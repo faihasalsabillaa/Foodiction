@@ -1,0 +1,1283 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --warm-bg: #FBF7F2;
+    --card-bg: #FFFFFF;
+    --accent-orange: #E07A3C;
+    --accent-orange-light: #FAE8D8;
+    --accent-green: #3B6D11;
+    --accent-green-light: #EAF3DE;
+    --text-primary: var(--color-text-primary);
+    --text-secondary: var(--color-text-secondary);
+    --border: var(--color-border-tertiary);
+    --tag-brown: #854F0B;
+    --tag-brown-bg: #FAEEDA;
+  }
+
+  .food-app {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--color-background-tertiary);
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .app-shell {
+    display: flex;
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--color-background-secondary);
+    min-height: 100vh;
+    position: relative;
+  }
+
+  /* Sidebar nav */
+  .sidebar {
+    width: 64px;
+    background: var(--color-background-primary);
+    border-right: 0.5px solid var(--color-border-tertiary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+    gap: 0.5rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .logo-mark {
+    width: 36px;
+    height: 36px;
+    background: #E07A3C;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .nav-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: var(--border-radius-md);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-secondary);
+    font-size: 20px;
+    transition: background 0.15s, color 0.15s;
+    position: relative;
+  }
+
+  .nav-btn:hover { background: var(--color-background-secondary); }
+  .nav-btn.active {
+    background: #FAE8D8;
+    color: #E07A3C;
+  }
+
+  .nav-btn .dot {
+    position: absolute;
+    top: 6px; right: 6px;
+    width: 6px; height: 6px;
+    background: #E07A3C;
+    border-radius: 50%;
+  }
+
+  /* Main content */
+  .main {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* Screen pages */
+  .screen { display: none; padding: 1.5rem; }
+  .screen.active { display: block; }
+
+  /* Header */
+  .page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  .greeting {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+
+  .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    line-height: 1.2;
+  }
+
+  .page-title span { color: #E07A3C; }
+
+  .avatar-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: #FAC775;
+    border: none;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 500; color: #633806;
+    flex-shrink: 0;
+  }
+
+  /* Search bar */
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: 10px 14px;
+    margin-bottom: 1.25rem;
+    cursor: text;
+  }
+
+  .search-bar i { color: var(--color-text-secondary); font-size: 18px; }
+  .search-bar span { font-size: 14px; color: var(--color-text-secondary); }
+
+  /* Filter chips */
+  .filter-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .filter-row::-webkit-scrollbar { display: none; }
+
+  .chip {
+    flex-shrink: 0;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    border: 0.5px solid var(--color-border-secondary);
+    background: var(--color-background-primary);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .chip.active {
+    background: #E07A3C;
+    border-color: #E07A3C;
+    color: white;
+    font-weight: 500;
+  }
+  .chip:hover:not(.active) { background: var(--color-background-secondary); }
+
+  /* Section label */
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .see-all {
+    font-size: 12px;
+    color: #E07A3C;
+    cursor: pointer;
+    font-weight: 500;
+    background: none;
+    border: none;
+  }
+
+  /* Featured card (horizontal scroll) */
+  .featured-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+    margin-bottom: 1.75rem;
+  }
+  .featured-row::-webkit-scrollbar { display: none; }
+
+  .feat-card {
+    flex-shrink: 0;
+    width: 200px;
+    background: var(--color-background-primary);
+    border-radius: var(--border-radius-lg);
+    border: 0.5px solid var(--color-border-tertiary);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  .feat-card:hover { transform: translateY(-2px); }
+
+  .feat-img {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    position: relative;
+  }
+
+  .feat-badge {
+    position: absolute;
+    top: 8px; left: 8px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 20px;
+    background: #FAE8D8;
+    color: #854F0B;
+  }
+
+  .feat-body { padding: 10px 12px; }
+  .feat-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+  }
+
+  .feat-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--color-text-secondary);
+  }
+
+  .star { color: #EF9F27; font-size: 11px; }
+
+  /* Food list cards */
+  .food-list { display: flex; flex-direction: column; gap: 10px; }
+
+  .food-card {
+    background: var(--color-background-primary);
+    border-radius: var(--border-radius-lg);
+    border: 0.5px solid var(--color-border-tertiary);
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    transition: border-color 0.15s;
+  }
+  .food-card:hover { border-color: var(--color-border-secondary); }
+
+  .food-emoji {
+    width: 56px; height: 56px;
+    border-radius: var(--border-radius-md);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px;
+    flex-shrink: 0;
+  }
+
+  .food-info { flex: 1; min-width: 0; }
+  .food-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .food-rest {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin-bottom: 6px;
+  }
+
+  .food-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+  .tag {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 20px;
+    font-weight: 500;
+    background: #FAEEDA;
+    color: #854F0B;
+  }
+  .tag.green { background: #EAF3DE; color: #3B6D11; }
+  .tag.blue { background: var(--color-background-info); color: var(--color-text-info); }
+
+  .food-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .price {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  .rating-pill {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    color: #633806;
+    background: #FAEEDA;
+    padding: 2px 7px;
+    border-radius: 20px;
+  }
+
+  /* Time suggestion banner */
+  .time-banner {
+    background: linear-gradient(135deg, #FAE8D8 0%, #FAEEDA 100%);
+    border: 0.5px solid #FAC775;
+    border-radius: var(--border-radius-lg);
+    padding: 14px 16px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  .banner-icon {
+    width: 40px; height: 40px;
+    background: #E07A3C;
+    border-radius: var(--border-radius-md);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .banner-text .b-label { font-size: 11px; color: #854F0B; font-weight: 500; }
+  .banner-text .b-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #412402;
+  }
+
+  /* ===== DETAIL SCREEN ===== */
+  .detail-header {
+    position: relative;
+    height: 180px;
+    background: #FAE8D8;
+    border-radius: var(--border-radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    border-radius: 0 0 var(--border-radius-xl) var(--border-radius-xl);
+    overflow: hidden;
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 14px; left: 14px;
+    width: 36px; height: 36px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--color-text-primary);
+    font-size: 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+
+  .fav-btn {
+    position: absolute;
+    top: 14px; right: 14px;
+    width: 36px; height: 36px;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    color: #E24B4A;
+  }
+
+  .detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+  }
+
+  .detail-sub {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    margin-bottom: 12px;
+  }
+
+  .detail-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 1.25rem;
+  }
+
+  .stat-box {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-md);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .stat-val {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+  }
+
+  .stat-lbl {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    margin-top: 2px;
+  }
+
+  /* Review section */
+  .review-card {
+    background: var(--color-background-primary);
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  .review-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+
+  .rev-avatar {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 500;
+    background: #CECBF6; color: #26215C;
+    flex-shrink: 0;
+  }
+
+  .rev-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+  .rev-date { font-size: 11px; color: var(--color-text-secondary); margin-left: auto; }
+  .rev-text { font-size: 13px; color: var(--color-text-secondary); line-height: 1.5; }
+
+  /* ===== MAP / EXPLORE SCREEN ===== */
+  .map-placeholder {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-lg);
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    border: 0.5px solid var(--color-border-tertiary);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .map-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(var(--color-border-tertiary) 1px, transparent 1px),
+      linear-gradient(90deg, var(--color-border-tertiary) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.6;
+  }
+
+  .map-pin {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .pin-bubble {
+    background: var(--color-background-primary);
+    border: 1px solid var(--color-border-secondary);
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-text-primary);
+    white-space: nowrap;
+    margin-bottom: 2px;
+  }
+
+  .pin-bubble.highlight {
+    background: #E07A3C;
+    border-color: #E07A3C;
+    color: white;
+  }
+
+  .pin-dot { width: 8px; height: 8px; border-radius: 50%; background: #E07A3C; }
+
+  /* ===== PROFILE SCREEN ===== */
+  .profile-hero {
+    text-align: center;
+    padding: 1.5rem 0 1rem;
+  }
+
+  .profile-avatar {
+    width: 64px; height: 64px;
+    background: #FAC775;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 500; color: #633806;
+    margin: 0 auto 12px;
+  }
+
+  .profile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+  }
+
+  .profile-sub { font-size: 13px; color: var(--color-text-secondary); }
+
+  .pref-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 1.25rem;
+  }
+
+  .pref-item {
+    background: var(--color-background-primary);
+    border-radius: var(--border-radius-md);
+    border: 0.5px solid var(--color-border-tertiary);
+    padding: 10px 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .pref-item.selected {
+    border-color: #E07A3C;
+    background: #FAE8D8;
+  }
+
+  .pref-emoji { font-size: 22px; margin-bottom: 4px; }
+  .pref-label { font-size: 11px; color: var(--color-text-secondary); }
+  .pref-item.selected .pref-label { color: #854F0B; }
+
+  .stat-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  .strip-box {
+    background: var(--color-background-secondary);
+    border-radius: var(--border-radius-md);
+    padding: 12px;
+    text-align: center;
+  }
+
+  .strip-num { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+  .strip-lbl { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; }
+
+  /* bottom nav (mobile feel) */
+  .bottom-nav {
+    display: none;
+  }
+
+  /* Divider */
+  .divider {
+    height: 0.5px;
+    background: var(--color-border-tertiary);
+    margin: 1rem 0;
+  }
+
+  /* submit review input */
+  .review-input-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .rev-input {
+    flex: 1;
+    background: var(--color-background-secondary);
+    border: 0.5px solid var(--color-border-secondary);
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-text-primary);
+    outline: none;
+  }
+
+  .rev-input:focus { border-color: #E07A3C; }
+
+  .rev-send {
+    width: 34px; height: 34px;
+    background: #E07A3C;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .stars-select {
+    display: flex; gap: 4px; margin-bottom: 8px;
+  }
+
+  .star-btn { font-size: 18px; cursor: pointer; color: #EF9F27; background: none; border: none; padding: 0; }
+  .star-btn.dim { color: var(--color-border-secondary); }
+
+  .h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 10px;
+  }
+
+  /* pulse animation on time banner */
+  @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+  .time-banner { animation: pulse 3s ease-in-out infinite; }
+</style>
+
+<h2 class="sr-only">Foodiction — local food discovery app UI showcasing home feed, food detail, explore map, and profile screens</h2>
+
+<div class="food-app">
+  <div class="app-shell">
+
+    <!-- Sidebar -->
+    <nav class="sidebar" aria-label="Main navigation">
+      <div class="logo-mark" aria-label="Foodiction logo">F</div>
+
+      <button class="nav-btn active" id="nav-home" onclick="showScreen('home')" aria-label="Home">
+        <i class="ti ti-home" aria-hidden="true"></i>
+      </button>
+      <button class="nav-btn" id="nav-explore" onclick="showScreen('explore')" aria-label="Explore map">
+        <i class="ti ti-map-pin" aria-hidden="true"></i>
+      </button>
+      <button class="nav-btn" id="nav-saved" onclick="showScreen('saved')" aria-label="Saved">
+        <i class="ti ti-heart" aria-hidden="true"></i>
+        <span class="dot"></span>
+      </button>
+      <button class="nav-btn" id="nav-profile" onclick="showScreen('profile')" aria-label="Profile">
+        <i class="ti ti-user" aria-hidden="true"></i>
+      </button>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main">
+
+      <!-- HOME SCREEN -->
+      <div class="screen active" id="screen-home">
+        <header class="page-header">
+          <div>
+            <p class="greeting">Good evening, Aufaa 👋</p>
+            <h1 class="page-title">Discover<br><span>Yogyakarta</span></h1>
+          </div>
+          <button class="avatar-btn" aria-label="User profile">AU</button>
+        </header>
+
+        <div class="search-bar" onclick="showScreen('explore')" role="button" tabindex="0" aria-label="Search for food">
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <span>Cari makanan, warung, lokasi...</span>
+        </div>
+
+        <div class="filter-row" role="group" aria-label="Filter by food type">
+          <button class="chip active" onclick="setChip(this)">Semua</button>
+          <button class="chip" onclick="setChip(this)">🍜 Gudeg</button>
+          <button class="chip" onclick="setChip(this)">🍢 Angkringan</button>
+          <button class="chip" onclick="setChip(this)">🍝 Bakmi Jawa</button>
+          <button class="chip" onclick="setChip(this)">🥘 Soto</button>
+          <button class="chip" onclick="setChip(this)">☕ Kopi</button>
+        </div>
+
+        <!-- Time-based banner -->
+        <div class="time-banner" onclick="showDetail('angkringan')" role="button" tabindex="0">
+          <div class="banner-icon">🌙</div>
+          <div class="banner-text">
+            <p class="b-label">MAKAN MALAM TERDEKAT</p>
+            <p class="b-title">Angkringan buka malam ini →</p>
+          </div>
+        </div>
+
+        <!-- Featured -->
+        <div class="section-header">
+          <p class="section-label">Rekomendasi Untukmu</p>
+          <button class="see-all" onclick="showScreen('explore')">Lihat semua</button>
+        </div>
+
+        <div class="featured-row">
+          <div class="feat-card" onclick="showDetail('gudeg')">
+            <div class="feat-img" style="background:#FAE8D8;">
+              🍛
+              <span class="feat-badge">🔥 Trending</span>
+            </div>
+            <div class="feat-body">
+              <p class="feat-name">Gudeg Bu Tjitro</p>
+              <div class="feat-meta">
+                <span class="star">★</span>
+                <span>4.8</span>
+                <span>·</span>
+                <span>1.2 km</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-card" onclick="showDetail('bakmi')">
+            <div class="feat-img" style="background:#E1F5EE;">
+              🍜
+              <span class="feat-badge">💰 Hemat</span>
+            </div>
+            <div class="feat-body">
+              <p class="feat-name">Bakmi Jawa Mbah Gito</p>
+              <div class="feat-meta">
+                <span class="star">★</span>
+                <span>4.6</span>
+                <span>·</span>
+                <span>0.8 km</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-card" onclick="showDetail('soto')">
+            <div class="feat-img" style="background:#EEEDFE;">
+              🥣
+              <span class="feat-badge">⏰ Buka Sekarang</span>
+            </div>
+            <div class="feat-body">
+              <p class="feat-name">Soto Kadipiro</p>
+              <div class="feat-meta">
+                <span class="star">★</span>
+                <span>4.7</span>
+                <span>·</span>
+                <span>2.1 km</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feat-card" onclick="showDetail('wedang')">
+            <div class="feat-img" style="background:#FBEAF0;">
+              ☕
+            </div>
+            <div class="feat-body">
+              <p class="feat-name">Wedang Uwuh Keraton</p>
+              <div class="feat-meta">
+                <span class="star">★</span>
+                <span>4.5</span>
+                <span>·</span>
+                <span>3.0 km</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- List -->
+        <div class="section-header">
+          <p class="section-label">Populer di Sekitarmu</p>
+        </div>
+
+        <div class="food-list">
+          <div class="food-card" onclick="showDetail('angkringan')">
+            <div class="food-emoji" style="background:#FAEEDA;">🍢</div>
+            <div class="food-info">
+              <p class="food-name">Angkringan Lek Man</p>
+              <p class="food-rest">Jl. Mangkubumi, dekat Tugu</p>
+              <div class="food-tags">
+                <span class="tag">Malam</span>
+                <span class="tag green">Murah</span>
+              </div>
+            </div>
+            <div class="food-right">
+              <span class="price">Rp 5k</span>
+              <span class="rating-pill"><i class="ti ti-star-filled" style="font-size:10px"></i> 4.9</span>
+            </div>
+          </div>
+
+          <div class="food-card" onclick="showDetail('gudeg')">
+            <div class="food-emoji" style="background:#FAE8D8;">🍛</div>
+            <div class="food-info">
+              <p class="food-name">Gudeg Wijilan</p>
+              <p class="food-rest">Gang Wijilan, Kraton</p>
+              <div class="food-tags">
+                <span class="tag">Pagi</span>
+                <span class="tag blue">Ikonik</span>
+              </div>
+            </div>
+            <div class="food-right">
+              <span class="price">Rp 25k</span>
+              <span class="rating-pill"><i class="ti ti-star-filled" style="font-size:10px"></i> 4.8</span>
+            </div>
+          </div>
+
+          <div class="food-card" onclick="showDetail('bakmi')">
+            <div class="food-emoji" style="background:#E1F5EE;">🍜</div>
+            <div class="food-info">
+              <p class="food-name">Bakmi Jawa Mbah Gito</p>
+              <p class="food-rest">Jl. Kaliurang KM 5</p>
+              <div class="food-tags">
+                <span class="tag">Malam</span>
+                <span class="tag green">Ramah Budget</span>
+              </div>
+            </div>
+            <div class="food-right">
+              <span class="price">Rp 18k</span>
+              <span class="rating-pill"><i class="ti ti-star-filled" style="font-size:10px"></i> 4.6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DETAIL SCREEN -->
+      <div class="screen" id="screen-detail">
+        <div class="detail-header" id="detail-emoji-bg">
+          <button class="back-btn" onclick="goBack()" aria-label="Go back">
+            <i class="ti ti-arrow-left" aria-hidden="true"></i>
+          </button>
+          <span id="detail-emoji" style="font-size:80px">🍛</span>
+          <button class="fav-btn" id="fav-toggle" onclick="toggleFav(this)" aria-label="Favourite">
+            <i class="ti ti-heart" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="food-tags" style="margin-bottom:8px;" id="detail-tags"></div>
+
+        <h2 class="detail-title" id="detail-name">Gudeg Bu Tjitro</h2>
+        <p class="detail-sub" id="detail-addr">Jl. Bugisan Selatan · Buka 06.00–14.00</p>
+
+        <div class="detail-stats">
+          <div class="stat-box">
+            <p class="stat-val" id="d-rating">4.8</p>
+            <p class="stat-lbl">Rating</p>
+          </div>
+          <div class="stat-box">
+            <p class="stat-val" id="d-dist">1.2 km</p>
+            <p class="stat-lbl">Jarak</p>
+          </div>
+          <div class="stat-box">
+            <p class="stat-val" id="d-price">Rp 20–30k</p>
+            <p class="stat-lbl">Harga</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="h3">Tentang</p>
+        <p style="font-size:14px; color:var(--color-text-secondary); line-height:1.6; margin-bottom:1rem;" id="detail-desc">
+          Salah satu warung gudeg legendaris di Yogyakarta yang telah berdiri sejak 1925. Gudeg manis khas keraton dengan nangka muda yang dimasak semalaman menggunakan kayu bakar.
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="h3">Ulasan Pengguna</p>
+
+        <div id="review-list">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="rev-avatar">RJ</div>
+              <span class="rev-name">Ratu J.</span>
+              <span class="rev-date">3 hari lalu</span>
+            </div>
+            <div style="display:flex;gap:2px;margin-bottom:5px;">
+              <span style="color:#EF9F27;font-size:12px;">★★★★★</span>
+            </div>
+            <p class="rev-text">Gudegnya legit enak banget, kuahnya meresap sempurna. Wajib pesen krecek-nya juga!</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-header">
+              <div class="rev-avatar" style="background:#9FE1CB;color:#085041;">YB</div>
+              <span class="rev-name">Yohana B.</span>
+              <span class="rev-date">1 minggu lalu</span>
+            </div>
+            <div style="display:flex;gap:2px;margin-bottom:5px;">
+              <span style="color:#EF9F27;font-size:12px;">★★★★☆</span>
+            </div>
+            <p class="rev-text">Porsinya pas, tempatnya bersih. Antriannya lumayan panjang waktu weekend tapi worth it!</p>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <p style="font-size:12px; color:var(--color-text-secondary); margin-bottom:6px;">Tambah ulasanmu:</p>
+          <div class="stars-select" id="star-select">
+            <button class="star-btn" data-val="1" onclick="selectStar(1)">★</button>
+            <button class="star-btn dim" data-val="2" onclick="selectStar(2)">★</button>
+            <button class="star-btn dim" data-val="3" onclick="selectStar(3)">★</button>
+            <button class="star-btn dim" data-val="4" onclick="selectStar(4)">★</button>
+            <button class="star-btn dim" data-val="5" onclick="selectStar(5)">★</button>
+          </div>
+          <div class="review-input-row">
+            <input class="rev-input" type="text" placeholder="Tulis ulasanmu..." id="rev-text-input" />
+            <button class="rev-send" onclick="submitReview()" aria-label="Kirim ulasan">
+              <i class="ti ti-send" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPLORE SCREEN -->
+      <div class="screen" id="screen-explore">
+        <header class="page-header">
+          <h1 class="page-title">Jelajahi <span>Peta</span></h1>
+          <button class="avatar-btn" aria-label="Filter">
+            <i class="ti ti-adjustments" style="font-size:18px" aria-hidden="true"></i>
+          </button>
+        </header>
+
+        <div class="search-bar">
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <span>Cari di peta...</span>
+        </div>
+
+        <div class="map-placeholder" role="img" aria-label="Peta lokasi kuliner Yogyakarta">
+          <div class="map-grid"></div>
+          <div class="map-pin" style="top:40%;left:35%;" onclick="showDetail('angkringan')">
+            <div class="pin-bubble highlight">🍢 Rp5k</div>
+            <div class="pin-dot"></div>
+          </div>
+          <div class="map-pin" style="top:55%;left:55%;" onclick="showDetail('gudeg')">
+            <div class="pin-bubble">🍛 Gudeg</div>
+            <div class="pin-dot"></div>
+          </div>
+          <div class="map-pin" style="top:30%;left:62%;" onclick="showDetail('bakmi')">
+            <div class="pin-bubble">🍜 Bakmi</div>
+            <div class="pin-dot"></div>
+          </div>
+          <div class="map-pin" style="top:65%;left:25%;" onclick="showDetail('soto')">
+            <div class="pin-bubble">🥣 Soto</div>
+            <div class="pin-dot"></div>
+          </div>
+          <div class="map-pin" style="top:48%;left:48%;" >
+            <div style="width:12px;height:12px;background:#E24B4A;border-radius:50%;border:2px solid white;margin: 0 auto 2px;"></div>
+            <div style="font-size:10px;color:#E24B4A;font-weight:500;">Kamu</div>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <p class="section-label">Di Sekitarmu (dalam 2km)</p>
+          <button class="see-all">Filter</button>
+        </div>
+
+        <div class="food-list">
+          <div class="food-card" onclick="showDetail('angkringan')">
+            <div class="food-emoji" style="background:#FAEEDA;">🍢</div>
+            <div class="food-info">
+              <p class="food-name">Angkringan Lek Man</p>
+              <p class="food-rest">0.4 km · Buka sampai 01.00</p>
+              <div class="food-tags">
+                <span class="tag green">Terdekat</span>
+              </div>
+            </div>
+            <div class="food-right">
+              <span class="price">Rp 5k</span>
+              <span class="rating-pill"><i class="ti ti-star-filled" style="font-size:10px"></i> 4.9</span>
+            </div>
+          </div>
+
+          <div class="food-card" onclick="showDetail('bakmi')">
+            <div class="food-emoji" style="background:#E1F5EE;">🍜</div>
+            <div class="food-info">
+              <p class="food-name">Bakmi Jawa Mbah Gito</p>
+              <p class="food-rest">0.8 km · Buka sampai 23.00</p>
+              <div class="food-tags">
+                <span class="tag">Malam</span>
+              </div>
+            </div>
+            <div class="food-right">
+              <span class="price">Rp 18k</span>
+              <span class="rating-pill"><i class="ti ti-star-filled" style="font-size:10px"></i> 4.6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAVED SCREEN -->
+      <div class="screen" id="screen-saved">
+        <header class="page-header">
+          <h1 class="page-title">Tersimpan <span>❤️</span></h1>
+        </header>
+
+        <div class="food-list">
+          <div class="food-card" onclick="showDetail('gudeg')">
+            <div class="food-emoji" style="background:#FAE8D8;">🍛</div>
+            <div class="food-info">
+              <p class="food-name">Gudeg Bu Tjitro</p>
+              <p class="food-rest">Jl. Bugisan Selatan</p>
+              <div class="food-tags"><span class="tag">Ikonik</span></div>
+            </div>
+            <div class="food-right">
+              <span class="price">Rp 25k</span>
+              <span class="rating-pill"><i class="ti ti-star-filled" style="font-size:10px"></i> 4.8</span>
+            </div>
+          </div>
+
+          <div class="food-card" onclick="showDetail('soto')">
+            <div class="food-emoji" style="background:#EEEDFE;">🥣</div>
+            <div class="food-info">
+              <p class="food-name">Soto Kadipiro</p>
+              <p class="food-rest">Jl. Wates KM 1</p>
+              <div class="food-tags"><span class="tag blue">Legendaris</span></div>
+            </div>
+            <div class="food-right">
+              <span class="price">Rp 20k</span>
+              <span class="rating-pill"><i class="ti ti-star-filled" style="font-size:10px"></i> 4.7</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem; padding:1rem; background:var(--color-background-secondary); border-radius:var(--border-radius-lg); text-align:center;">
+          <p style="font-size:13px; color:var(--color-text-secondary);">Simpan tempat favoritmu dan akses kapan saja!</p>
+        </div>
+      </div>
+
+      <!-- PROFILE SCREEN -->
+      <div class="screen" id="screen-profile">
+        <div class="profile-hero">
+          <div class="profile-avatar">AU</div>
+          <p class="profile-name">Aufaa Azzahra</p>
+          <p class="profile-sub">Yogyakarta · Member sejak 2024</p>
+        </div>
+
+        <div class="stat-strip">
+          <div class="strip-box">
+            <p class="strip-num">24</p>
+            <p class="strip-lbl">Ulasan</p>
+          </div>
+          <div class="strip-box">
+            <p class="strip-num">18</p>
+            <p class="strip-lbl">Tersimpan</p>
+          </div>
+          <div class="strip-box">
+            <p class="strip-num">312</p>
+            <p class="strip-lbl">Check-in</p>
+          </div>
+        </div>
+
+        <p class="section-label" style="margin-bottom:0.75rem;">Preferensi Rasa</p>
+        <div class="pref-grid" id="pref-grid">
+          <div class="pref-item selected" onclick="togglePref(this)">
+            <div class="pref-emoji">🌶️</div>
+            <p class="pref-label">Pedas</p>
+          </div>
+          <div class="pref-item" onclick="togglePref(this)">
+            <div class="pref-emoji">🍬</div>
+            <p class="pref-label">Manis</p>
+          </div>
+          <div class="pref-item selected" onclick="togglePref(this)">
+            <div class="pref-emoji">🧂</div>
+            <p class="pref-label">Gurih</p>
+          </div>
+          <div class="pref-item" onclick="togglePref(this)">
+            <div class="pref-emoji">🍋</div>
+            <p class="pref-label">Asam</p>
+          </div>
+          <div class="pref-item selected" onclick="togglePref(this)">
+            <div class="pref-emoji">🥘</div>
+            <p class="pref-label">Berkuah</p>
+          </div>
+          <div class="pref-item" onclick="togglePref(this)">
+            <div class="pref-emoji">🥗</div>
+            <p class="pref-label">Vegetarian</p>
+          </div>
+        </div>
+
+        <p class="section-label" style="margin-bottom:0.75rem;">Budget Harian</p>
+        <div style="background:var(--color-background-primary); border:0.5px solid var(--color-border-tertiary); border-radius:var(--border-radius-lg); padding:14px 16px; margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <span style="font-size:13px;color:var(--color-text-secondary);">Maksimum per hari</span>
+            <span style="font-weight:500; font-size:14px;" id="budget-lbl">Rp 50.000</span>
+          </div>
+          <input type="range" min="10" max="200" step="5" value="50" id="budget-slider" oninput="updateBudget(this.value)" style="width:100%;" />
+          <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--color-text-secondary);margin-top:4px;">
+            <span>Rp 10k</span><span>Rp 200k</span>
+          </div>
+        </div>
+
+        <button style="width:100%;padding:12px;border-radius:var(--border-radius-lg);border:none;background:#E07A3C;color:white;font-size:14px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;" onclick="sendPrompt('Update my Foodiction profile preferences')">
+          Simpan Preferensi ↗
+        </button>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script>
+let currentScreen = 'home';
+let previousScreen = 'home';
+let selectedStars = 1;
+
+const foods = {
+  gudeg: {
+    emoji: '🍛', bg: '#FAE8D8',
+    name: 'Gudeg Bu Tjitro',
+    addr: 'Jl. Bugisan Selatan · Buka 06.00–14.00',
+    rating: '4.8', dist: '1.2 km', price: 'Rp 20–30k',
+    tags: ['Pagi', 'Ikonik'],
+    desc: 'Salah satu warung gudeg legendaris di Yogyakarta yang telah berdiri sejak 1925. Gudeg manis khas keraton dengan nangka muda yang dimasak semalaman menggunakan kayu bakar.'
+  },
+  angkringan: {
+    emoji: '🍢', bg: '#FAEEDA',
+    name: 'Angkringan Lek Man',
+    addr: 'Jl. Mangkubumi, dekat Tugu · Buka 17.00–01.00',
+    rating: '4.9', dist: '0.4 km', price: 'Rp 3–8k',
+    tags: ['Malam', 'Murah'],
+    desc: 'Angkringan paling ikonik dekat Tugu Yogyakarta. Tempatnya nyaman di pinggir jalan, cocok buat nongkrong sambil menikmati kopi jos dan nasi kucing khas Yogya.'
+  },
+  bakmi: {
+    emoji: '🍜', bg: '#E1F5EE',
+    name: 'Bakmi Jawa Mbah Gito',
+    addr: 'Jl. Kaliurang KM 5 · Buka 17.00–23.00',
+    rating: '4.6', dist: '0.8 km', price: 'Rp 15–22k',
+    tags: ['Malam', 'Ramah Budget'],
+    desc: 'Bakmi Jawa tradisional dengan bumbu rempah yang kaya. Dimasak menggunakan arang untuk cita rasa smoky yang khas. Sudah berdiri lebih dari 40 tahun.'
+  },
+  soto: {
+    emoji: '🥣', bg: '#EEEDFE',
+    name: 'Soto Kadipiro',
+    addr: 'Jl. Wates KM 1 · Buka 07.00–16.00',
+    rating: '4.7', dist: '2.1 km', price: 'Rp 18–25k',
+    tags: ['Pagi', 'Legendaris'],
+    desc: 'Soto ayam bening legendaris yang sudah ada sejak 1921. Kuahnya segar dan gurih, dengan suwiran ayam kampung yang empuk. Wajib coba sate ususnya!'
+  },
+  wedang: {
+    emoji: '☕', bg: '#FBEAF0',
+    name: 'Wedang Uwuh Keraton',
+    addr: 'Alun-Alun Kidul · Buka 08.00–22.00',
+    rating: '4.5', dist: '3.0 km', price: 'Rp 8–15k',
+    tags: ['Minuman', 'Herbal'],
+    desc: 'Minuman rempah tradisional Yogyakarta yang menghangatkan tubuh. Terbuat dari campuran jahe, cengkeh, kayu manis, dan berbagai rempah pilihan.'
+  }
+};
+
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  const nb = document.getElementById('nav-' + name);
+  if (nb) nb.classList.add('active');
+  previousScreen = currentScreen;
+  currentScreen = name;
+}
+
+function showDetail(foodId) {
+  const f = foods[foodId];
+  if (!f) return;
+  document.getElementById('detail-emoji').textContent = f.emoji;
+  document.getElementById('detail-emoji-bg').style.background = f.bg;
+  document.getElementById('detail-name').textContent = f.name;
+  document.getElementById('detail-addr').textContent = f.addr;
+  document.getElementById('d-rating').textContent = f.rating;
+  document.getElementById('d-dist').textContent = f.dist;
+  document.getElementById('d-price').textContent = f.price;
+  document.getElementById('detail-desc').textContent = f.desc;
+  const tagsEl = document.getElementById('detail-tags');
+  tagsEl.innerHTML = f.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-detail').classList.add('active');
+  previousScreen = currentScreen;
+  currentScreen = 'detail';
+}
+
+function goBack() {
+  showScreen(previousScreen === 'detail' ? 'home' : previousScreen);
+}
+
+function setChip(el) {
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function toggleFav(btn) {
+  const icon = btn.querySelector('i');
+  if (icon.classList.contains('ti-heart')) {
+    icon.classList.replace('ti-heart', 'ti-heart-filled');
+    btn.style.color = '#E24B4A';
+  } else {
+    icon.classList.replace('ti-heart-filled', 'ti-heart');
+  }
+}
+
+function togglePref(el) {
+  el.classList.toggle('selected');
+}
+
+function selectStar(val) {
+  selectedStars = val;
+  document.querySelectorAll('#star-select .star-btn').forEach((b, i) => {
+    b.classList.toggle('dim', i >= val);
+  });
+}
+
+function submitReview() {
+  const input = document.getElementById('rev-text-input');
+  const text = input.value.trim();
+  if (!text) return;
+  const stars = '★'.repeat(selectedStars) + '☆'.repeat(5 - selectedStars);
+  const newCard = document.createElement('div');
+  newCard.className = 'review-card';
+  newCard.innerHTML = `
+    <div class="review-header">
+      <div class="rev-avatar" style="background:#B5D4F4;color:#042C53;">AU</div>
+      <span class="rev-name">Kamu</span>
+      <span class="rev-date">Baru saja</span>
+    </div>
+    <div style="display:flex;gap:2px;margin-bottom:5px;">
+      <span style="color:#EF9F27;font-size:12px;">${stars}</span>
+    </div>
+    <p class="rev-text">${text}</p>
+  `;
+  document.getElementById('review-list').prepend(newCard);
+  input.value = '';
+  selectStar(1);
+}
+
+function updateBudget(val) {
+  document.getElementById('budget-lbl').textContent = `Rp ${parseInt(val).toLocaleString('id-ID')}${parseInt(val) >= 1000 ? '' : '.000'}`;
+  const num = parseInt(val);
+  document.getElementById('budget-lbl').textContent = 'Rp ' + (num * 1000).toLocaleString('id-ID');
+}
+</script>
