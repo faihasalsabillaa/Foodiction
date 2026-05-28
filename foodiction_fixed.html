@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foodiction — Kuliner Yogyakarta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* SVG icon system — replaces Tabler webfont */
+i[class*="ti ti-"]{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;line-height:1}
+i[class*="ti ti-"] svg{width:1em;height:1em}
+</style>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cr:#F9F5EF;--cr2:#F0E9DF;--wh:#FFFFFF;
+  --am:#D4691E;--am2:#FBEDDF;--am3:#A84C0F;--am4:#F5A262;
+  --gn:#2D6A2D;--gn2:#E5F0E5;
+  --tx:#1E1410;--tx2:#6B5744;--tx3:#9C8877;
+  --bd:rgba(180,140,100,0.16);--bd2:rgba(180,140,100,0.28);
+  --sh:0 2px 12px rgba(90,50,20,0.08);--sh2:0 8px 28px rgba(90,50,20,0.13);
+  --r:16px;--rs:10px;
+  --fd:'Cormorant Garamond',serif;--fb:'Plus Jakarta Sans',sans-serif;
+}
+html,body{height:100%;background:#D9CFC3;display:flex;align-items:center;justify-content:center;font-family:var(--fb)}
+
+/* SHELL */
+.shell{width:393px;height:852px;background:var(--cr);border-radius:44px;box-shadow:0 40px 100px rgba(40,20,5,0.35),0 0 0 1px rgba(40,20,5,0.1),inset 0 0 0 1px rgba(255,255,255,0.15);overflow:hidden;display:flex;flex-direction:column;position:relative}
+
+/* STATUS */
+.sb{height:50px;padding:16px 26px 0;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;position:relative;z-index:20}
+.sb-t{font-size:14px;font-weight:700;color:var(--tx);letter-spacing:-.3px}
+.sb-r{display:flex;align-items:center;gap:5px;font-size:12px;color:var(--tx)}
+.sb-r i{font-size:16px}
+
+/* FRAME */
+.frame{flex:1;overflow:hidden;position:relative}
+
+/* SCREENS */
+.sc{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;opacity:0;pointer-events:none;transition:opacity .22s ease,transform .22s ease;transform:translateY(10px);scrollbar-width:none}
+.sc::-webkit-scrollbar{display:none}
+.sc.on{opacity:1;pointer-events:all;transform:translateY(0)}
+.sc.up{transform:translateY(60px)}
+
+/* BOTTOM NAV */
+.bnav{height:76px;background:var(--wh);border-top:1px solid var(--bd);display:flex;align-items:center;justify-content:space-around;padding:0 6px 10px;flex-shrink:0;position:relative;z-index:50}
+.ni{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;cursor:pointer;border-radius:12px;transition:all .15s;border:none;background:none;position:relative}
+.ni i{font-size:23px;color:var(--tx3);transition:color .15s}
+.ni span{font-size:10px;font-weight:600;color:var(--tx3);transition:color .15s}
+.ni.on i,.ni.on span{color:var(--am)}
+.ni .ndot{position:absolute;top:7px;right:calc(50% - 15px);width:5px;height:5px;background:var(--am);border-radius:50%;display:none}
+.ni.dot .ndot{display:block}
+
+/* TOAST */
+.toast{position:absolute;bottom:88px;left:18px;right:18px;background:#1E1410;color:#fff;border-radius:14px;padding:13px 16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:500;z-index:200;box-shadow:var(--sh2);opacity:0;transform:translateY(8px);pointer-events:none;transition:all .22s ease}
+.toast.on{opacity:1;transform:translateY(0)}
+.toast i{color:var(--am4);font-size:18px}
+
+/* ========== SHARED COMPONENTS ========== */
+.dtitle{font-family:var(--fd);font-size:27px;font-weight:700;color:var(--tx);line-height:1.15}
+.dtitle em{font-style:italic;color:var(--am)}
+.slabel{font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--tx3)}
+
+.sbox{display:flex;align-items:center;gap:10px;background:var(--wh);border:1px solid var(--bd2);border-radius:50px;padding:11px 16px;cursor:text}
+.sbox i{color:var(--tx3);font-size:18px}
+.sbox .ph{flex:1;font-size:14px;color:var(--tx3);font-family:var(--fb)}
+.sbox input{flex:1;font-size:14px;color:var(--tx);font-family:var(--fb);border:none;background:none;outline:none}
+.sbox input::placeholder{color:var(--tx3)}
+
+.chiprow{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.chiprow::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;padding:7px 15px;border-radius:50px;font-size:13px;font-weight:500;border:1px solid var(--bd2);background:var(--wh);color:var(--tx2);cursor:pointer;transition:all .15s;white-space:nowrap}
+.chip.on{background:var(--am);border-color:var(--am);color:#fff}
+.chip:hover:not(.on){background:var(--cr2)}
+
+.tag{font-size:10px;font-weight:600;padding:3px 8px;border-radius:20px;background:var(--am2);color:var(--am3)}
+.tag.g{background:var(--gn2);color:var(--gn)}
+.tag.b{background:#EEF2FF;color:#4356AF}
+.tag.p{background:#F3EEFF;color:#6A3FB5}
+
+.prat{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;background:#FFF4E4;color:#B06000;padding:3px 8px;border-radius:20px}
+.prat i{font-size:9px}
+
+.fc{background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);padding:13px;display:flex;gap:12px;cursor:pointer;transition:box-shadow .15s,border-color .15s,transform .15s}
+.fc:hover{box-shadow:var(--sh);border-color:var(--bd2);transform:translateY(-1px)}
+.fthumb{width:60px;height:60px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:32px;flex-shrink:0}
+.finfo{flex:1;min-width:0}
+.fname{font-family:var(--fd);font-size:16px;font-weight:600;color:var(--tx);margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fplace{font-size:12px;color:var(--tx3);margin-bottom:6px}
+.ftags{display:flex;gap:5px;flex-wrap:wrap}
+.fright{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex-shrink:0}
+.fprice{font-size:14px;font-weight:600;color:var(--tx)}
+
+.av{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#FAC775,#E07A3C);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;border:2px solid #fff;box-shadow:0 0 0 1px var(--bd2)}
+
+/* INPUT FIELD */
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-size:12px;font-weight:600;color:var(--tx2)}
+.field input,.field textarea,.field select{border:1px solid var(--bd2);border-radius:var(--rs);background:var(--cr);padding:12px 14px;font-size:14px;font-family:var(--fb);color:var(--tx);outline:none;transition:border-color .15s;width:100%}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--am)}
+.field input::placeholder,.field textarea::placeholder{color:var(--tx3)}
+.field textarea{resize:none}
+.field select{appearance:none;cursor:pointer}
+.field .pw-wrap{position:relative}
+.field .pw-wrap input{padding-right:44px}
+.field .pw-eye{position:absolute;right:14px;top:50%;transform:translateY(-50%);cursor:pointer;color:var(--tx3);font-size:18px;border:none;background:none;padding:0}
+
+.btnprimary{width:100%;background:var(--am);color:#fff;border:none;border-radius:50px;padding:14px;font-size:14px;font-weight:700;font-family:var(--fb);cursor:pointer;transition:background .15s;display:flex;align-items:center;justify-content:center;gap:8px}
+.btnprimary:hover{background:var(--am3)}
+.btnsec{width:100%;background:transparent;color:var(--tx2);border:1px solid var(--bd2);border-radius:50px;padding:13px;font-size:14px;font-weight:600;font-family:var(--fb);cursor:pointer;transition:all .15s}
+.btnsec:hover{background:var(--cr2)}
+
+/* ========== SPLASH ========== */
+#s-splash{background:linear-gradient(160deg,#1A0E08 0%,#4A1E08 50%,#7A3010 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.splash-orb{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#E07A3C,#FAC775);display:flex;align-items:center;justify-content:center;font-size:62px;box-shadow:0 0 80px rgba(224,122,60,.55);animation:porb 3s ease-in-out infinite;margin-bottom:28px}
+@keyframes porb{0%,100%{transform:scale(1);box-shadow:0 0 80px rgba(224,122,60,.55)}50%{transform:scale(1.05);box-shadow:0 0 110px rgba(224,122,60,.75)}}
+.splash-ring{position:absolute;width:200px;height:200px;border-radius:50%;border:1px solid rgba(255,255,255,.08);pointer-events:none}
+.splash-logo{font-family:var(--fd);font-size:42px;font-weight:700;color:#fff;margin-bottom:6px;letter-spacing:-.5px}
+.splash-logo span{color:var(--am4);font-style:italic}
+.splash-tag{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:40px}
+.splash-bar{width:140px;height:3px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;margin-bottom:0}
+.splash-bar-fill{height:100%;background:var(--am4);border-radius:2px;width:0%;animation:sload 2s ease forwards}
+@keyframes sload{0%{width:0%}100%{width:100%}}
+
+/* ========== ONBOARDING ========== */
+#s-ob{background:#fff;display:flex;flex-direction:column}
+.ob-slides{flex:1;position:relative;overflow:hidden}
+.ob-slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px 32px;opacity:0;transition:opacity .35s,transform .35s;transform:translateX(30px)}
+.ob-slide.on{opacity:1;transform:translateX(0)}
+.ob-slide.prev{transform:translateX(-30px)}
+.ob-ill{font-size:90px;margin-bottom:24px;filter:drop-shadow(0 8px 20px rgba(212,105,30,.2))}
+.ob-title{font-family:var(--fd);font-size:32px;font-weight:700;color:var(--tx);text-align:center;line-height:1.2;margin-bottom:12px}
+.ob-title em{font-style:italic;color:var(--am)}
+.ob-body{font-size:14px;color:var(--tx2);text-align:center;line-height:1.7}
+.ob-foot{padding:0 28px 36px;flex-shrink:0}
+.ob-dots{display:flex;justify-content:center;gap:7px;margin-bottom:22px}
+.od{width:7px;height:7px;border-radius:50%;background:#E0D5C8;transition:all .2s}
+.od.on{background:var(--am);width:22px;border-radius:4px}
+
+/* ========== LOGIN / SIGNUP ========== */
+#s-login{background:var(--cr);display:flex;flex-direction:column}
+.login-top{height:220px;background:linear-gradient(160deg,#1A0E08,#6B2C0A);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:28px;position:relative;overflow:hidden;flex-shrink:0}
+.login-blob{position:absolute;border-radius:50%;background:rgba(245,162,98,.08)}
+.login-logo{font-family:var(--fd);font-size:38px;font-weight:700;color:#fff;position:relative;z-index:1}
+.login-logo em{font-style:italic;color:var(--am4)}
+.login-sub{font-size:13px;color:rgba(255,255,255,.5);position:relative;z-index:1;margin-top:4px}
+.login-body{flex:1;padding:28px 24px;overflow-y:auto}
+.login-tabs{display:flex;background:var(--cr2);border-radius:50px;padding:4px;margin-bottom:24px}
+.ltab{flex:1;padding:9px;text-align:center;font-size:13px;font-weight:600;color:var(--tx3);cursor:pointer;border-radius:50px;transition:all .15s}
+.ltab.on{background:var(--wh);color:var(--tx);box-shadow:var(--sh)}
+.divider{display:flex;align-items:center;gap:12px;margin:18px 0}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--bd2)}
+.divider span{font-size:12px;color:var(--tx3);font-weight:500}
+.social-btn{display:flex;align-items:center;justify-content:center;gap:10px;padding:12px;border:1px solid var(--bd2);border-radius:50px;font-size:14px;font-weight:600;color:var(--tx);background:var(--wh);cursor:pointer;width:100%;font-family:var(--fb);transition:background .15s;margin-bottom:10px}
+.social-btn:hover{background:var(--cr2)}
+.login-switch{text-align:center;font-size:13px;color:var(--tx3);margin-top:16px;padding-bottom:20px}
+.login-switch a{color:var(--am);font-weight:600;cursor:pointer;text-decoration:none}
+.forgot{text-align:right;font-size:12px;color:var(--am);font-weight:600;cursor:pointer;margin-top:-8px;margin-bottom:14px}
+
+/* strength bar */
+.pw-strength{height:3px;border-radius:2px;margin-top:4px;transition:all .3s}
+.pw-strength-wrap{display:flex;gap:4px;margin-top:5px}
+.pw-seg{flex:1;height:3px;border-radius:2px;background:#E0D5C8;transition:background .3s}
+.pw-seg.fill-weak{background:#E53935}
+.pw-seg.fill-ok{background:#F5A623}
+.pw-seg.fill-strong{background:#43A047}
+.pw-hint{font-size:11px;color:var(--tx3);margin-top:4px}
+
+/* ========== HOME ========== */
+#s-home{background:var(--cr);padding-bottom:24px}
+.htop{padding:14px 20px 0;margin-bottom:16px}
+.hhead{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px}
+.hgreet{font-size:13px;color:var(--tx3);margin-bottom:2px}
+.tbadge{display:inline-flex;align-items:center;gap:6px;background:var(--am2);border:1px solid rgba(212,105,30,.2);border-radius:50px;padding:5px 12px;font-size:12px;font-weight:500;color:var(--am3);margin-bottom:14px;cursor:pointer}
+.tbadge i{font-size:13px}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#1A0E08 0%,#5C2A10 55%,#8A3D18 100%);border-radius:22px;padding:20px 20px 18px;margin:0 20px 18px;position:relative;overflow:hidden;cursor:pointer}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(245,162,98,.12) 0%,transparent 60%)}
+.hkick{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--am4);margin-bottom:5px;position:relative;z-index:1}
+.htitle{font-family:var(--fd);font-size:26px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:14px;position:relative;z-index:1}
+.htitle em{font-style:italic;color:var(--am4)}
+.hcta{display:inline-flex;align-items:center;gap:6px;background:var(--am);color:#fff;font-size:13px;font-weight:700;padding:9px 16px;border-radius:50px;border:none;cursor:pointer;font-family:var(--fb);position:relative;z-index:1;transition:background .15s}
+.hemoji{position:absolute;right:16px;bottom:10px;font-size:60px;opacity:.85;line-height:1;z-index:0}
+
+/* Cat grid */
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.citem{background:var(--wh);border-radius:14px;border:1px solid var(--bd);padding:12px 8px;text-align:center;cursor:pointer;transition:all .15s}
+.citem:hover{background:var(--am2);border-color:rgba(212,105,30,.25)}
+.cemoji{font-size:24px;margin-bottom:5px}
+.cname{font-size:10px;font-weight:700;color:var(--tx2)}
+
+/* Featured cards */
+.fscroll{display:flex;gap:12px;overflow-x:auto;padding:0 20px 4px;scrollbar-width:none;margin-bottom:18px}
+.fscroll::-webkit-scrollbar{display:none}
+.fcard{flex-shrink:0;width:152px;background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);overflow:hidden;cursor:pointer;transition:box-shadow .15s,transform .15s}
+.fcard:hover{box-shadow:var(--sh);transform:translateY(-2px)}
+.fimg{height:100px;display:flex;align-items:center;justify-content:center;font-size:44px;position:relative}
+.fbadge{position:absolute;top:8px;left:8px;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.92);color:var(--tx)}
+.fbody{padding:10px 12px 12px}
+.fnam{font-family:var(--fd);font-size:15px;font-weight:600;color:var(--tx);margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fmeta{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--tx3)}
+
+/* Trend header */
+.thead{display:flex;align-items:center;justify-content:space-between;padding:0 20px;margin-bottom:12px}
+.seeall{font-size:12px;font-weight:700;color:var(--am);background:none;border:none;cursor:pointer;font-family:var(--fb)}
+.tlist{display:flex;flex-direction:column;gap:10px;padding:0 20px}
+
+/* ========== EXPLORE ========== */
+#s-explore{background:var(--cr);padding:14px 20px 110px}
+
+/* Map visual */
+.mapwrap{border-radius:var(--r);height:210px;position:relative;overflow:hidden;margin-bottom:16px;border:1px solid var(--bd)}
+.mapbg{position:absolute;inset:0;background:linear-gradient(145deg,#E9E2D8 0%,#DDD5C6 50%,#D5CCBA 100%)}
+.mroad{position:absolute;background:rgba(255,255,255,.65)}
+.mrh{height:4px;border-radius:2px;left:0;right:0}
+.mrv{width:4px;border-radius:2px;top:0;bottom:0}
+.mpark{position:absolute;border-radius:8px;background:rgba(100,160,90,.18)}
+.mwater{position:absolute;border-radius:999px;background:rgba(100,160,200,.2)}
+.mblock{position:absolute;border-radius:4px;background:rgba(160,140,120,.15)}
+.mapme{position:absolute;width:14px;height:14px;background:#3B82F6;border-radius:50%;border:2.5px solid #fff;box-shadow:0 0 0 5px rgba(59,130,246,.18)}
+.mpin{position:absolute;display:flex;flex-direction:column;align-items:center;cursor:pointer;transition:transform .15s}
+.mpin:hover{transform:scale(1.1) translateY(-2px)}
+.mpinlabel{background:#fff;border:1px solid var(--bd2);border-radius:12px;padding:4px 9px;font-size:11px;font-weight:700;color:var(--tx);white-space:nowrap;box-shadow:var(--sh);margin-bottom:3px}
+.mpinlabel.hl{background:var(--am);border-color:var(--am);color:#fff}
+.mpindot{width:8px;height:8px;border-radius:50%;background:var(--am);box-shadow:0 0 0 2px #fff}
+.mapbtn{position:absolute;bottom:10px;right:10px;background:var(--am);color:#fff;border:none;border-radius:50px;padding:7px 13px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--fb);display:flex;align-items:center;gap:5px;box-shadow:var(--sh)}
+
+.ncards{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;margin-bottom:20px}
+.ncards::-webkit-scrollbar{display:none}
+.ncard{flex-shrink:0;width:155px;background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);padding:12px;cursor:pointer;transition:box-shadow .15s}
+.ncard:hover{box-shadow:var(--sh)}
+.nce{font-size:28px;margin-bottom:6px}
+.ncn{font-family:var(--fd);font-size:14px;font-weight:600;color:var(--tx);margin-bottom:3px}
+.ncd{font-size:11px;color:var(--tx3);margin-bottom:6px}
+.ncrow{display:flex;align-items:center;justify-content:space-between}
+.expllist{display:flex;flex-direction:column;gap:10px}
+
+/* No results */
+.no-results{text-align:center;padding:40px 20px;display:none}
+.no-results i{font-size:40px;color:var(--tx3);margin-bottom:10px;display:block}
+.no-results p{font-size:14px;color:var(--tx3)}
+
+/* ========== RECOMMENDATIONS ========== */
+#s-reco{background:var(--cr);padding:14px 20px 110px}
+.rhead{margin-bottom:18px}
+.rtitle{font-family:var(--fd);font-size:26px;font-weight:700;color:var(--tx);margin-bottom:4px}
+.rtitle em{font-style:italic;color:var(--am)}
+.rsub{font-size:13px;color:var(--tx3)}
+.ctxstrip{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-bottom:18px}
+.ctxstrip::-webkit-scrollbar{display:none}
+.cpill{flex-shrink:0;display:flex;align-items:center;gap:6px;padding:7px 13px;background:var(--wh);border:1px solid var(--bd2);border-radius:50px;font-size:12px;font-weight:500;color:var(--tx2)}
+.cpill i{font-size:14px;color:var(--am)}
+.cpill.hl{background:var(--am2);border-color:rgba(212,105,30,.22);color:var(--am3)}
+.aibox{background:linear-gradient(135deg,#1A0E08 0%,#5C2A10 100%);border-radius:20px;padding:18px;margin-bottom:18px;position:relative;overflow:hidden}
+.aibox::after{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(245,162,98,.08)}
+.aikick{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--am4);margin-bottom:6px;display:flex;align-items:center;gap:6px;position:relative;z-index:1}
+.aimsg{font-family:var(--fd);font-size:19px;font-weight:600;color:#fff;line-height:1.35;position:relative;z-index:1}
+.aimsg em{font-style:italic;color:var(--am4)}
+.rlist{display:flex;flex-direction:column;gap:10px}
+.rc{background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);padding:14px;display:flex;gap:12px;cursor:pointer;transition:box-shadow .15s,transform .15s;position:relative}
+.rc:hover{box-shadow:var(--sh);transform:translateY(-1px)}
+.rrank{position:absolute;top:-1px;right:14px;color:#fff;font-size:10px;font-weight:700;padding:4px 10px;border-radius:0 0 8px 8px}
+
+/* ========== SAVED ========== */
+#s-saved{background:var(--cr);padding:14px 20px 110px}
+.svhead{margin-bottom:18px}
+.svtitle{font-family:var(--fd);font-size:26px;font-weight:700;color:var(--tx);margin-bottom:3px}
+.svsub{font-size:13px;color:var(--tx3)}
+.svtabs{display:flex;gap:8px;margin-bottom:18px}
+.stab{padding:7px 16px;border-radius:50px;font-size:13px;font-weight:500;border:1px solid var(--bd2);background:var(--wh);color:var(--tx2);cursor:pointer;transition:all .15s}
+.stab.on{background:var(--am);border-color:var(--am);color:#fff}
+.svlist{display:flex;flex-direction:column;gap:10px}
+.empty{text-align:center;padding:50px 20px}
+.emptyico{font-size:48px;margin-bottom:14px}
+.emptymsg{font-size:15px;font-weight:600;color:var(--tx2);margin-bottom:6px}
+.emptysub{font-size:13px;color:var(--tx3)}
+
+/* ========== DETAIL ========== */
+#s-detail{background:var(--cr);padding-bottom:110px}
+.dhero{height:230px;display:flex;align-items:center;justify-content:center;font-size:88px;position:relative;overflow:hidden}
+.dhbg{position:absolute;inset:0}
+.bfab{position:absolute;top:16px;left:16px;width:38px;height:38px;background:#fff;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh);color:var(--tx);font-size:19px;z-index:5}
+.ffab{position:absolute;top:16px;right:16px;width:38px;height:38px;background:#fff;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--sh);font-size:19px;z-index:5;transition:transform .18s}
+.ffab:active{transform:scale(.88)}
+.dbody{padding:20px}
+.dname{font-family:var(--fd);font-size:26px;font-weight:700;color:var(--tx);margin-bottom:5px}
+.daddr{font-size:13px;color:var(--tx3);margin-bottom:14px;display:flex;align-items:center;gap:5px}
+.daddr i{color:var(--am);font-size:15px}
+.dtags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.dstats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
+.dstat{background:var(--cr2);border-radius:var(--rs);padding:12px 10px;text-align:center}
+.dstatv{font-family:var(--fd);font-size:20px;font-weight:700;color:var(--tx);margin-bottom:2px}
+.dstatl{font-size:11px;color:var(--tx3)}
+.irow{display:flex;gap:10px;margin-bottom:16px}
+.ichip{flex:1;background:var(--wh);border-radius:var(--rs);border:1px solid var(--bd);padding:10px;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--tx2)}
+.ichip i{color:var(--am);font-size:16px;flex-shrink:0}
+.ddesc{font-size:14px;line-height:1.75;color:var(--tx2);margin-bottom:18px}
+.astrip{display:flex;gap:8px;margin-bottom:20px}
+.abtn{flex:1;background:var(--wh);border:1px solid var(--bd);border-radius:var(--rs);padding:11px;display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;font-size:10px;font-weight:700;color:var(--tx2);font-family:var(--fb);transition:all .15s;letter-spacing:.02em;text-transform:uppercase}
+.abtn:hover{background:var(--am2);border-color:rgba(212,105,30,.3);color:var(--am3)}
+.abtn i{font-size:20px;color:var(--am)}
+.revinput{background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);padding:14px;margin-bottom:12px}
+.ribtop{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.rstars{display:flex;gap:4px}
+.sbtn{font-size:22px;cursor:pointer;transition:transform .12s;line-height:1;color:#EF9F27}
+.sbtn:hover{transform:scale(1.2)}
+.sbtn.dim{color:#D8CEC4}
+.revta{width:100%;border:1px solid var(--bd);border-radius:var(--rs);background:var(--cr);padding:10px;font-size:13px;font-family:var(--fb);color:var(--tx);resize:none;outline:none;margin-bottom:10px}
+.revta:focus{border-color:var(--am)}
+.revsubmit{width:100%;background:var(--am);color:#fff;border:none;border-radius:50px;padding:10px;font-size:13px;font-weight:700;font-family:var(--fb);cursor:pointer;transition:background .15s}
+.revsubmit:hover{background:var(--am3)}
+.revitem{background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);padding:14px;margin-bottom:10px}
+.revh{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.revav{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+.revname{font-size:13px;font-weight:600;color:var(--tx)}
+.revdate{font-size:11px;color:var(--tx3);margin-left:auto}
+.revstars{font-size:12px;color:#EF9F27;margin-bottom:5px}
+.revbody{font-size:13px;color:var(--tx2);line-height:1.65}
+
+/* ========== PROFILE ========== */
+#s-profile{background:var(--cr);padding-bottom:110px}
+.pcover{height:150px;background:linear-gradient(145deg,#1A0E08,#6B2C0A);position:relative;overflow:hidden;flex-shrink:0}
+.pcovpat{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,rgba(245,162,98,.12) 0%,transparent 60%)}
+.pcard{background:var(--wh);margin:-44px 20px 0;border-radius:var(--r);border:1px solid var(--bd);padding:16px;display:flex;align-items:flex-end;gap:14px;margin-bottom:16px;position:relative;z-index:2;box-shadow:var(--sh)}
+.pavlg{width:68px;height:68px;border-radius:50%;background:linear-gradient(135deg,#FAC775,#E07A3C);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;color:#fff;border:3px solid #fff;flex-shrink:0;box-shadow:0 2px 8px rgba(212,105,30,.3)}
+.pinfo{flex:1}
+.pnamlg{font-family:var(--fd);font-size:21px;font-weight:700;color:var(--tx);margin-bottom:3px}
+.ploc{font-size:12px;color:var(--tx3);display:flex;align-items:center;gap:4px}
+.editbtn{background:var(--am2);color:var(--am3);border:1px solid rgba(212,105,30,.2);border-radius:50px;padding:7px 14px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--fb);flex-shrink:0;transition:all .15s}
+.editbtn:hover{background:var(--am);color:#fff}
+.sstrip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 20px;margin-bottom:20px}
+.sbox2{background:var(--wh);border-radius:var(--rs);border:1px solid var(--bd);padding:14px 10px;text-align:center}
+.sboxv{font-family:var(--fd);font-size:24px;font-weight:700;color:var(--tx)}
+.sboxl{font-size:10px;font-weight:700;color:var(--tx3);letter-spacing:.05em;text-transform:uppercase;margin-top:2px}
+.prefsec{padding:0 20px;margin-bottom:20px}
+.prefh{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--tx3);margin-bottom:10px}
+.prefgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pi{background:var(--wh);border-radius:var(--rs);border:1px solid var(--bd);padding:12px 8px;text-align:center;cursor:pointer;transition:all .15s}
+.pi.on{background:var(--am2);border-color:rgba(212,105,30,.3)}
+.piemoji{font-size:22px;margin-bottom:4px}
+.pilbl{font-size:10px;font-weight:700;color:var(--tx3)}
+.pi.on .pilbl{color:var(--am3)}
+.budgbox{padding:0 20px;margin-bottom:20px}
+.budgcard{background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);padding:16px}
+.budgtop{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.budglbl{font-size:13px;color:var(--tx2);font-weight:500}
+.budgval{font-size:15px;font-weight:700;color:var(--tx)}
+input[type=range]{width:100%;-webkit-appearance:none;height:4px;border-radius:2px;background:linear-gradient(to right,var(--am) 25%,#E0D5C8 25%);outline:none;margin-bottom:7px;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;background:var(--am);border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.2);cursor:pointer}
+.budgmm{display:flex;justify-content:space-between;font-size:10px;color:var(--tx3)}
+.menulist{padding:0 20px}
+.mitem{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--bd);cursor:pointer;transition:opacity .15s}
+.mitem:hover{opacity:.7}
+.mico{width:40px;height:40px;border-radius:11px;background:var(--am2);display:flex;align-items:center;justify-content:center;color:var(--am);font-size:19px;flex-shrink:0}
+.mtxt{flex:1;font-size:14px;color:var(--tx);font-weight:500}
+.marr{color:var(--tx3);font-size:18px}
+
+/* ========== EDIT PROFILE ========== */
+#s-editprofile{background:var(--cr);padding-bottom:110px}
+.ephead{display:flex;align-items:center;gap:14px;padding:16px 20px 20px;background:var(--wh);border-bottom:1px solid var(--bd);margin-bottom:20px}
+.ephead h2{font-family:var(--fd);font-size:22px;font-weight:700;color:var(--tx);flex:1;text-align:center}
+.eptxt{font-size:14px;font-weight:600;color:var(--am);background:none;border:none;cursor:pointer;font-family:var(--fb)}
+.epavwrap{display:flex;flex-direction:column;align-items:center;margin-bottom:24px}
+.epav{width:88px;height:88px;border-radius:50%;background:linear-gradient(135deg,#FAC775,#E07A3C);display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;color:#fff;border:3px solid #fff;box-shadow:0 4px 16px rgba(212,105,30,.3);margin-bottom:10px;position:relative;cursor:pointer}
+.epav-edit{position:absolute;bottom:2px;right:2px;width:26px;height:26px;background:var(--am);border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid #fff}
+.epav-edit i{font-size:13px;color:#fff}
+.epav-lbl{font-size:13px;font-weight:600;color:var(--am);cursor:pointer}
+.epform{padding:0 20px}
+
+/* ======= ANIMATIONS ======= */
+@keyframes fup{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.an{animation:fup .28s ease both}
+.d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.15s}.d4{animation-delay:.2s}
+
+/* ======= SEARCH RESULTS ======= */
+.srbox{background:var(--wh);border-radius:var(--r);border:1px solid var(--bd);overflow:hidden;margin-bottom:16px;display:none}
+.srbox.show{display:block}
+.sritem{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--bd);cursor:pointer;transition:background .15s}
+.sritem:last-child{border-bottom:none}
+.sritem:hover{background:var(--cr2)}
+.sritemico{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
+.sritemn{font-size:13px;font-weight:600;color:var(--tx);margin-bottom:2px}
+.sritems{font-size:11px;color:var(--tx3)}
+.sr-none{padding:20px;text-align:center;color:var(--tx3);font-size:13px}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- STATUS BAR -->
+  <div class="sb" id="statusbar">
+    <span class="sb-t" id="clock">09:41</span>
+    <div class="sb-r">
+      <i class="ti ti-wifi"></i>
+      <i class="ti ti-brand-4chan" style="display:none"></i>
+      <span style="font-size:11px;font-weight:700">4G</span>
+      <i class="ti ti-battery-3"></i>
+    </div>
+  </div>
+
+  <!-- FRAME -->
+  <div class="frame">
+
+    <!-- ═══ SPLASH ═══ -->
+    <div class="sc on" id="s-splash" style="background:linear-gradient(160deg,#1A0E08 0%,#4A1E08 50%,#7A3010 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0">
+      <div style="position:relative;display:flex;align-items:center;justify-content:center;margin-bottom:28px">
+        <div class="splash-ring"></div>
+        <div class="splash-orb">🍛</div>
+      </div>
+      <div class="splash-logo">Food<span>iction</span></div>
+      <div class="splash-tag">Kuliner Yogyakarta untuk Kamu</div>
+      <div class="splash-bar" style="margin-top:32px"><div class="splash-bar-fill"></div></div>
+    </div>
+
+    <!-- ═══ ONBOARDING ═══ -->
+    <div class="sc" id="s-ob" style="display:flex;flex-direction:column">
+      <div class="ob-slides">
+        <div class="ob-slide on" id="ob0">
+          <div class="ob-ill">🍛</div>
+          <div class="ob-title">Temukan Kuliner <em>Yogya</em> Terbaikmu</div>
+          <div class="ob-body">Dari Gudeg legendaris hingga Angkringan tersembunyi — semua ada di Foodiction.</div>
+        </div>
+        <div class="ob-slide" id="ob1">
+          <div class="ob-ill">✨</div>
+          <div class="ob-title">Rekomendasi <em>Cerdas</em> Untukmu</div>
+          <div class="ob-body">Sistem kami memahami waktu, budget, dan seleramu untuk menyajikan pilihan terbaik setiap saat.</div>
+        </div>
+        <div class="ob-slide" id="ob2">
+          <div class="ob-ill">📍</div>
+          <div class="ob-title">Kuliner <em>Terdekat</em> dari Lokasimu</div>
+          <div class="ob-body">Temukan warung dan restoran di sekitarmu dengan mudah dan cepat.</div>
+        </div>
+      </div>
+      <div class="ob-foot">
+        <div class="ob-dots">
+          <div class="od on" id="od0"></div>
+          <div class="od" id="od1"></div>
+          <div class="od" id="od2"></div>
+        </div>
+        <button class="btnprimary" id="ob-next-btn" onclick="obNext()">Lanjut <i class="ti ti-arrow-right"></i></button>
+        <button class="btnsec" style="margin-top:10px" onclick="goLogin()">Masuk dengan akun yang ada</button>
+      </div>
+    </div>
+
+    <!-- ═══ LOGIN / REGISTER ═══ -->
+    <div class="sc" id="s-login" style="display:flex;flex-direction:column">
+      <div class="login-top">
+        <div class="login-blob" style="width:200px;height:200px;top:-80px;right:-60px"></div>
+        <div class="login-blob" style="width:140px;height:140px;bottom:-30px;left:-40px;background:rgba(245,162,98,.06)"></div>
+        <div class="login-logo">Food<em>iction</em></div>
+        <div class="login-sub">Selamat datang kembali 👋</div>
+      </div>
+      <div class="login-body">
+        <div class="login-tabs">
+          <div class="ltab on" id="ltab-masuk" onclick="switchLoginTab('masuk')">Masuk</div>
+          <div class="ltab" id="ltab-daftar" onclick="switchLoginTab('daftar')">Daftar</div>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <div id="form-masuk">
+          <div class="field">
+            <label>Email</label>
+            <input type="email" id="li-email" placeholder="contoh@email.com">
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <div class="pw-wrap">
+              <input type="password" id="li-pw" placeholder="••••••••">
+              <button class="pw-eye" onclick="togglePw('li-pw',this)" tabindex="-1"><i class="ti ti-eye"></i></button>
+            </div>
+          </div>
+          <div class="forgot">Lupa password?</div>
+          <button class="btnprimary" onclick="doLogin()">Masuk <i class="ti ti-arrow-right"></i></button>
+          <div class="divider"><span>atau</span></div>
+          <button class="social-btn" onclick="launchApp()">
+            <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.34-8.16 2.34-6.26 0-11.57-3.59-13.46-8.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+            Lanjut dengan Google
+          </button>
+          <div class="login-switch">Belum punya akun? <a onclick="switchLoginTab('daftar')">Daftar gratis</a></div>
+        </div>
+
+        <!-- REGISTER FORM -->
+        <div id="form-daftar" style="display:none">
+          <div class="field">
+            <label>Nama Lengkap</label>
+            <input type="text" id="re-name" placeholder="Nama kamu">
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" id="re-email" placeholder="contoh@email.com">
+          </div>
+          <div class="field">
+            <label>Password</label>
+            <div class="pw-wrap">
+              <input type="password" id="re-pw" placeholder="Min. 8 karakter" oninput="checkPwStrength(this.value)">
+              <button class="pw-eye" onclick="togglePw('re-pw',this)" tabindex="-1"><i class="ti ti-eye"></i></button>
+            </div>
+            <div class="pw-strength-wrap">
+              <div class="pw-seg" id="pws1"></div>
+              <div class="pw-seg" id="pws2"></div>
+              <div class="pw-seg" id="pws3"></div>
+              <div class="pw-seg" id="pws4"></div>
+            </div>
+            <div class="pw-hint" id="pw-hint">Masukkan password yang kuat</div>
+          </div>
+          <div class="field">
+            <label>Konfirmasi Password</label>
+            <div class="pw-wrap">
+              <input type="password" id="re-pw2" placeholder="Ulangi password">
+              <button class="pw-eye" onclick="togglePw('re-pw2',this)" tabindex="-1"><i class="ti ti-eye"></i></button>
+            </div>
+          </div>
+          <div class="field">
+            <label>Kota</label>
+            <select id="re-city">
+              <option value="">Pilih kota</option>
+              <option value="Yogyakarta" selected>Yogyakarta</option>
+              <option value="Sleman">Sleman</option>
+              <option value="Bantul">Bantul</option>
+              <option value="Gunungkidul">Gunungkidul</option>
+            </select>
+          </div>
+          <button class="btnprimary" onclick="doRegister()" style="margin-top:4px">Buat Akun <i class="ti ti-arrow-right"></i></button>
+          <div class="divider"><span>atau</span></div>
+          <button class="social-btn" onclick="launchApp()">
+            <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.08 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.34-8.16 2.34-6.26 0-11.57-3.59-13.46-8.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+            Daftar dengan Google
+          </button>
+          <div class="login-switch">Sudah punya akun? <a onclick="switchLoginTab('masuk')">Masuk</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ HOME ═══ -->
+    <div class="sc" id="s-home" style="padding-bottom:24px">
+      <div class="htop">
+        <div class="hhead">
+          <div>
+            <div class="hgreet" id="hgreet">Selamat pagi,</div>
+            <h1 class="dtitle">Mau makan<br>apa hari ini? <em>✨</em></h1>
+          </div>
+          <div class="av" style="cursor:pointer" onclick="go('profile')" id="home-av">AU</div>
+        </div>
+        <!-- HOME SEARCH — actually goes to explore with query -->
+        <div class="sbox" style="cursor:pointer" onclick="go('explore');document.getElementById('expl-search').focus()">
+          <i class="ti ti-search"></i>
+          <span class="ph">Cari makanan atau warung...</span>
+          <i class="ti ti-adjustments-horizontal" style="color:var(--am)"></i>
+        </div>
+      </div>
+
+      <div style="padding:0 20px;margin-bottom:14px">
+        <div class="tbadge" onclick="go('reco')">
+          <i class="ti ti-clock"></i>
+          <span id="timelbl">Sarapan · Rekomendasi untukmu</span>
+          <i class="ti ti-chevron-right"></i>
+        </div>
+      </div>
+
+      <div class="hero an" onclick="detail('gudeg')">
+        <div class="hkick">✦ Kuliner Legendaris</div>
+        <div class="htitle">Gudeg Bu Tjitro<br><em>sejak 1925</em></div>
+        <button class="hcta">Lihat Detail <i class="ti ti-arrow-right"></i></button>
+        <div class="hemoji">🍛</div>
+      </div>
+
+      <div style="padding:0 20px;margin-bottom:20px" class="an d1">
+        <div class="thead" style="padding:0;margin-bottom:12px">
+          <span class="slabel">Jelajahi Kategori</span>
+        </div>
+        <div class="cgrid">
+          <div class="citem" onclick="filterAndExplore('Sarapan')"><div class="cemoji">🌅</div><div class="cname">Sarapan</div></div>
+          <div class="citem" onclick="filterAndExplore('Siang')"><div class="cemoji">☀️</div><div class="cname">Siang</div></div>
+          <div class="citem" onclick="filterAndExplore('Malam')"><div class="cemoji">🌙</div><div class="cname">Malam</div></div>
+          <div class="citem" onclick="filterAndExplore('Angkringan')"><div class="cemoji">🍢</div><div class="cname">Angkringan</div></div>
+          <div class="citem" onclick="filterAndExplore('Gudeg')"><div class="cemoji">🍛</div><div class="cname">Gudeg</div></div>
+          <div class="citem" onclick="filterAndExplore('Bakmi Jawa')"><div class="cemoji">🍜</div><div class="cname">Bakmi Jawa</div></div>
+          <div class="citem" onclick="filterAndExplore('Wedang')"><div class="cemoji">☕</div><div class="cname">Wedang</div></div>
+          <div class="citem" onclick="filterAndExplore('budget')"><div class="cemoji">🏷️</div><div class="cname">Budget</div></div>
+        </div>
+      </div>
+
+      <div class="thead an d2">
+        <span class="slabel">Pilihan Editor</span>
+        <button class="seeall" onclick="go('explore')">Lihat semua</button>
+      </div>
+      <div class="fscroll an d3">
+        <div class="fcard" onclick="detail('angkringan')">
+          <div class="fimg" style="background:#FFF3E0">🍢<span class="fbadge">🔥 Hits</span></div>
+          <div class="fbody"><div class="fnam">Angkringan Lek Man</div><div class="fmeta"><span style="color:#EF9F27">★</span> 4.9 · 0.4 km</div></div>
+        </div>
+        <div class="fcard" onclick="detail('bakmi')">
+          <div class="fimg" style="background:#E8F5EE">🍜<span class="fbadge">🌙 Malam</span></div>
+          <div class="fbody"><div class="fnam">Bakmi Mbah Gito</div><div class="fmeta"><span style="color:#EF9F27">★</span> 4.6 · 0.8 km</div></div>
+        </div>
+        <div class="fcard" onclick="detail('soto')">
+          <div class="fimg" style="background:#F3EEFF">🥣<span class="fbadge">🏆 Legendaris</span></div>
+          <div class="fbody"><div class="fnam">Soto Kadipiro</div><div class="fmeta"><span style="color:#EF9F27">★</span> 4.7 · 2.1 km</div></div>
+        </div>
+        <div class="fcard" onclick="detail('wedang')">
+          <div class="fimg" style="background:#FBEAF0">☕<span class="fbadge">🌿 Herbal</span></div>
+          <div class="fbody"><div class="fnam">Wedang Uwuh Keraton</div><div class="fmeta"><span style="color:#EF9F27">★</span> 4.5 · 3.0 km</div></div>
+        </div>
+      </div>
+
+      <div class="thead an d4" style="margin-top:4px">
+        <span class="slabel">Trending Sekarang</span>
+        <button class="seeall" onclick="go('explore')">Lihat semua</button>
+      </div>
+      <div class="tlist an d4">
+        <div class="fc" onclick="detail('gudeg')"><div class="fthumb" style="background:#FAE8D8">🍛</div><div class="finfo"><div class="fname">Gudeg Bu Tjitro</div><div class="fplace">Jl. Bugisan Selatan</div><div class="ftags"><span class="tag">Pagi</span><span class="tag g">Ikonik</span></div></div><div class="fright"><span class="fprice">Rp 25k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.8</span></div></div>
+        <div class="fc" onclick="detail('angkringan')"><div class="fthumb" style="background:#FFF3E0">🍢</div><div class="finfo"><div class="fname">Angkringan Lek Man</div><div class="fplace">Jl. Mangkubumi, dekat Tugu</div><div class="ftags"><span class="tag">Malam</span><span class="tag b">Murah</span></div></div><div class="fright"><span class="fprice">Rp 5k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.9</span></div></div>
+        <div class="fc" onclick="detail('bakmi')"><div class="fthumb" style="background:#E8F5EE">🍜</div><div class="finfo"><div class="fname">Bakmi Jawa Mbah Gito</div><div class="fplace">Jl. Kaliurang KM 5</div><div class="ftags"><span class="tag">Malam</span><span class="tag b">Budget</span></div></div><div class="fright"><span class="fprice">Rp 18k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.6</span></div></div>
+      </div>
+    </div>
+
+    <!-- ═══ EXPLORE ═══ -->
+    <div class="sc" id="s-explore">
+      <h1 class="dtitle an" style="padding:14px 20px 0">Jelajahi<br><em>Kuliner Yogya</em></h1>
+      <div style="padding:14px 20px 0">
+        <!-- WORKING SEARCH BAR -->
+        <div class="sbox an d1" style="margin-bottom:12px;cursor:text" onclick="document.getElementById('expl-search').focus()">
+          <i class="ti ti-search" style="flex-shrink:0"></i>
+          <input type="text" id="expl-search" placeholder="Cari makanan atau warung..." oninput="doSearch(this.value)" onkeydown="if(event.key==='Escape'){clearSearch()}">
+          <button id="expl-clear" style="display:none;background:none;border:none;cursor:pointer;padding:0;color:var(--tx3)" onclick="clearSearch()"><i class="ti ti-x" style="font-size:16px"></i></button>
+          <i class="ti ti-adjustments-horizontal" style="color:var(--am);cursor:pointer;flex-shrink:0"></i>
+        </div>
+        <!-- SEARCH RESULTS DROPDOWN -->
+        <div class="srbox" id="srbox">
+          <div id="srlist"></div>
+        </div>
+        <div class="chiprow an d2" style="margin-bottom:16px" id="chip-row">
+          <div class="chip on" onclick="setChip(this,'Semua')">Semua</div>
+          <div class="chip" onclick="setChip(this,'Terdekat')">Terdekat</div>
+          <div class="chip" onclick="setChip(this,'Terpopuler')">Terpopuler</div>
+          <div class="chip" onclick="setChip(this,'Budget')">Budget &lt;20k</div>
+          <div class="chip" onclick="setChip(this,'Buka')">Buka Sekarang</div>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div style="padding:0 20px;margin-bottom:16px" class="an d2">
+        <div class="mapwrap">
+          <div class="mapbg"></div>
+          <div class="mroad mrh" style="top:72px;opacity:.8"></div>
+          <div class="mroad mrh" style="top:138px;opacity:.6"></div>
+          <div class="mroad mrv" style="left:95px;opacity:.7"></div>
+          <div class="mroad mrv" style="left:248px;opacity:.6"></div>
+          <div class="mpark" style="width:70px;height:45px;top:15px;right:15px;opacity:.9"></div>
+          <div class="mpark" style="width:40px;height:30px;bottom:20px;left:20px"></div>
+          <div class="mwater" style="width:60px;height:20px;bottom:40px;right:80px;transform:rotate(-8deg)"></div>
+          <div class="mblock" style="width:35px;height:28px;top:20px;left:20px"></div>
+          <div class="mblock" style="width:28px;height:22px;top:95px;left:130px"></div>
+          <div class="mblock" style="width:40px;height:32px;bottom:55px;right:20px"></div>
+          <div class="mapme" style="bottom:55px;left:65px"></div>
+          <div class="mpin" style="top:18px;left:52px" onclick="detail('gudeg')"><div class="mpinlabel hl">🍛 Gudeg Bu Tjitro</div><div class="mpindot"></div></div>
+          <div class="mpin" style="top:88px;left:162px" onclick="detail('angkringan')"><div class="mpinlabel">🍢 Lek Man</div><div class="mpindot"></div></div>
+          <div class="mpin" style="top:30px;right:25px" onclick="detail('bakmi')"><div class="mpinlabel">🍜 Mbah Gito</div><div class="mpindot"></div></div>
+          <div class="mpin" style="bottom:25px;left:135px" onclick="detail('soto')"><div class="mpinlabel">🥣 Kadipiro</div><div class="mpindot"></div></div>
+          <button class="mapbtn"><i class="ti ti-map-2"></i> Peta Penuh</button>
+        </div>
+      </div>
+
+      <div style="padding:0 20px">
+        <div class="slabel an d3" style="margin-bottom:12px">Terdekat dari Kamu</div>
+        <div class="ncards an d3">
+          <div class="ncard" onclick="detail('angkringan')"><div class="nce">🍢</div><div class="ncn">Angkringan Lek Man</div><div class="ncd"><i class="ti ti-map-pin" style="font-size:11px"></i> 0.4 km</div><div class="ncrow"><span class="tag">Malam</span><span class="prat"><i class="ti ti-star-filled"></i> 4.9</span></div></div>
+          <div class="ncard" onclick="detail('bakmi')"><div class="nce">🍜</div><div class="ncn">Bakmi Mbah Gito</div><div class="ncd"><i class="ti ti-map-pin" style="font-size:11px"></i> 0.8 km</div><div class="ncrow"><span class="tag">Malam</span><span class="prat"><i class="ti ti-star-filled"></i> 4.6</span></div></div>
+          <div class="ncard" onclick="detail('gudeg')"><div class="nce">🍛</div><div class="ncn">Gudeg Bu Tjitro</div><div class="ncd"><i class="ti ti-map-pin" style="font-size:11px"></i> 1.2 km</div><div class="ncrow"><span class="tag">Pagi</span><span class="prat"><i class="ti ti-star-filled"></i> 4.8</span></div></div>
+          <div class="ncard" onclick="detail('soto')"><div class="nce">🥣</div><div class="ncn">Soto Kadipiro</div><div class="ncd"><i class="ti ti-map-pin" style="font-size:11px"></i> 2.1 km</div><div class="ncrow"><span class="tag">Pagi</span><span class="prat"><i class="ti ti-star-filled"></i> 4.7</span></div></div>
+        </div>
+        <div class="slabel an d4" style="margin-bottom:12px" id="expllist-label">Semua Kuliner</div>
+        <div class="expllist an d4" id="expllist" style="padding-bottom:110px">
+          <div class="fc" onclick="detail('gudeg')" data-name="gudeg bu tjitro" data-cat="gudeg tradisional sarapan pagi legendaris"><div class="fthumb" style="background:#FAE8D8">🍛</div><div class="finfo"><div class="fname">Gudeg Bu Tjitro</div><div class="fplace">Jl. Bugisan Selatan · 1.2 km</div><div class="ftags"><span class="tag">Pagi</span><span class="tag g">Ikonik</span></div></div><div class="fright"><span class="fprice">Rp 25k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.8</span></div></div>
+          <div class="fc" onclick="detail('angkringan')" data-name="angkringan lek man" data-cat="angkringan street food malam murah"><div class="fthumb" style="background:#FFF3E0">🍢</div><div class="finfo"><div class="fname">Angkringan Lek Man</div><div class="fplace">Jl. Mangkubumi · 0.4 km</div><div class="ftags"><span class="tag">Malam</span><span class="tag b">Murah</span></div></div><div class="fright"><span class="fprice">Rp 5k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.9</span></div></div>
+          <div class="fc" onclick="detail('bakmi')" data-name="bakmi jawa mbah gito" data-cat="bakmi jawa mi malam budget"><div class="fthumb" style="background:#E8F5EE">🍜</div><div class="finfo"><div class="fname">Bakmi Jawa Mbah Gito</div><div class="fplace">Jl. Kaliurang KM 5 · 0.8 km</div><div class="ftags"><span class="tag">Malam</span><span class="tag b">Budget</span></div></div><div class="fright"><span class="fprice">Rp 18k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.6</span></div></div>
+          <div class="fc" onclick="detail('soto')" data-name="soto kadipiro" data-cat="soto sup tradisional pagi legendaris"><div class="fthumb" style="background:#F3EEFF">🥣</div><div class="finfo"><div class="fname">Soto Kadipiro</div><div class="fplace">Jl. Wates KM 1 · 2.1 km</div><div class="ftags"><span class="tag">Pagi</span><span class="tag p">Legendaris</span></div></div><div class="fright"><span class="fprice">Rp 20k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.7</span></div></div>
+          <div class="fc" onclick="detail('wedang')" data-name="wedang uwuh keraton" data-cat="wedang minuman herbal tradisional"><div class="fthumb" style="background:#FBEAF0">☕</div><div class="finfo"><div class="fname">Wedang Uwuh Keraton</div><div class="fplace">Alun-Alun Kidul · 3.0 km</div><div class="ftags"><span class="tag">Minuman</span><span class="tag g">Herbal</span></div></div><div class="fright"><span class="fprice">Rp 10k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.5</span></div></div>
+        </div>
+        <div class="no-results" id="no-results">
+          <i class="ti ti-mood-empty"></i>
+          <p>Tidak ada hasil untuk pencarian ini</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ RECOMMENDATIONS ═══ -->
+    <div class="sc" id="s-reco" style="padding:14px 20px 110px">
+      <div class="rhead an">
+        <div class="rtitle">Untuk<br><em>Kamu Hari Ini</em></div>
+        <div class="rsub">Berdasarkan preferensi & waktu sekarang</div>
+      </div>
+      <div class="ctxstrip an d1" id="reco-ctx">
+        <div class="cpill hl"><i class="ti ti-clock"></i> <span id="reco-time-pill">Pagi ini</span></div>
+        <div class="cpill"><i class="ti ti-map-pin"></i> Dekat UGM</div>
+        <div class="cpill"><i class="ti ti-currency-dollar"></i> Budget Rp 50k</div>
+        <div class="cpill"><i class="ti ti-flame"></i> Pedas & Gurih</div>
+      </div>
+      <div class="aibox an d2">
+        <div class="aikick"><i class="ti ti-sparkles"></i> Rekomendasi Cerdas</div>
+        <div class="aimsg" id="reco-msg">Pagi ini cocok buat sarapan berat. <em>Gudeg atau Soto</em> jadi pilihan terbaik untuk energi harianmu.</div>
+      </div>
+      <div class="rlist an d3">
+        <div class="rc" onclick="detail('gudeg')"><div class="rrank" style="background:var(--am)">#1</div><div class="fthumb" style="background:#FAE8D8;margin-top:6px">🍛</div><div class="finfo"><div class="fname">Gudeg Bu Tjitro</div><div class="fplace">Jl. Bugisan Selatan · 1.2 km</div><div class="ftags"><span class="tag">Pagi</span><span class="tag g">Sesuai Preferensi</span></div></div><div class="fright" style="margin-top:6px"><span class="fprice">Rp 25k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.8</span></div></div>
+        <div class="rc" onclick="detail('soto')"><div class="rrank" style="background:#6B5744">#2</div><div class="fthumb" style="background:#F3EEFF;margin-top:6px">🥣</div><div class="finfo"><div class="fname">Soto Kadipiro</div><div class="fplace">Jl. Wates KM 1 · 2.1 km</div><div class="ftags"><span class="tag">Pagi</span><span class="tag b">Budget Oke</span></div></div><div class="fright" style="margin-top:6px"><span class="fprice">Rp 20k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.7</span></div></div>
+        <div class="rc" onclick="detail('angkringan')"><div class="rrank" style="background:#9C8877">#3</div><div class="fthumb" style="background:#FFF3E0;margin-top:6px">🍢</div><div class="finfo"><div class="fname">Angkringan Lek Man</div><div class="fplace">Jl. Mangkubumi · 0.4 km</div><div class="ftags"><span class="tag b">Paling Dekat</span></div></div><div class="fright" style="margin-top:6px"><span class="fprice">Rp 5k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.9</span></div></div>
+      </div>
+    </div>
+
+    <!-- ═══ SAVED ═══ -->
+    <div class="sc" id="s-saved" style="padding:14px 20px 110px">
+      <div class="svhead an">
+        <div class="svtitle">Tersimpan</div>
+        <div class="svsub">2 tempat favoritmu</div>
+      </div>
+      <div class="svtabs an d1">
+        <div class="stab on" onclick="setSvTab(this)">Semua</div>
+        <div class="stab" onclick="setSvTab(this)">Dikunjungi</div>
+        <div class="stab" onclick="setSvTab(this)">Wishlist</div>
+      </div>
+      <div class="svlist an d2">
+        <div class="fc" onclick="detail('gudeg')"><div class="fthumb" style="background:#FAE8D8">🍛</div><div class="finfo"><div class="fname">Gudeg Bu Tjitro</div><div class="fplace">Jl. Bugisan Selatan</div><div class="ftags"><span class="tag g">Ikonik</span></div></div><div class="fright"><span class="fprice">Rp 25k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.8</span></div></div>
+        <div class="fc" onclick="detail('soto')"><div class="fthumb" style="background:#F3EEFF">🥣</div><div class="finfo"><div class="fname">Soto Kadipiro</div><div class="fplace">Jl. Wates KM 1</div><div class="ftags"><span class="tag p">Legendaris</span></div></div><div class="fright"><span class="fprice">Rp 20k</span><span class="prat"><i class="ti ti-star-filled"></i> 4.7</span></div></div>
+      </div>
+    </div>
+
+    <!-- ═══ DETAIL ═══ -->
+    <div class="sc up" id="s-detail">
+      <div class="dhero" id="dhero">
+        <div class="dhbg" id="dhbg"></div>
+        <button class="bfab" onclick="goBack()"><i class="ti ti-arrow-left"></i></button>
+        <button class="ffab" id="ffab" onclick="togFav(this)" style="color:#E53935"><i class="ti ti-heart"></i></button>
+        <span id="demoji" style="position:relative;z-index:1;filter:drop-shadow(0 6px 14px rgba(0,0,0,0.15))">🍛</span>
+      </div>
+      <div class="dbody">
+        <div class="dname" id="dname">-</div>
+        <div class="daddr"><i class="ti ti-map-pin"></i><span id="daddr">-</span></div>
+        <div class="dtags" id="dtags"></div>
+        <div class="dstats">
+          <div class="dstat"><div class="dstatv" id="drating">-</div><div class="dstatl">Rating</div></div>
+          <div class="dstat"><div class="dstatv" id="ddist">-</div><div class="dstatl">Jarak</div></div>
+          <div class="dstat"><div class="dstatv" id="dprice">-</div><div class="dstatl">Mulai dari</div></div>
+        </div>
+        <div class="irow">
+          <div class="ichip"><i class="ti ti-clock"></i><span id="dhours">-</span></div>
+          <div class="ichip"><i class="ti ti-tag"></i><span id="dcat">-</span></div>
+        </div>
+        <div class="ddesc" id="ddesc">-</div>
+        <div class="astrip">
+          <button class="abtn" onclick="toast('Membuka peta... 🗺️')"><i class="ti ti-map-2"></i>Rute</button>
+          <button class="abtn" onclick="toast('Menghubungi warung... 📞')"><i class="ti ti-phone"></i>Hubungi</button>
+          <button class="abtn" onclick="toast('Link berhasil disalin! 🔗')"><i class="ti ti-share-3"></i>Bagikan</button>
+          <button class="abtn" onclick="togFav(document.getElementById('ffab'));toast('Disimpan ke favoritmu! 🔖')"><i class="ti ti-bookmark"></i>Simpan</button>
+        </div>
+        <div class="slabel" style="margin-bottom:12px">Ulasan Pengunjung</div>
+        <div class="revinput">
+          <div class="ribtop">
+            <div class="av" style="width:32px;height:32px;font-size:11px" id="rev-av">AU</div>
+            <div class="rstars" id="starsel">
+              <span class="sbtn" onclick="setStar(1)">★</span>
+              <span class="sbtn dim" onclick="setStar(2)">★</span>
+              <span class="sbtn dim" onclick="setStar(3)">★</span>
+              <span class="sbtn dim" onclick="setStar(4)">★</span>
+              <span class="sbtn dim" onclick="setStar(5)">★</span>
+            </div>
+          </div>
+          <textarea class="revta" id="revta" rows="3" placeholder="Ceritakan pengalamanmu..."></textarea>
+          <button class="revsubmit" onclick="submitRev()">Kirim Ulasan</button>
+        </div>
+        <div id="revlist">
+          <div class="revitem"><div class="revh"><div class="revav" style="background:#FBEAF0;color:#B5345C">RA</div><span class="revname">Ratu Faiha</span><span class="revdate">2 hari lalu</span></div><div class="revstars">★★★★★</div><div class="revbody">Gudegnya manis banget! Sangat recommended buat sarapan pagi. Antriannya memang panjang tapi worth it banget.</div></div>
+          <div class="revitem"><div class="revh"><div class="revav" style="background:#E5F0E5;color:#2D6A2D">YB</div><span class="revname">Yohana Butar</span><span class="revdate">5 hari lalu</span></div><div class="revstars">★★★★☆</div><div class="revbody">Lokasinya strategis, porsi cukup dan rasanya autentik. Pelayannya ramah. Harga sesuai kualitas!</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ PROFILE ═══ -->
+    <div class="sc" id="s-profile">
+      <div class="pcover"><div class="pcovpat"></div></div>
+      <div class="pcard an">
+        <div class="pavlg" id="prof-av">AU</div>
+        <div class="pinfo">
+          <div class="pnamlg" id="prof-name">Aufaa Azzahra</div>
+          <div class="ploc"><i class="ti ti-map-pin" style="font-size:12px;color:var(--am)"></i> <span id="prof-loc">Yogyakarta · Member 2024</span></div>
+        </div>
+        <button class="editbtn" onclick="go('editprofile')"><i class="ti ti-pencil" style="font-size:12px"></i> Edit Profil</button>
+      </div>
+      <div class="sstrip an d1">
+        <div class="sbox2"><div class="sboxv">24</div><div class="sboxl">Ulasan</div></div>
+        <div class="sbox2"><div class="sboxv">18</div><div class="sboxl">Tersimpan</div></div>
+        <div class="sbox2"><div class="sboxv">312</div><div class="sboxl">Check-in</div></div>
+      </div>
+      <div class="prefsec an d2">
+        <div class="prefh">Preferensi Rasa</div>
+        <div class="prefgrid">
+          <div class="pi on" onclick="this.classList.toggle('on')"><div class="piemoji">🌶️</div><div class="pilbl">Pedas</div></div>
+          <div class="pi" onclick="this.classList.toggle('on')"><div class="piemoji">🍬</div><div class="pilbl">Manis</div></div>
+          <div class="pi on" onclick="this.classList.toggle('on')"><div class="piemoji">🧂</div><div class="pilbl">Gurih</div></div>
+          <div class="pi" onclick="this.classList.toggle('on')"><div class="piemoji">🍋</div><div class="pilbl">Asam</div></div>
+          <div class="pi on" onclick="this.classList.toggle('on')"><div class="piemoji">🥘</div><div class="pilbl">Berkuah</div></div>
+          <div class="pi" onclick="this.classList.toggle('on')"><div class="piemoji">🥗</div><div class="pilbl">Vegetarian</div></div>
+        </div>
+      </div>
+      <div class="budgbox an d3">
+        <div class="prefh" style="padding-bottom:10px">Budget Harian</div>
+        <div class="budgcard">
+          <div class="budgtop"><span class="budglbl">Maksimum per hari</span><span class="budgval" id="budgval">Rp 50.000</span></div>
+          <input type="range" min="10" max="200" step="5" value="50" oninput="updBudg(this)">
+          <div class="budgmm"><span>Rp 10k</span><span>Rp 200k</span></div>
+        </div>
+      </div>
+      <div style="padding:0 20px;margin-bottom:20px" class="an d3">
+        <button class="btnprimary" onclick="toast('Preferensi berhasil disimpan! ✓')"><i class="ti ti-device-floppy"></i> Simpan Preferensi</button>
+      </div>
+      <div class="menulist an d4">
+        <div class="mitem" onclick="go('editprofile')"><div class="mico"><i class="ti ti-user-edit"></i></div><span class="mtxt">Edit Profil</span><i class="ti ti-chevron-right marr"></i></div>
+        <div class="mitem" onclick="toast('Pengaturan notifikasi 🔔')"><div class="mico"><i class="ti ti-bell"></i></div><span class="mtxt">Notifikasi</span><i class="ti ti-chevron-right marr"></i></div>
+        <div class="mitem" onclick="toast('Pengaturan lokasi 📍')"><div class="mico"><i class="ti ti-map-pin"></i></div><span class="mtxt">Lokasi & Jarak</span><i class="ti ti-chevron-right marr"></i></div>
+        <div class="mitem" onclick="toast('Pengaturan privasi 🔒')"><div class="mico"><i class="ti ti-shield-check"></i></div><span class="mtxt">Privasi & Keamanan</span><i class="ti ti-chevron-right marr"></i></div>
+        <div class="mitem" onclick="doLogout()" style="padding-bottom:20px"><div class="mico" style="background:#FBEAF0;color:#B5345C"><i class="ti ti-logout"></i></div><span class="mtxt" style="color:#B5345C">Keluar</span><i class="ti ti-chevron-right marr"></i></div>
+      </div>
+    </div>
+
+    <!-- ═══ EDIT PROFILE ═══ -->
+    <div class="sc up" id="s-editprofile">
+      <div class="ephead">
+        <button class="bfab" style="position:static;width:34px;height:34px;font-size:17px;box-shadow:none;border:1px solid var(--bd)" onclick="goBack()"><i class="ti ti-arrow-left"></i></button>
+        <h2>Edit Profil</h2>
+        <button class="eptxt" onclick="saveProfile()">Simpan</button>
+      </div>
+      <div class="epavwrap">
+        <div class="epav" id="ep-av">AU<div class="epav-edit"><i class="ti ti-camera"></i></div></div>
+        <div class="epav-lbl">Ubah Foto Profil</div>
+      </div>
+      <div class="epform">
+        <div class="field"><label>Nama Lengkap</label><input type="text" id="ep-name" value="Aufaa Azzahra Aryawan"></div>
+        <div class="field"><label>Username</label><input type="text" id="ep-username" value="@aufaa.azzahra"></div>
+        <div class="field"><label>Email</label><input type="email" id="ep-email" value="aufaa@email.com"></div>
+        <div class="field"><label>Kota</label>
+          <select id="ep-city">
+            <option value="Yogyakarta" selected>Yogyakarta</option>
+            <option value="Sleman">Sleman</option>
+            <option value="Bantul">Bantul</option>
+            <option value="Gunungkidul">Gunungkidul</option>
+          </select>
+        </div>
+        <div class="field"><label>Bio</label><textarea id="ep-bio" rows="3" placeholder="Ceritakan sedikit tentang dirimu...">Food lover dari Yogyakarta 🍛 Suka explore kuliner lokal</textarea></div>
+        <div class="field"><label>Nomor HP</label><input type="tel" id="ep-phone" value="0812-xxxx-xxxx"></div>
+        <div class="field"><label>Password Baru</label>
+          <div class="pw-wrap">
+            <input type="password" id="ep-pw" placeholder="Kosongkan jika tidak ingin ubah">
+            <button class="pw-eye" onclick="togglePw('ep-pw',this)" tabindex="-1"><i class="ti ti-eye"></i></button>
+          </div>
+        </div>
+        <button class="btnprimary" style="margin-top:8px;margin-bottom:120px" onclick="saveProfile()"><i class="ti ti-check"></i> Simpan Perubahan</button>
+      </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toastEl"><i class="ti ti-circle-check-filled"></i><span id="toastMsg">Berhasil!</span></div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bnav" id="bnav" style="display:none">
+    <button class="ni on" id="ni-home" onclick="go('home')"><i class="ti ti-home-2"></i><span>Beranda</span></button>
+    <button class="ni" id="ni-explore" onclick="go('explore')"><i class="ti ti-compass"></i><span>Jelajahi</span></button>
+    <button class="ni dot" id="ni-reco" onclick="go('reco')"><div class="ndot"></div><i class="ti ti-sparkles"></i><span>Untukmu</span></button>
+    <button class="ni dot" id="ni-saved" onclick="go('saved')"><div class="ndot"></div><i class="ti ti-bookmark"></i><span>Tersimpan</span></button>
+    <button class="ni" id="ni-profile" onclick="go('profile')"><i class="ti ti-user-circle"></i><span>Profil</span></button>
+  </nav>
+</div>
+
+<script>
+// ===== SVG ICONS MAP (global) =====
+const ICONS = {
+  'ti-search': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>',
+  'ti-adjustments-horizontal': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M8 12h8M6 18h12"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="10" cy="18" r="2"/></svg>',
+  'ti-x': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>',
+  'ti-map-pin': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>',
+  'ti-map-2': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 7 6-3 6 3 6-3v13l-6 3-6-3-6 3V7"/><path d="M9 4v13M15 7v13"/></svg>',
+  'ti-star-filled': '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>',
+  'ti-heart': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>',
+  'ti-heart-filled': '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>',
+  'ti-arrow-left': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>',
+  'ti-arrow-right': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>',
+  'ti-chevron-right': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>',
+  'ti-clock': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>',
+  'ti-flame': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>',
+  'ti-currency-dollar': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+  'ti-sparkles': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4M19 17v4M3 5h4M17 19h4"/></svg>',
+  'ti-circle-check-filled': '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="m9 12 2 2 4-4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  'ti-wifi': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13a10 10 0 0 1 14 0M2 10a14 14 0 0 1 20 0M8 16a6 6 0 0 1 8 0"/><circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/></svg>',
+  'ti-battery-3': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z"/><path d="M20 11v2"/><path d="M8 11h6" stroke-width="2.5"/></svg>',
+  'ti-home-2': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>',
+  'ti-compass': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor" stroke="none"/></svg>',
+  'ti-bookmark': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg>',
+  'ti-user-circle': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/></svg>',
+  'ti-pencil': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>',
+  'ti-tag': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42Z"/><circle cx="7.5" cy="7.5" r="1.5" fill="currentColor" stroke="none"/></svg>',
+  'ti-user-edit': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21v-1a4 4 0 0 1 4-4h4"/><circle cx="10" cy="8" r="4"/><path d="m21.5 15-5 5H13v-3.5l5-5 3.5 3.5Z"/></svg>',
+  'ti-bell': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>',
+  'ti-shield-check': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>',
+  'ti-logout': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>',
+  'ti-eye': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
+  'ti-eye-off': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>',
+  'ti-camera': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>',
+  'ti-phone': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  'ti-share-3': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>',
+  'ti-device-floppy': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>',
+  'ti-mood-empty': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 15h8"/><circle cx="9" cy="10" r="0.5" fill="currentColor"/><circle cx="15" cy="10" r="0.5" fill="currentColor"/></svg>',
+  'ti-check': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
+  'ti-brand-4chan': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>',
+};
+
+// ===== DATA =====
+const FD={
+  gudeg:{emoji:'🍛',bg:'linear-gradient(135deg,#FAE8D8,#F5C9A0)',name:'Gudeg Bu Tjitro',addr:'Jl. Bugisan Selatan · Buka 06.00–14.00',hours:'06.00 – 14.00',cat:'Gudeg · Tradisional',rating:'4.8',dist:'1.2 km',price:'Rp 25k',tags:[['Pagi',''],['Ikonik','g'],['Legendaris','p']],desc:'Salah satu warung gudeg legendaris di Yogyakarta sejak 1925. Gudeg manis khas keraton dengan nangka muda yang dimasak semalaman menggunakan kayu bakar. Menjadi destinasi wajib wisata kuliner Yogya.'},
+  angkringan:{emoji:'🍢',bg:'linear-gradient(135deg,#FFF3E0,#FFDAB0)',name:'Angkringan Lek Man',addr:'Jl. Mangkubumi, dekat Tugu · Buka 17.00–01.00',hours:'17.00 – 01.00',cat:'Angkringan · Street Food',rating:'4.9',dist:'0.4 km',price:'Rp 3k',tags:[['Malam',''],['Murah','b'],['Ikonik','g']],desc:'Angkringan paling ikonik dekat Tugu Yogyakarta. Tempatnya nyaman di pinggir jalan, cocok buat nongkrong sambil menikmati kopi jos dan nasi kucing khas Yogya.'},
+  bakmi:{emoji:'🍜',bg:'linear-gradient(135deg,#E8F5EE,#B8E0CB)',name:'Bakmi Jawa Mbah Gito',addr:'Jl. Kaliurang KM 5 · Buka 17.00–23.00',hours:'17.00 – 23.00',cat:'Bakmi Jawa · Mi',rating:'4.6',dist:'0.8 km',price:'Rp 18k',tags:[['Malam',''],['Ramah Budget','b']],desc:'Bakmi Jawa tradisional dengan bumbu rempah yang kaya. Dimasak menggunakan arang untuk cita rasa smoky yang khas. Sudah berdiri lebih dari 40 tahun.'},
+  soto:{emoji:'🥣',bg:'linear-gradient(135deg,#F3EEFF,#D4C8F5)',name:'Soto Kadipiro',addr:'Jl. Wates KM 1 · Buka 07.00–16.00',hours:'07.00 – 16.00',cat:'Soto · Sup Tradisional',rating:'4.7',dist:'2.1 km',price:'Rp 20k',tags:[['Pagi',''],['Legendaris','p']],desc:'Soto ayam bening legendaris sejak 1921. Kuahnya segar dan gurih, dengan suwiran ayam kampung yang empuk. Wajib coba sate ususnya yang menjadi signature dish.'},
+  wedang:{emoji:'☕',bg:'linear-gradient(135deg,#FBEAF0,#F5C0D5)',name:'Wedang Uwuh Keraton',addr:'Alun-Alun Kidul · Buka 08.00–22.00',hours:'08.00 – 22.00',cat:'Minuman · Herbal',rating:'4.5',dist:'3.0 km',price:'Rp 8k',tags:[['Minuman',''],['Herbal','g']],desc:'Minuman rempah tradisional Yogyakarta yang menghangatkan tubuh. Terbuat dari campuran jahe, cengkeh, kayu manis, dan berbagai rempah pilihan.'}
+};
+
+// ===== USER STATE =====
+let userProfile = {
+  name: 'Aufaa Azzahra',
+  initials: 'AU',
+  city: 'Yogyakarta'
+};
+
+let cur='splash', prev='home', selStars=1, obIdx=0;
+const NAV_SCREENS=['home','explore','reco','saved','profile'];
+
+// ===== CLOCK =====
+function tick(){
+  const n=new Date(),h=String(n.getHours()).padStart(2,'0'),m=String(n.getMinutes()).padStart(2,'0');
+  document.getElementById('clock').textContent=h+':'+m;
+  const hr=n.getHours();
+  let greet='Selamat pagi,', lb='Sarapan', recoMsg='', timePill='';
+  if(hr>=11&&hr<15){lb='Makan Siang';greet='Selamat siang,';recoMsg='Siang hari, saatnya makan besar. <em>Soto atau Bakmi</em> pilihan sempurna untuk tenaga siang hari.';timePill='Siang ini'}
+  else if(hr>=15&&hr<18){lb='Camilan Sore';greet='Selamat sore,';recoMsg='Sore hari yang santai. <em>Wedang Uwuh</em> atau camilan angkringan cocok menemani sore kamu.';timePill='Sore ini'}
+  else if(hr>=18&&hr<22){lb='Makan Malam';greet='Selamat malam,';recoMsg='Malam ini, <em>Angkringan Lek Man</em> jadi pilihan top — murah, meriah, dan paling dekat dari lokasimu.';timePill='Malam ini'}
+  else if(hr>=22||hr<5){lb='Larut Malam';greet='Masih lapar?';recoMsg='Larut malam, <em>Angkringan</em> tetap setia menemanimu. Buka sampai dini hari!';timePill='Larut malam'}
+  else{recoMsg='Pagi ini cocok buat sarapan berat. <em>Gudeg atau Soto</em> jadi pilihan terbaik untuk energi harianmu.';timePill='Pagi ini'}
+  const tl=document.getElementById('timelbl');
+  const hg=document.getElementById('hgreet');
+  const rm=document.getElementById('reco-msg');
+  const rtp=document.getElementById('reco-time-pill');
+  if(tl)tl.textContent=lb+' · Rekomendasi untukmu';
+  if(hg)hg.textContent=greet;
+  if(rm)rm.innerHTML=recoMsg||'Pagi ini cocok buat sarapan berat. <em>Gudeg atau Soto</em> jadi pilihan terbaik untuk energi harianmu.';
+  if(rtp)rtp.textContent=timePill||'Pagi ini';
+}
+tick();setInterval(tick,30000);
+
+// ===== SPLASH → ONBOARD =====
+setTimeout(()=>{
+  document.getElementById('s-splash').classList.remove('on');
+  document.getElementById('s-ob').classList.add('on');
+  cur='ob';
+},2200);
+
+// ===== ONBOARDING =====
+function obNext(){
+  if(obIdx<2){
+    document.getElementById('ob'+obIdx).classList.remove('on');
+    document.getElementById('ob'+obIdx).classList.add('prev');
+    obIdx++;
+    document.getElementById('ob'+obIdx).classList.add('on');
+    document.querySelectorAll('.od').forEach((d,i)=>{d.classList.toggle('on',i===obIdx)});
+    if(obIdx===2){document.getElementById('ob-next-btn').innerHTML='Mulai Sekarang <i class="ti ti-arrow-right"></i>';applyIcons();}
+  } else {
+    goLogin();
+  }
+}
+function goLogin(){
+  document.getElementById('s-ob').classList.remove('on');
+  document.getElementById('s-login').classList.add('on');
+  cur='login';
+}
+
+// ===== LOGIN TABS =====
+function switchLoginTab(t){
+  document.getElementById('ltab-masuk').classList.toggle('on',t==='masuk');
+  document.getElementById('ltab-daftar').classList.toggle('on',t==='daftar');
+  document.getElementById('form-masuk').style.display=t==='masuk'?'':'none';
+  document.getElementById('form-daftar').style.display=t==='daftar'?'':'none';
+}
+
+// ===== PASSWORD TOGGLE =====
+function togglePw(id, btn){
+  const inp=document.getElementById(id);
+  const isHidden=inp.type==='password';
+  inp.type=isHidden?'text':'password';
+  const key=isHidden?'ti-eye-off':'ti-eye';
+  btn.innerHTML=`<i class="ti ${key}">${ICONS[key]||''}</i>`;
+}
+
+// ===== PASSWORD STRENGTH =====
+function checkPwStrength(pw){
+  const segs=[document.getElementById('pws1'),document.getElementById('pws2'),document.getElementById('pws3'),document.getElementById('pws4')];
+  const hint=document.getElementById('pw-hint');
+  segs.forEach(s=>{s.className='pw-seg'});
+  if(!pw){hint.textContent='Masukkan password yang kuat';return;}
+  let score=0;
+  if(pw.length>=8)score++;
+  if(/[A-Z]/.test(pw))score++;
+  if(/[0-9]/.test(pw))score++;
+  if(/[^A-Za-z0-9]/.test(pw))score++;
+  const cls=['fill-weak','fill-weak','fill-ok','fill-strong'];
+  const labels=['Terlalu lemah','Lemah','Cukup kuat','Kuat! 🎉'];
+  for(let i=0;i<score;i++)segs[i].classList.add(cls[score-1]);
+  hint.textContent=labels[score-1]||'';
+  hint.style.color=score>=3?'var(--gn)':score===2?'#B06000':'#E53935';
+}
+
+// ===== DO LOGIN =====
+function doLogin(){
+  const email=document.getElementById('li-email').value.trim();
+  const pw=document.getElementById('li-pw').value;
+  if(!email||!pw){toast('Isi email dan password dulu ya!');return;}
+  launchApp();
+}
+
+// ===== DO REGISTER =====
+function doRegister(){
+  const name=document.getElementById('re-name').value.trim();
+  const email=document.getElementById('re-email').value.trim();
+  const pw=document.getElementById('re-pw').value;
+  const pw2=document.getElementById('re-pw2').value;
+  if(!name||!email||!pw){toast('Lengkapi semua data dulu ya!');return;}
+  if(pw!==pw2){toast('Password tidak sama, coba lagi!');return;}
+  if(pw.length<8){toast('Password minimal 8 karakter!');return;}
+  // Update profile with registration data
+  userProfile.name=name;
+  userProfile.initials=name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+  updateProfileUI();
+  launchApp();
+}
+
+// ===== LAUNCH APP =====
+function launchApp(){
+  document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
+  document.getElementById('bnav').style.display='flex';
+  document.getElementById('s-home').classList.add('on');
+  document.getElementById('ni-home').classList.add('on');
+  cur='home';prev='home';
+  updateProfileUI();
+}
+
+// ===== UPDATE PROFILE UI =====
+function updateProfileUI(){
+  const ini=userProfile.initials;
+  document.getElementById('home-av').textContent=ini;
+  document.getElementById('prof-av').textContent=ini;
+  document.getElementById('ep-av').childNodes[0].textContent=ini;
+  document.getElementById('rev-av').textContent=ini;
+  document.getElementById('prof-name').textContent=userProfile.name.split(' ').slice(0,2).join(' ');
+  document.getElementById('prof-loc').textContent=userProfile.city+' · Member 2024';
+}
+
+// ===== NAVIGATE =====
+function go(name){
+  if(name===cur)return;
+  document.querySelectorAll('.sc').forEach(s=>{s.classList.remove('on');s.classList.remove('up')});
+  const t=document.getElementById('s-'+name);
+  if(t){
+    if(name==='detail'||name==='editprofile'){t.classList.remove('up');t.classList.add('on');}
+    else{t.classList.add('on');}
+    t.scrollTop=0;
+  }
+  document.querySelectorAll('.ni').forEach(n=>n.classList.remove('on'));
+  const nb=document.getElementById('ni-'+name);
+  if(nb)nb.classList.add('on');
+  prev=cur;cur=name;
+  applyIcons();
+}
+
+function goBack(){
+  go(prev);
+  // re-add 'up' class to detail/editprofile so they animate out properly next time
+  setTimeout(()=>{
+    const d=document.getElementById('s-detail');
+    const e=document.getElementById('s-editprofile');
+    if(d&&!d.classList.contains('on'))d.classList.add('up');
+    if(e&&!e.classList.contains('on'))e.classList.add('up');
+  },250);
+}
+
+// ===== DETAIL =====
+function detail(id){
+  const f=FD[id];if(!f)return;
+  document.getElementById('demoji').textContent=f.emoji;
+  document.getElementById('dhbg').style.background=f.bg;
+  document.getElementById('dname').textContent=f.name;
+  document.getElementById('daddr').textContent=f.addr;
+  document.getElementById('drating').textContent=f.rating;
+  document.getElementById('ddist').textContent=f.dist;
+  document.getElementById('dprice').textContent=f.price;
+  document.getElementById('dhours').textContent=f.hours;
+  document.getElementById('dcat').textContent=f.cat;
+  document.getElementById('ddesc').textContent=f.desc;
+  const dtags=document.getElementById('dtags');
+  dtags.innerHTML=f.tags.map(([t,c])=>`<span class="tag${c?' '+c:''}">${t}</span>`).join('');
+  go('detail');
+}
+
+// ===== FAV TOGGLE =====
+function togFav(btn){
+  const isFav=btn.style.color==='rgb(229, 57, 53)';
+  btn.style.color=isFav?'var(--tx3)':'#E53935';
+  const icon=btn.querySelector('i');
+  if(icon){
+    icon.className=isFav?'ti ti-heart':'ti ti-heart-filled';
+    icon.innerHTML=ICONS[isFav?'ti-heart':'ti-heart-filled']||'';
+  }
+}
+
+// ===== TOAST =====
+let toastTimer;
+function toast(msg){
+  const el=document.getElementById('toastEl');
+  document.getElementById('toastMsg').textContent=msg;
+  el.classList.add('on');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>el.classList.remove('on'),2500);
+}
+
+// ===== STARS =====
+function setStar(n){
+  selStars=n;
+  document.querySelectorAll('#starsel .sbtn').forEach((s,i)=>{
+    s.classList.toggle('dim',i>=n);
+  });
+}
+
+// ===== SUBMIT REVIEW =====
+function submitRev(){
+  const ta=document.getElementById('revta');
+  if(!ta.value.trim()){toast('Tulis dulu ulasanmu!');return;}
+  const stars='★'.repeat(selStars)+'☆'.repeat(5-selStars);
+  const ini=userProfile.initials;
+  const div=document.createElement('div');
+  div.className='revitem';
+  div.innerHTML=`<div class="revh"><div class="revav" style="background:var(--am2);color:var(--am3)">${ini}</div><span class="revname">${userProfile.name.split(' ')[0]}</span><span class="revdate">Baru saja</span></div><div class="revstars">${stars}</div><div class="revbody">${ta.value.trim()}</div>`;
+  document.getElementById('revlist').prepend(div);
+  ta.value='';setStar(1);
+  toast('Ulasan berhasil dikirim! ⭐');
+}
+
+// ===== BUDGET SLIDER =====
+function updBudg(el){
+  const v=parseInt(el.value);
+  document.getElementById('budgval').textContent='Rp '+v.toLocaleString('id-ID')+'.000';
+  const pct=((v-10)/(200-10))*100;
+  el.style.background=`linear-gradient(to right,var(--am) ${pct}%,#E0D5C8 ${pct}%)`;
+}
+
+// ===== CHIPS =====
+function setChip(el,cat){
+  document.querySelectorAll('#chip-row .chip').forEach(c=>c.classList.remove('on'));
+  el.classList.add('on');
+  clearSearch();
+  if(cat==='Semua'){filterExplore('');}
+  else if(cat==='Budget'){filterExplore('budget');}
+  else if(cat==='Terdekat'){sortByDist();}
+  else if(cat==='Terpopuler'){sortByRating();}
+  else if(cat==='Buka'){filterBukaSekarang();}
+}
+
+function setSvTab(el){
+  document.querySelectorAll('.stab').forEach(t=>t.classList.remove('on'));
+  el.classList.add('on');
+}
+
+// ===== SEARCH =====
+const SEARCH_INDEX = [
+  {id:'gudeg',name:'Gudeg Bu Tjitro',place:'Jl. Bugisan Selatan',emoji:'🍛',bg:'#FAE8D8',price:'Rp 25k',keywords:'gudeg tradisional sarapan pagi legendaris manis keraton nangka'},
+  {id:'angkringan',name:'Angkringan Lek Man',place:'Jl. Mangkubumi, dekat Tugu',emoji:'🍢',bg:'#FFF3E0',price:'Rp 3k',keywords:'angkringan street food malam murah nasi kucing kopi jos tugu'},
+  {id:'bakmi',name:'Bakmi Jawa Mbah Gito',place:'Jl. Kaliurang KM 5',emoji:'🍜',bg:'#E8F5EE',price:'Rp 18k',keywords:'bakmi jawa mi mie malam budget arang smoky'},
+  {id:'soto',name:'Soto Kadipiro',place:'Jl. Wates KM 1',emoji:'🥣',bg:'#F3EEFF',price:'Rp 20k',keywords:'soto sup soup tradisional pagi legendaris ayam bening'},
+  {id:'wedang',name:'Wedang Uwuh Keraton',place:'Alun-Alun Kidul',emoji:'☕',bg:'#FBEAF0',price:'Rp 8k',keywords:'wedang minuman herbal rempah jahe hangat keraton'}
+];
+
+function doSearch(q){
+  const query=q.toLowerCase().trim();
+  const clrBtn=document.getElementById('expl-clear');
+  const srbox=document.getElementById('srbox');
+  const srlist=document.getElementById('srlist');
+  const expllist=document.getElementById('expllist');
+  const noRes=document.getElementById('no-results');
+  const label=document.getElementById('expllist-label');
+
+  clrBtn.style.display=query?'block':'none';
+
+  if(!query){
+    srbox.classList.remove('show');
+    // show all list items
+    document.querySelectorAll('#expllist .fc').forEach(el=>el.style.display='');
+    noRes.style.display='none';
+    label.textContent='Semua Kuliner';
+    return;
+  }
+
+  // Filter main list
+  let found=0;
+  document.querySelectorAll('#expllist .fc').forEach(el=>{
+    const name=(el.dataset.name||'').toLowerCase();
+    const cat=(el.dataset.cat||'').toLowerCase();
+    const match=name.includes(query)||cat.includes(query);
+    el.style.display=match?'':'none';
+    if(match)found++;
+  });
+  noRes.style.display=found?'none':'block';
+  label.textContent=found?`${found} hasil ditemukan`:'Tidak ada hasil';
+
+  // Dropdown suggestions
+  const results=SEARCH_INDEX.filter(item=>
+    item.name.toLowerCase().includes(query)||item.keywords.includes(query)
+  );
+  if(results.length&&query.length>=2){
+    srlist.innerHTML=results.map(r=>`
+      <div class="sritem" onclick="detail('${r.id}');clearSearch()">
+        <div class="sritemico" style="background:${r.bg}">${r.emoji}</div>
+        <div><div class="sritemn">${r.name}</div><div class="sritems">${r.place} · ${r.price}</div></div>
+      </div>`).join('');
+    srbox.classList.add('show');
+  } else if(query.length>=2){
+    srlist.innerHTML='<div class="sr-none">Tidak ada hasil untuk "<b>'+query+'</b>"</div>';
+    srbox.classList.add('show');
+  } else {
+    srbox.classList.remove('show');
+  }
+}
+
+function clearSearch(){
+  const inp=document.getElementById('expl-search');
+  inp.value='';
+  doSearch('');
+  inp.blur();
+}
+
+function filterExplore(keyword){
+  document.querySelectorAll('#expllist .fc').forEach(el=>{
+    if(!keyword){el.style.display='';return;}
+    const name=(el.dataset.name||'').toLowerCase();
+    const cat=(el.dataset.cat||'').toLowerCase();
+    el.style.display=(name.includes(keyword.toLowerCase())||cat.includes(keyword.toLowerCase()))?'':'none';
+  });
+  const noRes=document.getElementById('no-results');
+  const visible=[...document.querySelectorAll('#expllist .fc')].filter(el=>el.style.display!=='none');
+  noRes.style.display=visible.length?'none':'block';
+  document.getElementById('expllist-label').textContent=keyword?`Filter: ${keyword}`:'Semua Kuliner';
+}
+
+function sortByDist(){
+  document.querySelectorAll('#expllist .fc').forEach(el=>el.style.display='');
+  document.getElementById('no-results').style.display='none';
+  document.getElementById('expllist-label').textContent='Terdekat dari Kamu';
+}
+
+function sortByRating(){
+  document.querySelectorAll('#expllist .fc').forEach(el=>el.style.display='');
+  document.getElementById('no-results').style.display='none';
+  document.getElementById('expllist-label').textContent='Terpopuler';
+}
+
+function filterBukaSekarang(){
+  document.querySelectorAll('#expllist .fc').forEach(el=>el.style.display='');
+  document.getElementById('no-results').style.display='none';
+  document.getElementById('expllist-label').textContent='Buka Sekarang';
+}
+
+function filterAndExplore(cat){
+  go('explore');
+  setTimeout(()=>{filterExplore(cat);},100);
+}
+
+// ===== SAVE PROFILE =====
+function saveProfile(){
+  const name=document.getElementById('ep-name').value.trim();
+  const city=document.getElementById('ep-city').value;
+  if(!name){toast('Nama tidak boleh kosong!');return;}
+  userProfile.name=name;
+  userProfile.initials=name.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+  userProfile.city=city;
+  updateProfileUI();
+  toast('Profil berhasil diperbarui! ✓');
+  goBack();
+}
+
+// ===== LOGOUT =====
+function doLogout(){
+  document.getElementById('bnav').style.display='none';
+  document.querySelectorAll('.sc').forEach(s=>s.classList.remove('on'));
+  document.getElementById('s-login').classList.add('on');
+  switchLoginTab('masuk');
+  cur='login';prev='home';
+}
+</script>
+
+<script>
+// ===== SVG ICON REPLACEMENT =====
+function applyIcons(){
+  document.querySelectorAll('i[class]').forEach(el=>{
+    const cls=[...el.classList];
+    const key=cls.find(c=>c.startsWith('ti-')&&c!=='ti');
+    if(key&&ICONS[key]){
+      el.innerHTML=ICONS[key];
+    }
+  });
+}
+applyIcons();
+
+// Re-apply after dynamic content changes (togFav updates i.className)
+const _togFav=window.togFav;
+window.togFav=function(btn){
+  _togFav(btn);
+  applyIcons();
+};
+const _togglePw=window.togglePw;
+window.togglePw=function(id,btn){
+  _togglePw(id,btn);
+  applyIcons();
+};
+const _obNext=window.obNext;
+window.obNext=function(){
+  _obNext();
+  applyIcons();
+};
+
+// Fix clickable context pills in recommendation screen
+document.querySelectorAll('.cpill').forEach(pill=>{
+  pill.style.cursor='pointer';
+  pill.addEventListener('click',function(){
+    document.querySelectorAll('.cpill').forEach(p=>p.classList.remove('hl'));
+    this.classList.add('hl');
+  });
+});
+</script>
+</body>
+</html>
