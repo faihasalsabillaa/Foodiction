@@ -9,9 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "csv-parser": "^3.2.1",
     "next": "latest",
+    "pg": "^8.21.0",
     "react": "latest",
     "react-dom": "latest"
   },
-  "devDependencies": {}
+  "description": "Refactor dari prototype satu file menjadi struktur Next.js App Router yang lebih scalable tanpa mengubah desain visual utama.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aufaarya/Foodiction.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aufaarya/Foodiction/issues"
+  },
+  "homepage": "https://github.com/aufaarya/Foodiction#readme"
 }
