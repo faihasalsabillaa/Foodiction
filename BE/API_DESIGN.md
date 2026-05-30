@@ -95,6 +95,26 @@ Authenticates a user and issues access/refresh tokens.
 }
 ```
 
+### GET /auth/me
+Retrieves the logged-in user's profile information based on the JWT token.
+
+* **Headers:** `Authorization: Bearer <token>`
+
+**Response (200 OK):**
+```json
+{
+  "success": true,
+  "data": {
+    "user": {
+      "id": "char-36-uuid",
+      "email": "user@example.com",
+      "fullName": "Budi Santoso",
+      "createdAt": "2026-05-30T10:30:00Z"
+    }
+  }
+}
+```
+
 ---
 
 ## 3. User Profile & Preferences Endpoints

@@ -3,8 +3,13 @@ const cors = require('cors');
 const { Pool } = require('pg');
 const { randomUUID } = require('crypto');
 const dotenv = require('dotenv');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 
 dotenv.config();
+
+const JWT_SECRET = process.env.JWT_SECRET || 'foodiction_dev_secret';
+const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
 
 const pool = new Pool({
   host: process.env.PGHOST || 'localhost',
@@ -35,17 +40,6 @@ function errorResponse(message) {
   };
 }
 
-function haversineDistance(lat1, lng1, lat2, lng2) {
-  const toRad = (value) => (value * Math.PI) / 180;
-  const R = 6371000;
-  const φ1 = toRad(lat1);
-  const φ2 = toRad(lat2);
-  const Δφ = toRad(lat2 - lat1);
-  const Δλ = toRad(lng2 - lng1);
-  const a = Math.sin(Δφ / 2) ** 2 + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) ** 2;
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c;
-}
 
 function parseOpenPeriod(openPeriod) {
   if (!openPeriod || typeof openPeriod !== 'string') return null;
@@ -86,7 +80,39 @@ function normalizeCategory(value) {
   return (value || '').toString().trim().toLowerCase();
 }
 
+// ─── Auth Middleware ──────────────────────────────────────────────────────────
+
+function authenticateToken(req, res, next) {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
+  if (!token) {
+    return res.status(401).json(errorResponse('Access token is required.'));
+  }
+  try {
+    const payload = jwt.verify(token, JWT_SECRET);
+    req.user = payload;
+    next();
+  } catch (err) {
+    return res.status(401).json(errorResponse('Invalid or expired token.'));
+  }
+}
+
+function optionalAuth(req, res, next) {
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
+  if (token) {
+    try {
+      req.user = jwt.verify(token, JWT_SECRET);
+    } catch (_) {
+      // token invalid tapi optional — lanjut tanpa user
+    }
+  }
+  next();
+}
+
 function getUserId(req) {
+  // Prioritaskan user dari JWT, fallback ke header lama untuk kompatibilitas
+  if (req.user) return req.user.userId;
   return req.header('x-user-id') || req.query.user_id || null;
 }
 
@@ -123,6 +149,98 @@ function buildTasteScore(restaurant, preferences) {
   return score;
 }
 
+// ─── Auth Endpoints ───────────────────────────────────────────────────────────
+
+app.post('/auth/register', async (req, res) => {
+  const { email, password, fullName } = req.body;
+
+  if (!email || !password || !fullName) {
+    return res.status(400).json(errorResponse('email, password, dan fullName wajib diisi.'));
+  }
+  if (password.length < 8) {
+    return res.status(400).json(errorResponse('Password minimal 8 karakter.'));
+  }
+
+  try {
+    const existing = await pool.query('SELECT id FROM users WHERE email = $1', [email.toLowerCase().trim()]);
+    if (existing.rows.length > 0) {
+      return res.status(409).json(errorResponse('Email sudah terdaftar.'));
+    }
+
+    const passwordHash = await bcrypt.hash(password, 12);
+    const result = await pool.query(
+      `INSERT INTO users (email, password_hash, full_name)
+       VALUES ($1, $2, $3)
+       RETURNING id, email, full_name AS "fullName", created_at AS "createdAt"`,
+      [email.toLowerCase().trim(), passwordHash, fullName.trim()]
+    );
+
+    const user = result.rows[0];
+    const token = jwt.sign({ userId: user.id, email: user.email, fullName: user.fullName }, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
+
+    return res.status(201).json(successResponse({
+      user: { id: user.id, email: user.email, fullName: user.fullName },
+      tokens: { accessToken: token, expiresIn: JWT_EXPIRES_IN },
+    }));
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json(errorResponse('Gagal mendaftarkan akun.'));
+  }
+});
+
+app.post('/auth/login', async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json(errorResponse('email dan password wajib diisi.'));
+  }
+
+  try {
+    const result = await pool.query(
+      'SELECT id, email, password_hash, full_name AS "fullName" FROM users WHERE email = $1',
+      [email.toLowerCase().trim()]
+    );
+
+    if (result.rows.length === 0) {
+      return res.status(401).json(errorResponse('Email atau password salah.'));
+    }
+
+    const user = result.rows[0];
+    const passwordMatch = await bcrypt.compare(password, user.password_hash);
+    if (!passwordMatch) {
+      return res.status(401).json(errorResponse('Email atau password salah.'));
+    }
+
+    const token = jwt.sign({ userId: user.id, email: user.email, fullName: user.fullName }, JWT_SECRET, { expiresIn: JWT_EXPIRES_IN });
+
+    return res.json(successResponse({
+      user: { id: user.id, email: user.email, fullName: user.fullName },
+      tokens: { accessToken: token, expiresIn: JWT_EXPIRES_IN },
+    }));
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json(errorResponse('Gagal melakukan login.'));
+  }
+});
+
+app.get('/auth/me', authenticateToken, async (req, res) => {
+  try {
+    const result = await pool.query(
+      'SELECT id, email, full_name AS "fullName", created_at AS "createdAt" FROM users WHERE id = $1',
+      [req.user.userId]
+    );
+    if (result.rows.length === 0) {
+      return res.status(404).json(errorResponse('User tidak ditemukan.'));
+    }
+    return res.json(successResponse({ user: result.rows[0] }));
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json(errorResponse('Gagal mengambil data user.'));
+  }
+});
+
+// ─── Restaurant Endpoints ──────────────────────────────────────────────────────
+
 app.get('/restaurants/nearby', async (req, res) => {
   const lat = Number(req.query.lat);
   const lng = Number(req.query.lng);
@@ -136,33 +254,30 @@ app.get('/restaurants/nearby', async (req, res) => {
 
   try {
     const result = await pool.query(
-      `SELECT r.*, COALESCE(MIN(m.price), 0) AS min_menu_price
+      `SELECT r.*, 
+              COALESCE(MIN(m.price), 0) AS min_menu_price,
+              ( 6371000 * acos( least(1.0, cos( radians($1) ) * cos( radians( r.latitude ) ) * cos( radians( r.longitude ) - radians($2) ) + sin( radians($1) ) * sin( radians( r.latitude ) ) ) ) ) AS distance_meters
        FROM restaurants r
        LEFT JOIN menus m ON r.id = m.restaurant_id
-       GROUP BY r.id;
-      `
+       WHERE r.latitude IS NOT NULL AND r.longitude IS NOT NULL
+       GROUP BY r.id
+       HAVING ( 6371000 * acos( least(1.0, cos( radians($1) ) * cos( radians( r.latitude ) ) * cos( radians( r.longitude ) - radians($2) ) + sin( radians($1) ) * sin( radians( r.latitude ) ) ) ) ) <= $3
+       ORDER BY distance_meters ASC
+      `, [lat, lng, radius]
     );
 
     const restaurants = result.rows
-      .map((restaurant) => {
-        const distanceMeters = restaurant.latitude && restaurant.longitude
-          ? haversineDistance(lat, lng, Number(restaurant.latitude), Number(restaurant.longitude))
-          : null;
-
-        return {
-          ...restaurant,
-          min_menu_price: Number(restaurant.min_menu_price || 0),
-          distance_meters: distanceMeters,
-        };
-      })
-      .filter((restaurant) => restaurant.distance_meters !== null && restaurant.distance_meters <= radius)
+      .map((restaurant) => ({
+        ...restaurant,
+        min_menu_price: Number(restaurant.min_menu_price || 0),
+        distance_meters: Number(restaurant.distance_meters),
+      }))
       .filter((restaurant) => {
         if (maxBudget !== null && restaurant.min_menu_price > maxBudget) return false;
         if (!category) return true;
         const tags = Array.isArray(restaurant.tags) ? restaurant.tags.map((tag) => tag.toString().toLowerCase()) : [];
         return tags.includes(category) || restaurant.name.toLowerCase().includes(category);
       })
-      .sort((a, b) => a.distance_meters - b.distance_meters)
       .map((restaurant) => ({
         id: restaurant.id,
         name: restaurant.name,
@@ -243,16 +358,17 @@ app.get('/restaurants/:id/reviews', async (req, res) => {
   }
 });
 
-app.post('/restaurants/:id/reviews', async (req, res) => {
+app.post('/restaurants/:id/reviews', authenticateToken, async (req, res) => {
   const { id } = req.params;
-  const { user_name, rating, review_text, ordered_item } = req.body;
+  const { rating, review_text, ordered_item } = req.body;
   const ratingValue = Number(rating);
 
   if (!ratingValue || ratingValue < 1 || ratingValue > 5) {
     return res.status(400).json(errorResponse('rating must be an integer between 1 and 5.'));
   }
 
-  const userName = user_name ? String(user_name).trim() : 'Foodie';
+  const userName = req.user.fullName || req.user.email || 'Foodie';
+  const userId = req.user.userId;
 
   try {
     const restaurantResult = await pool.query('SELECT id FROM restaurants WHERE id = $1', [id]);
@@ -261,9 +377,9 @@ app.post('/restaurants/:id/reviews', async (req, res) => {
     }
 
     await pool.query(
-      `INSERT INTO reviews (id, restaurant_id, user_name, rating, review_text, ordered_item)
-       VALUES ($1, $2, $3, $4, $5, $6)`,
-      [randomUUID(), id, userName, ratingValue, review_text || null, ordered_item || null]
+      `INSERT INTO reviews (id, restaurant_id, user_name, user_id, rating, review_text, ordered_item)
+       VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+      [randomUUID(), id, userName, userId, ratingValue, review_text || null, ordered_item || null]
     );
 
     return res.status(201).json(successResponse({ message: 'Review submitted successfully.' }));
@@ -273,7 +389,9 @@ app.post('/restaurants/:id/reviews', async (req, res) => {
   }
 });
 
-app.get('/recommendations/smart-pick', async (req, res) => {
+// ─── Recommendation Endpoints ─────────────────────────────────────────────────
+
+app.get('/recommendations/smart-pick', optionalAuth, async (req, res) => {
   const lat = Number(req.query.lat);
   const lng = Number(req.query.lng);
   const currentTime = req.query.current_time;
@@ -292,28 +410,28 @@ app.get('/recommendations/smart-pick', async (req, res) => {
 
   try {
     const result = await pool.query(
-      `SELECT r.*, COALESCE(MIN(m.price), 0) AS min_menu_price
+      `SELECT r.*, 
+              COALESCE(MIN(m.price), 0) AS min_menu_price,
+              ( 6371000 * acos( least(1.0, cos( radians($1) ) * cos( radians( r.latitude ) ) * cos( radians( r.longitude ) - radians($2) ) + sin( radians($1) ) * sin( radians( r.latitude ) ) ) ) ) AS distance_meters
        FROM restaurants r
        LEFT JOIN menus m ON r.id = m.restaurant_id
-       GROUP BY r.id`
+       WHERE r.latitude IS NOT NULL AND r.longitude IS NOT NULL
+       GROUP BY r.id
+       HAVING ( 6371000 * acos( least(1.0, cos( radians($1) ) * cos( radians( r.latitude ) ) * cos( radians( r.longitude ) - radians($2) ) + sin( radians($1) ) * sin( radians( r.latitude ) ) ) ) ) <= $3
+      `, [lat, lng, radius]
     );
 
     const candidates = result.rows
       .map((restaurant) => {
-        const distanceMeters = restaurant.latitude && restaurant.longitude
-          ? haversineDistance(lat, lng, Number(restaurant.latitude), Number(restaurant.longitude))
-          : null;
         return {
           ...restaurant,
           min_menu_price: Number(restaurant.min_menu_price || 0),
-          distance_meters: distanceMeters,
+          distance_meters: Number(restaurant.distance_meters),
           is_open: isOpenNow(restaurant.open_period, currentTime, dayIndex),
           taste_score: buildTasteScore(restaurant, preferences),
         };
       })
-      .filter((restaurant) => restaurant.distance_meters !== null)
       .filter((restaurant) => effectiveMaxBudget === null || restaurant.min_menu_price <= effectiveMaxBudget)
-      .filter((restaurant) => restaurant.distance_meters <= radius)
       .filter((restaurant) => restaurant.is_open !== false)
       .sort((a, b) => {
         if ((b.taste_score || 0) !== (a.taste_score || 0)) return (b.taste_score || 0) - (a.taste_score || 0);
@@ -345,10 +463,12 @@ app.get('/recommendations/smart-pick', async (req, res) => {
   }
 });
 
-app.get('/users/me/preferences', async (req, res) => {
+// ─── User Preference Endpoints ────────────────────────────────────────────────
+
+app.get('/users/me/preferences', authenticateToken, async (req, res) => {
   const userId = getUserId(req);
   if (!userId) {
-    return res.status(400).json(errorResponse('Missing user_id. Send x-user-id header or user_id query parameter.'));
+    return res.status(401).json(errorResponse('Unauthorized.'));
   }
 
   try {
@@ -366,10 +486,10 @@ app.get('/users/me/preferences', async (req, res) => {
   }
 });
 
-app.put('/users/me/preferences', async (req, res) => {
+app.put('/users/me/preferences', authenticateToken, async (req, res) => {
   const userId = getUserId(req);
   if (!userId) {
-    return res.status(400).json(errorResponse('Missing user_id. Send x-user-id header or user_id query parameter.'));
+    return res.status(401).json(errorResponse('Unauthorized.'));
   }
 
   const tastePreferences = normalizeTextArray(req.body.tastePreferences || req.body.taste_preferences || []);

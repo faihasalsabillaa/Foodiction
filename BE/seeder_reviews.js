@@ -2,6 +2,7 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const { randomUUID } = require('crypto');
 const { Pool } = require('pg');
+const bcrypt = require('bcryptjs');
 
 const pool = new Pool({
     user: 'lommy',
@@ -127,10 +128,6 @@ const reviewerNames = [
     "Alpha","Beta","Gamma","Delta","Omega","Sigma","Ace","Duke","Baron","Cesar"
 ];
 
-function pickRandomReviewer() {
-    return reviewerNames[Math.floor(Math.random() * reviewerNames.length)];
-}
-
 function parseOpenPeriods(field) {
     if (!field) return null;
     let parsed;
@@ -233,6 +230,21 @@ async function seedReviews() {
         keywords: buildRestaurantKeywords(row.name),
     }));
 
+    console.log('⏳ Syncing dummy users for reviews...');
+    const dummyUsers = [];
+    const dummyPasswordHash = await bcrypt.hash('password123', 10);
+    for (const name of reviewerNames) {
+        const email = `${name.toLowerCase().replace(/[^a-z0-9]/g, '')}@foodiction.local`;
+        const { rows } = await pool.query(
+            `INSERT INTO users (id, email, password_hash, full_name)
+             VALUES ($1, $2, $3, $4)
+             ON CONFLICT (email) DO UPDATE SET full_name = EXCLUDED.full_name
+             RETURNING id, full_name`,
+            [randomUUID(), email, dummyPasswordHash, name]
+        );
+        dummyUsers.push(rows[0]);
+    }
+
     const overviews = await loadCsv('gofood_food_overviews.csv');
     console.log(`⏳ Processing ${overviews.length} overview review...`);
 
@@ -269,10 +281,12 @@ async function seedReviews() {
             }
         }
 
+        const randomUser = dummyUsers[Math.floor(Math.random() * dummyUsers.length)];
+
         await pool.query(
-            `INSERT INTO reviews (id, restaurant_id, user_name, rating, review_text, ordered_item)
-             VALUES ($1, $2, $3, $4, $5, $6)`,
-            [randomUUID(), targetRestaurant.id, pickRandomReviewer(), ratingScore, reviewText, savedOrderedItem]
+            `INSERT INTO reviews (id, restaurant_id, user_id, user_name, rating, review_text, ordered_item)
+             VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+            [randomUUID(), targetRestaurant.id, randomUser.id, randomUser.full_name, ratingScore, reviewText, savedOrderedItem]
         );
     }
 
