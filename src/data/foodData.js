@@ -113,3 +113,5 @@ export const SEARCH_INDEX = Object.entries(FD).map(([id, d]) => ({
       .join(" ")
       .toLowerCase(),
 }));
+
+export const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
