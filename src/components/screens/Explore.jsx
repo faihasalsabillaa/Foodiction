@@ -1,102 +1,65 @@
 "use client";
 
-import { useState } from "react";
-import { COLORS, SEARCH_INDEX } from "@/data/foodData";
+import { useState, useEffect } from "react";
+import { COLORS } from "@/data/foodData";
 import Icon from "@/components/ui/Icon";
 import FoodCard from "@/components/ui/FoodCard";
 import Tag from "@/components/ui/Tag";
 import Rat from "@/components/ui/RatingPill";
 
-// Explore
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "/api";
+
 const Explore = ({ goDetail, filterKw }) => {
   const [search, setSearch] = useState(filterKw || "");
-  const [chip, setChip] = useState(filterKw ? filterKw : "Semua");
-  const [showDrop, setShowDrop] = useState(false);
-  const allFoods = [
-    [
-      "gudeg",
-      "#FAE8D8",
-      "🍛",
-      "Gudeg Bu Tjitro",
-      "Jl. Bugisan Selatan · 1.2 km",
-      [
-        ["Pagi", ""],
-        ["Ikonik", "g"],
-      ],
-      "Rp 25k",
-      "4.8",
-      "gudeg tradisional sarapan pagi legendaris",
-    ],
-    [
-      "angkringan",
-      "#FFF3E0",
-      "🍢",
-      "Angkringan Lek Man",
-      "Jl. Mangkubumi · 0.4 km",
-      [
-        ["Malam", ""],
-        ["Murah", "b"],
-      ],
-      "Rp 5k",
-      "4.9",
-      "angkringan street food malam murah",
-    ],
-    [
-      "bakmi",
-      "#E8F5EE",
-      "🍜",
-      "Bakmi Jawa Mbah Gito",
-      "Jl. Kaliurang KM 5 · 0.8 km",
-      [
-        ["Malam", ""],
-        ["Budget", "b"],
-      ],
-      "Rp 18k",
-      "4.6",
-      "bakmi jawa mi malam budget",
-    ],
-    [
-      "soto",
-      "#F3EEFF",
-      "🥣",
-      "Soto Kadipiro",
-      "Jl. Wates KM 1 · 2.1 km",
-      [
-        ["Pagi", ""],
-        ["Legendaris", "p"],
-      ],
-      "Rp 20k",
-      "4.7",
-      "soto sup tradisional pagi legendaris",
-    ],
-    [
-      "wedang",
-      "#FBEAF0",
-      "☕",
-      "Wedang Uwuh Keraton",
-      "Alun-Alun Kidul · 3.0 km",
-      [
-        ["Minuman", ""],
-        ["Herbal", "g"],
-      ],
-      "Rp 10k",
-      "4.5",
-      "wedang minuman herbal tradisional",
-    ],
-  ];
-  const q = search.toLowerCase();
-  const filtered = allFoods.filter(([id, , , name, place, , , , kw]) =>
-    !q
-      ? chip === "Semua" ||
-        kw.includes(chip.toLowerCase()) ||
-        name.toLowerCase().includes(chip.toLowerCase())
-      : name.toLowerCase().includes(q) || kw.includes(q),
-  );
-  const dropResults = SEARCH_INDEX.filter(
-    (r) =>
-      q.length >= 2 &&
-      (r.name.toLowerCase().includes(q) || r.keywords.includes(q)),
-  );
+  const [chip, setChip] = useState("Semua");
+  const [restaurants, setRestaurants] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchRestaurants = async () => {
+      setLoading(true);
+      try {
+        const params = new URLSearchParams();
+        if (search) params.set("search", search);
+        if (chip === "Budget <20k") params.set("max_budget", 20000);
+        const res = await fetch(`${BASE_URL}/restaurants?${params.toString()}`);
+        const json = await res.json();
+        setRestaurants(json.data?.restaurants || []);
+      } catch (err) {
+        console.error("Failed to fetch restaurants:", err);
+        setRestaurants([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchRestaurants();
+  }, [search, chip]);
+
+  // Filter open now on the client side
+  const filtered = restaurants.filter((r) => {
+    if (chip === "Terpopuler") return Number(r.rating) >= 4.5;
+    if (chip === "Buka Sekarang") {
+      const now = new Date();
+      const hhmm = `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}`;
+      return r.open_period?.includes(hhmm) ?? true;
+    }
+    return true;
+  });
+
+  const nearby = [...restaurants]
+    .sort((a, b) => Number(b.rating) - Number(a.rating))
+    .slice(0, 4);
+
+  const tagColor = (tag) => {
+    if (!tag) return "";
+    const t = tag.toLowerCase();
+    if (t.includes("pagi") || t.includes("siang")) return "";
+    if (t.includes("malam") || t.includes("murah") || t.includes("budget")) return "b";
+    if (t.includes("legendaris") || t.includes("ikonik")) return "p";
+    return "g";
+  };
+
   return (
     <div
       style={{
@@ -120,6 +83,7 @@ const Explore = ({ goDetail, filterKw }) => {
         <br />
         <em style={{ fontStyle: "italic", color: COLORS.am }}>Kuliner Yogya</em>
       </div>
+
       {/* Search */}
       <div style={{ position: "relative", marginBottom: 12 }}>
         <div
@@ -133,18 +97,10 @@ const Explore = ({ goDetail, filterKw }) => {
             padding: "11px 16px",
           }}
         >
-          <Icon
-            name="search"
-            size={18}
-            style={{ color: COLORS.tx3, flexShrink: 0 }}
-          />
+          <Icon name="search" size={18} style={{ color: COLORS.tx3, flexShrink: 0 }} />
           <input
             value={search}
-            onChange={(e) => {
-              setSearch(e.target.value);
-              setShowDrop(true);
-            }}
-            onBlur={() => setTimeout(() => setShowDrop(false), 150)}
+            onChange={(e) => setSearch(e.target.value)}
             style={{
               flex: 1,
               fontSize: 14,
@@ -158,98 +114,16 @@ const Explore = ({ goDetail, filterKw }) => {
           />
           {search && (
             <button
-              onClick={() => {
-                setSearch("");
-                setShowDrop(false);
-              }}
-              style={{
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                color: COLORS.tx3,
-                padding: 0,
-              }}
+              onClick={() => setSearch("")}
+              style={{ background: "none", border: "none", cursor: "pointer", color: COLORS.tx3, padding: 0 }}
             >
               <Icon name="x" size={16} />
             </button>
           )}
-          <Icon
-            name="adjustments"
-            size={18}
-            style={{ color: COLORS.am, flexShrink: 0 }}
-          />
+          <Icon name="adjustments" size={18} style={{ color: COLORS.am, flexShrink: 0 }} />
         </div>
-        {showDrop && dropResults.length > 0 && (
-          <div
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: 0,
-              right: 0,
-              background: "#fff",
-              borderRadius: 16,
-              border: "1px solid rgba(180,140,100,0.16)",
-              overflow: "hidden",
-              zIndex: 50,
-              marginTop: 4,
-              boxShadow: "0 8px 28px rgba(90,50,20,0.13)",
-            }}
-          >
-            {dropResults.map((r) => (
-              <div
-                key={r.id}
-                onMouseDown={() => {
-                  goDetail(r.id);
-                  setSearch("");
-                }}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 12,
-                  padding: "12px 16px",
-                  borderBottom: "1px solid rgba(180,140,100,0.16)",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.background = COLORS.cr2)
-                }
-                onMouseLeave={(e) => (e.currentTarget.style.background = "")}
-              >
-                <div
-                  style={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: 10,
-                    background: r.bg,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: 22,
-                    flexShrink: 0,
-                  }}
-                >
-                  {r.emoji}
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontSize: 13,
-                      fontWeight: 600,
-                      color: COLORS.tx,
-                      marginBottom: 2,
-                    }}
-                  >
-                    {r.name}
-                  </div>
-                  <div style={{ fontSize: 11, color: COLORS.tx3 }}>
-                    {r.place} · {r.price}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
       </div>
+
       {/* Chips */}
       <div
         style={{
@@ -261,13 +135,7 @@ const Explore = ({ goDetail, filterKw }) => {
           marginBottom: 16,
         }}
       >
-        {[
-          "Semua",
-          "Terdekat",
-          "Terpopuler",
-          "Budget <20k",
-          "Buka Sekarang",
-        ].map((c) => (
+        {["Semua", "Terdekat", "Terpopuler", "Budget <20k", "Buka Sekarang"].map((c) => (
           <div
             key={c}
             onClick={() => setChip(c)}
@@ -288,7 +156,8 @@ const Explore = ({ goDetail, filterKw }) => {
           </div>
         ))}
       </div>
-      {/* Nearby cards */}
+
+      {/* Nearby */}
       <div
         style={{
           fontSize: 11,
@@ -299,7 +168,7 @@ const Explore = ({ goDetail, filterKw }) => {
           marginBottom: 12,
         }}
       >
-        Terdekat dari Kamu
+        Teratas dari Database
       </div>
       <div
         style={{
@@ -310,15 +179,10 @@ const Explore = ({ goDetail, filterKw }) => {
           marginBottom: 20,
         }}
       >
-        {[
-          ["angkringan", "🍢", "Angkringan Lek Man", "0.4 km", "Malam", "4.9"],
-          ["bakmi", "🍜", "Bakmi Mbah Gito", "0.8 km", "Malam", "4.6"],
-          ["gudeg", "🍛", "Gudeg Bu Tjitro", "1.2 km", "Pagi", "4.8"],
-          ["soto", "🥣", "Soto Kadipiro", "2.1 km", "Pagi", "4.7"],
-        ].map(([id, emoji, name, dist, tag, rat]) => (
+        {nearby.map((r) => (
           <div
-            key={id}
-            onClick={() => goDetail(id)}
+            key={r.id}
+            onClick={() => goDetail(r.id)}
             style={{
               flexShrink: 0,
               width: 155,
@@ -329,7 +193,7 @@ const Explore = ({ goDetail, filterKw }) => {
               cursor: "pointer",
             }}
           >
-            <div style={{ fontSize: 28, marginBottom: 6 }}>{emoji}</div>
+            <div style={{ fontSize: 28, marginBottom: 6 }}>🍽️</div>
             <div
               style={{
                 fontFamily: "'Cormorant Garamond',serif",
@@ -337,36 +201,29 @@ const Explore = ({ goDetail, filterKw }) => {
                 fontWeight: 600,
                 color: COLORS.tx,
                 marginBottom: 3,
+                overflow: "hidden",
+                display: "-webkit-box",
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: "vertical",
               }}
             >
-              {name}
-            </div>
-            <div
-              style={{
-                fontSize: 11,
-                color: COLORS.tx3,
-                marginBottom: 6,
-                display: "flex",
-                alignItems: "center",
-                gap: 4,
-              }}
-            >
-              <Icon name="map-pin" size={11} style={{ color: COLORS.tx3 }} />{" "}
-              {dist}
+              {r.name}
             </div>
             <div
               style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
+                marginTop: 6,
               }}
             >
-              <Tag label={tag} type="" />
-              <Rat val={rat} />
+              <Tag label={r.tags?.[0] || "Kuliner"} type={tagColor(r.tags?.[0])} />
+              <Rat val={r.rating} />
             </div>
           </div>
         ))}
       </div>
+
       {/* List */}
       <div
         style={{
@@ -378,30 +235,32 @@ const Explore = ({ goDetail, filterKw }) => {
           marginBottom: 12,
         }}
       >
-        {q ? `${filtered.length} hasil ditemukan` : "Semua Kuliner"}
+        {search ? `${filtered.length} hasil ditemukan` : "Semua Kuliner"}
       </div>
-      {filtered.length === 0 ? (
+
+      {loading ? (
+        <div style={{ textAlign: "center", padding: "40px 20px", color: COLORS.tx3 }}>
+          Memuat data...
+        </div>
+      ) : filtered.length === 0 ? (
         <div style={{ textAlign: "center", padding: "40px 20px" }}>
-          <div style={{ fontSize: 40, marginBottom: 10, color: COLORS.tx3 }}>
-            <Icon name="mood-empty" size={40} style={{ color: COLORS.tx3 }} />
-          </div>
           <p style={{ fontSize: 14, color: COLORS.tx3 }}>
             Tidak ada hasil untuk pencarian ini
           </p>
         </div>
       ) : (
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {filtered.map(([id, bg, emoji, name, place, tags, price, rat]) => (
+          {filtered.map((r) => (
             <FoodCard
-              key={id}
-              thumbBg={bg}
-              emoji={emoji}
-              name={name}
-              place={place}
-              tags={tags}
-              price={price}
-              rating={rat}
-              onClick={() => goDetail(id)}
+              key={r.id}
+              thumbBg={"#FAE8D8"}
+              emoji={"🍽️"}
+              name={r.name}
+              place={r.open_period?.split(";")[0]?.replace("weekday:", "").trim() || "Yogyakarta"}
+              tags={r.tags?.slice(0, 2).map((t) => [t, tagColor(t)]) || []}
+              price={`⭐ ${r.rating}`}
+              rating={r.rating}
+              onClick={() => goDetail(r.id)}
             />
           ))}
         </div>
