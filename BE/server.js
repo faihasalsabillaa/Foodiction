@@ -298,6 +298,43 @@ app.get('/restaurants/nearby', async (req, res) => {
   }
 });
 
+app.get('/restaurants', async (req, res) => {
+  const search = req.query.search ? req.query.search.toLowerCase() : null;
+  const page = Math.max(1, Number(req.query.page) || 1);
+  const limit = Math.min(100, Number(req.query.limit) || 50);
+  const offset = (page - 1) * limit;
+
+  try {
+    let baseWhere = 'WHERE 1=1';
+    const params = [];
+
+    if (search) {
+      params.push(`%${search}%`);
+      baseWhere += ` AND (LOWER(name) LIKE $${params.length} OR LOWER(description) LIKE $${params.length})`;
+    }
+
+    const countResult = await pool.query(
+      `SELECT COUNT(*) AS total FROM restaurants ${baseWhere}`,
+      params
+    );
+    const total = Number(countResult.rows[0].total);
+
+    params.push(limit, offset);
+    const result = await pool.query(
+      `SELECT * FROM restaurants ${baseWhere} ORDER BY rating DESC NULLS LAST LIMIT $${params.length - 1} OFFSET $${params.length}`,
+      params
+    );
+
+    return res.json(successResponse({
+      restaurants: result.rows,
+      pagination: { page, limit, total, totalPages: Math.ceil(total / limit) }
+    }));
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json(errorResponse('Failed to fetch restaurants.'));
+  }
+});
+
 app.get('/restaurants/:id', async (req, res) => {
   const { id } = req.params;
   try {
