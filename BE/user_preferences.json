@@ -1,0 +1,3115 @@
+[
+  {
+    "user_id": "12c883f5-7fed-41b0-9f25-9dd5c3faffa8",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.879274+07",
+    "updated_at": "2026-05-31 17:47:33.879274+07"
+  },
+  {
+    "user_id": "a84263ca-5b7f-4068-b729-cf18b59396f8",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.884666+07",
+    "updated_at": "2026-05-31 17:47:33.884666+07"
+  },
+  {
+    "user_id": "6466686c-1c49-4ae2-9c15-1097d17e820f",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.885589+07",
+    "updated_at": "2026-05-31 17:47:33.885589+07"
+  },
+  {
+    "user_id": "8188ffe7-3a1a-46ce-93be-2d2cfa3be923",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.886752+07",
+    "updated_at": "2026-05-31 17:47:33.886752+07"
+  },
+  {
+    "user_id": "393c5fdf-5948-4925-979a-71c0e1cc4c92",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.887874+07",
+    "updated_at": "2026-05-31 17:47:33.887874+07"
+  },
+  {
+    "user_id": "c596c2f8-569b-4d2e-84a3-5ffc3ccc2985",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.889018+07",
+    "updated_at": "2026-05-31 17:47:33.889018+07"
+  },
+  {
+    "user_id": "b23f3c2b-838e-4285-92b1-d1e000c77f9f",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.889865+07",
+    "updated_at": "2026-05-31 17:47:33.889865+07"
+  },
+  {
+    "user_id": "2a06cfc3-6abd-43f4-8fe3-448423c67a63",
+    "taste_preferences": [
+      "kering",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.890465+07",
+    "updated_at": "2026-05-31 17:47:33.890465+07"
+  },
+  {
+    "user_id": "d86d1b02-c677-438d-ad2d-cbacf5597a15",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.89132+07",
+    "updated_at": "2026-05-31 17:47:33.89132+07"
+  },
+  {
+    "user_id": "bbcb299e-5b24-4d4f-be42-76b404f267a3",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.892029+07",
+    "updated_at": "2026-05-31 17:47:33.892029+07"
+  },
+  {
+    "user_id": "d910f86b-9e87-4ffa-9d69-acd4ec5d30f9",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.892744+07",
+    "updated_at": "2026-05-31 17:47:33.892744+07"
+  },
+  {
+    "user_id": "2120daf4-7426-41bc-a34e-f16db911c455",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.8934+07",
+    "updated_at": "2026-05-31 17:47:33.8934+07"
+  },
+  {
+    "user_id": "3eef4ac8-f8df-4b74-b978-e93b15e411b3",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.894197+07",
+    "updated_at": "2026-05-31 17:47:33.894197+07"
+  },
+  {
+    "user_id": "3bed65f1-34e3-4de2-915b-bab0f38ac7f5",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.894799+07",
+    "updated_at": "2026-05-31 17:47:33.894799+07"
+  },
+  {
+    "user_id": "c3567fde-561b-4b5f-a7a2-3ce2bfdf9bfb",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.89527+07",
+    "updated_at": "2026-05-31 17:47:33.89527+07"
+  },
+  {
+    "user_id": "b2365ee9-1c67-4b80-b730-736acd8a9d4e",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.895692+07",
+    "updated_at": "2026-05-31 17:47:33.895692+07"
+  },
+  {
+    "user_id": "4c8f8fa2-8519-4698-a7fd-6a204248ce8d",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.896243+07",
+    "updated_at": "2026-05-31 17:47:33.896243+07"
+  },
+  {
+    "user_id": "247b63eb-6a2d-4a82-ba47-9d9150901bd3",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.896893+07",
+    "updated_at": "2026-05-31 17:47:33.896893+07"
+  },
+  {
+    "user_id": "49ee12da-98ce-4d11-a03d-e47c3f49a7b1",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.897443+07",
+    "updated_at": "2026-05-31 17:47:33.897443+07"
+  },
+  {
+    "user_id": "313c30f7-0bd5-42ac-b967-7cebd43cb932",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.898092+07",
+    "updated_at": "2026-05-31 17:47:33.898092+07"
+  },
+  {
+    "user_id": "e66d7611-00a2-4565-9b36-7904f5caae53",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.898616+07",
+    "updated_at": "2026-05-31 17:47:33.898616+07"
+  },
+  {
+    "user_id": "f806ae5d-782b-42fb-a790-9d3fa1b88be6",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.899133+07",
+    "updated_at": "2026-05-31 17:47:33.899133+07"
+  },
+  {
+    "user_id": "277eff36-2987-46e8-b637-bb7c749cc27c",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.899667+07",
+    "updated_at": "2026-05-31 17:47:33.899667+07"
+  },
+  {
+    "user_id": "17c7c2d6-d4a2-4b08-833d-7397437df6c0",
+    "taste_preferences": [
+      "manis",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.900211+07",
+    "updated_at": "2026-05-31 17:47:33.900211+07"
+  },
+  {
+    "user_id": "7359e392-09ce-4224-a570-d4074f4ff7e0",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.900724+07",
+    "updated_at": "2026-05-31 17:47:33.900724+07"
+  },
+  {
+    "user_id": "d2c0014b-58e1-4b91-b6cb-37762172180f",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.901237+07",
+    "updated_at": "2026-05-31 17:47:33.901237+07"
+  },
+  {
+    "user_id": "48f26994-402d-410b-b86f-a06f92db26e7",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.901744+07",
+    "updated_at": "2026-05-31 17:47:33.901744+07"
+  },
+  {
+    "user_id": "57bb34b4-2399-4b76-9ddf-a0791153f026",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.902263+07",
+    "updated_at": "2026-05-31 17:47:33.902263+07"
+  },
+  {
+    "user_id": "9969c7ef-69a2-4265-a216-4e39f02e6a9f",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.903124+07",
+    "updated_at": "2026-05-31 17:47:33.903124+07"
+  },
+  {
+    "user_id": "177547e9-82c2-4d49-9b4a-57ef08ff6f97",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.903635+07",
+    "updated_at": "2026-05-31 17:47:33.903635+07"
+  },
+  {
+    "user_id": "bde88e2e-ecbf-45b9-80c1-bcf8bf0b8e0b",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.904527+07",
+    "updated_at": "2026-05-31 17:47:33.904527+07"
+  },
+  {
+    "user_id": "32b8cc93-8eea-42c7-bf40-8f2cab802272",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.905014+07",
+    "updated_at": "2026-05-31 17:47:33.905014+07"
+  },
+  {
+    "user_id": "31dd3d7f-3731-4417-9a77-a328f557699e",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.905596+07",
+    "updated_at": "2026-05-31 17:47:33.905596+07"
+  },
+  {
+    "user_id": "eca6d94d-d278-407b-ba18-464eeed672ff",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.906038+07",
+    "updated_at": "2026-05-31 17:47:33.906038+07"
+  },
+  {
+    "user_id": "71c01e75-03ed-4327-9f1e-2bc1f266cb63",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.906462+07",
+    "updated_at": "2026-05-31 17:47:33.906462+07"
+  },
+  {
+    "user_id": "46d5476d-3747-47e7-ba93-157cd5dcb29e",
+    "taste_preferences": [
+      "kering",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.906888+07",
+    "updated_at": "2026-05-31 17:47:33.906888+07"
+  },
+  {
+    "user_id": "31d5e162-5bdc-4730-a721-eb54e312ee7c",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.907311+07",
+    "updated_at": "2026-05-31 17:47:33.907311+07"
+  },
+  {
+    "user_id": "7b37aaa1-a1b8-474b-b5b1-7185bab28ba5",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.907734+07",
+    "updated_at": "2026-05-31 17:47:33.907734+07"
+  },
+  {
+    "user_id": "5c5e319b-2f5f-4669-a165-64973baefe09",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.908159+07",
+    "updated_at": "2026-05-31 17:47:33.908159+07"
+  },
+  {
+    "user_id": "1f33418b-ebab-4690-aaca-07d7e505c365",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.908653+07",
+    "updated_at": "2026-05-31 17:47:33.908653+07"
+  },
+  {
+    "user_id": "b026e68e-7bb5-44ec-95d6-b4af6374e0eb",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.909093+07",
+    "updated_at": "2026-05-31 17:47:33.909093+07"
+  },
+  {
+    "user_id": "93d353b9-d8ac-4ad4-8277-adac1ee6beae",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.909605+07",
+    "updated_at": "2026-05-31 17:47:33.909605+07"
+  },
+  {
+    "user_id": "3ea81cc8-6e26-48a3-930d-e4e9cbb15525",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.910035+07",
+    "updated_at": "2026-05-31 17:47:33.910035+07"
+  },
+  {
+    "user_id": "dd324699-3189-4227-932b-c0a70c5f4097",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.910429+07",
+    "updated_at": "2026-05-31 17:47:33.910429+07"
+  },
+  {
+    "user_id": "4bfcf45d-67ed-45d1-8a16-53e4b046f10d",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.910878+07",
+    "updated_at": "2026-05-31 17:47:33.910878+07"
+  },
+  {
+    "user_id": "92d0f2d9-14b4-4730-9fb3-fe5d1d070b20",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.911316+07",
+    "updated_at": "2026-05-31 17:47:33.911316+07"
+  },
+  {
+    "user_id": "d7a93cb1-3f34-4306-8709-bff8082eae72",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.91171+07",
+    "updated_at": "2026-05-31 17:47:33.91171+07"
+  },
+  {
+    "user_id": "10e4f18e-e892-44df-ae6d-26b18ff8811e",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.912137+07",
+    "updated_at": "2026-05-31 17:47:33.912137+07"
+  },
+  {
+    "user_id": "fa35add5-8554-4e83-8f90-ddb80c46f7ca",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.912551+07",
+    "updated_at": "2026-05-31 17:47:33.912551+07"
+  },
+  {
+    "user_id": "568ebf65-80ab-4dcf-a544-cc8632434aae",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.91307+07",
+    "updated_at": "2026-05-31 17:47:33.91307+07"
+  },
+  {
+    "user_id": "38a63eef-d8e3-45a7-ac4a-d8b8d1ce1c4a",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.913502+07",
+    "updated_at": "2026-05-31 17:47:33.913502+07"
+  },
+  {
+    "user_id": "562dcb6a-5d05-46f5-a8a0-6c153511c88e",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.914132+07",
+    "updated_at": "2026-05-31 17:47:33.914132+07"
+  },
+  {
+    "user_id": "5c617446-acbe-433d-9cb1-fba82ae2c662",
+    "taste_preferences": [
+      "gurih",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.914572+07",
+    "updated_at": "2026-05-31 17:47:33.914572+07"
+  },
+  {
+    "user_id": "76289d9b-110a-4d97-af2b-8a824dd96a77",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.914947+07",
+    "updated_at": "2026-05-31 17:47:33.914947+07"
+  },
+  {
+    "user_id": "69159892-4eed-47f7-aa5a-4ca127f73ce2",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.915319+07",
+    "updated_at": "2026-05-31 17:47:33.915319+07"
+  },
+  {
+    "user_id": "22c744f1-5c32-4132-8ffc-f46e84753aed",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.915695+07",
+    "updated_at": "2026-05-31 17:47:33.915695+07"
+  },
+  {
+    "user_id": "0a6dede4-75e3-4222-b948-75b888b5e446",
+    "taste_preferences": [
+      "pedas",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.916067+07",
+    "updated_at": "2026-05-31 17:47:33.916067+07"
+  },
+  {
+    "user_id": "44eb8ecf-6a22-4330-9202-978ca6704ba6",
+    "taste_preferences": [
+      "pedas",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.916445+07",
+    "updated_at": "2026-05-31 17:47:33.916445+07"
+  },
+  {
+    "user_id": "664ae8bc-87ec-464e-94bd-66c0e6d3eec4",
+    "taste_preferences": [
+      "kering",
+      "gurih"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.916829+07",
+    "updated_at": "2026-05-31 17:47:33.916829+07"
+  },
+  {
+    "user_id": "b5ad7098-bc07-43cd-b8d7-b37de242b343",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.917218+07",
+    "updated_at": "2026-05-31 17:47:33.917218+07"
+  },
+  {
+    "user_id": "887ac379-abc5-41fb-a600-1ce3db7556a2",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.91761+07",
+    "updated_at": "2026-05-31 17:47:33.91761+07"
+  },
+  {
+    "user_id": "d17f7416-9f39-47e2-853c-7001efe20f46",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.918142+07",
+    "updated_at": "2026-05-31 17:47:33.918142+07"
+  },
+  {
+    "user_id": "0c4503e5-9b3e-40af-ab41-f7718e78df64",
+    "taste_preferences": [
+      "manis",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.918545+07",
+    "updated_at": "2026-05-31 17:47:33.918545+07"
+  },
+  {
+    "user_id": "53172dea-e249-442d-8293-bea01900a4c4",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.918928+07",
+    "updated_at": "2026-05-31 17:47:33.918928+07"
+  },
+  {
+    "user_id": "6fde14c7-d7a1-42bb-ad7d-c69e3a85b26c",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.919378+07",
+    "updated_at": "2026-05-31 17:47:33.919378+07"
+  },
+  {
+    "user_id": "67a32ff1-8831-4c9f-940b-c976761f7911",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.919922+07",
+    "updated_at": "2026-05-31 17:47:33.919922+07"
+  },
+  {
+    "user_id": "b69918dd-7c48-46bc-9249-98af86212ebb",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.9203+07",
+    "updated_at": "2026-05-31 17:47:33.9203+07"
+  },
+  {
+    "user_id": "3e8a0926-b6ec-4a98-96a1-4873bad353d7",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.920725+07",
+    "updated_at": "2026-05-31 17:47:33.920725+07"
+  },
+  {
+    "user_id": "dcddd787-d2f9-476d-a3f6-bf6ee895be8b",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.9211+07",
+    "updated_at": "2026-05-31 17:47:33.9211+07"
+  },
+  {
+    "user_id": "7b2410fb-f8e1-4071-8bde-8ea4801e37f7",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.921459+07",
+    "updated_at": "2026-05-31 17:47:33.921459+07"
+  },
+  {
+    "user_id": "4e3e04d4-5309-4792-a8a5-1164c1578090",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.921818+07",
+    "updated_at": "2026-05-31 17:47:33.921818+07"
+  },
+  {
+    "user_id": "c60b5b79-36b8-4f20-a935-33d264891650",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.92285+07",
+    "updated_at": "2026-05-31 17:47:33.92285+07"
+  },
+  {
+    "user_id": "d12589b3-adf9-4d71-82b2-121fdab4968e",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.923197+07",
+    "updated_at": "2026-05-31 17:47:33.923197+07"
+  },
+  {
+    "user_id": "a7c326f2-e269-46e3-baa7-dea00443326a",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.923558+07",
+    "updated_at": "2026-05-31 17:47:33.923558+07"
+  },
+  {
+    "user_id": "bdf14775-c07e-497d-ab74-1b74b2904130",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.923913+07",
+    "updated_at": "2026-05-31 17:47:33.923913+07"
+  },
+  {
+    "user_id": "019c0b04-91e4-439e-b835-bbae8aeb7593",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.924242+07",
+    "updated_at": "2026-05-31 17:47:33.924242+07"
+  },
+  {
+    "user_id": "e10ce9f0-af0e-48fb-b6d2-ab46b1b0c365",
+    "taste_preferences": [
+      "pedas",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.924584+07",
+    "updated_at": "2026-05-31 17:47:33.924584+07"
+  },
+  {
+    "user_id": "2f1fb54b-f67e-44e0-b7d0-ff90f3b715f5",
+    "taste_preferences": [
+      "kering",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.924913+07",
+    "updated_at": "2026-05-31 17:47:33.924913+07"
+  },
+  {
+    "user_id": "9464db73-67e2-45e1-9432-f59710bdc8d3",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.925485+07",
+    "updated_at": "2026-05-31 17:47:33.925485+07"
+  },
+  {
+    "user_id": "d9b0603c-fdc9-4a25-bc29-a509b0a85d18",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.925967+07",
+    "updated_at": "2026-05-31 17:47:33.925967+07"
+  },
+  {
+    "user_id": "07ae58ba-0aaf-41b2-9d73-a9b0b3b00805",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.926401+07",
+    "updated_at": "2026-05-31 17:47:33.926401+07"
+  },
+  {
+    "user_id": "f8c5dfc1-f373-4d94-9525-483cbf80dc4e",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.926793+07",
+    "updated_at": "2026-05-31 17:47:33.926793+07"
+  },
+  {
+    "user_id": "7de8a39c-3d91-45be-8995-450f57c725a2",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.92718+07",
+    "updated_at": "2026-05-31 17:47:33.92718+07"
+  },
+  {
+    "user_id": "440008a1-2c88-4b76-a652-231d5776e0e1",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.927649+07",
+    "updated_at": "2026-05-31 17:47:33.927649+07"
+  },
+  {
+    "user_id": "7ced633a-1b58-4c00-8997-d4a46f2e5f8a",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.928093+07",
+    "updated_at": "2026-05-31 17:47:33.928093+07"
+  },
+  {
+    "user_id": "9b4dfaa9-726e-4aef-9787-16a979707544",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.928504+07",
+    "updated_at": "2026-05-31 17:47:33.928504+07"
+  },
+  {
+    "user_id": "fe123db4-594d-46bd-8de3-4282808c142e",
+    "taste_preferences": [
+      "pedas",
+      "gurih"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.928913+07",
+    "updated_at": "2026-05-31 17:47:33.928913+07"
+  },
+  {
+    "user_id": "30ace203-bb84-4bbb-bf6a-6b1bc6eeea23",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.929293+07",
+    "updated_at": "2026-05-31 17:47:33.929293+07"
+  },
+  {
+    "user_id": "055dc1db-038b-43b6-9fa0-86a98ce3b2e8",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.929679+07",
+    "updated_at": "2026-05-31 17:47:33.929679+07"
+  },
+  {
+    "user_id": "99a6f43c-8808-418e-92c6-e96200c24493",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.930082+07",
+    "updated_at": "2026-05-31 17:47:33.930082+07"
+  },
+  {
+    "user_id": "d2092946-e3ef-4b3d-8217-1cfa11692fae",
+    "taste_preferences": [
+      "gurih",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.930453+07",
+    "updated_at": "2026-05-31 17:47:33.930453+07"
+  },
+  {
+    "user_id": "00b5afa6-b0d2-4081-a2cc-9be484feb2bf",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.93082+07",
+    "updated_at": "2026-05-31 17:47:33.93082+07"
+  },
+  {
+    "user_id": "49586c17-38f4-41e0-aa0d-4ddd3af98d42",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.931179+07",
+    "updated_at": "2026-05-31 17:47:33.931179+07"
+  },
+  {
+    "user_id": "dc59ec86-38e6-4967-821c-9d464d7e7353",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.931528+07",
+    "updated_at": "2026-05-31 17:47:33.931528+07"
+  },
+  {
+    "user_id": "865ff432-55d7-471b-9165-4f2d0f49685d",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.931884+07",
+    "updated_at": "2026-05-31 17:47:33.931884+07"
+  },
+  {
+    "user_id": "3770ec25-2b03-46d8-9449-aa6740920bf3",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.932778+07",
+    "updated_at": "2026-05-31 17:47:33.932778+07"
+  },
+  {
+    "user_id": "2dc07cbc-0abc-4cf1-aa60-26a5afc842a3",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.933117+07",
+    "updated_at": "2026-05-31 17:47:33.933117+07"
+  },
+  {
+    "user_id": "a5a9f656-398f-40df-8d77-e2e3a4347902",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.933479+07",
+    "updated_at": "2026-05-31 17:47:33.933479+07"
+  },
+  {
+    "user_id": "6ac3ef47-9432-475a-bd05-faf5e0b0c825",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.933855+07",
+    "updated_at": "2026-05-31 17:47:33.933855+07"
+  },
+  {
+    "user_id": "cd18f31c-95b3-4231-8c5b-477d4a168a2f",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.934204+07",
+    "updated_at": "2026-05-31 17:47:33.934204+07"
+  },
+  {
+    "user_id": "7df93691-62b5-43fd-b865-5f3ae3c476a4",
+    "taste_preferences": [
+      "manis",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.934564+07",
+    "updated_at": "2026-05-31 17:47:33.934564+07"
+  },
+  {
+    "user_id": "723b7064-c642-4c77-bddf-13742e9d633b",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.934925+07",
+    "updated_at": "2026-05-31 17:47:33.934925+07"
+  },
+  {
+    "user_id": "f4c1013c-74ee-48de-a4e6-5f84ba435f86",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.935284+07",
+    "updated_at": "2026-05-31 17:47:33.935284+07"
+  },
+  {
+    "user_id": "4fac7423-5ec9-4884-823c-255c3d7b03a8",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.935669+07",
+    "updated_at": "2026-05-31 17:47:33.935669+07"
+  },
+  {
+    "user_id": "292e0318-2e03-43a0-b22d-b20720ad35ce",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.936211+07",
+    "updated_at": "2026-05-31 17:47:33.936211+07"
+  },
+  {
+    "user_id": "d308af29-697b-4e1d-8fb6-fe224019222a",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.936589+07",
+    "updated_at": "2026-05-31 17:47:33.936589+07"
+  },
+  {
+    "user_id": "45f17dee-3c45-4a0b-8a67-f1869bd54227",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.936961+07",
+    "updated_at": "2026-05-31 17:47:33.936961+07"
+  },
+  {
+    "user_id": "4786da8e-394f-480c-b3c6-cb638fbb1282",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.937334+07",
+    "updated_at": "2026-05-31 17:47:33.937334+07"
+  },
+  {
+    "user_id": "9194bf1d-0ec0-4e4e-82e6-0fd1eae2980d",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.937713+07",
+    "updated_at": "2026-05-31 17:47:33.937713+07"
+  },
+  {
+    "user_id": "7f52265c-cd94-430b-a126-94a3d18d0269",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.938099+07",
+    "updated_at": "2026-05-31 17:47:33.938099+07"
+  },
+  {
+    "user_id": "9bd59a55-204d-4915-811e-abc852a03551",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.938473+07",
+    "updated_at": "2026-05-31 17:47:33.938473+07"
+  },
+  {
+    "user_id": "d361c2e4-b549-43da-95fa-629e340c4016",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.938842+07",
+    "updated_at": "2026-05-31 17:47:33.938842+07"
+  },
+  {
+    "user_id": "1ca774e6-dc77-4d94-a092-7f9cadfa4c73",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.939211+07",
+    "updated_at": "2026-05-31 17:47:33.939211+07"
+  },
+  {
+    "user_id": "f8260bdb-c4cb-4d1a-89d3-8eeb8ad37696",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.939593+07",
+    "updated_at": "2026-05-31 17:47:33.939593+07"
+  },
+  {
+    "user_id": "1cdec6f6-a541-4f93-9cde-f52cbc01893a",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.93995+07",
+    "updated_at": "2026-05-31 17:47:33.93995+07"
+  },
+  {
+    "user_id": "72b356e8-0412-4f4d-875f-45c9eeb6d362",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.940305+07",
+    "updated_at": "2026-05-31 17:47:33.940305+07"
+  },
+  {
+    "user_id": "ff3caa98-b775-4df6-bc3b-5cd432903d8f",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.941014+07",
+    "updated_at": "2026-05-31 17:47:33.941014+07"
+  },
+  {
+    "user_id": "021d1567-5644-4ac0-ba6e-788c2c1e268c",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.94139+07",
+    "updated_at": "2026-05-31 17:47:33.94139+07"
+  },
+  {
+    "user_id": "954473b2-9666-4d72-9f25-d397783d01bd",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.941754+07",
+    "updated_at": "2026-05-31 17:47:33.941754+07"
+  },
+  {
+    "user_id": "518613d9-3cab-4916-89eb-dccece4b4887",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.942111+07",
+    "updated_at": "2026-05-31 17:47:33.942111+07"
+  },
+  {
+    "user_id": "61b3a783-65cb-4c46-b006-dee68e8a0494",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.942459+07",
+    "updated_at": "2026-05-31 17:47:33.942459+07"
+  },
+  {
+    "user_id": "54d692b3-2427-41b8-9796-fe5c292cf6eb",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.942808+07",
+    "updated_at": "2026-05-31 17:47:33.942808+07"
+  },
+  {
+    "user_id": "c4b71ee7-e187-48cd-863b-9f0466df5c28",
+    "taste_preferences": [
+      "pedas",
+      "kering"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.943151+07",
+    "updated_at": "2026-05-31 17:47:33.943151+07"
+  },
+  {
+    "user_id": "780d70e5-02bc-40a5-a93e-23513af05b4a",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.943649+07",
+    "updated_at": "2026-05-31 17:47:33.943649+07"
+  },
+  {
+    "user_id": "6239fd64-affb-48cf-9a4f-9160dac5e75d",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.94402+07",
+    "updated_at": "2026-05-31 17:47:33.94402+07"
+  },
+  {
+    "user_id": "a39c2c9b-80e0-4fdd-82e2-3108ab74cdee",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.944393+07",
+    "updated_at": "2026-05-31 17:47:33.944393+07"
+  },
+  {
+    "user_id": "524be154-8174-4ff6-9da8-595e9c4e88fc",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.944786+07",
+    "updated_at": "2026-05-31 17:47:33.944786+07"
+  },
+  {
+    "user_id": "bfea9234-0630-4eaf-9cc1-7bb906792484",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.94518+07",
+    "updated_at": "2026-05-31 17:47:33.94518+07"
+  },
+  {
+    "user_id": "353af30a-7b59-43ff-86c1-9a30bfcde892",
+    "taste_preferences": [
+      "pedas",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.945584+07",
+    "updated_at": "2026-05-31 17:47:33.945584+07"
+  },
+  {
+    "user_id": "6eeda761-97c8-4e8a-97f2-b370b106addd",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.946002+07",
+    "updated_at": "2026-05-31 17:47:33.946002+07"
+  },
+  {
+    "user_id": "b6b06d95-4a1d-4795-a26a-74afa9cecb2d",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.946396+07",
+    "updated_at": "2026-05-31 17:47:33.946396+07"
+  },
+  {
+    "user_id": "4d1a94c9-c1ec-4053-be0c-9cba77929a50",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.946799+07",
+    "updated_at": "2026-05-31 17:47:33.946799+07"
+  },
+  {
+    "user_id": "1e76438a-d4d0-4f41-a9b8-567553c1d5dc",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.947206+07",
+    "updated_at": "2026-05-31 17:47:33.947206+07"
+  },
+  {
+    "user_id": "f75d9035-1ea6-46b3-a70d-860d03be5fba",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.947595+07",
+    "updated_at": "2026-05-31 17:47:33.947595+07"
+  },
+  {
+    "user_id": "7f0c707f-8859-4039-aee3-21359e273325",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.947961+07",
+    "updated_at": "2026-05-31 17:47:33.947961+07"
+  },
+  {
+    "user_id": "a229a621-e989-499f-a702-bde9079de4ef",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.948364+07",
+    "updated_at": "2026-05-31 17:47:33.948364+07"
+  },
+  {
+    "user_id": "ab910dd8-bdca-4955-8dfc-bd927275b11c",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.948751+07",
+    "updated_at": "2026-05-31 17:47:33.948751+07"
+  },
+  {
+    "user_id": "67b69ebf-8f01-40e9-88a1-f7d4d2b2ea9c",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.949138+07",
+    "updated_at": "2026-05-31 17:47:33.949138+07"
+  },
+  {
+    "user_id": "ca996a40-c4e6-487c-8372-1470ad7706d8",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.932427+07",
+    "updated_at": "2026-05-31 17:47:33.932427+07"
+  },
+  {
+    "user_id": "8e3dd6c5-bcb8-47db-93f4-eb2bd3e14c87",
+    "taste_preferences": [
+      "pedas",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.949479+07",
+    "updated_at": "2026-05-31 17:47:33.949479+07"
+  },
+  {
+    "user_id": "493557cd-4dca-45a8-9c7b-c52093424b05",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.949879+07",
+    "updated_at": "2026-05-31 17:47:33.949879+07"
+  },
+  {
+    "user_id": "29342487-a5ec-4814-a4ae-0b6dde246ea9",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.950199+07",
+    "updated_at": "2026-05-31 17:47:33.950199+07"
+  },
+  {
+    "user_id": "bd7c532c-fee2-43a4-88aa-733fe414195c",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.950503+07",
+    "updated_at": "2026-05-31 17:47:33.950503+07"
+  },
+  {
+    "user_id": "840c08d8-af7f-45ef-81d4-a33047a195a4",
+    "taste_preferences": [
+      "gurih",
+      "kering"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.950794+07",
+    "updated_at": "2026-05-31 17:47:33.950794+07"
+  },
+  {
+    "user_id": "3dab76ce-dd9e-42da-b62a-e8f823ebde67",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.951184+07",
+    "updated_at": "2026-05-31 17:47:33.951184+07"
+  },
+  {
+    "user_id": "2bd9324f-847a-49de-9a56-af5a0b543538",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.951484+07",
+    "updated_at": "2026-05-31 17:47:33.951484+07"
+  },
+  {
+    "user_id": "8a5860b8-0a5a-4840-99aa-d553dc4f0ec5",
+    "taste_preferences": [
+      "pedas",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.951778+07",
+    "updated_at": "2026-05-31 17:47:33.951778+07"
+  },
+  {
+    "user_id": "3a16f24f-ad22-4f8b-a192-0d985269e5cd",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.952139+07",
+    "updated_at": "2026-05-31 17:47:33.952139+07"
+  },
+  {
+    "user_id": "7501f352-85f5-419c-a180-51f0b2baba60",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.952437+07",
+    "updated_at": "2026-05-31 17:47:33.952437+07"
+  },
+  {
+    "user_id": "4ffe128a-c4fc-4c3a-8e4f-0404bcde195a",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.952813+07",
+    "updated_at": "2026-05-31 17:47:33.952813+07"
+  },
+  {
+    "user_id": "26e3dd09-f0d7-4626-8e28-d1759b654a7e",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.953139+07",
+    "updated_at": "2026-05-31 17:47:33.953139+07"
+  },
+  {
+    "user_id": "4887084e-e354-45ff-b4e0-60f93574ed7f",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.953589+07",
+    "updated_at": "2026-05-31 17:47:33.953589+07"
+  },
+  {
+    "user_id": "0f755ae7-49a4-4b92-996c-a60baeaf073e",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.953891+07",
+    "updated_at": "2026-05-31 17:47:33.953891+07"
+  },
+  {
+    "user_id": "c6804c47-f383-45d3-98d4-6abb11622537",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.954217+07",
+    "updated_at": "2026-05-31 17:47:33.954217+07"
+  },
+  {
+    "user_id": "fe0ca23b-d511-486a-93c8-8746c60f6db4",
+    "taste_preferences": [
+      "gurih",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.954571+07",
+    "updated_at": "2026-05-31 17:47:33.954571+07"
+  },
+  {
+    "user_id": "5eda7ac5-ff7c-4b27-ab85-7134ee5d8c2a",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.954878+07",
+    "updated_at": "2026-05-31 17:47:33.954878+07"
+  },
+  {
+    "user_id": "87b4571c-5804-46c3-bc49-88726135ccce",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.955153+07",
+    "updated_at": "2026-05-31 17:47:33.955153+07"
+  },
+  {
+    "user_id": "66b71290-87d6-4b29-a867-6311f783f053",
+    "taste_preferences": [
+      "pedas",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.955422+07",
+    "updated_at": "2026-05-31 17:47:33.955422+07"
+  },
+  {
+    "user_id": "1a02618c-9f7c-4bdc-b302-ea072ad3ec8a",
+    "taste_preferences": [
+      "pedas",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.955727+07",
+    "updated_at": "2026-05-31 17:47:33.955727+07"
+  },
+  {
+    "user_id": "17a77be1-6d07-456c-a384-fcd7d82a588b",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.95604+07",
+    "updated_at": "2026-05-31 17:47:33.95604+07"
+  },
+  {
+    "user_id": "9542d1bf-807c-4116-8fb3-5efdf1a92bad",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.956324+07",
+    "updated_at": "2026-05-31 17:47:33.956324+07"
+  },
+  {
+    "user_id": "f5ef1716-4b6a-4188-9d02-21c328114df7",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.956864+07",
+    "updated_at": "2026-05-31 17:47:33.956864+07"
+  },
+  {
+    "user_id": "98b2d890-fe2c-4711-bac9-d533eb3e2212",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.957146+07",
+    "updated_at": "2026-05-31 17:47:33.957146+07"
+  },
+  {
+    "user_id": "37b62748-ead4-4eec-8397-b56bc77ea829",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.957465+07",
+    "updated_at": "2026-05-31 17:47:33.957465+07"
+  },
+  {
+    "user_id": "7dc84391-abc0-4364-9388-e09355a3a08d",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.957745+07",
+    "updated_at": "2026-05-31 17:47:33.957745+07"
+  },
+  {
+    "user_id": "93dd8efa-3617-47cb-a224-693bff05d4ca",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.958021+07",
+    "updated_at": "2026-05-31 17:47:33.958021+07"
+  },
+  {
+    "user_id": "6434a294-6002-4b88-a3ba-dfc82446d741",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.958293+07",
+    "updated_at": "2026-05-31 17:47:33.958293+07"
+  },
+  {
+    "user_id": "12a9a12d-7ce5-40a7-8619-d772cf0d17b7",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.958575+07",
+    "updated_at": "2026-05-31 17:47:33.958575+07"
+  },
+  {
+    "user_id": "14b945d7-cf35-40e3-aa58-cf927fda4189",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.958845+07",
+    "updated_at": "2026-05-31 17:47:33.958845+07"
+  },
+  {
+    "user_id": "e031bb6f-941f-44b7-8cb6-ec55e930d9db",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.959377+07",
+    "updated_at": "2026-05-31 17:47:33.959377+07"
+  },
+  {
+    "user_id": "5c5a08be-24d2-470b-821e-874ecdfd51a9",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.959699+07",
+    "updated_at": "2026-05-31 17:47:33.959699+07"
+  },
+  {
+    "user_id": "10218bc9-6a23-4c1c-b5b0-9822df3cfed9",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.960004+07",
+    "updated_at": "2026-05-31 17:47:33.960004+07"
+  },
+  {
+    "user_id": "b445c63a-4f6c-4528-bbc4-e17a4abae806",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.940644+07",
+    "updated_at": "2026-05-31 17:47:33.940644+07"
+  },
+  {
+    "user_id": "902f921a-f7dd-4f08-b7d1-91cd86425b12",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.960587+07",
+    "updated_at": "2026-05-31 17:47:33.960587+07"
+  },
+  {
+    "user_id": "70b2f83c-af12-469f-b012-1efede28844c",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.960856+07",
+    "updated_at": "2026-05-31 17:47:33.960856+07"
+  },
+  {
+    "user_id": "68773911-c321-4210-b99d-8490428ce726",
+    "taste_preferences": [
+      "pedas",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.961135+07",
+    "updated_at": "2026-05-31 17:47:33.961135+07"
+  },
+  {
+    "user_id": "082ce1a1-a033-4c4f-bdcf-62991910d5b9",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.961437+07",
+    "updated_at": "2026-05-31 17:47:33.961437+07"
+  },
+  {
+    "user_id": "76f5b01e-a81c-48b8-975d-a724588c9db8",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.96175+07",
+    "updated_at": "2026-05-31 17:47:33.96175+07"
+  },
+  {
+    "user_id": "884eee7f-b2b2-49b0-9d3a-48bd95183979",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.962088+07",
+    "updated_at": "2026-05-31 17:47:33.962088+07"
+  },
+  {
+    "user_id": "b2adc949-94a0-4e2d-8418-2ecd6d00d9c2",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.962486+07",
+    "updated_at": "2026-05-31 17:47:33.962486+07"
+  },
+  {
+    "user_id": "001a4ed9-760e-45a4-bd5d-59ed91012f74",
+    "taste_preferences": [
+      "pedas",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.962836+07",
+    "updated_at": "2026-05-31 17:47:33.962836+07"
+  },
+  {
+    "user_id": "cdd4106c-c8cf-4826-a3c6-9725e3a2b905",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.963133+07",
+    "updated_at": "2026-05-31 17:47:33.963133+07"
+  },
+  {
+    "user_id": "54453ec7-53cd-49e4-9803-05bac49580cb",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.963407+07",
+    "updated_at": "2026-05-31 17:47:33.963407+07"
+  },
+  {
+    "user_id": "ff1b2774-2ea8-440f-b2e6-f844b0eb8a4c",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.963679+07",
+    "updated_at": "2026-05-31 17:47:33.963679+07"
+  },
+  {
+    "user_id": "006dc19a-4a85-4af0-9ec2-74f15afc9c03",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.963971+07",
+    "updated_at": "2026-05-31 17:47:33.963971+07"
+  },
+  {
+    "user_id": "79758901-79f0-4113-8202-46e312ac31c9",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.964277+07",
+    "updated_at": "2026-05-31 17:47:33.964277+07"
+  },
+  {
+    "user_id": "e3e1652a-fbee-4e58-bc0b-0014f26d6435",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.964575+07",
+    "updated_at": "2026-05-31 17:47:33.964575+07"
+  },
+  {
+    "user_id": "f8012edb-3c39-40a0-b337-0fada74e3e97",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.964865+07",
+    "updated_at": "2026-05-31 17:47:33.964865+07"
+  },
+  {
+    "user_id": "53e48e83-ca6c-4dc8-8263-52e7b8d2c448",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.965152+07",
+    "updated_at": "2026-05-31 17:47:33.965152+07"
+  },
+  {
+    "user_id": "22d01511-1dc6-4b98-8e20-1ab981da60f3",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.965424+07",
+    "updated_at": "2026-05-31 17:47:33.965424+07"
+  },
+  {
+    "user_id": "17cf1004-1120-44c0-b08b-520a3d9921b1",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.96569+07",
+    "updated_at": "2026-05-31 17:47:33.96569+07"
+  },
+  {
+    "user_id": "dba4778e-854c-4e35-93c7-ffbb9538c875",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.965981+07",
+    "updated_at": "2026-05-31 17:47:33.965981+07"
+  },
+  {
+    "user_id": "c759869f-b4ff-4e63-ac23-c25260ea7f10",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.966246+07",
+    "updated_at": "2026-05-31 17:47:33.966246+07"
+  },
+  {
+    "user_id": "e36d1d05-2373-4133-9d06-04cff9782319",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.966515+07",
+    "updated_at": "2026-05-31 17:47:33.966515+07"
+  },
+  {
+    "user_id": "2af8d651-f39f-4e6f-9f61-5fc23fd0a21a",
+    "taste_preferences": [
+      "gurih",
+      "kering"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.96678+07",
+    "updated_at": "2026-05-31 17:47:33.96678+07"
+  },
+  {
+    "user_id": "374559bf-45b4-45e9-b13a-daa06194f074",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.967094+07",
+    "updated_at": "2026-05-31 17:47:33.967094+07"
+  },
+  {
+    "user_id": "5e283592-77f5-4a9c-bb89-126e856c0713",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.967555+07",
+    "updated_at": "2026-05-31 17:47:33.967555+07"
+  },
+  {
+    "user_id": "bddc0531-bd6a-423c-a49b-a2eb6d4233c1",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.967855+07",
+    "updated_at": "2026-05-31 17:47:33.967855+07"
+  },
+  {
+    "user_id": "ade7457f-b000-4ac4-a742-27fff781bbab",
+    "taste_preferences": [
+      "pedas",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.968131+07",
+    "updated_at": "2026-05-31 17:47:33.968131+07"
+  },
+  {
+    "user_id": "51cb9b1d-b7b5-49bf-b1d7-6e0ea1419fc2",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.968397+07",
+    "updated_at": "2026-05-31 17:47:33.968397+07"
+  },
+  {
+    "user_id": "9e7c6ab8-f502-43d5-984c-1312647c6fc9",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.968673+07",
+    "updated_at": "2026-05-31 17:47:33.968673+07"
+  },
+  {
+    "user_id": "60d23f97-120b-489c-ae1c-3cd4661c4bb6",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.968985+07",
+    "updated_at": "2026-05-31 17:47:33.968985+07"
+  },
+  {
+    "user_id": "5484477f-0b6f-41cc-b9c8-1f6d74799209",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.969612+07",
+    "updated_at": "2026-05-31 17:47:33.969612+07"
+  },
+  {
+    "user_id": "d2cd0f39-1ce9-4976-8393-b6091a2fcb96",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.96993+07",
+    "updated_at": "2026-05-31 17:47:33.96993+07"
+  },
+  {
+    "user_id": "39aa664f-b55c-4195-9b9e-0a0073ee79dc",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.956596+07",
+    "updated_at": "2026-05-31 17:47:33.956596+07"
+  },
+  {
+    "user_id": "12808ac5-aacf-4984-80dd-5e7f244b0ec8",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.970566+07",
+    "updated_at": "2026-05-31 17:47:33.970566+07"
+  },
+  {
+    "user_id": "0069d7af-644f-44e9-8013-2f9148e2c71f",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.970878+07",
+    "updated_at": "2026-05-31 17:47:33.970878+07"
+  },
+  {
+    "user_id": "5374bf26-13b4-4e45-8b67-b929e129b2eb",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.971197+07",
+    "updated_at": "2026-05-31 17:47:33.971197+07"
+  },
+  {
+    "user_id": "a788d263-4cbc-4333-a2ee-252b4215a4e7",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.97151+07",
+    "updated_at": "2026-05-31 17:47:33.97151+07"
+  },
+  {
+    "user_id": "39ffca3f-40e2-4af2-90ee-acbdba0ee17f",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.972005+07",
+    "updated_at": "2026-05-31 17:47:33.972005+07"
+  },
+  {
+    "user_id": "ed9178d9-655b-475c-a1ac-df0bdbc976c9",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.972336+07",
+    "updated_at": "2026-05-31 17:47:33.972336+07"
+  },
+  {
+    "user_id": "c8fb9f2c-252e-4d78-9237-40b8b4243cc9",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.97263+07",
+    "updated_at": "2026-05-31 17:47:33.97263+07"
+  },
+  {
+    "user_id": "4e7afb54-f249-4ec7-8572-258e4f13994a",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.972906+07",
+    "updated_at": "2026-05-31 17:47:33.972906+07"
+  },
+  {
+    "user_id": "0671bd51-2301-49e4-96b2-b341919ba3b6",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.973187+07",
+    "updated_at": "2026-05-31 17:47:33.973187+07"
+  },
+  {
+    "user_id": "bfd2648f-65c1-4a3e-81ca-685fd58e1a0e",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.973466+07",
+    "updated_at": "2026-05-31 17:47:33.973466+07"
+  },
+  {
+    "user_id": "77b2ac1b-e954-4e70-918c-605022ebff44",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.973736+07",
+    "updated_at": "2026-05-31 17:47:33.973736+07"
+  },
+  {
+    "user_id": "8b8445d7-5338-4bf4-9240-300d303a3111",
+    "taste_preferences": [
+      "gurih",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.974051+07",
+    "updated_at": "2026-05-31 17:47:33.974051+07"
+  },
+  {
+    "user_id": "0edb757e-086e-4f67-8084-e7c7218c6d99",
+    "taste_preferences": [
+      "pedas",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.974367+07",
+    "updated_at": "2026-05-31 17:47:33.974367+07"
+  },
+  {
+    "user_id": "b5692ef8-aaf0-4fa8-9ea5-2de95e7741ad",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.974663+07",
+    "updated_at": "2026-05-31 17:47:33.974663+07"
+  },
+  {
+    "user_id": "f836ba0f-62f6-4aa5-bc06-ebd2cb2f87a1",
+    "taste_preferences": [
+      "gurih",
+      "kering"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.974941+07",
+    "updated_at": "2026-05-31 17:47:33.974941+07"
+  },
+  {
+    "user_id": "0ad11cdf-8dfa-4547-bc29-1c074875db6a",
+    "taste_preferences": [
+      "pedas",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.975226+07",
+    "updated_at": "2026-05-31 17:47:33.975226+07"
+  },
+  {
+    "user_id": "e0d45b42-e34c-4ddd-be19-8e076bd4af6c",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.975506+07",
+    "updated_at": "2026-05-31 17:47:33.975506+07"
+  },
+  {
+    "user_id": "1a8d3459-a5a1-49bf-a64e-5f185781440c",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.975798+07",
+    "updated_at": "2026-05-31 17:47:33.975798+07"
+  },
+  {
+    "user_id": "80c34f16-fda3-4206-b49c-c76afeef3026",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.976103+07",
+    "updated_at": "2026-05-31 17:47:33.976103+07"
+  },
+  {
+    "user_id": "94a8926b-b311-4347-ba6e-47c95f0eec17",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.976401+07",
+    "updated_at": "2026-05-31 17:47:33.976401+07"
+  },
+  {
+    "user_id": "e6d720f1-5027-41f5-a7a2-1a592495239c",
+    "taste_preferences": [
+      "manis",
+      "gurih"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.976694+07",
+    "updated_at": "2026-05-31 17:47:33.976694+07"
+  },
+  {
+    "user_id": "f1236ea5-aff7-4ff5-a0bb-6d28480cffc9",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.976986+07",
+    "updated_at": "2026-05-31 17:47:33.976986+07"
+  },
+  {
+    "user_id": "6c704f58-2f21-4269-a72c-f51effe3817f",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.977353+07",
+    "updated_at": "2026-05-31 17:47:33.977353+07"
+  },
+  {
+    "user_id": "9b3c534f-9e38-4a66-b3b9-fdb83e206369",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.977697+07",
+    "updated_at": "2026-05-31 17:47:33.977697+07"
+  },
+  {
+    "user_id": "531c914c-5b98-4432-b8f6-116f1fe83639",
+    "taste_preferences": [
+      "kering",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.978062+07",
+    "updated_at": "2026-05-31 17:47:33.978062+07"
+  },
+  {
+    "user_id": "5c330a74-9251-469e-bcae-d8bed71278a7",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.978468+07",
+    "updated_at": "2026-05-31 17:47:33.978468+07"
+  },
+  {
+    "user_id": "4a137d7a-ea17-40a4-b11e-b7e430c10630",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.97892+07",
+    "updated_at": "2026-05-31 17:47:33.97892+07"
+  },
+  {
+    "user_id": "695236c3-53fb-4a3d-b890-b3f1170f60c5",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.979279+07",
+    "updated_at": "2026-05-31 17:47:33.979279+07"
+  },
+  {
+    "user_id": "a35d3861-59e9-43aa-ac80-6a95c019b5e4",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.979595+07",
+    "updated_at": "2026-05-31 17:47:33.979595+07"
+  },
+  {
+    "user_id": "f5b62d58-708c-43cc-a289-1f077003abb1",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.979976+07",
+    "updated_at": "2026-05-31 17:47:33.979976+07"
+  },
+  {
+    "user_id": "c8b4ddc4-a238-4ec1-b7c4-6af205996c5f",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.980284+07",
+    "updated_at": "2026-05-31 17:47:33.980284+07"
+  },
+  {
+    "user_id": "bb4af77b-3f83-4776-a8f6-6501456734fe",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.98081+07",
+    "updated_at": "2026-05-31 17:47:33.98081+07"
+  },
+  {
+    "user_id": "ced12ac9-b627-4343-8e20-210151481054",
+    "taste_preferences": [
+      "gurih",
+      "berkuah"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.98116+07",
+    "updated_at": "2026-05-31 17:47:33.98116+07"
+  },
+  {
+    "user_id": "0a13e586-04a7-4381-90b5-188390200b53",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.98298+07",
+    "updated_at": "2026-05-31 17:47:33.98298+07"
+  },
+  {
+    "user_id": "f40b93c0-9b2e-4158-8cdb-ffed881c2530",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.983326+07",
+    "updated_at": "2026-05-31 17:47:33.983326+07"
+  },
+  {
+    "user_id": "29752848-bca5-410a-a1ae-d8da20bcb413",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.983627+07",
+    "updated_at": "2026-05-31 17:47:33.983627+07"
+  },
+  {
+    "user_id": "0c81ea0f-2dc4-420c-aa95-99e895301beb",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.98392+07",
+    "updated_at": "2026-05-31 17:47:33.98392+07"
+  },
+  {
+    "user_id": "7dff59bc-345e-4635-90aa-5b4563931643",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.984246+07",
+    "updated_at": "2026-05-31 17:47:33.984246+07"
+  },
+  {
+    "user_id": "c910bec6-01b6-4e72-bf54-8adbdfcbb735",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.984593+07",
+    "updated_at": "2026-05-31 17:47:33.984593+07"
+  },
+  {
+    "user_id": "5cbb9490-452e-4a90-b99b-6281d71406f2",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.984934+07",
+    "updated_at": "2026-05-31 17:47:33.984934+07"
+  },
+  {
+    "user_id": "c2d3c420-63fd-417b-8bc6-48f9e319eeb4",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.985259+07",
+    "updated_at": "2026-05-31 17:47:33.985259+07"
+  },
+  {
+    "user_id": "876af63a-6574-4414-87b9-a00605514e3c",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.985573+07",
+    "updated_at": "2026-05-31 17:47:33.985573+07"
+  },
+  {
+    "user_id": "dedaa54e-4075-4ea7-be95-3e05ac1ce629",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.985917+07",
+    "updated_at": "2026-05-31 17:47:33.985917+07"
+  },
+  {
+    "user_id": "793423ad-82d1-4c71-90f4-db50b0a27be6",
+    "taste_preferences": [
+      "pedas",
+      "gurih"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.986212+07",
+    "updated_at": "2026-05-31 17:47:33.986212+07"
+  },
+  {
+    "user_id": "61ca9fc9-fef1-4611-aee0-78beda31586e",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.986481+07",
+    "updated_at": "2026-05-31 17:47:33.986481+07"
+  },
+  {
+    "user_id": "1d7cf162-c32f-4594-9fcd-683818c7242b",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.986787+07",
+    "updated_at": "2026-05-31 17:47:33.986787+07"
+  },
+  {
+    "user_id": "76528560-7f73-42e4-aa90-5474ec41ca23",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.987209+07",
+    "updated_at": "2026-05-31 17:47:33.987209+07"
+  },
+  {
+    "user_id": "dddfd72b-0e55-467e-89ca-2c89a3670b29",
+    "taste_preferences": [
+      "gurih",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.987581+07",
+    "updated_at": "2026-05-31 17:47:33.987581+07"
+  },
+  {
+    "user_id": "118ad2bc-99ff-4cc9-a67e-11fc638417c6",
+    "taste_preferences": [
+      "kering",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.988272+07",
+    "updated_at": "2026-05-31 17:47:33.988272+07"
+  },
+  {
+    "user_id": "5b0366e3-d704-485a-aa68-bbc745fbe3a2",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.98869+07",
+    "updated_at": "2026-05-31 17:47:33.98869+07"
+  },
+  {
+    "user_id": "1af42e3d-4207-4f7e-823b-2ca08ad803ed",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.98905+07",
+    "updated_at": "2026-05-31 17:47:33.98905+07"
+  },
+  {
+    "user_id": "f310a5ae-0c56-4070-9103-2a33873feafa",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.989411+07",
+    "updated_at": "2026-05-31 17:47:33.989411+07"
+  },
+  {
+    "user_id": "243dc03a-02c1-4529-9b5d-ff4348ba3980",
+    "taste_preferences": [
+      "berkuah",
+      "manis"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.989735+07",
+    "updated_at": "2026-05-31 17:47:33.989735+07"
+  },
+  {
+    "user_id": "2eaf5ea0-e1af-4f52-baa0-343cf11f9aa4",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.990027+07",
+    "updated_at": "2026-05-31 17:47:33.990027+07"
+  },
+  {
+    "user_id": "bc4d5e95-eeec-430f-8220-4e37835b582f",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.990318+07",
+    "updated_at": "2026-05-31 17:47:33.990318+07"
+  },
+  {
+    "user_id": "1616c668-1dae-41db-9630-2a8504040040",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.990584+07",
+    "updated_at": "2026-05-31 17:47:33.990584+07"
+  },
+  {
+    "user_id": "24360670-5042-4e85-81d8-8dbee41f1acb",
+    "taste_preferences": [
+      "gurih",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.990853+07",
+    "updated_at": "2026-05-31 17:47:33.990853+07"
+  },
+  {
+    "user_id": "398e2036-7509-4c77-98dd-babcd5e3c5c8",
+    "taste_preferences": [
+      "kering",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.991271+07",
+    "updated_at": "2026-05-31 17:47:33.991271+07"
+  },
+  {
+    "user_id": "3fc30d77-8bbd-44b8-93eb-0b437c03982d",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.991533+07",
+    "updated_at": "2026-05-31 17:47:33.991533+07"
+  },
+  {
+    "user_id": "ac2c40c9-f73f-4517-a000-8ae9bce6db2a",
+    "taste_preferences": [
+      "berkuah",
+      "pedas"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.991791+07",
+    "updated_at": "2026-05-31 17:47:33.991791+07"
+  },
+  {
+    "user_id": "4c380e11-8179-4965-946b-09113eff40ef",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.992086+07",
+    "updated_at": "2026-05-31 17:47:33.992086+07"
+  },
+  {
+    "user_id": "b21d96c5-9198-42df-9ec3-f88312a5d5fa",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.992365+07",
+    "updated_at": "2026-05-31 17:47:33.992365+07"
+  },
+  {
+    "user_id": "7309b977-7ff3-4f3a-8792-19d7914bb35d",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.992633+07",
+    "updated_at": "2026-05-31 17:47:33.992633+07"
+  },
+  {
+    "user_id": "90023539-da79-4d89-a06e-9fd41d07ee98",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.992945+07",
+    "updated_at": "2026-05-31 17:47:33.992945+07"
+  },
+  {
+    "user_id": "408d86e3-81d1-41fb-85aa-084cfba427f5",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.993202+07",
+    "updated_at": "2026-05-31 17:47:33.993202+07"
+  },
+  {
+    "user_id": "9c4a81e0-22e2-48f1-88f5-c84470f8fddd",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "75000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.993479+07",
+    "updated_at": "2026-05-31 17:47:33.993479+07"
+  },
+  {
+    "user_id": "cca4ade2-d218-4194-9369-6f5e15b245be",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.993736+07",
+    "updated_at": "2026-05-31 17:47:33.993736+07"
+  },
+  {
+    "user_id": "5aec1d46-abb0-4e0e-aea8-74dc81d082aa",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.994024+07",
+    "updated_at": "2026-05-31 17:47:33.994024+07"
+  },
+  {
+    "user_id": "59fd9f12-320f-40ed-8b5d-5cbf1bccf22c",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.994293+07",
+    "updated_at": "2026-05-31 17:47:33.994293+07"
+  },
+  {
+    "user_id": "da76b6d4-335e-4865-ad45-b7fd106f0995",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.994559+07",
+    "updated_at": "2026-05-31 17:47:33.994559+07"
+  },
+  {
+    "user_id": "e9b16b5e-7019-4c26-8269-f66851e77cdf",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "15000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.994924+07",
+    "updated_at": "2026-05-31 17:47:33.994924+07"
+  },
+  {
+    "user_id": "d7c7dedc-8af2-4a38-8d4a-c71002516bf4",
+    "taste_preferences": [
+      "pedas",
+      "manis"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.99525+07",
+    "updated_at": "2026-05-31 17:47:33.99525+07"
+  },
+  {
+    "user_id": "3a657674-2f6c-42cc-92ab-c3615b092784",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.995559+07",
+    "updated_at": "2026-05-31 17:47:33.995559+07"
+  },
+  {
+    "user_id": "bdbca6bd-fc97-4ca0-a95d-66afc819e9b1",
+    "taste_preferences": [
+      "berkuah",
+      "kering"
+    ],
+    "max_budget": "50000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.995869+07",
+    "updated_at": "2026-05-31 17:47:33.995869+07"
+  },
+  {
+    "user_id": "a66b353b-5d3a-49f6-8bf8-775cef007b6e",
+    "taste_preferences": [
+      "manis",
+      "pedas"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 5000,
+    "created_at": "2026-05-31 17:47:33.996211+07",
+    "updated_at": "2026-05-31 17:47:33.996211+07"
+  },
+  {
+    "user_id": "e6e31f6e-b147-495a-927c-fe148c05dcb3",
+    "taste_preferences": [
+      "berkuah",
+      "gurih"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 2000,
+    "created_at": "2026-05-31 17:47:33.996496+07",
+    "updated_at": "2026-05-31 17:47:33.996496+07"
+  },
+  {
+    "user_id": "557d1785-bd13-47ef-9fda-974c2f068069",
+    "taste_preferences": [
+      "manis",
+      "berkuah"
+    ],
+    "max_budget": "100000.00",
+    "preferred_radius": 15000,
+    "created_at": "2026-05-31 17:47:33.996787+07",
+    "updated_at": "2026-05-31 17:47:33.996787+07"
+  },
+  {
+    "user_id": "803e6007-52e0-48d0-9015-759e5a3fdb4a",
+    "taste_preferences": [
+      "manis",
+      "kering"
+    ],
+    "max_budget": "25000.00",
+    "preferred_radius": 10000,
+    "created_at": "2026-05-31 17:47:33.997065+07",
+    "updated_at": "2026-05-31 17:47:33.997065+07"
+  }
+]

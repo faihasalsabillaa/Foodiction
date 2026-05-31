@@ -230,19 +230,42 @@ async function seedReviews() {
         keywords: buildRestaurantKeywords(row.name),
     }));
 
-    console.log('⏳ Syncing dummy users for reviews...');
+    console.log('⏳ Syncing dummy users for reviews and their preferences...');
     const dummyUsers = [];
     const dummyPasswordHash = await bcrypt.hash('password123', 10);
+    
+    const possibleTastes = ['manis', 'pedas', 'gurih', 'berkuah', 'kering'];
+    const possibleBudgets = [15000, 25000, 50000, 75000, 100000];
+    const possibleRadiuses = [2000, 5000, 10000, 15000];
+
     for (const name of reviewerNames) {
         const email = `${name.toLowerCase().replace(/[^a-z0-9]/g, '')}@foodiction.local`;
+        const userId = randomUUID();
+        
         const { rows } = await pool.query(
             `INSERT INTO users (id, email, password_hash, full_name)
              VALUES ($1, $2, $3, $4)
              ON CONFLICT (email) DO UPDATE SET full_name = EXCLUDED.full_name
              RETURNING id, full_name`,
-            [randomUUID(), email, dummyPasswordHash, name]
+            [userId, email, dummyPasswordHash, name]
         );
-        dummyUsers.push(rows[0]);
+        const user = rows[0];
+        dummyUsers.push(user);
+
+        const shuffledTastes = [...possibleTastes].sort(() => 0.5 - Math.random());
+        const randomTastes = shuffledTastes.slice(0, 2);
+        const randomBudget = possibleBudgets[Math.floor(Math.random() * possibleBudgets.length)];
+        const randomRadius = possibleRadiuses[Math.floor(Math.random() * possibleRadiuses.length)];
+
+        await pool.query(
+            `INSERT INTO user_preferences (user_id, taste_preferences, max_budget, preferred_radius)
+             VALUES ($1, $2, $3, $4)
+             ON CONFLICT (user_id) DO UPDATE SET 
+                 taste_preferences = EXCLUDED.taste_preferences,
+                 max_budget = EXCLUDED.max_budget,
+                 preferred_radius = EXCLUDED.preferred_radius`,
+            [user.id, randomTastes, randomBudget, randomRadius]
+        );
     }
 
     const overviews = await loadCsv('gofood_food_overviews.csv');

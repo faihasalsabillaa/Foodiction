@@ -1,0 +1,2862 @@
+[
+  {
+    "id": "73681c07-77cd-4cb4-8cfe-316bf3c897b7",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Mio",
+    "rating": 5,
+    "review_text": "Mantap sambalnya enak👍",
+    "ordered_item": "Gado-gado Spesial, Lotek Double Sayur",
+    "user_id": "3a16f24f-ad22-4f8b-a192-0d985269e5cd",
+    "created_at": "2026-05-31 03:36:32.082924+07"
+  },
+  {
+    "id": "5d9cecf3-b072-4625-b7e6-8d55b2ad6c4e",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "user_name": "Rain",
+    "rating": 4,
+    "review_text": "pesan kunir asem yg datang gula asem",
+    "ordered_item": "Mendoan, Kunir Asem, Paket 4 ( Brongkos ), Cumi, Cap Cay Goreng, Nasi Putih, Bakmi Goreng, Jeruk Manis",
+    "user_id": "082ce1a1-a033-4c4f-bdcf-62991910d5b9",
+    "created_at": "2026-05-31 03:36:32.086215+07"
+  },
+  {
+    "id": "f5dd9d26-7cba-4735-9bf5-11c42ac16c8e",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Eleanor",
+    "rating": 3,
+    "review_text": "kemarin pesan gudeg telur ayam suwir,,g ada ayamnya,,",
+    "ordered_item": "Nasi Gudeg Krecek Telur Ayam Suwir",
+    "user_id": "a35d3861-59e9-43aa-ac80-6a95c019b5e4",
+    "created_at": "2026-05-31 03:36:32.086852+07"
+  },
+  {
+    "id": "625aceb3-d3f2-48b9-95c8-fb34a96f01c6",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Clay",
+    "rating": 4,
+    "review_text": "sambelnya tidak dilengkapi",
+    "ordered_item": "Nasi Gudeg Krecek Telur Ayam Suwir",
+    "user_id": "17a77be1-6d07-456c-a384-fcd7d82a588b",
+    "created_at": "2026-05-31 03:36:32.087242+07"
+  },
+  {
+    "id": "8f557de2-1892-4574-90d2-628a7585123e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "River",
+    "rating": 5,
+    "review_text": "enak sekali, murah meriah",
+    "ordered_item": "Opor Ayam, Lotek Dobel Bakwan",
+    "user_id": "ca996a40-c4e6-487c-8372-1470ad7706d8",
+    "created_at": "2026-05-31 03:36:32.08814+07"
+  },
+  {
+    "id": "00a71932-304c-45cf-9bab-e4a717533d86",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Penelope",
+    "rating": 3,
+    "review_text": "beli lotek+nasi tapi nggak ada nasinya",
+    "ordered_item": "Nasi Goreng, Lotek + Nasi, Bakwan, Teh Panas / Es, Milo Panas / Es",
+    "user_id": "5cbb9490-452e-4a90-b99b-6281d71406f2",
+    "created_at": "2026-05-31 03:36:32.089135+07"
+  },
+  {
+    "id": "6b806195-8c4d-4d5a-a6aa-3109fde50161",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Hinata",
+    "rating": 4,
+    "review_text": "kebanyakan air. ",
+    "ordered_item": "Lotek",
+    "user_id": "3dab76ce-dd9e-42da-b62a-e8f823ebde67",
+    "created_at": "2026-05-31 03:36:32.090016+07"
+  },
+  {
+    "id": "083cecd3-2352-40f0-ad58-c90056deef50",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Cedric",
+    "rating": 3,
+    "review_text": "ga merhatiin catetan. sudah 2x ga lengkap.",
+    "ordered_item": "Telur Rebus, Lotek Dobel Bakwan",
+    "user_id": "61ca9fc9-fef1-4611-aee0-78beda31586e",
+    "created_at": "2026-05-31 03:36:32.09077+07"
+  },
+  {
+    "id": "adde13e1-4baa-46b4-86e2-af926d65bb19",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Aero",
+    "rating": 3,
+    "review_text": "porsinya tidak sprti pesanan yg sebelumnya\nyg sekarang sy pesan lebih sedikit.apa yang siapin beda orang ya..beda porsi",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "fe0ca23b-d511-486a-93c8-8746c60f6db4",
+    "created_at": "2026-05-31 03:36:32.091586+07"
+  },
+  {
+    "id": "2c9d281b-dbc2-47ff-9ac1-b38db0aa6a2b",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Bella",
+    "rating": 3,
+    "review_text": "krecek nya alot, telurnya alot, tidak ada sambalnya",
+    "ordered_item": "Nasi Gudeg Krecek Telur + Suwir, Nasi Gudeg Krecek Telur + Tahu",
+    "user_id": "45f17dee-3c45-4a0b-8a67-f1869bd54227",
+    "created_at": "2026-05-31 03:36:32.092309+07"
+  },
+  {
+    "id": "0f789091-d195-4b4b-946a-4ae2dac741ef",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Daisy",
+    "rating": 5,
+    "review_text": "Silahkan dicoba, Recommended food",
+    "ordered_item": "Nasi Gudeg Krecek Sayap + Telor",
+    "user_id": "9194bf1d-0ec0-4e4e-82e6-0fd1eae2980d",
+    "created_at": "2026-05-31 03:36:32.092925+07"
+  },
+  {
+    "id": "87701060-e9f1-4aa0-a146-02e751b0e0af",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Mary",
+    "rating": 5,
+    "review_text": "sayang deh sama chefnya👍",
+    "ordered_item": "Nasi Gudeg Krecek Sayap + Telor",
+    "user_id": "7dff59bc-345e-4635-90aa-5b4563931643",
+    "created_at": "2026-05-31 03:36:32.093313+07"
+  },
+  {
+    "id": "aa103baf-0181-4bac-89bb-44a2be57e9f7",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Indra",
+    "rating": 4,
+    "review_text": "tahunya kasinan..nasinya dingin",
+    "ordered_item": "Nasi Gudeg Krecek Suwir, Nasi Gudeg Krecek Telor + Tahu",
+    "user_id": "49ee12da-98ce-4d11-a03d-e47c3f49a7b1",
+    "created_at": "2026-05-31 03:36:32.093922+07"
+  },
+  {
+    "id": "8c3aacf9-85d5-453b-bbff-001e31d9a9f8",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "user_name": "Clover",
+    "rating": 1,
+    "review_text": "baru ini makan lotek rasanya pait, beliny 3 bunfkus pula.",
+    "ordered_item": "Lotek, Mendoan (isi 3)",
+    "user_id": "dba4778e-854c-4e35-93c7-ffbb9538c875",
+    "created_at": "2026-05-31 03:36:32.094569+07"
+  },
+  {
+    "id": "c338296d-f9dc-49ff-ba94-5e3858ffad51",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Galang",
+    "rating": 4,
+    "review_text": "Order malam hari, tempe sudah hampir tidak layak dimakan",
+    "ordered_item": "Nasi Gudeg Krecek Telur Bebek",
+    "user_id": "c3567fde-561b-4b5f-a7a2-3ce2bfdf9bfb",
+    "created_at": "2026-05-31 03:36:32.095257+07"
+  },
+  {
+    "id": "351ac184-3577-4058-8b9a-37de00415582",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Elizabeth",
+    "rating": 5,
+    "review_text": "Alhamdulillah pesanan yang datang sesuai, gudeg seporsi+telur 4+oseng mercon. Oseng merconnya ternyata 10rb hanya sedikit ya, tapi okelah yang penting rasa tidak mengecewakan untuk gudeg maupun oseng merconnya. Gudeg rasanya pertengahan antara manis dan gurih. ",
+    "ordered_item": "Telur Bebek, Oseng Mercon, Gudeg",
+    "user_id": "f5b62d58-708c-43cc-a289-1f077003abb1",
+    "created_at": "2026-05-31 03:36:32.095934+07"
+  },
+  {
+    "id": "5953fe93-c8e2-49d5-ad20-dee737f8ffe5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Leo",
+    "rating": 5,
+    "review_text": "Kurang banyak Nasinya ",
+    "ordered_item": "Nasi Gudeg Krecek Telur Bebek",
+    "user_id": "7ced633a-1b58-4c00-8997-d4a46f2e5f8a",
+    "created_at": "2026-05-31 03:36:32.096342+07"
+  },
+  {
+    "id": "9b774fe6-80c9-429a-b36b-62b8bae5bf08",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ryder",
+    "rating": 2,
+    "review_text": "sy pesan 5porsi yg 1porsi sambal kreceknya dipisah.. tapi kreceknya malah tdk dikasih Dan tdk bawakan ... sy pesan dipisah bukan tdk pakai sambalgoreng",
+    "ordered_item": "Nasi Gudeg Krecek Telur Bebek",
+    "user_id": "3770ec25-2b03-46d8-9449-aa6740920bf3",
+    "created_at": "2026-05-31 03:36:32.096775+07"
+  },
+  {
+    "id": "ba1cca22-5667-46ee-b7a9-c8e9cfd1bac5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Winston",
+    "rating": 5,
+    "review_text": "I enjoyed bit this food",
+    "ordered_item": "Nasi Gudeg Krecek Sayap, Bubur Gudeg Krecek Sayap, Nasi Gudeg Krecek Telur Bebek, Telur Bebek",
+    "user_id": "398e2036-7509-4c77-98dd-babcd5e3c5c8",
+    "created_at": "2026-05-31 03:36:32.097492+07"
+  },
+  {
+    "id": "18acb240-7ce2-4bce-a5f6-9f1e8996c14d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Madeline",
+    "rating": 3,
+    "review_text": "bubur nya asiiinn ",
+    "ordered_item": "Nasi Gudeg Krecek Telur Bebek, Bubur",
+    "user_id": "408d86e3-81d1-41fb-85aa-084cfba427f5",
+    "created_at": "2026-05-31 03:36:32.098161+07"
+  },
+  {
+    "id": "d13a0dee-4982-401e-af61-5b0be0ced669",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Itsuki",
+    "rating": 5,
+    "review_text": "uenak puolll worth it every rupiah! ",
+    "ordered_item": "Nasi Gudeg Krecek Telur Bebek, Sambel Krecek per Porsi, Komplitan",
+    "user_id": "780d70e5-02bc-40a5-a93e-23513af05b4a",
+    "created_at": "2026-05-31 03:36:32.099137+07"
+  },
+  {
+    "id": "83307730-8297-49a4-8c6b-ffdcc5821926",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Clover",
+    "rating": 5,
+    "review_text": "Enak bgt muarah bgt",
+    "ordered_item": "Ceker Per Porsi, Nasi Gudeg Krecek Paha Bawah, Nasi Gudeg Krecek Paha Atas, Kerupuk",
+    "user_id": "dba4778e-854c-4e35-93c7-ffbb9538c875",
+    "created_at": "2026-05-31 03:36:32.099793+07"
+  },
+  {
+    "id": "26103a0d-28e3-4c3c-ae0f-d432f428cc36",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Leo",
+    "rating": 4,
+    "review_text": "sip enak...cmn porsinya kurang hehehe",
+    "ordered_item": "Nasi Gudeg Krecek Suwir",
+    "user_id": "7ced633a-1b58-4c00-8997-d4a46f2e5f8a",
+    "created_at": "2026-05-31 03:36:32.100661+07"
+  },
+  {
+    "id": "31bbc1ef-201a-4bbd-b3b4-a42edb00618b",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Joseph",
+    "rating": 5,
+    "review_text": "Pertahankan kualitasnya",
+    "ordered_item": "Lotek Double-double",
+    "user_id": "0edb757e-086e-4f67-8084-e7c7218c6d99",
+    "created_at": "2026-05-31 03:36:32.101386+07"
+  },
+  {
+    "id": "02391b92-c97f-4f24-b18f-030b42cb1b20",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Gavin",
+    "rating": 5,
+    "review_text": "Akhirnya nemu lotek yg enak di daerah atas,bakal jadi langganan insyaallah…perpaduan yg mantap antara saos kacang yg creamy dengan manisnya yg pas,porsinya jg banyak sekali dan harganya murah sekali…recommended banget pokoknya ini loteknya👍🏻",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "bdf14775-c07e-497d-ab74-1b74b2904130",
+    "created_at": "2026-05-31 03:36:32.102197+07"
+  },
+  {
+    "id": "1a5c4698-dbf2-41cf-9a41-b5ccd9521ff0",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Albert",
+    "rating": 5,
+    "review_text": "enak banget..rasa nya pas dan pedas banget",
+    "ordered_item": "Lotek",
+    "user_id": "5374bf26-13b4-4e45-8b67-b929e129b2eb",
+    "created_at": "2026-05-31 03:36:32.102561+07"
+  },
+  {
+    "id": "cca2efd9-b109-4ec1-b0a2-30223ce85dde",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Yuda",
+    "rating": 5,
+    "review_text": "Rasanya gausah diraguin, enak banget loteknya. Kalau kalian makannya gak banyak jangan coba2 pesen yg double2, isinya jadi buanyak. Mantab banget lah pokoknya\nSukses terus yaaa",
+    "ordered_item": "Lotek Double Sayur, Lotek Double Bakwan",
+    "user_id": "92d0f2d9-14b4-4730-9fb3-fe5d1d070b20",
+    "created_at": "2026-05-31 03:36:32.103281+07"
+  },
+  {
+    "id": "2c33036e-b864-4ebb-916b-69426ed2b353",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Makoto",
+    "rating": 4,
+    "review_text": "paket masker mbak..",
+    "ordered_item": "Lotek Double Sayur, Bakwan Goreng",
+    "user_id": "6eeda761-97c8-4e8a-97f2-b370b106addd",
+    "created_at": "2026-05-31 03:36:32.103994+07"
+  },
+  {
+    "id": "f469be0b-1883-47b5-9f15-0e174de08e79",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ezra",
+    "rating": 5,
+    "review_text": "enak. sayangnya kurang pedes",
+    "ordered_item": "Lotek + Telur Rebus",
+    "user_id": "c60b5b79-36b8-4f20-a935-33d264891650",
+    "created_at": "2026-05-31 03:36:32.104674+07"
+  },
+  {
+    "id": "9abfec20-d547-4605-af82-066158ace761",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Dusk",
+    "rating": 5,
+    "review_text": "opornya kemarin sangat asin ",
+    "ordered_item": "Lotek, Opor Ayam",
+    "user_id": "39aa664f-b55c-4195-9b9e-0a0073ee79dc",
+    "created_at": "2026-05-31 03:36:32.105386+07"
+  },
+  {
+    "id": "561d9a2c-ca11-494b-af9a-3622fa925897",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Jade",
+    "rating": 3,
+    "review_text": "kok gak dikasi sendok kayak biasanya? krupuknya kurang 1",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "f8260bdb-c4cb-4d1a-89d3-8eeb8ad37696",
+    "created_at": "2026-05-31 03:36:32.105759+07"
+  },
+  {
+    "id": "bdf3f1da-4931-4e03-8277-ddb2ef9e8263",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "River",
+    "rating": 5,
+    "review_text": "enakk banget, porsi banyak",
+    "ordered_item": "Lotek Double Bakwan, Kupat Tahu",
+    "user_id": "ca996a40-c4e6-487c-8372-1470ad7706d8",
+    "created_at": "2026-05-31 03:36:32.106454+07"
+  },
+  {
+    "id": "83aa0366-b559-4e3e-b63e-452f1ae7a337",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Isabella",
+    "rating": 1,
+    "review_text": "DARI KEMARIN LHO SALAH TERUS PESANANNYA!!! KEMARIN LUPA TELUR,SEKARANG ADA 1 PORSI GAK ADA BAKWAN SAMA SEKALI?NIAT JUALAN TIDAK?! PROFESIONAL LAH",
+    "ordered_item": "Lotek",
+    "user_id": "0a13e586-04a7-4381-90b5-188390200b53",
+    "created_at": "2026-05-31 03:36:32.106892+07"
+  },
+  {
+    "id": "2de43dcd-ebc9-4992-979e-9600a18d6335",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Volt",
+    "rating": 4,
+    "review_text": "dari aplikasi customer orderan sudah masuk ke resto tapi tidak langsung di bikin sama restonya, customer juga nunggu dapat driver,sudah dapat driver ,driver masih otw ke resto,sampe resto driver masih antri karena orderan masuk ke resto tidak langsung di proses.\npokoke harus extra sabar kalo mau makan lotek ,,semoga bisa lebih cepat proses nya biar pembeli via gofood nggak kelamaan nunggu.",
+    "ordered_item": "Lotek Double Bakwan, Kupat Tahu",
+    "user_id": "e3e1652a-fbee-4e58-bc0b-0014f26d6435",
+    "created_at": "2026-05-31 03:36:32.107404+07"
+  },
+  {
+    "id": "d9da6442-7e2a-4696-903e-7fda5e8ce88d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Zack",
+    "rating": 5,
+    "review_text": "The best lotek👍",
+    "ordered_item": "Lotek Telur",
+    "user_id": "4fac7423-5ec9-4884-823c-255c3d7b03a8",
+    "created_at": "2026-05-31 03:36:32.108066+07"
+  },
+  {
+    "id": "cd05c90a-cc51-41a8-8898-d701069b8e88",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Vapor",
+    "rating": 5,
+    "review_text": "enak bgttt porsinya jg ngenyangin bgttt, trs bumbunya melimpahh",
+    "ordered_item": "Kupat Tahu, Lotek Telur, Krupuk Kecil, Ketupat, Es Teh",
+    "user_id": "006dc19a-4a85-4af0-9ec2-74f15afc9c03",
+    "created_at": "2026-05-31 03:36:32.108724+07"
+  },
+  {
+    "id": "b9234ff2-2378-4a9d-bee5-e4b46163abd3",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Gita",
+    "rating": 5,
+    "review_text": "rasanya tidak berubah",
+    "ordered_item": "Kupat Tahu, Lotek Double Bakwan",
+    "user_id": "5c617446-acbe-433d-9cb1-fba82ae2c662",
+    "created_at": "2026-05-31 03:36:32.10939+07"
+  },
+  {
+    "id": "0449c4a5-8125-46dd-8da1-ce626795cf32",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Sky",
+    "rating": 5,
+    "review_text": "bumbunya enak ,,khas desa sekali ",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "b2adc949-94a0-4e2d-8418-2ecd6d00d9c2",
+    "created_at": "2026-05-31 03:36:32.109733+07"
+  },
+  {
+    "id": "6966ff1a-5c2d-4485-a7ed-be592f3d1f53",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Dusk",
+    "rating": 5,
+    "review_text": "juosssshhh.....gandosssss ",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "39aa664f-b55c-4195-9b9e-0a0073ee79dc",
+    "created_at": "2026-05-31 03:36:32.110109+07"
+  },
+  {
+    "id": "8fbe2f16-aac7-452e-ae72-6390597bab74",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ruby",
+    "rating": 3,
+    "review_text": "minta pedes banget tp ngga pedes sama sekali",
+    "ordered_item": "Lotek Double Bakwan, Lotek",
+    "user_id": "ff3caa98-b775-4df6-bc3b-5cd432903d8f",
+    "created_at": "2026-05-31 03:36:32.110907+07"
+  },
+  {
+    "id": "37e11c0c-9ef2-498c-be3c-fa5e9f8d4854",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Pyro",
+    "rating": 5,
+    "review_text": "kok yg di ngaglik ga buka",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "70b2f83c-af12-469f-b012-1efede28844c",
+    "created_at": "2026-05-31 03:36:32.111242+07"
+  },
+  {
+    "id": "c2cf0623-102a-469c-ba79-560c814c9cb4",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Atlas",
+    "rating": 5,
+    "review_text": "mantap. porsinya pas. manis dan rasanya enak",
+    "ordered_item": "Lotek Nasi",
+    "user_id": "d17f7416-9f39-47e2-853c-7001efe20f46",
+    "created_at": "2026-05-31 03:36:32.111892+07"
+  },
+  {
+    "id": "ec169aa6-8705-476f-80e3-3d20d2bc2a22",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Albert",
+    "rating": 4,
+    "review_text": "bakwannya banyak yg keras wkwk",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "5374bf26-13b4-4e45-8b67-b929e129b2eb",
+    "created_at": "2026-05-31 03:36:32.112368+07"
+  },
+  {
+    "id": "095565af-c75c-4fb5-b320-f67d44378cb7",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Rosalind",
+    "rating": 5,
+    "review_text": "It’s reaaaally good! I said what I said. Gonna rebuy!!! Love it so much",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "cca4ade2-d218-4194-9369-6f5e15b245be",
+    "created_at": "2026-05-31 03:36:32.11316+07"
+  },
+  {
+    "id": "f8ec1b0e-8fa5-44bd-aaaf-517204fec6c6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Alpha",
+    "rating": 2,
+    "review_text": "bungkusannya ada yg sobek, jadi isi loteknya keluar",
+    "ordered_item": "Lotek, Lotek Double Bakwan, Lotek Double Sayur",
+    "user_id": "59fd9f12-320f-40ed-8b5d-5cbf1bccf22c",
+    "created_at": "2026-05-31 03:36:32.113857+07"
+  },
+  {
+    "id": "307d4dcf-b742-43dc-8c85-6be5846f3c12",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Rosalind",
+    "rating": 5,
+    "review_text": "Bumbu nya terasa pas. \nKalau bisa, lebih kental. Jangan terlalu encer...🙏",
+    "ordered_item": "Gado Gado + Telur, Lotek + Telur",
+    "user_id": "cca4ade2-d218-4194-9369-6f5e15b245be",
+    "created_at": "2026-05-31 03:36:32.11455+07"
+  },
+  {
+    "id": "af8b1189-bb9f-425b-9d56-0bc33905f4c7",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Yuda",
+    "rating": 5,
+    "review_text": "ada bakwan goreng nya! yummy...",
+    "ordered_item": "Lotek + Telur",
+    "user_id": "92d0f2d9-14b4-4730-9fb3-fe5d1d070b20",
+    "created_at": "2026-05-31 03:36:32.11526+07"
+  },
+  {
+    "id": "4e22958e-d51e-4122-9d79-0ee8ab9c6090",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Sinar",
+    "rating": 5,
+    "review_text": "rasanya pas, cuman bumbu kurang kental lagi.",
+    "ordered_item": "Lotek",
+    "user_id": "5c5e319b-2f5f-4669-a165-64973baefe09",
+    "created_at": "2026-05-31 03:36:32.115607+07"
+  },
+  {
+    "id": "ce427e13-a9df-4054-b3ef-70ca7ac4161a",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Chiyo",
+    "rating": 5,
+    "review_text": "mantulllll luar biasa....uenak tenan 👍👍👍👍👍⭐⭐⭐⭐⭐ jos\npas buat langganan",
+    "ordered_item": "Gudeg Tahu Tanpa Nasi, Gudeg Gending Brutu Tanpa Nasi, Sambel Krecek Tanpa Nasi",
+    "user_id": "29342487-a5ec-4814-a4ae-0b6dde246ea9",
+    "created_at": "2026-05-31 03:36:32.116254+07"
+  },
+  {
+    "id": "50474b5f-3dff-4ad9-9357-ab1f5cc25ef4",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Albert",
+    "rating": 3,
+    "review_text": "trlalu mnis krecekny.. ",
+    "ordered_item": "Nasi Gudeg Telor",
+    "user_id": "5374bf26-13b4-4e45-8b67-b929e129b2eb",
+    "created_at": "2026-05-31 03:36:32.116868+07"
+  },
+  {
+    "id": "2c45965e-1a64-4df6-a1cc-9ff64b3fb3eb",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Baron",
+    "rating": 5,
+    "review_text": "enak banget, bapia terenak yang pernah saya rasa, keju dan durian nya, real betul2 rasanya, bakal beli lagi langsung ke outlet nya",
+    "ordered_item": "Bakpia Keju Isi 15, Bakpia Susu Durian Isi 15",
+    "user_id": "557d1785-bd13-47ef-9fda-974c2f068069",
+    "created_at": "2026-05-31 03:36:32.117471+07"
+  },
+  {
+    "id": "8cb9a96a-6b0b-4bee-9338-616aa2e7f9c5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Stella",
+    "rating": 5,
+    "review_text": "selalu beli kurnia sari kalo ke jogja 🥰🥰🥰",
+    "ordered_item": "Bakpia Keju Isi 15, Bakpia Kacang Hijau Isi 15, Bakpia Coklat Isi 15",
+    "user_id": "021d1567-5644-4ac0-ba6e-788c2c1e268c",
+    "created_at": "2026-05-31 03:36:32.118071+07"
+  },
+  {
+    "id": "7281c492-ce21-4d6d-9834-4b0abfeba6b8",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Cedric",
+    "rating": 5,
+    "review_text": "enak ajah.......",
+    "ordered_item": "Bakpia Susu Durian Isi 15, Bakpia Isi 40",
+    "user_id": "61ca9fc9-fef1-4611-aee0-78beda31586e",
+    "created_at": "2026-05-31 03:36:32.118639+07"
+  },
+  {
+    "id": "5420e05b-7187-4188-b3dd-e9abed07d633",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Kiko",
+    "rating": 5,
+    "review_text": "always tasty, kurnia sari juaranya bakpia emang.",
+    "ordered_item": "Bakpia  keju edam isi 15",
+    "user_id": "2bd9324f-847a-49de-9a56-af5a0b543538",
+    "created_at": "2026-05-31 03:36:32.119251+07"
+  },
+  {
+    "id": "79d34a2c-1567-41e0-b03d-e4c4ea81b3b9",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Evander",
+    "rating": 5,
+    "review_text": "MANTAP! porsinya plg konsisten diantara semua cabang yu djum yg lain... ",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "76528560-7f73-42e4-aa90-5474ec41ca23",
+    "created_at": "2026-05-31 03:36:32.119589+07"
+  },
+  {
+    "id": "8515f957-06cf-4ea2-8525-f6e4de166440",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Iris",
+    "rating": 5,
+    "review_text": "porsi yg pas, trus rasanya emang dari dulu bikin nagih, apalagi kreceknya..beuhh tiada tandingny 🤩",
+    "ordered_item": "Nasi Gudeg Krecek Paha Bawah, Nasi Gudeg Krecek Telur Tahu",
+    "user_id": "1ca774e6-dc77-4d94-a092-7f9cadfa4c73",
+    "created_at": "2026-05-31 03:36:32.120249+07"
+  },
+  {
+    "id": "94fb90a3-062c-4f34-b5ae-ecf52a95efb6",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Mist",
+    "rating": 4,
+    "review_text": "entah.. apa yg salah\nrasanya kok ga nendang",
+    "ordered_item": "Nasi Gudeg Krecek Telur Sayap",
+    "user_id": "5c5a08be-24d2-470b-821e-874ecdfd51a9",
+    "created_at": "2026-05-31 03:36:32.120865+07"
+  },
+  {
+    "id": "f9bf8637-149f-4fc8-b8af-4c0d569464b3",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Margaret",
+    "rating": 2,
+    "review_text": "nasinya yg 1 box masih mentah, kerassss... jadi pesen 3 box. Cuman 2 box yang kemakan nasinya.. kan sayang banget, tolong kualitasnya lebih dijaga lagi dan lagi, nama yu Djum sudah besar bangett lho",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "0c81ea0f-2dc4-420c-aa95-99e895301beb",
+    "created_at": "2026-05-31 03:36:32.121186+07"
+  },
+  {
+    "id": "fdae6623-8d8e-4678-94cf-4f09fe5a1840",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Wisnu",
+    "rating": 3,
+    "review_text": "Akhirnya mengutarakan pertanyaan sekitar sebulanan ini. Udah sering beli. Hampir 3-4hari skali. Tp smakin ksini porsinya semakin berkurang gudegnya. Gatau atau mgkn karna lg efek corona, jd emg porsinya dikurangin atau yg melayani ambil gudegnya kurang tdk tau deh. Yg hari ini dapet gudeg dikiiiiittttt sekalii. Mau buat 2 org makan aja gabisa.",
+    "ordered_item": "Gudeg + Krecek + Telor 2",
+    "user_id": "4bfcf45d-67ed-45d1-8a16-53e4b046f10d",
+    "created_at": "2026-05-31 03:36:32.12189+07"
+  },
+  {
+    "id": "10a8f9f1-83b6-4749-b743-5ede5caf5b08",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Emi",
+    "rating": 2,
+    "review_text": "Ayamnya KERAS Sekali / seperti kayu, tdk bs dimakan. utk oseng telur & oseng genjer lumayan.",
+    "ordered_item": "Ayam Goreng Serundeng, Oseng Putih Telor, Oseng Genjer",
+    "user_id": "bd7c532c-fee2-43a4-88aa-733fe414195c",
+    "created_at": "2026-05-31 03:36:32.122579+07"
+  },
+  {
+    "id": "f1b626cc-387b-4e11-9ae9-00cf4c0675bc",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "user_name": "Ava",
+    "rating": 5,
+    "review_text": "Baru pertama nyoba, ternyata enak masakannya, terimakasih ya",
+    "ordered_item": "Usus Mercon, Lodeh, Terong Balado",
+    "user_id": "d308af29-697b-4e1d-8fb6-fe224019222a",
+    "created_at": "2026-05-31 03:36:32.123389+07"
+  },
+  {
+    "id": "3c1b1333-2b12-4ba8-b5f9-de3582326110",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Penelope",
+    "rating": 4,
+    "review_text": "pokoknya q suka menu2 yg ada di resto ini😊😚",
+    "ordered_item": "Ayam Opor, Oseng Jamur, Oseng Gembus, Sop, Cap Cay",
+    "user_id": "5cbb9490-452e-4a90-b99b-6281d71406f2",
+    "created_at": "2026-05-31 03:36:32.124045+07"
+  },
+  {
+    "id": "5fcbc415-34b9-48a5-a0da-626ed97033cd",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "James",
+    "rating": 5,
+    "review_text": "Mantap... Rasa dan taste sama seperti yg yu djum pusat",
+    "ordered_item": "Nasi Gudeg Krecek Telur Ayam Suwir, Tahu",
+    "user_id": "8b8445d7-5338-4bf4-9240-300d303a3111",
+    "created_at": "2026-05-31 03:36:32.124935+07"
+  },
+  {
+    "id": "933b4445-1cb4-4517-9a89-a89b086d0bd4",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Diana",
+    "rating": 5,
+    "review_text": "Mantap sekali makanannya ",
+    "ordered_item": "Nasi Gudeg Krecek Paha Atas",
+    "user_id": "695236c3-53fb-4a3d-b890-b3f1170f60c5",
+    "created_at": "2026-05-31 03:36:32.12649+07"
+  },
+  {
+    "id": "1bd0eaea-8f65-4693-8b9c-8801ce25eba7",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Parker",
+    "rating": 4,
+    "review_text": "kemasan menggunakan dus menjadi salah satu poin pilihan. waktu penyiapan cepat. kalo pagi sering kehabisan gudeg telurnya",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "49586c17-38f4-41e0-aa0d-4ddd3af98d42",
+    "created_at": "2026-05-31 03:36:32.127169+07"
+  },
+  {
+    "id": "651053a2-2364-484c-9da3-d7a7edb5579e",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Baron",
+    "rating": 5,
+    "review_text": "beberapa kali beli di sini 👍",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "557d1785-bd13-47ef-9fda-974c2f068069",
+    "created_at": "2026-05-31 03:36:32.127729+07"
+  },
+  {
+    "id": "ac858c26-58da-4b74-9e5a-746a0d67bff9",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Alistair",
+    "rating": 5,
+    "review_text": "Terimakasih driver, semangat terus",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "dedaa54e-4075-4ea7-be95-3e05ac1ce629",
+    "created_at": "2026-05-31 03:36:32.12811+07"
+  },
+  {
+    "id": "0e5344d3-d75d-48ea-8520-9c5e44831c04",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Bella",
+    "rating": 1,
+    "review_text": "terlalu manis, nasi terlalu lembek.",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "45f17dee-3c45-4a0b-8a67-f1869bd54227",
+    "created_at": "2026-05-31 03:36:32.128438+07"
+  },
+  {
+    "id": "92d1e4a8-5864-491b-a7b7-50053c10adc5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "ratih",
+    "rating": 5,
+    "review_text": "Sudah enak cuma sedikit terlalu manis,  terima kasih",
+    "ordered_item": "Nasi Gudeg Krecek Telur Tahu",
+    "user_id": "664ae8bc-87ec-464e-94bd-66c0e6d3eec4",
+    "created_at": "2026-05-31 03:36:32.129084+07"
+  },
+  {
+    "id": "c1998194-e148-48d7-a03c-14c9f399f10a",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Chloe",
+    "rating": 2,
+    "review_text": "udah kesekian kali beli biasanya ya gak masalah....kali ini hambar tidak ada rasa mau gado2 atau lotek...mana pesanan kurang 1 bungkus...walo akhirnya dikirim lagi.",
+    "ordered_item": "Gado-Gado, Lotek, Lotek",
+    "user_id": "4786da8e-394f-480c-b3c6-cb638fbb1282",
+    "created_at": "2026-05-31 03:36:32.129678+07"
+  },
+  {
+    "id": "57414950-e9ad-4c7d-b8aa-c3ccf60ed7fe",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Putri",
+    "rating": 5,
+    "review_text": "jika ke Jogja pasti pesen lotek disini, soal rasa jangan ditanya dan harga bersahabat tidak nguras dikantong ",
+    "ordered_item": "Lotek",
+    "user_id": "bde88e2e-ecbf-45b9-80c1-bcf8bf0b8e0b",
+    "created_at": "2026-05-31 03:36:32.130304+07"
+  },
+  {
+    "id": "9f5cb81d-c252-4da1-a60b-8d689cf256ab",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "River",
+    "rating": 5,
+    "review_text": "Bagus sekali enak",
+    "ordered_item": "Lotek",
+    "user_id": "ca996a40-c4e6-487c-8372-1470ad7706d8",
+    "created_at": "2026-05-31 03:36:32.130625+07"
+  },
+  {
+    "id": "1cce5e98-2c2d-460a-a95c-e6899fa82012",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Hydra",
+    "rating": 2,
+    "review_text": "biasa ada lontong, tapi ini tidak ada.... padahal tidak ada request",
+    "ordered_item": "Lotek",
+    "user_id": "6434a294-6002-4b88-a3ba-dfc82446d741",
+    "created_at": "2026-05-31 03:36:32.130934+07"
+  },
+  {
+    "id": "b9b229e5-9a28-42d9-aabf-bb7c80f852ca",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Laser",
+    "rating": 4,
+    "review_text": "enak ,cuma agk beda rasanya nggk sprti biasanya . 🙂",
+    "ordered_item": "Tahu Kupat, Lotek",
+    "user_id": "e031bb6f-941f-44b7-8cb6-ec55e930d9db",
+    "created_at": "2026-05-31 03:36:32.131626+07"
+  },
+  {
+    "id": "c779bff9-d541-4a79-89a1-52a7058a2860",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Sawyer",
+    "rating": 4,
+    "review_text": "Taste is very good, but need more vegetables",
+    "ordered_item": "Lotek",
+    "user_id": "a5a9f656-398f-40df-8d77-e2e3a4347902",
+    "created_at": "2026-05-31 03:36:32.13196+07"
+  },
+  {
+    "id": "6af8be7b-a9d4-4bcb-b6aa-d83b826b95a5",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Maya",
+    "rating": 1,
+    "review_text": "Sayurnya dikit banget... untuk harga 19 ribu",
+    "ordered_item": "Lotek",
+    "user_id": "72b356e8-0412-4f4d-875f-45c9eeb6d362",
+    "created_at": "2026-05-31 03:36:32.132261+07"
+  },
+  {
+    "id": "702821d2-1e5e-43e3-889f-d472c6c4e8e2",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Taufan",
+    "rating": 5,
+    "review_text": "jaga higienitas makanan asli Indonesia untuk Indonesia sehat 🙋🏻‍♂️",
+    "ordered_item": "Nasi Gudeg Krecek Telur, Nasi Gudeg Krecek Telur Tahu",
+    "user_id": "b026e68e-7bb5-44ec-95d6-b4af6374e0eb",
+    "created_at": "2026-05-31 03:36:32.132859+07"
+  },
+  {
+    "id": "8a20e766-2670-4286-8fae-62f538d4ff76",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Pyro",
+    "rating": 5,
+    "review_text": "saya suka, sesuai dengan pesanan.",
+    "ordered_item": "Nasi Gudeg Krecek Sayap",
+    "user_id": "70b2f83c-af12-469f-b012-1efede28844c",
+    "created_at": "2026-05-31 03:36:32.133446+07"
+  },
+  {
+    "id": "bd7f5102-ec4a-4929-97ff-6448c792e1d2",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Aero",
+    "rating": 4,
+    "review_text": "Rasanya ok, namun masih kalah dengan Gudeg Yu Djum yang di pusat (dari Selokan Mataram masuk gang lagi) atau yang masuk lewat Jalan Kaliurang",
+    "ordered_item": "Nasi Gudeg Krecek Telur Sayap, Tahu",
+    "user_id": "fe0ca23b-d511-486a-93c8-8746c60f6db4",
+    "created_at": "2026-05-31 03:36:32.134039+07"
+  },
+  {
+    "id": "f26c7b7c-ff36-47e7-9c93-3c445a21ceca",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Hana",
+    "rating": 5,
+    "review_text": "mantul x rasa nya, rekomendasi buat yg suka dengan gudek...",
+    "ordered_item": "Nasi Gudeg Krecek Telur, Tahu",
+    "user_id": "840c08d8-af7f-45ef-81d4-a33047a195a4",
+    "created_at": "2026-05-31 03:36:32.13464+07"
+  },
+  {
+    "id": "2c8b7ee1-feb8-47c8-8c61-d81c4c155b6e",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Cliff",
+    "rating": 5,
+    "review_text": "selalu enak... gak pernah bosen",
+    "ordered_item": "Nasi Gudeg Krecek Telur Paha Atas",
+    "user_id": "ade7457f-b000-4ac4-a742-27fff781bbab",
+    "created_at": "2026-05-31 03:36:32.135182+07"
+  },
+  {
+    "id": "ae340868-5ccb-44b1-a084-4d22b3713507",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Philip",
+    "rating": 3,
+    "review_text": "garing krn ga ada arehnya",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "1a8d3459-a5a1-49bf-a64e-5f185781440c",
+    "created_at": "2026-05-31 03:36:32.135452+07"
+  },
+  {
+    "id": "6d64e1a8-e39d-40c4-8f4f-9fe8c7d98b23",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Fitri",
+    "rating": 5,
+    "review_text": "Kualitasnya tetap terjaga sejak dulu. Mantap...",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "562dcb6a-5d05-46f5-a8a0-6c153511c88e",
+    "created_at": "2026-05-31 03:36:32.135725+07"
+  },
+  {
+    "id": "65ac8a01-326e-4736-85df-779a4db83eca",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ndaru",
+    "rating": 5,
+    "review_text": "alhamdulillah akhirnya bs mkn gudeg yu jum lagi setelah sekian thn tdk ke jogja. tetep enak dan mantap.",
+    "ordered_item": "Nasi Gudeg Krecek Telur Tahu, Nasi Gudeg Krecek Ayam Suwir",
+    "user_id": "d2c0014b-58e1-4b91-b6cb-37762172180f",
+    "created_at": "2026-05-31 03:36:32.136271+07"
+  },
+  {
+    "id": "743b051c-fc7c-4f85-8d38-c8cd201149a9",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Candra",
+    "rating": 3,
+    "review_text": "krecek nya ga diksh cabe..pdhl td udh pesen lgs di aplikasi nya",
+    "ordered_item": "Nasi Gudeg Krecek Ayam Suwir",
+    "user_id": "d86d1b02-c677-438d-ad2d-cbacf5597a15",
+    "created_at": "2026-05-31 03:36:32.136814+07"
+  },
+  {
+    "id": "2afd4899-82cd-4f92-96bc-8f57a74f6344",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Isaac",
+    "rating": 5,
+    "review_text": "gede bgt porsinya bisa buat 3orang😂",
+    "ordered_item": "Nasi / Bubur Gudeg Ayam Suwir +Telor",
+    "user_id": "d9b0603c-fdc9-4a25-bc29-a509b0a85d18",
+    "created_at": "2026-05-31 03:36:32.137366+07"
+  },
+  {
+    "id": "655c2246-16ed-4712-a4ba-921776a82389",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Lestari",
+    "rating": 3,
+    "review_text": "Kepala ayam tdk ada 🥲🥲",
+    "ordered_item": "Nasi / Bubur Gudeg Telor, Nasi / Bubur Gudeg Sayap Ayam, Nasi / Bubur Gudeg Sayap Ayam + Tahu",
+    "user_id": "277eff36-2987-46e8-b637-bb7c749cc27c",
+    "created_at": "2026-05-31 03:36:32.137979+07"
+  },
+  {
+    "id": "d27c8195-906f-488d-8d71-81fa3f20e2ac",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ruby",
+    "rating": 5,
+    "review_text": "rasanya enak khas gudeg jaman dulu, cuma nasinya terlalu sedikit 🙊",
+    "ordered_item": "Nasi / Bubur Gudeg Kepala Ayam + Tahu, Nasi / Bubur Gudeg Kepala Ayam + Telor",
+    "user_id": "ff3caa98-b775-4df6-bc3b-5cd432903d8f",
+    "created_at": "2026-05-31 03:36:32.138611+07"
+  },
+  {
+    "id": "f711077f-0f32-4402-b5ff-7ff7ea7ffcbe",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Neon",
+    "rating": 5,
+    "review_text": "gudeg paling enak yg pernah ak makan,porsinya pas,enakkkkkk",
+    "ordered_item": "Nasi / Bubur Gudeg Telor",
+    "user_id": "10218bc9-6a23-4c1c-b5b0-9822df3cfed9",
+    "created_at": "2026-05-31 03:36:32.139117+07"
+  },
+  {
+    "id": "443a7837-bae9-4075-a7e2-8304cbf28cd4",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Zenith",
+    "rating": 5,
+    "review_text": "pengen ngawinin chefnya",
+    "ordered_item": "Nasi / Bubur Gudeg Ayam Suwir",
+    "user_id": "53e48e83-ca6c-4dc8-8263-52e7b8d2c448",
+    "created_at": "2026-05-31 03:36:32.139658+07"
+  },
+  {
+    "id": "9f435c61-e42e-486b-82bd-63aee0dc7cea",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ezra",
+    "rating": 4,
+    "review_text": "bubur nya dingin seperti  msk kulkas",
+    "ordered_item": "Nasi / Bubur Gudeg Tahu",
+    "user_id": "c60b5b79-36b8-4f20-a935-33d264891650",
+    "created_at": "2026-05-31 03:36:32.140213+07"
+  },
+  {
+    "id": "f06fc738-ca72-4ad2-9832-0d8ab1b37b64",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Vector",
+    "rating": 5,
+    "review_text": "enak banget, recommend",
+    "ordered_item": "Nasi / Bubur Gudeg Ayam Suwir +Telor",
+    "user_id": "79758901-79f0-4113-8202-46e312ac31c9",
+    "created_at": "2026-05-31 03:36:32.14052+07"
+  },
+  {
+    "id": "ab15ab70-c765-43be-b481-a2d0734b5913",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Takeru",
+    "rating": 5,
+    "review_text": "Rasa enak, kuah arehnya juga ga pelit mantep",
+    "ordered_item": "Nasi / Bubur Gudeg Telor + Tahu, Nasi / Bubur Gudeg Ayam Suwir + Tahu",
+    "user_id": "a229a621-e989-499f-a702-bde9079de4ef",
+    "created_at": "2026-05-31 03:36:32.14109+07"
+  },
+  {
+    "id": "c255727b-89d1-4141-8020-41d54c77a2da",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Aqua",
+    "rating": 5,
+    "review_text": "Hanya packagingnya aja yang kurang sreg karena pake styrofoam",
+    "ordered_item": "Nasi / Bubur Gudeg Telor",
+    "user_id": "5eda7ac5-ff7c-4b27-ab85-7134ee5d8c2a",
+    "created_at": "2026-05-31 03:36:32.141398+07"
+  },
+  {
+    "id": "0d79820e-6d54-413e-8c36-2c0217d45c4d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Langit",
+    "rating": 1,
+    "review_text": "hari ini rasa 4 lotek yang saya pesan amburadul, asin, ada rasa pait kacang... pokoknya tidak seperti biasanya ",
+    "ordered_item": "Lotek Kupat, Bakwan",
+    "user_id": "f806ae5d-782b-42fb-a790-9d3fa1b88be6",
+    "created_at": "2026-05-31 03:36:32.141985+07"
+  },
+  {
+    "id": "e63dbd68-7e5b-4454-b960-38f2855e9338",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Endah",
+    "rating": 5,
+    "review_text": "enakkk bangetttt.. selalu seneng order disini.. masaknya cepet dan selalu pas bumbunya.. klo ada yg kosong jg lngsung dikabari mau ganti apa.. pokoknya kedai sinang kesayangan bgt..",
+    "ordered_item": "Lotek Kupat, Gado - Gado Kupat",
+    "user_id": "38a63eef-d8e3-45a7-ac4a-d8b8d1ce1c4a",
+    "created_at": "2026-05-31 03:36:32.142535+07"
+  },
+  {
+    "id": "d647470d-8da5-4af4-82f5-a853da0e68c6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Wira",
+    "rating": 1,
+    "review_text": "Pesen lotek telur Tanpa ketupat cabe 10, datengnya bakwan bumbu. Payah! Ngapain gue buang uang 40,000 buat bakwan doang!",
+    "ordered_item": "Lotek Telur, Cabe, Kerupuk",
+    "user_id": "3ea81cc8-6e26-48a3-930d-e4e9cbb15525",
+    "created_at": "2026-05-31 03:36:32.143072+07"
+  },
+  {
+    "id": "13759124-e1d2-4c75-89da-3f1a5cfdfc59",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Yuto",
+    "rating": 3,
+    "review_text": "beda cabang agak beda rasanya..",
+    "ordered_item": "Lotek Telur, Gado - Gado Kupat",
+    "user_id": "ab910dd8-bdca-4955-8dfc-bd927275b11c",
+    "created_at": "2026-05-31 03:36:32.143637+07"
+  },
+  {
+    "id": "5d2e53b3-f603-47e3-9ad3-bafd31d0e3bf",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Riku",
+    "rating": 5,
+    "review_text": "bakpianya enak. kalo beli merek bakpiaku aja",
+    "ordered_item": "Bakpiaku Isi 20 Rasa Keju",
+    "user_id": "4ffe128a-c4fc-4c3a-8e4f-0404bcde195a",
+    "created_at": "2026-05-31 03:36:32.144178+07"
+  },
+  {
+    "id": "e4ef61eb-54f5-416f-88e1-d877d117797f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Theodore",
+    "rating": 4,
+    "review_text": "sayang mungkin sdh jam 19.00 nangka gorinya sudah agak basi, jadi tdk bisa dimakan, yg lainnya OK semua",
+    "ordered_item": "Nasi Gudeg Krecek Suwir, Nasi Gudeg Krecek Telur",
+    "user_id": "1616c668-1dae-41db-9630-2a8504040040",
+    "created_at": "2026-05-31 03:36:32.144732+07"
+  },
+  {
+    "id": "8aafe84b-ae12-4e65-a89e-d23698b80c2f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Cordelia",
+    "rating": 5,
+    "review_text": "the taste is good and fast delivey",
+    "ordered_item": "Nasi Gudeg Krecek Dada + Telur",
+    "user_id": "4c380e11-8179-4965-946b-09113eff40ef",
+    "created_at": "2026-05-31 03:36:32.145264+07"
+  },
+  {
+    "id": "6deb68d0-3041-4377-9328-b4eceaa4a1e8",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Dorian",
+    "rating": 5,
+    "review_text": "Anda layak dapat bintang, joosss gandos gudegnya, enak tp ga bikin eneg, sukses terus untuk bisnis gudegnya, bu.",
+    "ordered_item": "Nasi Gudeg Krecek Telor + Tahu",
+    "user_id": "1d7cf162-c32f-4594-9fcd-683818c7242b",
+    "created_at": "2026-05-31 03:36:32.145768+07"
+  },
+  {
+    "id": "bc040ea3-30c1-45ce-8a77-cb2792a2ec92",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "George",
+    "rating": 5,
+    "review_text": "nyeseeeeeL saya beliny 3 doang... ter Enaaak se Jogya sesuai lidah saya",
+    "ordered_item": "Nasi Gudeg Krecek Sayap, Nasi Gudeg Krecek Suwir, Nasi Gudeg Krecek Telor + Tahu",
+    "user_id": "bfd2648f-65c1-4a3e-81ca-685fd58e1a0e",
+    "created_at": "2026-05-31 03:36:32.146303+07"
+  },
+  {
+    "id": "afd2290b-3fde-4737-b1d5-344ca4a84d38",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Leo",
+    "rating": 5,
+    "review_text": "sippp makasii yA",
+    "ordered_item": "Bakpia Coklat Isi 15, Bakpia Aneka Rasa Isi 10, Bakpia Kacang Hijau Isi 10, Bakpia Kacang Hijau Isi 20",
+    "user_id": "7ced633a-1b58-4c00-8997-d4a46f2e5f8a",
+    "created_at": "2026-05-31 03:36:32.146883+07"
+  },
+  {
+    "id": "ce6dfdbb-43db-4733-bbbe-8092daeb5376",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Leo",
+    "rating": 5,
+    "review_text": "cocok untuk jadi oleh2",
+    "ordered_item": "Bakpia Kacang Hijau Isi 20",
+    "user_id": "7ced633a-1b58-4c00-8997-d4a46f2e5f8a",
+    "created_at": "2026-05-31 03:36:32.147465+07"
+  },
+  {
+    "id": "5da32573-71fa-4e35-b451-354c797e1b10",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Omega",
+    "rating": 5,
+    "review_text": "suka banget kulitnya tipis berlapis lapis dan isiannya lezat. teruskan promonya ya Kak",
+    "ordered_item": "Bakpia Greentea isi 10, Bakpia Keju Isi 15, Bakpia Kacang Hijau Isi 10, Bakpia Keju Isi 10, Bakpia Coklat Isi 10",
+    "user_id": "3a657674-2f6c-42cc-92ab-c3615b092784",
+    "created_at": "2026-05-31 03:36:32.147966+07"
+  },
+  {
+    "id": "728f9b5f-ad8b-4f2b-ba44-0412cbbc6132",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Sigma",
+    "rating": 4,
+    "review_text": "beli 3 bungkus, 1 bungkusnya ada ulatnya hiks",
+    "ordered_item": "Lotek Telur",
+    "user_id": "bdbca6bd-fc97-4ca0-a95d-66afc819e9b1",
+    "created_at": "2026-05-31 03:36:32.148237+07"
+  },
+  {
+    "id": "28e0d37d-8b1d-4a39-9d39-567dfa25d4d2",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Emma",
+    "rating": 5,
+    "review_text": "enak bangett sayang ngak ada kerupukk 😭",
+    "ordered_item": "Lotek Kupat",
+    "user_id": "7f52265c-cd94-430b-a126-94a3d18d0269",
+    "created_at": "2026-05-31 03:36:32.148796+07"
+  },
+  {
+    "id": "4dd9d166-331e-4802-b2bd-2398b1016421",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Wijaya",
+    "rating": 1,
+    "review_text": "tahu mboten gimbal biasa dapet kupat/lontong ini ga dapet sama sekali full di isi kol sama tauge 🥲 dan bumbunya jadi kuah encer sekali di tambah ulekan kacangnya mengendap \nbad sekali ",
+    "ordered_item": "Lotek Nasi, Tahu (Mboten) Gimbal, Nasi Putih, Tjap Djaek",
+    "user_id": "dd324699-3189-4227-932b-c0a70c5f4097",
+    "created_at": "2026-05-31 03:36:32.149507+07"
+  },
+  {
+    "id": "651e90d3-17df-437f-b957-b1f649b487ff",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Magnus",
+    "rating": 3,
+    "review_text": "saya pesan lotek telur, yg datang lotek tanpa telur. mohon lebih teliti kedepannya",
+    "ordered_item": "Lotek Telur, Es Jeruk, Kerupuk",
+    "user_id": "1af42e3d-4207-4f7e-823b-2ca08ad803ed",
+    "created_at": "2026-05-31 03:36:32.150143+07"
+  },
+  {
+    "id": "7b895b92-aa14-4c31-88cf-a4bee725833a",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Nova",
+    "rating": 3,
+    "review_text": "Yg datang lotek 2, gado-gado 1, order nya gado-gado 2, lotek 1 😑",
+    "ordered_item": "Lotek Kupat, Gado - Gado Kupat",
+    "user_id": "b445c63a-4f6c-4528-bbc4-e17a4abae806",
+    "created_at": "2026-05-31 03:36:32.15047+07"
+  },
+  {
+    "id": "82bacfe8-fb7a-4122-8849-84f1a180b135",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Vivienne",
+    "rating": 2,
+    "review_text": "kurang pas bumbunya...tidak sprti dulu",
+    "ordered_item": "Gado - Gado Kupat, Lotek Kupat, Cap Cay Goreng / Rebus",
+    "user_id": "5aec1d46-abb0-4e0e-aea8-74dc81d082aa",
+    "created_at": "2026-05-31 03:36:32.151041+07"
+  },
+  {
+    "id": "7b3ac3b3-72d4-4e47-aaa2-6eb8ee7e0055",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Meadow",
+    "rating": 5,
+    "review_text": "tks sdh mengantar pesanan makanan sampai kami",
+    "ordered_item": "Lotek Kupat",
+    "user_id": "9e7c6ab8-f502-43d5-984c-1312647c6fc9",
+    "created_at": "2026-05-31 03:36:32.151343+07"
+  },
+  {
+    "id": "5365ca2f-ccd9-460a-b24b-c8a47ab69c11",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ningrum",
+    "rating": 4,
+    "review_text": "add tomatoes, please",
+    "ordered_item": "Lotek Kupat, Bakwan",
+    "user_id": "44eb8ecf-6a22-4330-9202-978ca6704ba6",
+    "created_at": "2026-05-31 03:36:32.151659+07"
+  },
+  {
+    "id": "8c1a022b-65ed-4854-b220-fb921724b1a7",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Wira",
+    "rating": 3,
+    "review_text": "Ada ulatnya... mohon dijaga kebersihannya 🙏",
+    "ordered_item": "Lotek Kupat, Bakwan",
+    "user_id": "3ea81cc8-6e26-48a3-930d-e4e9cbb15525",
+    "created_at": "2026-05-31 03:36:32.151974+07"
+  },
+  {
+    "id": "c2aef297-80c4-45ab-a83a-801ba7c43d33",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Brooke",
+    "rating": 5,
+    "review_text": "Langganan keluarga",
+    "ordered_item": "Lotek Telur, Gado - Gado Kupat, Kerupuk",
+    "user_id": "5484477f-0b6f-41cc-b9c8-1f6d74799209",
+    "created_at": "2026-05-31 03:36:32.152532+07"
+  },
+  {
+    "id": "e36ed4f9-51a5-498a-aa08-39c42a8467b4",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ethan",
+    "rating": 3,
+    "review_text": "Pesen gado gado isinya Kobis semua 🥵🥵🥵",
+    "ordered_item": "Gado - Gado Kupat, Lotek Telur",
+    "user_id": "4e3e04d4-5309-4792-a8a5-1164c1578090",
+    "created_at": "2026-05-31 03:36:32.15309+07"
+  },
+  {
+    "id": "67704897-1970-4f95-9654-4ed0ead2749a",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Gilang",
+    "rating": 5,
+    "review_text": "porsinya melimpah",
+    "ordered_item": "Lotek Kupat, Tahu (Mboten) Gimbal, Tahu / Tempe Bacem",
+    "user_id": "4c8f8fa2-8519-4698-a7fd-6a204248ce8d",
+    "created_at": "2026-05-31 03:36:32.153641+07"
+  },
+  {
+    "id": "51424520-1d26-42cc-ab0f-bcbd936e4865",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Oliver",
+    "rating": 3,
+    "review_text": "loteknya enak, tapi bihun gorengnya rasa micin, kayaknya kedobel ngasih micinnya 😵",
+    "ordered_item": "Bihun Boreng / Rebus, Lotek Kupat",
+    "user_id": "0ad11cdf-8dfa-4547-bc29-1c074875db6a",
+    "created_at": "2026-05-31 03:36:32.154154+07"
+  },
+  {
+    "id": "b8d0b632-7ff2-4f5e-9fbc-7a39cc057b94",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Diana",
+    "rating": 1,
+    "review_text": "di lotek saya ada kalajengking matinya",
+    "ordered_item": "Lotek Bumbu Pisah",
+    "user_id": "695236c3-53fb-4a3d-b890-b3f1170f60c5",
+    "created_at": "2026-05-31 03:36:32.154773+07"
+  },
+  {
+    "id": "cadcd2e4-f6a8-4bd3-952c-20668f9fb938",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Rizky",
+    "rating": 4,
+    "review_text": "kerupuknya melempem",
+    "ordered_item": "Lotek Kupat",
+    "user_id": "eca6d94d-d278-407b-ba18-464eeed672ff",
+    "created_at": "2026-05-31 03:36:32.155061+07"
+  },
+  {
+    "id": "7f96c514-67bb-4d75-a38e-9deb1755c74b",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Arthur",
+    "rating": 3,
+    "review_text": "Biassnya telur rebus, ini kok diberi telur dadar..?",
+    "ordered_item": "Lotek Telur",
+    "user_id": "a788d263-4cbc-4333-a2ee-252b4215a4e7",
+    "created_at": "2026-05-31 03:36:32.155407+07"
+  },
+  {
+    "id": "03f5c3ef-6308-4e1e-8021-64ff66d4e665",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Kenji",
+    "rating": 4,
+    "review_text": "kobis terlalu banyak",
+    "ordered_item": "Lotek Kupat",
+    "user_id": "a39c2c9b-80e0-4fdd-82e2-3108ab74cdee",
+    "created_at": "2026-05-31 03:36:32.156188+07"
+  },
+  {
+    "id": "3c604981-120d-4f91-8c6d-d9774c298859",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Daiki",
+    "rating": 4,
+    "review_text": "jusnya kurang lama ngeblendernya, jadi masih ada yang utuh buahnya.",
+    "ordered_item": "Lotek Kupat, Jus Sirsak",
+    "user_id": "61b3a783-65cb-4c46-b006-dee68e8a0494",
+    "created_at": "2026-05-31 03:36:32.157513+07"
+  },
+  {
+    "id": "90726499-3541-4131-b56f-1037ae5b1ba4",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Ren",
+    "rating": 5,
+    "review_text": "Rasa enak, porsi banyak, ikan gak amis.. Cocok utk yg lagi belajar makan ikan\n. Mantab pokoknya",
+    "ordered_item": "Ngikan POP!, Ikan Sambal Oseng Mercon, Ikan Sambal Woku",
+    "user_id": "4d1a94c9-c1ec-4053-be0c-9cba77929a50",
+    "created_at": "2026-05-31 03:36:32.158209+07"
+  },
+  {
+    "id": "9d44208a-caaa-4fa6-bbdb-410d8aefef66",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Sebastian",
+    "rating": 4,
+    "review_text": "Nasinya kurang empuk",
+    "ordered_item": "Ikan Sambal Oseng Mercon",
+    "user_id": "bc4d5e95-eeec-430f-8220-4e37835b582f",
+    "created_at": "2026-05-31 03:36:32.158802+07"
+  },
+  {
+    "id": "b63bc9a0-d4fb-4963-8d2a-18bfe903e52a",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Gavin",
+    "rating": 4,
+    "review_text": "bakpia yg rasa kumbu hitam tidak fresh",
+    "ordered_item": "Bakpia Basah Kumbu Hitam Isi 15, Bakpia Basah Keju Isi 15, Bakpia Kacang Hijau Original Isi 10 - Juwara Satoe, Bakpia Basah Coklat Premium Isi 15",
+    "user_id": "bdf14775-c07e-497d-ab74-1b74b2904130",
+    "created_at": "2026-05-31 03:36:32.159442+07"
+  },
+  {
+    "id": "5b14a57b-03c2-40a4-a1e1-0a354d356a08",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Milo",
+    "rating": 5,
+    "review_text": "mantap, besar2 bakpiany",
+    "ordered_item": "Bakpia Basah Kumbu Hitam Isi 15 - Juwara Satoe, Bakpia Basah Kacang Hijau Isi 15 - Juwara Satoe",
+    "user_id": "fe123db4-594d-46bd-8de3-4282808c142e",
+    "created_at": "2026-05-31 03:36:32.160012+07"
+  },
+  {
+    "id": "c7f1a8fe-b698-4ebb-af30-0c71c6f57ba5",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Naoki",
+    "rating": 3,
+    "review_text": "masih ada beberapa helai rambut, tolong diikat ya kalau sedang masak.",
+    "ordered_item": "Lotek Sayur, Lotek Sayur",
+    "user_id": "b6b06d95-4a1d-4795-a26a-74afa9cecb2d",
+    "created_at": "2026-05-31 03:36:32.160536+07"
+  },
+  {
+    "id": "29f55da0-5759-43fb-8cc7-f38298064556",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Satria",
+    "rating": 5,
+    "review_text": "Sempat ada yang kurang, tapi restonya fast respon waktu dikomplain via WA yang ada di info resto & bertanggung jawab mengantarkan kekurangannya. Terima kasih",
+    "ordered_item": "Kupat Tahu, Gorengan (Tempe, Bakwan), Paket Lotek + Gorengan",
+    "user_id": "31d5e162-5bdc-4730-a721-eb54e312ee7c",
+    "created_at": "2026-05-31 03:36:32.161092+07"
+  },
+  {
+    "id": "89b3f645-97ba-401a-b728-efd6638a2f89",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Milo",
+    "rating": 5,
+    "review_text": "mantap enakk pooll 🤩",
+    "ordered_item": "Gado-gado, Krupuk Lotek, Bakwan",
+    "user_id": "fe123db4-594d-46bd-8de3-4282808c142e",
+    "created_at": "2026-05-31 03:36:32.161625+07"
+  },
+  {
+    "id": "e29d08ab-be23-4877-8a3b-bfbdce8fae7f",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Zephyr",
+    "rating": 3,
+    "review_text": "bumbunya kurang berasa ",
+    "ordered_item": "Bakso Mercon",
+    "user_id": "22d01511-1dc6-4b98-8e20-1ab981da60f3",
+    "created_at": "2026-05-31 03:36:32.162142+07"
+  },
+  {
+    "id": "44fe6129-3d66-4768-aeab-cf0e4fa64478",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Eka",
+    "rating": 1,
+    "review_text": "gak enak blas gal lengkap sayurnya",
+    "ordered_item": "Lotek Biasa",
+    "user_id": "3eef4ac8-f8df-4b74-b978-e93b15e411b3",
+    "created_at": "2026-05-31 03:36:32.163031+07"
+  },
+  {
+    "id": "b9902303-365a-4fbe-8fce-43f1c7eef6c7",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Winston",
+    "rating": 4,
+    "review_text": "Kadang bumbunya enak, kadang hambar",
+    "ordered_item": "Lotek + Telur",
+    "user_id": "398e2036-7509-4c77-98dd-babcd5e3c5c8",
+    "created_at": "2026-05-31 03:36:32.163344+07"
+  },
+  {
+    "id": "d3879ca5-178c-425e-a389-a90251f3e1ef",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Jade",
+    "rating": 3,
+    "review_text": "Pesen minta pedes g pernah pedes. Smp dtulis lbh pdes dr kmrn. Ttp sm aj",
+    "ordered_item": "Lotek Biasa",
+    "user_id": "f8260bdb-c4cb-4d1a-89d3-8eeb8ad37696",
+    "created_at": "2026-05-31 03:36:32.163802+07"
+  },
+  {
+    "id": "11521564-1258-40e7-b51a-4300f9cf1b36",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Rosalind",
+    "rating": 5,
+    "review_text": "tahu bakso'a kurang asin dikit 🤭",
+    "ordered_item": "Lotek Biasa, Tahu Bakso, Gado-gado Biasa",
+    "user_id": "cca4ade2-d218-4194-9369-6f5e15b245be",
+    "created_at": "2026-05-31 03:36:32.164467+07"
+  },
+  {
+    "id": "a5ac310f-c8f0-4a33-953d-532ade1cc45a",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ian",
+    "rating": 2,
+    "review_text": "pesan nasi pecel + telur tapi yang datang tanpa telur. Dan harganya tidak berkurang. cek lagi ketelitian",
+    "ordered_item": "Lotek + Telur, Nasi Pecel + Telur",
+    "user_id": "9464db73-67e2-45e1-9432-f59710bdc8d3",
+    "created_at": "2026-05-31 03:36:32.165071+07"
+  },
+  {
+    "id": "002fbe98-4dc2-46ea-a375-bf0d06b25582",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Blake",
+    "rating": 3,
+    "review_text": "lotek : minim sayur\ngado gado : dominasi kobis",
+    "ordered_item": "Lotek Biasa, Gado - Gado + Telur, Gorengan",
+    "user_id": "53172dea-e249-442d-8293-bea01900a4c4",
+    "created_at": "2026-05-31 03:36:32.16602+07"
+  },
+  {
+    "id": "c4192af3-f42b-4019-8c79-720f349a1138",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Spark",
+    "rating": 3,
+    "review_text": "bumbu loteknya kurang sedep, gorengannya juga melempem",
+    "ordered_item": "Gado - Gado + Telur, Lotek Biasa",
+    "user_id": "cdd4106c-c8cf-4826-a3c6-9725e3a2b905",
+    "created_at": "2026-05-31 03:36:32.166533+07"
+  },
+  {
+    "id": "2d1ec997-a1bb-4bc1-8b97-287db4a640b2",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ryu",
+    "rating": 4,
+    "review_text": "pesen lotek + telur, tapi ngga ada telurnya 👍",
+    "ordered_item": "Lotek + Telur, Bakwan",
+    "user_id": "1e76438a-d4d0-4f41-a9b8-567553c1d5dc",
+    "created_at": "2026-05-31 03:36:32.167087+07"
+  },
+  {
+    "id": "3a3f0ae7-dd5e-49c5-9b39-e17485a53365",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "user_name": "Ava",
+    "rating": 3,
+    "review_text": "bakso/pentol merconnya belum matang",
+    "ordered_item": "Sate Ayam Biasa, Tahu Tek Telur, Es Teh, Bakso Mercon",
+    "user_id": "d308af29-697b-4e1d-8fb6-fe224019222a",
+    "created_at": "2026-05-31 03:36:32.167547+07"
+  },
+  {
+    "id": "c47c3e23-3bb1-46ad-b8e7-4fa58ce4bf36",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Wyatt",
+    "rating": 3,
+    "review_text": "bakso nya enak sih tapi kuah nya uuuuaasiiinn bgt..yg jual pngn kawin kah😭🤣",
+    "ordered_item": "Bakso Mercon, Bakso isi Daging Cincang",
+    "user_id": "723b7064-c642-4c77-bddf-13742e9d633b",
+    "created_at": "2026-05-31 03:36:32.168122+07"
+  },
+  {
+    "id": "b2646485-db90-404f-9718-3739722a2904",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Aqua",
+    "rating": 3,
+    "review_text": "sedih bgtt pesan es jeruk tp es jeruknya ga dikasih, ntah emg lg banyak pesanan atau gmn tapi lain kali tolong diperhatikan lagi ya pesanannya:(",
+    "ordered_item": "Lotek Kupat, Magelangan, Es Jeruk, Kupat Tahu, Kerupuk",
+    "user_id": "5eda7ac5-ff7c-4b27-ab85-7134ee5d8c2a",
+    "created_at": "2026-05-31 03:36:32.168649+07"
+  },
+  {
+    "id": "b708bbd4-7970-43aa-9662-dc672a0ec4ef",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Edward",
+    "rating": 2,
+    "review_text": "pesen lotek telurr .. yg dateng lotek tanpa telurrr bosss.. haduh",
+    "ordered_item": "Lotek Telur, Gado - Gado Kupat",
+    "user_id": "4e7afb54-f249-4ec7-8572-258e4f13994a",
+    "created_at": "2026-05-31 03:36:32.168945+07"
+  },
+  {
+    "id": "08e13b57-8584-40cc-a2dc-fbdee164a44c",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Penelope",
+    "rating": 3,
+    "review_text": "akurasi pesanan perlu ditingkatkan",
+    "ordered_item": "Lotek Kupat, Bakwan",
+    "user_id": "5cbb9490-452e-4a90-b99b-6281d71406f2",
+    "created_at": "2026-05-31 03:36:32.169218+07"
+  },
+  {
+    "id": "ea468dff-b55c-41b8-b15f-fb0b7e9fae3f",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Guntur",
+    "rating": 1,
+    "review_text": "pesennya lotek telur, tp ngga dikasih telur.",
+    "ordered_item": "Telur Dadar / Ceplok / Rebus, Bakwan, Lotek Telur",
+    "user_id": "b2365ee9-1c67-4b80-b730-736acd8a9d4e",
+    "created_at": "2026-05-31 03:36:32.169719+07"
+  },
+  {
+    "id": "349e0cd1-1912-459a-a820-3af3991b9ea0",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Florence",
+    "rating": 3,
+    "review_text": "bumbunya terlalu manis",
+    "ordered_item": "Gado - Gado Kupat, Lotek Telur",
+    "user_id": "c8b4ddc4-a238-4ec1-b7c4-6af205996c5f",
+    "created_at": "2026-05-31 03:36:32.169999+07"
+  },
+  {
+    "id": "843a2333-b78d-4a4c-a91d-51f8d36868ac",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Ryu",
+    "rating": 5,
+    "review_text": "yang ga enak cuma pentolnya,astaga ga dikasih sambel acan,rasanya anyep bgt pula 😂 bukan pentol malah kayak cilok biasa 🤣 ",
+    "ordered_item": "Oseng Mie, Kering Tempe, Bergedel, Rica-rica Ati Ampela Ayam, Ayam Suwir Pedas",
+    "user_id": "1e76438a-d4d0-4f41-a9b8-567553c1d5dc",
+    "created_at": "2026-05-31 03:36:32.170565+07"
+  },
+  {
+    "id": "d0400636-5fab-4c72-8484-0a48fa903acb",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Nova",
+    "rating": 1,
+    "review_text": "Porsinya terlalu sedikit sih menurutku",
+    "ordered_item": "Es Batu, Teh Poci Mangga, Ceker Mercon, Oseng Tempe Lombok Ijo",
+    "user_id": "b445c63a-4f6c-4528-bbc4-e17a4abae806",
+    "created_at": "2026-05-31 03:36:32.171078+07"
+  },
+  {
+    "id": "e2555395-bd63-4c50-aa10-b0b857bea8f6",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Yuto",
+    "rating": 1,
+    "review_text": "pesen sop makaroni tapi makaroni nya cm 1 biji, rasanya ga enak sama sekali, sop baksonya jg ga seger alias baksonya basi, cekernya ga mateng masih ada warna darahnya dan keras. warung makan terburuk di gofood. chef juna menangis melihat ini 😭",
+    "ordered_item": "Ceker Mercon, Soup Bakso, Soup Makaroni",
+    "user_id": "ab910dd8-bdca-4955-8dfc-bd927275b11c",
+    "created_at": "2026-05-31 03:36:32.171597+07"
+  },
+  {
+    "id": "e6994d29-4b2e-4983-9af6-ea819ac4fa97",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "user_name": "Clay",
+    "rating": 5,
+    "review_text": "mantappp minta yg baru dikasih yg panas, tq seller sukses terus ",
+    "ordered_item": "Paket CERIA isi 6 Box Bakpia isi 20 (Free Dus Traveler Packing), Tambahan Kardus Traveler Packing Muat Hingga 6 Kotak Bakpia, Kacang Hijau Original Isi 20",
+    "user_id": "17a77be1-6d07-456c-a384-fcd7d82a588b",
+    "created_at": "2026-05-31 03:36:32.172104+07"
+  },
+  {
+    "id": "5bb1007e-8c99-4b8d-9576-4574ec852709",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Zephyr",
+    "rating": 4,
+    "review_text": "Saya pesan 6 box semua isi 20, tapi ada satu box yang isi 15, :(. Tidak bisa komplen karena kondisi hujan dan driver pun tidak cek. ",
+    "ordered_item": "Paket CERIA isi 4 Box Bakpia isi 20 (Free Dus Traveler Packing), Kacang Hijau Rasa Coklat Isi 20, Bakpia Mix Aneka Rasa Buah isi 20",
+    "user_id": "22d01511-1dc6-4b98-8e20-1ab981da60f3",
+    "created_at": "2026-05-31 03:36:32.172919+07"
+  },
+  {
+    "id": "842df754-bda5-4a2a-b4f9-b7cfbe7fea68",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Aditya",
+    "rating": 5,
+    "review_text": "Pasti pesen lagi ",
+    "ordered_item": "Kacang Hijau Isi 15, Bakpia Kumbu Hitam Isi 20, Kacang Hijau Mix ori dan Kumbu Hitam isi 20",
+    "user_id": "12c883f5-7fed-41b0-9f25-9dd5c3faffa8",
+    "created_at": "2026-05-31 03:36:32.173506+07"
+  },
+  {
+    "id": "2a0fe739-f2d7-4b20-8fac-adddc50bb7fc",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Mentari",
+    "rating": 4,
+    "review_text": "mbok nasinya ditambahi..",
+    "ordered_item": "Nasi Gudeg Krecek Telor Suwir",
+    "user_id": "7359e392-09ce-4224-a570-d4074f4ff7e0",
+    "created_at": "2026-05-31 03:36:32.174206+07"
+  },
+  {
+    "id": "43858c62-095a-4b8a-9277-1e8053602092",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Nana",
+    "rating": 5,
+    "review_text": "Enak bgt sumpah dah",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "7501f352-85f5-419c-a180-51f0b2baba60",
+    "created_at": "2026-05-31 03:36:32.174461+07"
+  },
+  {
+    "id": "f7162f20-b53e-4fc4-8eb5-e98a5ed66b75",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Sebastian",
+    "rating": 5,
+    "review_text": "Gudeg terfavorit dari semua merk, rasaya benar2 pas, ayam emppuk, nasi pulen, telur mantap, krecek tidak prengus, gudeg tidak eneg, mantul semua",
+    "ordered_item": "Nasi Gudeg Telor Suwir",
+    "user_id": "bc4d5e95-eeec-430f-8220-4e37835b582f",
+    "created_at": "2026-05-31 03:36:32.174997+07"
+  },
+  {
+    "id": "1c025fac-0bac-4e16-9ec1-43e5383732ac",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Victor",
+    "rating": 4,
+    "review_text": "Daging paha bisa lebih dikit",
+    "ordered_item": "Nasi Gudeg Paha, Nasi Gudeg Paha",
+    "user_id": "6c704f58-2f21-4269-a72c-f51effe3817f",
+    "created_at": "2026-05-31 03:36:32.175507+07"
+  },
+  {
+    "id": "fbbf4030-458a-483f-b869-9a2504550dd5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Mio",
+    "rating": 5,
+    "review_text": "Pak. Ini kok ndk ad pilihan tip yaa .. atau tunggu sbntr . Saya mau sampai pak",
+    "ordered_item": "Nasi Gudeg Tahu",
+    "user_id": "3a16f24f-ad22-4f8b-a192-0d985269e5cd",
+    "created_at": "2026-05-31 03:36:32.176008+07"
+  },
+  {
+    "id": "bce27546-ecd5-4123-84be-4712e213a141",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Fajar",
+    "rating": 2,
+    "review_text": "arehnya kyk gk fress",
+    "ordered_item": "Nasi Gudeg Sayap",
+    "user_id": "3bed65f1-34e3-4de2-915b-bab0f38ac7f5",
+    "created_at": "2026-05-31 03:36:32.176504+07"
+  },
+  {
+    "id": "ae23951e-264f-4fe0-b5fa-00a8b312d466",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Tegar",
+    "rating": 3,
+    "review_text": "ayam suir nya dikit banget",
+    "ordered_item": "Nasi Gudeg Suwir Telor",
+    "user_id": "1f33418b-ebab-4690-aaca-07d7e505c365",
+    "created_at": "2026-05-31 03:36:32.17698+07"
+  },
+  {
+    "id": "054bff97-9dc7-41e3-b58d-3de01292aeae",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Echo",
+    "rating": 5,
+    "review_text": "enak tolong di pertahanin ya",
+    "ordered_item": "Nasi Pecel + Oseng Tempe + Peyek + Telur",
+    "user_id": "f5ef1716-4b6a-4188-9d02-21c328114df7",
+    "created_at": "2026-05-31 03:36:32.177532+07"
+  },
+  {
+    "id": "2b618531-a920-4b91-b467-2aeb01de3c6c",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Francis",
+    "rating": 5,
+    "review_text": "- mantap sambel pecelnya..., jempol limo 👍🏽👍🏽👍🏽👍🏽👍🏽",
+    "ordered_item": "Nasi Pecel + Oseng Tempe + Peyek + Tempe + Telur, Peyek teri, Telur Asin",
+    "user_id": "0671bd51-2301-49e4-96b2-b341919ba3b6",
+    "created_at": "2026-05-31 03:36:32.178074+07"
+  },
+  {
+    "id": "a709268a-ba15-4388-bc43-c1cfd3ac9b1c",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Ruby",
+    "rating": 3,
+    "review_text": "bumbunya kelewat pedas, sayuran ya dikiiiit banget Gak sebanding ama nasinya.",
+    "ordered_item": "Nasi Pecel + Oseng Tempe + Peyek + Telur, Es Jeruk, Paket A",
+    "user_id": "ff3caa98-b775-4df6-bc3b-5cd432903d8f",
+    "created_at": "2026-05-31 03:36:32.178556+07"
+  },
+  {
+    "id": "8b79d19d-2226-4166-a56b-36ecaf62c5e0",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Laras",
+    "rating": 4,
+    "review_text": "rasanya enak  banget tapi peyek nya kurang banyak 😄😄",
+    "ordered_item": "Nasi Pecel + Oseng Tempe + Peyek",
+    "user_id": "22c744f1-5c32-4132-8ffc-f46e84753aed",
+    "created_at": "2026-05-31 03:36:32.179085+07"
+  },
+  {
+    "id": "6e62c6e7-60bc-45f1-a74e-1621dd9cbcf8",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Dawn",
+    "rating": 5,
+    "review_text": "mantull, paket cepat sampai",
+    "ordered_item": "Gudeg Kaleng Bu Tjitro - ORIGINAL, Gudeg Kaleng Bu Tjitro - PEDAS, Sambel Goreng KRECEK MERCON - kaleng -  BU TJITRO, Sambel Goreng KRECEK ORIGINAL - kaleng -  BU TJITRO, Wedang Uwuh - Isi 10 pack, Wedang Uwuh Jahe Merah - Isi 10",
+    "user_id": "d2cd0f39-1ce9-4976-8393-b6091a2fcb96",
+    "created_at": "2026-05-31 03:36:32.179601+07"
+  },
+  {
+    "id": "6d053e72-079d-42c8-9eb9-2b57216ab928",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Kadek",
+    "rating": 3,
+    "review_text": "telur nya uatos bianget, gak fresh ya? seperti telur anget2an kemarin. dipotong pake sendok memcolot, loncat",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "e66d7611-00a2-4565-9b36-7904f5caae53",
+    "created_at": "2026-05-31 03:36:32.179854+07"
+  },
+  {
+    "id": "cd67ff36-cb41-4c9f-86d9-5c98f3836f33",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Bernard",
+    "rating": 5,
+    "review_text": "enak tapi kurang asin dikit",
+    "ordered_item": "Nasi Gudeg Krecek Telur Paha Atas, Nasi Gudeg Krecek Telur Dada",
+    "user_id": "39ffca3f-40e2-4af2-90ee-acbdba0ee17f",
+    "created_at": "2026-05-31 03:36:32.1804+07"
+  },
+  {
+    "id": "7a59e4b4-07e1-45a2-9280-4a53558e80a1",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Bella",
+    "rating": 1,
+    "review_text": "Jadi gini kita yg niat beli oleh oleh via gofood itu karena ada keterbatasan waktu dan tidak sempat beli langsung.  Jadi toko anda sebenernya bisa menjual dengan harga lebih mahal asal kualitas barang bagus seperti expired tidak mepet. Ini yg di kirim ke saya semua expired 2 harj lagi. Jadi saya sarankan untuk yang lain jangan order di toko ini lagi",
+    "ordered_item": "Pathok 25 Keju, Pathok 25 Kacang Hijau ( Bakpia Basah )",
+    "user_id": "45f17dee-3c45-4a0b-8a67-f1869bd54227",
+    "created_at": "2026-05-31 03:36:32.18092+07"
+  },
+  {
+    "id": "1cbae6d1-410f-4a6f-8eae-d16270794e17",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Naoki",
+    "rating": 2,
+    "review_text": "telurnya masih ada cangkangnya, mungkin lebih teliti lagi supaya kebersihannya terjaga, rasanya enak",
+    "ordered_item": "Lotek Kupat, Gado Gado",
+    "user_id": "b6b06d95-4a1d-4795-a26a-74afa9cecb2d",
+    "created_at": "2026-05-31 03:36:32.181582+07"
+  },
+  {
+    "id": "40473a99-5600-43d9-b26f-95a8b9afa278",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Sawyer",
+    "rating": 5,
+    "review_text": "lotek paling pas rasanya, sayuran selalu segar, pertahankan.. 👍",
+    "ordered_item": "Lotek Tanpa Kupat, Tahu Guling",
+    "user_id": "a5a9f656-398f-40df-8d77-e2e3a4347902",
+    "created_at": "2026-05-31 03:36:32.182115+07"
+  },
+  {
+    "id": "65fc20dc-36cb-4d6f-8954-351859402a76",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "user_name": "Rain",
+    "rating": 1,
+    "review_text": "Kelihatan nya aja banyak, asli nya ga worth dengan harga segini,,, rasa biasa ajah,,, cukup bintang 1",
+    "ordered_item": "Gule Daging, Paket Sate Klathak + Nasi, Kicik, Krupuk",
+    "user_id": "082ce1a1-a033-4c4f-bdcf-62991910d5b9",
+    "created_at": "2026-05-31 03:36:32.182641+07"
+  },
+  {
+    "id": "b155fce5-3049-4140-9217-9a242af21b80",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "user_name": "Baskara",
+    "rating": 3,
+    "review_text": "not recommended",
+    "ordered_item": "Sate Klathak, Tongseng",
+    "user_id": "6466686c-1c49-4ae2-9c15-1097d17e820f",
+    "created_at": "2026-05-31 03:36:32.183143+07"
+  },
+  {
+    "id": "cd660e87-b2e9-4998-9908-92d1d481347c",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Grant",
+    "rating": 2,
+    "review_text": "mf sy sering sdh sering langganan go food d sini,bwt pesenan hr ini td sy sgt kecewa,,pesenan yg dtg tdk sesuai,,sy pesen oseng mercon,tp yg dtg cm ayam geprek biasa aj,bukan oseng mercon,,pdhl hargana oseng mercon",
+    "ordered_item": "Paket Geprek Bensu Oseng Mercon, Mie Goreng, Nasi Putih",
+    "user_id": "019c0b04-91e4-439e-b835-bbae8aeb7593",
+    "created_at": "2026-05-31 03:36:32.183676+07"
+  },
+  {
+    "id": "e3c5f6dd-773a-447a-9edf-773ae1b26f88",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Jane",
+    "rating": 3,
+    "review_text": "sayur kurang banyak. banyak gorengannya doang. kl rasa enak",
+    "ordered_item": "Nasi Goreng Telur, Lotek",
+    "user_id": "f40b93c0-9b2e-4158-8cdb-ffed881c2530",
+    "created_at": "2026-05-31 03:36:32.184237+07"
+  },
+  {
+    "id": "7206cc63-774a-46f6-b2b8-c35c193c184a",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Duke",
+    "rating": 5,
+    "review_text": "superb fresh ingredients!",
+    "ordered_item": "Lotek, Gado-Gado, Nasi Pecel",
+    "user_id": "e6e31f6e-b147-495a-927c-fe148c05dcb3",
+    "created_at": "2026-05-31 03:36:32.185392+07"
+  },
+  {
+    "id": "6df5bf66-a2b4-4bcf-a6d8-d63759901bc1",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Zephyr",
+    "rating": 4,
+    "review_text": "rasanya lumayan enak tapi bumbunya terlalu sedikit jadinya kering bgt loteknya, kerupuknya ada yg alot, tingkatkan lagi yaa",
+    "ordered_item": "Lotek",
+    "user_id": "22d01511-1dc6-4b98-8e20-1ab981da60f3",
+    "created_at": "2026-05-31 03:36:32.185651+07"
+  },
+  {
+    "id": "a131041c-b412-4479-9e7e-a40a893e90fe",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Louis",
+    "rating": 3,
+    "review_text": "sudah pesan extra bakwan tapi ndak dikasih",
+    "ordered_item": "Lotek",
+    "user_id": "b5692ef8-aaf0-4fa8-9ea5-2de95e7741ad",
+    "created_at": "2026-05-31 03:36:32.185913+07"
+  },
+  {
+    "id": "f5396f56-2b76-41c4-a68e-35ce9cb102d6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Theodore",
+    "rating": 4,
+    "review_text": "bu, jangan pake plastik mika tumpah semua saos kacangnya.",
+    "ordered_item": "Lotek, Telur, Bakwan",
+    "user_id": "1616c668-1dae-41db-9630-2a8504040040",
+    "created_at": "2026-05-31 03:36:32.186379+07"
+  },
+  {
+    "id": "354a8391-a807-4030-ae8f-a0a993927ac8",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ren",
+    "rating": 2,
+    "review_text": "kerupuk melempem, porsi kecil",
+    "ordered_item": "Lotek",
+    "user_id": "4d1a94c9-c1ec-4053-be0c-9cba77929a50",
+    "created_at": "2026-05-31 03:36:32.186689+07"
+  },
+  {
+    "id": "e10e19b2-61fc-4cea-ac5e-98cac6422a40",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "user_name": "Owen",
+    "rating": 2,
+    "review_text": "porsi tongseng untuk ukuran harga segutu sedikit banget",
+    "ordered_item": "Sate Klatak Kambing, Tongseng Mercon Kambing",
+    "user_id": "d2092946-e3ef-4b3d-8217-1cfa11692fae",
+    "created_at": "2026-05-31 03:36:32.18754+07"
+  },
+  {
+    "id": "42010f8c-63e4-45b5-a524-cd88e55a6762",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Ruby",
+    "rating": 1,
+    "review_text": "pesan osen ati dikirim orak arik telur ",
+    "ordered_item": "Nasi Oseng Ati, Nasi Ayam Rica, Mie Setan",
+    "user_id": "ff3caa98-b775-4df6-bc3b-5cd432903d8f",
+    "created_at": "2026-05-31 03:36:32.188099+07"
+  },
+  {
+    "id": "b05b4906-be1c-4ae5-bb5c-ea715c9e22c1",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Dexter",
+    "rating": 5,
+    "review_text": "harganya diturunkan dong 😁",
+    "ordered_item": "Nasi Oseng Ayam, Nasi Orak Arik Telor, Mie Dok Dok, Nutrisari",
+    "user_id": "dcddd787-d2f9-476d-a3f6-bf6ee895be8b",
+    "created_at": "2026-05-31 03:36:32.188697+07"
+  },
+  {
+    "id": "4d2a1ab2-afff-499e-aaba-14fb24d46cf4",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Arata",
+    "rating": 3,
+    "review_text": "maaff tapi kali ini aku beli rasa ayam rica nya tidak sedang seperti biasanya, agak kurang enak gitu rasa nya kurang balance. ",
+    "ordered_item": "Nasi Ayam Rica, Nasi Oseng Ayam, Telor Dadar/Ceplok",
+    "user_id": "518613d9-3cab-4916-89eb-dccece4b4887",
+    "created_at": "2026-05-31 03:36:32.189628+07"
+  },
+  {
+    "id": "6b338690-7d51-4e74-ad1c-28ea2f1d4798",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Victoria",
+    "rating": 5,
+    "review_text": "Pedes pol, aku dah noted ga pedes loh aa :’)",
+    "ordered_item": "Nasi Oseng Ayam",
+    "user_id": "876af63a-6574-4414-87b9-a00605514e3c",
+    "created_at": "2026-05-31 03:36:32.190233+07"
+  },
+  {
+    "id": "c04e41cc-a3b3-4f01-bca3-1e9b10c25c3a",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Vale",
+    "rating": 5,
+    "review_text": "lumayan enak si tp estehnya pait",
+    "ordered_item": "Paket Dos Nasi Gudeg Areh Ayam Kampung Paha Ceker Dan Kerupuk + Krecek, Es Teh Manis",
+    "user_id": "51cb9b1d-b7b5-49bf-b1d7-6e0ea1419fc2",
+    "created_at": "2026-05-31 03:36:32.190841+07"
+  },
+  {
+    "id": "630771d3-a26c-421c-851c-783e6306a021",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Utama",
+    "rating": 1,
+    "review_text": "godeg telur ayam suwir ra ono telure",
+    "ordered_item": "Nasi Gudeg Areh Ayam Kampung Suwir + Telur",
+    "user_id": "93d353b9-d8ac-4ad4-8277-adac1ee6beae",
+    "created_at": "2026-05-31 03:36:32.191395+07"
+  },
+  {
+    "id": "b3bfb577-e378-4e5f-a131-82ebf6f79c3f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Beatrice",
+    "rating": 1,
+    "review_text": "oseng mercon tidak ada .nasi malah di masih bubur",
+    "ordered_item": "Bubur Putih, Nasi Gudeg Areh Paha Ceker",
+    "user_id": "5c330a74-9251-469e-bcae-d8bed71278a7",
+    "created_at": "2026-05-31 03:36:32.191927+07"
+  },
+  {
+    "id": "e07f1600-80aa-4174-b36f-1be5e696a8e0",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Sebastian",
+    "rating": 4,
+    "review_text": "rasa oke, porsi oke tapi kemasan gak oke",
+    "ordered_item": "Bubur Gudeg Telur Krecek Dan Areh, Nasi Ayam Goreng Kota + Kerupuk Udang, Telur, Rambak Kecil, Kerupuk Udang, Es jeruk Manis",
+    "user_id": "bc4d5e95-eeec-430f-8220-4e37835b582f",
+    "created_at": "2026-05-31 03:36:32.192457+07"
+  },
+  {
+    "id": "fde93357-dec1-4b28-9cb1-2b604208d413",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Brooke",
+    "rating": 3,
+    "review_text": "gudeg agak pahit dan sangit",
+    "ordered_item": "Nasi Gudeg Areh Ayam Kampung Suwir",
+    "user_id": "5484477f-0b6f-41cc-b9c8-1f6d74799209",
+    "created_at": "2026-05-31 03:36:32.192968+07"
+  },
+  {
+    "id": "5b2bf3bc-84df-4f4d-ac26-b1f969bd011d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Dewi",
+    "rating": 5,
+    "review_text": "terima kasih... sama-sama berkah ya",
+    "ordered_item": "Nasi Gudeg Areh Ayam Kampung Suwir + Telur, Nasi Gudeg Areh Ayam Kampung suwir, Nasi Gudeg Areh Ayam Kampung Paha Ceker, Nasi Gudeg Areh Telur",
+    "user_id": "568ebf65-80ab-4dcf-a544-cc8632434aae",
+    "created_at": "2026-05-31 03:36:32.193498+07"
+  },
+  {
+    "id": "eb14bd69-e97c-4fac-a23d-f7ac4dbbcba5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Utama",
+    "rating": 5,
+    "review_text": "Gak dikasih pipet minumannya.",
+    "ordered_item": "Bubur Telur Gudeg Areh, Susu Coklat",
+    "user_id": "93d353b9-d8ac-4ad4-8277-adac1ee6beae",
+    "created_at": "2026-05-31 03:36:32.19402+07"
+  },
+  {
+    "id": "e7f713f5-5757-4f40-b264-3f5354355738",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Aditya",
+    "rating": 5,
+    "review_text": "salah satu menu wajib jika saya dinas ke Jogja. sudah jadi comfort food",
+    "ordered_item": "Nasi Gudeg Telur,Ayam Suwir Tahu+ Krecek",
+    "user_id": "12c883f5-7fed-41b0-9f25-9dd5c3faffa8",
+    "created_at": "2026-05-31 03:36:32.194524+07"
+  },
+  {
+    "id": "d85a3074-aa79-486f-ad83-c854e0b7aa04",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Leo",
+    "rating": 4,
+    "review_text": "Sambal goreng krecek dan tempe nya kepedesan untuk ukuran gudeg",
+    "ordered_item": "Nasi Gudeg Telur,Ayam Suwir Tahu+ Krecek",
+    "user_id": "7ced633a-1b58-4c00-8997-d4a46f2e5f8a",
+    "created_at": "2026-05-31 03:36:32.194814+07"
+  },
+  {
+    "id": "bc3d6df0-5ea5-41d4-9389-fb05ba053adb",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ndaru",
+    "rating": 5,
+    "review_text": "Karena rasa nya cocok,jadi pengen mmpir ke restonya,teh nya juga enak,gratis lagi👍",
+    "ordered_item": "Nasi Gudeg Paha Atas + Krecek + GRATIS Es teh",
+    "user_id": "d2c0014b-58e1-4b91-b6cb-37762172180f",
+    "created_at": "2026-05-31 03:36:32.195318+07"
+  },
+  {
+    "id": "7371674b-7d36-4e0a-834e-6ecb641e2b04",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ion",
+    "rating": 1,
+    "review_text": "Ayamnya sebenernya lumayan, tetapi karena terlalu asin rada merusak rasa. Tahu juga terlalu asin. Apa karena dipanasin terus menerus? ",
+    "ordered_item": "Gudeg Dada 1 , Sayap 1 , Telur 2  + Krecek",
+    "user_id": "12a9a12d-7ce5-40a7-8619-d772cf0d17b7",
+    "created_at": "2026-05-31 03:36:32.195809+07"
+  },
+  {
+    "id": "9d52e6cd-9eef-49f9-a074-a4514a215806",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Shota",
+    "rating": 5,
+    "review_text": "Terimakasih mantap ",
+    "ordered_item": "Nasi Gudeg Telur Krecek, Es Teh, Es Jeruk",
+    "user_id": "7f0c707f-8859-4039-aee3-21359e273325",
+    "created_at": "2026-05-31 03:36:32.196487+07"
+  },
+  {
+    "id": "5733b31d-7815-4b38-b1d5-4eae55b1d0d0",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Wira",
+    "rating": 5,
+    "review_text": "selalu JD menu sarapan favorit aq..",
+    "ordered_item": "Nasi Gudeg Telur Tahu +krecek",
+    "user_id": "3ea81cc8-6e26-48a3-930d-e4e9cbb15525",
+    "created_at": "2026-05-31 03:36:32.197004+07"
+  },
+  {
+    "id": "be2e3eb3-d9e0-4466-b067-15b9d51481a7",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ash",
+    "rating": 2,
+    "review_text": "dengan harga yang sama di gudeg wijilan yg lain porsinya lebih banyak.....di tempat bu Is sangat sedikit....jadi ini berarti gudeg bu Is sangat mahal",
+    "ordered_item": "Gudeg Dada 1 , Paha Bawah 1, Telur 3,tahu + Krecek",
+    "user_id": "87b4571c-5804-46c3-bc49-88726135ccce",
+    "created_at": "2026-05-31 03:36:32.197524+07"
+  },
+  {
+    "id": "75b9dbec-435f-40ad-a8df-946a275f7ec5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Lestari",
+    "rating": 5,
+    "review_text": "semoga tetap enak dan murah (terjangkau)",
+    "ordered_item": "Nasi Gudeg Telur Krecek",
+    "user_id": "277eff36-2987-46e8-b637-bb7c749cc27c",
+    "created_at": "2026-05-31 03:36:32.19803+07"
+  },
+  {
+    "id": "d75aa00c-2c9b-4220-9c77-04fbd035628d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Haru",
+    "rating": 5,
+    "review_text": "Rasa mantep, enak banget, manisnya pas banget. Pasti reorder kalo ke Jogja lagi.",
+    "ordered_item": "Nasi Gudeg Telur Tahu +krecek, Gudeg Sayap + Krecek",
+    "user_id": "c4b71ee7-e187-48cd-863b-9f0466df5c28",
+    "created_at": "2026-05-31 03:36:32.198519+07"
+  },
+  {
+    "id": "1f183c94-882c-4c46-a4fa-36a99ee5a86f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Anggraini",
+    "rating": 5,
+    "review_text": "rasanya mantul bgt, pedasnya trasa, porsinya banyak.. lanjutkan",
+    "ordered_item": "Nasi Gudeg Telur Krecek",
+    "user_id": "10e4f18e-e892-44df-ae6d-26b18ff8811e",
+    "created_at": "2026-05-31 03:36:32.19881+07"
+  },
+  {
+    "id": "3cf6b41c-a43b-472e-9477-d3607b3f9104",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Ryder",
+    "rating": 3,
+    "review_text": "order wedang uwuh tawar tanpa gula, tapi tetap manis",
+    "ordered_item": "Nasi Gudeg Krecek Telor Suwir, Wedang Uwuh",
+    "user_id": "3770ec25-2b03-46d8-9449-aa6740920bf3",
+    "created_at": "2026-05-31 03:36:32.199354+07"
+  },
+  {
+    "id": "9857e992-c7af-412a-bdaa-12e4d0594450",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Vince",
+    "rating": 1,
+    "review_text": "pesanan kurang satu",
+    "ordered_item": "Nasi Gudeg Krecek Sayap, Teh / Es Teh, Telor Bebek",
+    "user_id": "7df93691-62b5-43fd-b865-5f3ae3c476a4",
+    "created_at": "2026-05-31 03:36:32.19983+07"
+  },
+  {
+    "id": "0df7e1fe-95e8-48d1-a6d0-6a1567fbe244",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "mawar",
+    "rating": 5,
+    "review_text": "saya selalu suka gudeg nya pas sesuai selera dan selalu habis bahkan nambah makan sampai 2 porsi",
+    "ordered_item": "Nasi Gudeg Krecek Sayap, Nasi Gudeg Krecek Telor",
+    "user_id": "0a6dede4-75e3-4222-b948-75b888b5e446",
+    "created_at": "2026-05-31 03:36:32.20038+07"
+  },
+  {
+    "id": "1930eec5-dc54-4383-90ac-812cd2e27042",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Nebula",
+    "rating": 5,
+    "review_text": "enak banget bunds xixixiixi, no 1",
+    "ordered_item": "Nasi Gudeg Krecek Telur + Ayam Suwir",
+    "user_id": "17cf1004-1120-44c0-b08b-520a3d9921b1",
+    "created_at": "2026-05-31 03:36:32.200905+07"
+  },
+  {
+    "id": "ef026167-5f71-42d5-b74b-65df5c63152b",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Dusk",
+    "rating": 4,
+    "review_text": "kal bara g kog g ad y",
+    "ordered_item": "Bakpiaku Isi 10 Rasa Keju, Bakpiaku Isi 10 Rasa Kacang Hijau, Bakpiaku Isi 20 Rasa Kacang Hijau",
+    "user_id": "39aa664f-b55c-4195-9b9e-0a0073ee79dc",
+    "created_at": "2026-05-31 03:36:32.201372+07"
+  },
+  {
+    "id": "09cc99a3-d525-4585-a765-178547b7a6d0",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Theodore",
+    "rating": 5,
+    "review_text": "Bakpia Kejunya juara! Enak banget yang keju! Saran buat packing isi 5: pakein cara membuka kemasan supaya gak salah posisi tarik. Kan sedih kalo salah tarik kebuang semua isi kardusnya :(",
+    "ordered_item": "Bakpiaku Isi 10 Rasa Kacang Hijau, Bakpiaku Isi 5 Rasa Coklat, Bakpiaku Isi 5 Rasa Keju",
+    "user_id": "1616c668-1dae-41db-9630-2a8504040040",
+    "created_at": "2026-05-31 03:36:32.201875+07"
+  },
+  {
+    "id": "b3147215-be52-4ed2-a866-2ca820385171",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Ami",
+    "rating": 1,
+    "review_text": "dah minta yg exp nya lama krn mau kirim luar pulau tp ttp aja dpt yg 2 hari -_- ",
+    "ordered_item": "Bakpiaku Isi 10 Rasa Kacang Hijau",
+    "user_id": "493557cd-4dca-45a8-9c7b-c52093424b05",
+    "created_at": "2026-05-31 03:36:32.202337+07"
+  },
+  {
+    "id": "9cbec8c1-227a-40f9-a59e-d2f0e8626d3b",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "user_name": "Baskara",
+    "rating": 5,
+    "review_text": "mantap, enak, amanah, dan recommended",
+    "ordered_item": "Bakpiaku Isi 10 Rasa Kacang Hijau",
+    "user_id": "6466686c-1c49-4ae2-9c15-1097d17e820f",
+    "created_at": "2026-05-31 03:36:32.20266+07"
+  },
+  {
+    "id": "62a73bdb-ff31-489b-aee2-8f4827d068f3",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Wijaya",
+    "rating": 1,
+    "review_text": "yg w psan ga sesuai",
+    "ordered_item": "Duo Sujah Coklat, Nasi Ayam Balado, Ayam Paha Utuh, Jamur Crispi, Nasi Oseng Jamur",
+    "user_id": "dd324699-3189-4227-932b-c0a70c5f4097",
+    "created_at": "2026-05-31 03:36:32.203239+07"
+  },
+  {
+    "id": "c8effc7e-d036-4d50-9594-6b424acae045",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Wisnu",
+    "rating": 5,
+    "review_text": "Jadi langganan terus jadi biasa aja merconnya? Wkwkwkwk ngimpi!! Pedesnya masih nampol njjr 😅",
+    "ordered_item": "Nasi Gudeg Krecek Mercon Ayam Suwir, Nasi Gudeg Krecek Mercon Telur+Tahu",
+    "user_id": "4bfcf45d-67ed-45d1-8a16-53e4b046f10d",
+    "created_at": "2026-05-31 03:36:32.203742+07"
+  },
+  {
+    "id": "b0f0511a-2ec4-4481-adc4-6c17443e1554",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Sakura",
+    "rating": 5,
+    "review_text": "enakkk bangetsss, ga nyesel dari jakarta jauh\" pesen gudekk ",
+    "ordered_item": "Nasi Gudeg Krecek Mercon Kepala",
+    "user_id": "26e3dd09-f0d7-4626-8e28-d1759b654a7e",
+    "created_at": "2026-05-31 03:36:32.204233+07"
+  },
+  {
+    "id": "f90224b0-8c9e-44c4-b7ff-0680d448639d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Zenith",
+    "rating": 5,
+    "review_text": "Joooss\ngudeg ny pas 👍 manis dikit\npedes ny,  jangan tanya, koyo dikampleng\nkalo bisa jangan gudeg aja,  ada masakan laen\ntrims bu murniiiii",
+    "ordered_item": "Nasi Gudeg Krecek Mercon Paha+Telur+Tahu, Nasi Gudeg Krecek Mercon Kepala+Telur+Tahu",
+    "user_id": "53e48e83-ca6c-4dc8-8263-52e7b8d2c448",
+    "created_at": "2026-05-31 03:36:32.204737+07"
+  },
+  {
+    "id": "9ec63baf-c557-4b6c-b10c-c31e0433558b",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Albert",
+    "rating": 5,
+    "review_text": "krecek mercon nya bener bener pedes! mantap asliii",
+    "ordered_item": "Nasi Gudeg Krecek Mercon Telur+Tahu, Nasi Gudeg Krecek Mercon Paha",
+    "user_id": "5374bf26-13b4-4e45-8b67-b929e129b2eb",
+    "created_at": "2026-05-31 03:36:32.20532+07"
+  },
+  {
+    "id": "2929a5cd-0bcd-4399-a140-5528527db346",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Anastasia",
+    "rating": 5,
+    "review_text": "akhirnya nyoba gudeg di jogja dan ga salah pilih ternyata enakkkk😩❤️",
+    "ordered_item": "Nasi Gudeg Krecek Mercon Telur+Ayam Suwir",
+    "user_id": "3fc30d77-8bbd-44b8-93eb-0b437c03982d",
+    "created_at": "2026-05-31 03:36:32.205898+07"
+  },
+  {
+    "id": "1dced25c-313e-4287-9aa5-ee7d1e4776ee",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Mega",
+    "rating": 1,
+    "review_text": "saya bilang jgn pake sayur yg ijo yg kerass... malah yg di kasih sayur ijo semua hadehhhhh ga baca apagimana",
+    "ordered_item": "Lotek, Bakwan Sayur, Es Teh Manis",
+    "user_id": "17c7c2d6-d4a2-4b08-833d-7397437df6c0",
+    "created_at": "2026-05-31 03:36:32.206389+07"
+  },
+  {
+    "id": "9698a87b-3d9e-4da5-8672-e6d7149d24f8",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "George",
+    "rating": 4,
+    "review_text": "portion dine-in dan take-away berbeda… prefer dine-in😏",
+    "ordered_item": "Lotek + Bakwan + Telur Rebus/dadar/ceplok, Tempe Mendoan",
+    "user_id": "bfd2648f-65c1-4a3e-81ca-685fd58e1a0e",
+    "created_at": "2026-05-31 03:36:32.207161+07"
+  },
+  {
+    "id": "f10a8e1f-3938-4de1-8c5e-da5be1ee6190",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Aditya",
+    "rating": 3,
+    "review_text": "pesan tanpa ketupat dpt nya lotek banyak ketupat sayuran nya sedikit sekali, bumbu tahu guling nya lebih suka kacang nya yg ditumbuk dr pd dikasih kacang gr utuh membuat bumbu tahu guling jd clear kurang mantab. ",
+    "ordered_item": "Kupat Tahu, Lotek",
+    "user_id": "12c883f5-7fed-41b0-9f25-9dd5c3faffa8",
+    "created_at": "2026-05-31 03:36:32.207689+07"
+  },
+  {
+    "id": "b5348950-f85f-46a7-a1b5-66433f4b9aa7",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "William",
+    "rating": 4,
+    "review_text": "Pesen lotek+bakwan..pas dateng bakwannya ga ada",
+    "ordered_item": "Lotek + Bakwan",
+    "user_id": "9b3c534f-9e38-4a66-b3b9-fdb83e206369",
+    "created_at": "2026-05-31 03:36:32.208199+07"
+  },
+  {
+    "id": "69da371f-53ae-4c49-a1a2-1d8bbf3e75bf",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ian",
+    "rating": 3,
+    "review_text": "diminta ga pedas malah dikasih pedas, ga pake ketupat malah dikasih ketupat wong iso ambyarrr bu",
+    "ordered_item": "Lotek + Bakwan",
+    "user_id": "9464db73-67e2-45e1-9432-f59710bdc8d3",
+    "created_at": "2026-05-31 03:36:32.208521+07"
+  },
+  {
+    "id": "adc2843e-8b75-44ef-b12f-2699f3aa4ae8",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Vector",
+    "rating": 5,
+    "review_text": "rasa dan bumbunya kerennn habis.. Bu Ning.Top",
+    "ordered_item": "Lotek + Telur Rebus / Dadar / Ceplok",
+    "user_id": "79758901-79f0-4113-8202-46e312ac31c9",
+    "created_at": "2026-05-31 03:36:32.209028+07"
+  },
+  {
+    "id": "f6958aff-d641-4dc4-aff8-2b81d665ca6a",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Aiko",
+    "rating": 4,
+    "review_text": "lebih diperhatikan catatannya ya",
+    "ordered_item": "Bakso Mercon, Bakso Bom",
+    "user_id": "8e3dd6c5-bcb8-47db-93f4-eb2bd3e14c87",
+    "created_at": "2026-05-31 03:36:32.209535+07"
+  },
+  {
+    "id": "ba07281f-26e5-4868-b470-0e0c4d11fb10",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Shadow",
+    "rating": 3,
+    "review_text": "kuah nya hambar ",
+    "ordered_item": "Bakso Mercon",
+    "user_id": "884eee7f-b2b2-49b0-9d3a-48bd95183979",
+    "created_at": "2026-05-31 03:36:32.209789+07"
+  },
+  {
+    "id": "d8d525bd-f508-46ae-8139-4522ff5247d2",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Magnus",
+    "rating": 4,
+    "review_text": "Rasanya enak tapi porsinya dikit banget",
+    "ordered_item": "Lotek + Telur Rebus",
+    "user_id": "1af42e3d-4207-4f7e-823b-2ca08ad803ed",
+    "created_at": "2026-05-31 03:36:32.210028+07"
+  },
+  {
+    "id": "41f574df-2337-49fa-9645-e799710b4a78",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Clover",
+    "rating": 2,
+    "review_text": "gado\" nya kentangnya rasanya dah kecut..udh busuk...gk enak blasss",
+    "ordered_item": "Gado - Gado, Lotek Dobel Bakwan, Jeruk ( Es / Panas )",
+    "user_id": "dba4778e-854c-4e35-93c7-ffbb9538c875",
+    "created_at": "2026-05-31 03:36:32.210534+07"
+  },
+  {
+    "id": "21aa3c2e-2449-4c99-94d0-a99276acee30",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Lestari",
+    "rating": 3,
+    "review_text": "rasa jusnya kurang pas dan packaging nya",
+    "ordered_item": "Lotek + Free Le Minerale 600ml, Krupuk Lotek, Jus Sirsak",
+    "user_id": "277eff36-2987-46e8-b637-bb7c749cc27c",
+    "created_at": "2026-05-31 03:36:32.211031+07"
+  },
+  {
+    "id": "f200a901-35d9-41a6-b5c5-72217a0fc0ef",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ian",
+    "rating": 5,
+    "review_text": "mantebb bgttt porsinya buanyakk. Dan alhamdulilah dapet promo xixixi 😆😆😆",
+    "ordered_item": "Lotek, Krupuk Lotek, Gado - Gado",
+    "user_id": "9464db73-67e2-45e1-9432-f59710bdc8d3",
+    "created_at": "2026-05-31 03:36:32.211571+07"
+  },
+  {
+    "id": "a399628c-f6df-484b-90df-47a2adf54527",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Canyon",
+    "rating": 2,
+    "review_text": "bakwan 2 pcs nya mana yaaa… kok ga ada ",
+    "ordered_item": "Lotek, Bakwan",
+    "user_id": "bddc0531-bd6a-423c-a49b-a2eb6d4233c1",
+    "created_at": "2026-05-31 03:36:32.212101+07"
+  },
+  {
+    "id": "87557c83-e170-4c82-b5e8-ccaa7e7714a8",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Clay",
+    "rating": 1,
+    "review_text": "tipu2, 3 kali pesan lotek + telor. selalu tdk dikasih telor. Awalnya kami kira keluapaan. tp ternyata selalu tipu2 begitu.",
+    "ordered_item": "Lotek + Telur Rebus, Jus Sirsak",
+    "user_id": "17a77be1-6d07-456c-a384-fcd7d82a588b",
+    "created_at": "2026-05-31 03:36:32.212612+07"
+  },
+  {
+    "id": "61cdf90b-385d-48a8-ad05-fadaf8cbbdf5",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Rian",
+    "rating": 3,
+    "review_text": "Rasanya enak tp porsinya dikit banget, buat cewek aja kurang apalagi cowok",
+    "ordered_item": "Lotek",
+    "user_id": "31dd3d7f-3731-4417-9a77-a328f557699e",
+    "created_at": "2026-05-31 03:36:32.212862+07"
+  },
+  {
+    "id": "bc5bbfaf-9de1-4fb8-b227-199fdde72043",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Daisy",
+    "rating": 2,
+    "review_text": "porsiny makin sedikit",
+    "ordered_item": "Lotek",
+    "user_id": "9194bf1d-0ec0-4e4e-82e6-0fd1eae2980d",
+    "created_at": "2026-05-31 03:36:32.213111+07"
+  },
+  {
+    "id": "3b647ff3-2652-4084-ab92-a19b77889155",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Zion",
+    "rating": 5,
+    "review_text": "loteknya enak sih 😃😋",
+    "ordered_item": "Lotek",
+    "user_id": "292e0318-2e03-43a0-b22d-b20720ad35ce",
+    "created_at": "2026-05-31 03:36:32.213351+07"
+  },
+  {
+    "id": "82a55f31-5152-456c-8a3f-a69950ee891a",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Benedict",
+    "rating": 5,
+    "review_text": "selalu enak, terima kasih masakannya... ",
+    "ordered_item": "Garang Asem Ayam, Sayur Lodeh labu /Jipang +Tahu, Oseng Gembus Kemangi, Sayur Asem, Pete Lalap, Udang Asam Manis, Mendoan",
+    "user_id": "793423ad-82d1-4c71-90f4-db50b0a27be6",
+    "created_at": "2026-05-31 03:36:32.213845+07"
+  },
+  {
+    "id": "3530e9a3-1e64-401b-8045-75791ddbbcd3",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Charles",
+    "rating": 4,
+    "review_text": "Oseng jipangnya garing, ga ada rasanya. Sebaiknya dikasih kuah sedikit supaya terasa bumbunya.",
+    "ordered_item": "Nasi Rames Buto Terong, Sayur Lodeh Jipang+Tahu, Oseng So On, Garang Asem Ayam, Perkedel Kentang, Paha Ayam Goreng Kremes",
+    "user_id": "ed9178d9-655b-475c-a1ac-df0bdbc976c9",
+    "created_at": "2026-05-31 03:36:32.214356+07"
+  },
+  {
+    "id": "26e67865-d2c0-44ba-950a-d41a61df7cd2",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Katherine",
+    "rating": 2,
+    "review_text": "kurang rasa, cuma enak mie soon nya",
+    "ordered_item": "Paket Sarapan Werkudhoro, Oseng So On, Paha Bawah Ayam Bacem, Nasi Putih",
+    "user_id": "29752848-bca5-410a-a1ae-d8da20bcb413",
+    "created_at": "2026-05-31 03:36:32.214823+07"
+  },
+  {
+    "id": "4c009e6d-94a3-4c10-b156-407b9281a6fb",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Sonic",
+    "rating": 4,
+    "review_text": "Terinyaaa kurang banyaaak kl dibanyakin bakal langganan dan q bintang full hehe",
+    "ordered_item": "Nasi Rames Negoro Ngalengko, Nasi Rames Ayam Buto Ijo, Nasi Rames Cantrik, Oseng Jipang / Labu Siam, Oseng Jamur Tiram",
+    "user_id": "001a4ed9-760e-45a4-bd5d-59ed91012f74",
+    "created_at": "2026-05-31 03:36:32.215321+07"
+  },
+  {
+    "id": "f98ddb64-ca63-41d6-9166-c43db4d17bc0",
+    "restaurant_id": "36e69068-8cfe-4c5a-bdd3-8e434d69f833",
+    "user_name": "Arthur",
+    "rating": 5,
+    "review_text": "enakkk bersih suka sekali. terimakasih 😄",
+    "ordered_item": "Bubur Kacang+ Ketan, Nasi Telor Asin, Telur Dadar, Nasi Putih, Nasi Ati Ampla Balado, Nasi Mangut Lele",
+    "user_id": "a788d263-4cbc-4333-a2ee-252b4215a4e7",
+    "created_at": "2026-05-31 03:36:32.215769+07"
+  },
+  {
+    "id": "8a0f34d0-ea17-4780-b2a1-8879235079f6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Parker",
+    "rating": 5,
+    "review_text": "besok besok kasih sendok ya buk",
+    "ordered_item": "Gado Gado Dan Teh(Panas,Es), Paket Geprek Dan Es Teh, Lotek Kupat(Es Teh/Panas)",
+    "user_id": "49586c17-38f4-41e0-aa0d-4ddd3af98d42",
+    "created_at": "2026-05-31 03:36:32.21623+07"
+  },
+  {
+    "id": "d7213a64-6e4c-4bd8-877a-0880e5c9ae6e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "David",
+    "rating": 5,
+    "review_text": "enak rasa bumbunya pas, porsi oke, pesen masih pagi jadi fresh... ",
+    "ordered_item": "Lotek Kupat(Es Teh/Panas)",
+    "user_id": "c8fb9f2c-252e-4d78-9237-40b8b4243cc9",
+    "created_at": "2026-05-31 03:36:32.216943+07"
+  },
+  {
+    "id": "881abb4d-b412-4cef-b002-83d2998ee14d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Chiyo",
+    "rating": 2,
+    "review_text": "Pesan lotek, sup ayu dan puyung hai.\nYang datang cuma lotek. Sup ayu dan puyunghai tidak ada. Sangat mengecewakan. Lain kali agar lebih teliti karena ketidaktelitian seller merugikan pembeli.",
+    "ordered_item": "Lotek Kupat, Sop Ayu, Fuyunghai",
+    "user_id": "29342487-a5ec-4814-a4ae-0b6dde246ea9",
+    "created_at": "2026-05-31 03:36:32.217456+07"
+  },
+  {
+    "id": "0f5eab14-ff6d-44c7-aed1-1f32b1e46edb",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Ren",
+    "rating": 5,
+    "review_text": "enakkkk banget, Porsi banyak",
+    "ordered_item": "Lotek Telur",
+    "user_id": "4d1a94c9-c1ec-4053-be0c-9cba77929a50",
+    "created_at": "2026-05-31 03:36:32.217688+07"
+  },
+  {
+    "id": "7bbc3711-e38d-4aaa-ba99-d0c576c2bd5b",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Nova",
+    "rating": 1,
+    "review_text": "confirm order, tapi pas di buat kupat nya abis, masa super resto kaya gini pelayanan nya payah",
+    "ordered_item": "Lotek Kupat, Gado - Gado Kupat",
+    "user_id": "b445c63a-4f6c-4528-bbc4-e17a4abae806",
+    "created_at": "2026-05-31 03:36:32.217952+07"
+  },
+  {
+    "id": "91b59a7f-b761-44e3-9b07-c787dbb5e708",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Diana",
+    "rating": 5,
+    "review_text": "gak ada sendoknya",
+    "ordered_item": "Gado - Gado Kupat, Kupat Tahu, Lotek Kupat, Teh Manis ( Hangat / Es )",
+    "user_id": "695236c3-53fb-4a3d-b890-b3f1170f60c5",
+    "created_at": "2026-05-31 03:36:32.218437+07"
+  },
+  {
+    "id": "92b4f530-6aa0-4926-b335-7da308fc0511",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Bayu",
+    "rating": 3,
+    "review_text": "untuk harga segini rasanya ga worth it dgn porsi yg di dapet, nasi terlalu dikit cumi jg dikit\npacking ganti jgn pake rice box gini isinya dikit bgt kemahalan\nga ada rasa asin juga, cumi alot kelamaan di masaknya\ntahu mercon jg ga ada pedes sama sekali, ga panas, ga ada rasa, terlalu berminyak",
+    "ordered_item": "Sego Sambel Cumi, Seporsi Tahu Isi Mercon (Isi 3)",
+    "user_id": "393c5fdf-5948-4925-979a-71c0e1cc4c92",
+    "created_at": "2026-05-31 03:36:32.218974+07"
+  },
+  {
+    "id": "478c45b2-0448-40c9-b59a-af4e6ac8435d",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Caleb",
+    "rating": 5,
+    "review_text": "Semuanya enak cumn untuk es nya tolong di periksa ulang soalnya udh pesen extra es batu tapi pas dateng gak ada es batunya sama sekali ",
+    "ordered_item": "Nasi Ayam Geprek + Es Teh, Tahu Isi, Terong Sambalado, Oseng Usus 1 Porsi, Milo, Sayur 1porsi+ Ayam Penyet (Tanpa Nasi)",
+    "user_id": "67a32ff1-8831-4c9f-940b-c976761f7911",
+    "created_at": "2026-05-31 03:36:32.219479+07"
+  },
+  {
+    "id": "6fc2887b-f491-43a7-8d48-d8eb1cdf4255",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Candra",
+    "rating": 2,
+    "review_text": "porsi sayur tidak sesuai dengan bumbu nya, daun jeruk dan kencur tidak terasa",
+    "ordered_item": "Lotek Komplit, Lotek Kupat",
+    "user_id": "d86d1b02-c677-438d-ad2d-cbacf5597a15",
+    "created_at": "2026-05-31 03:36:32.220005+07"
+  },
+  {
+    "id": "a07c3268-4db6-4729-b84d-80cc36dcddfe",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Jude",
+    "rating": 4,
+    "review_text": "Agak kecewa soalnya yang baso pedes itu bukan isi cabe ulek tapi bubuk :((",
+    "ordered_item": "Bakso Mercon, Bakso Urat",
+    "user_id": "f8c5dfc1-f373-4d94-9525-483cbf80dc4e",
+    "created_at": "2026-05-31 03:36:32.220504+07"
+  },
+  {
+    "id": "22f58cbb-0ed2-4670-8fef-e20439a12f36",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Benedict",
+    "rating": 1,
+    "review_text": "bakso mercon asin bgt.....dan cm kebayakan  tepung....bakso biasanya juga asin kebykan  tepungnya juga.",
+    "ordered_item": "Bakso Mercon, Bakso Biasa",
+    "user_id": "793423ad-82d1-4c71-90f4-db50b0a27be6",
+    "created_at": "2026-05-31 03:36:32.220992+07"
+  },
+  {
+    "id": "b9f171e6-7c0c-4e9f-b3bc-eb0963625acf",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Rosalind",
+    "rating": 4,
+    "review_text": "sedikit kurang asin,tapi gak papa daripada keasinan.",
+    "ordered_item": "Bakso Mercon, Bakso Beranak",
+    "user_id": "cca4ade2-d218-4194-9369-6f5e15b245be",
+    "created_at": "2026-05-31 03:36:32.221469+07"
+  },
+  {
+    "id": "7c02dd2f-ee73-4253-b2d1-e44a837ef8bb",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Anastasia",
+    "rating": 5,
+    "review_text": "langganan, murmer dan enak. seeing beli ayam ungkep buat stok di rumah ",
+    "ordered_item": "Ayam Ungkep Sayap Isi 5, Ayam Ungkep Paha Isi 5, Sayur Oseng Pare, Oseng Pepaya Muda, Lele Mangut, Tempe Mendoan",
+    "user_id": "3fc30d77-8bbd-44b8-93eb-0b437c03982d",
+    "created_at": "2026-05-31 03:36:32.221992+07"
+  },
+  {
+    "id": "6f77a2d1-bb51-403b-85b0-cea514aaa009",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Silas",
+    "rating": 5,
+    "review_text": "EnakEnakEnakEnakEnakEnakEnakEnak",
+    "ordered_item": "Bakwan Jagung, Bakmie Goreng, Sayur Lodeh, Sayur Sop, Gudeg Tewel Cowel, Kripik Singkong, Pithik Kriuk Double, Sayur Oseng Tempe, Nasi Geprek Paha",
+    "user_id": "2dc07cbc-0abc-4cf1-aa60-26a5afc842a3",
+    "created_at": "2026-05-31 03:36:32.222554+07"
+  },
+  {
+    "id": "6ec8534a-fd87-408c-9469-2cff7668089f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Rain",
+    "rating": 5,
+    "review_text": "mantab asoy,........",
+    "ordered_item": "Nasi Gudeg Krecek Telur, Nasi Gudeg Krecek Tahu, Nasi Gudeg Krecek Telur + Tahu",
+    "user_id": "082ce1a1-a033-4c4f-bdcf-62991910d5b9",
+    "created_at": "2026-05-31 03:36:32.223202+07"
+  },
+  {
+    "id": "5f4200cc-4f05-4a54-ada3-63fd232a8f48",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Diana",
+    "rating": 5,
+    "review_text": "sarapan pagi yg mantap",
+    "ordered_item": "Nasi Gudeg Krecek Sayap + Telur",
+    "user_id": "695236c3-53fb-4a3d-b890-b3f1170f60c5",
+    "created_at": "2026-05-31 03:36:32.223732+07"
+  },
+  {
+    "id": "9079d841-df13-4bca-9820-91bad8772fe9",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Arka",
+    "rating": 4,
+    "review_text": "nasinya dikasih yg keras huhu sedih kaya nasi kering pinggiran magicom",
+    "ordered_item": "Nasi Gudeg Krecek Tahu",
+    "user_id": "a84263ca-5b7f-4068-b729-cf18b59396f8",
+    "created_at": "2026-05-31 03:36:32.224263+07"
+  },
+  {
+    "id": "9944c0ae-c480-4d75-a62d-2e52a368d652",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Wijaya",
+    "rating": 5,
+    "review_text": "gudegnya enakkk, pakai telur bebek, porsinya mantab. terima kasih",
+    "ordered_item": "Nasi Gudeg Krecek Telur, Nasi Gudeg Krecek Tahu, Oseng Mercon",
+    "user_id": "dd324699-3189-4227-932b-c0a70c5f4097",
+    "created_at": "2026-05-31 03:36:32.22482+07"
+  },
+  {
+    "id": "11c51844-9594-411f-9c59-1a5d0cd6cd87",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "ratih",
+    "rating": 5,
+    "review_text": "harga bersahabat rasa mantab👍",
+    "ordered_item": "Nasi Gudeg Krecek Telur",
+    "user_id": "664ae8bc-87ec-464e-94bd-66c0e6d3eec4",
+    "created_at": "2026-05-31 03:36:32.225077+07"
+  },
+  {
+    "id": "c3a62eb8-27a2-4249-9b80-89afa2289268",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Hana",
+    "rating": 5,
+    "review_text": "untuk tahu kurang enak,tp kalau untuk yg lain mak nyussss!",
+    "ordered_item": "Nasi Gudeg Krecek Suwir + Telur, Nasi Gudeg Krecek Tahu",
+    "user_id": "840c08d8-af7f-45ef-81d4-a33047a195a4",
+    "created_at": "2026-05-31 03:36:32.225635+07"
+  },
+  {
+    "id": "bb704a77-392f-4d17-9ccf-b1b5a9bab841",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Meadow",
+    "rating": 3,
+    "review_text": "sayurnya dikit..",
+    "ordered_item": "Lotek Telur, Lotek Telur",
+    "user_id": "9e7c6ab8-f502-43d5-984c-1312647c6fc9",
+    "created_at": "2026-05-31 03:36:32.226137+07"
+  },
+  {
+    "id": "dfdcf700-422d-43ab-8dcd-6914cbea3cb1",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Clover",
+    "rating": 5,
+    "review_text": "enak poll, tapi padet bgt bumbunyaa",
+    "ordered_item": "Lotek Double Bakwan, Lotek",
+    "user_id": "dba4778e-854c-4e35-93c7-ffbb9538c875",
+    "created_at": "2026-05-31 03:36:32.226556+07"
+  },
+  {
+    "id": "aa65d89c-20d2-4742-aaf6-92ed8f9078c1",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Henry",
+    "rating": 3,
+    "review_text": "porsi cukup\nrasa lotek juga enak mantab",
+    "ordered_item": "Lotek Dobel Bakwan",
+    "user_id": "77b2ac1b-e954-4e70-918c-605022ebff44",
+    "created_at": "2026-05-31 03:36:32.227034+07"
+  },
+  {
+    "id": "c62ad127-9638-40f9-8af5-5178eb4811da",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Nova",
+    "rating": 5,
+    "review_text": "enak banget bumbunya. ",
+    "ordered_item": "Gado Gado, Lotek",
+    "user_id": "b445c63a-4f6c-4528-bbc4-e17a4abae806",
+    "created_at": "2026-05-31 03:36:32.227521+07"
+  },
+  {
+    "id": "8f38ad09-f8d9-45ca-82ef-a0cbfadceb38",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Emi",
+    "rating": 5,
+    "review_text": "banyak banget porsinya",
+    "ordered_item": "Lotek Telur",
+    "user_id": "bd7c532c-fee2-43a4-88aa-733fe414195c",
+    "created_at": "2026-05-31 03:36:32.227762+07"
+  },
+  {
+    "id": "c408af71-dd56-47b5-b7e2-1b161c8bdb37",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Winston",
+    "rating": 1,
+    "review_text": "saya tadi pesan lotek.telur tapi telurnya tidak ada",
+    "ordered_item": "Lotek Telur",
+    "user_id": "398e2036-7509-4c77-98dd-babcd5e3c5c8",
+    "created_at": "2026-05-31 03:36:32.227989+07"
+  },
+  {
+    "id": "64f0ea2a-0983-4be8-b6d0-a27d966c3791",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "River",
+    "rating": 5,
+    "review_text": "cocol kr bumbune",
+    "ordered_item": "Lotek, Tahu Guling",
+    "user_id": "ca996a40-c4e6-487c-8372-1470ad7706d8",
+    "created_at": "2026-05-31 03:36:32.228455+07"
+  },
+  {
+    "id": "c1ff6663-59f2-411e-820e-a309df3c50ec",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Cole",
+    "rating": 5,
+    "review_text": "Enak. Sesuai catatan.",
+    "ordered_item": "Gudeg 5 (Nasi Gudeg Krecek Ayam) + Box/Dus, Gudeg 1(Nasi Gudeg Krecek Telur) + Box/Dus",
+    "user_id": "b69918dd-7c48-46bc-9249-98af86212ebb",
+    "created_at": "2026-05-31 03:36:32.228973+07"
+  },
+  {
+    "id": "8aec05c7-4a3b-4740-ab7e-9f5e7fee2503",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Frost",
+    "rating": 5,
+    "review_text": "Awsome package and taste Ok",
+    "ordered_item": "Gudeg 5 (Nasi Gudeg Krecek Ayam) + Box/Dus, Gudeg 2 (Nasi Gudek Krecek Kikil) + Box/Dus",
+    "user_id": "7dc84391-abc0-4364-9388-e09355a3a08d",
+    "created_at": "2026-05-31 03:36:32.229528+07"
+  },
+  {
+    "id": "26cfba1f-9e7c-4da5-8edf-c8e605ab12f4",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Silas",
+    "rating": 4,
+    "review_text": "Sbetulnya mantep sih gudeg n lauk pauknya. Dikasih kerdus pula.. Cuma rasa n bumbunya kurang legit, brasa agak ngambang. Mgkn perlu dimodif dikit bumbunya",
+    "ordered_item": "Gudeg 1 (Nasi Gudeg Krecek Telur), Paket C (2 Ayam + 2 Telur)",
+    "user_id": "2dc07cbc-0abc-4cf1-aa60-26a5afc842a3",
+    "created_at": "2026-05-31 03:36:32.230033+07"
+  },
+  {
+    "id": "57794d07-0894-4c3e-ba4b-4e9740e0d88c",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "user_name": "Vale",
+    "rating": 5,
+    "review_text": "rasanya pas banget sama selera akuu. gudegnya gak terlalu manis, telurnya jugaa. terus porsinya juga pas buatku, gak banyak banget yang sampai gak habis gituu nasinya. kemasan juga rapiii. the best deh pokoknya. pertahankan yaa!",
+    "ordered_item": "Bubur 1 (Bubur Krecek Telur), Oseng Usus, Gudeg 6 (Nasi Gudeg Krecek Ayam Dan Kikil)",
+    "user_id": "51cb9b1d-b7b5-49bf-b1d7-6e0ea1419fc2",
+    "created_at": "2026-05-31 03:36:32.230534+07"
+  },
+  {
+    "id": "0d8238bf-24db-45ea-88b0-ff74265812ab",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Echo",
+    "rating": 5,
+    "review_text": "Sudah langganan…..Maknyusssss",
+    "ordered_item": "Ayam Goreng Utuh, Gudangan, Oseng Tempe Lombok Ijo",
+    "user_id": "f5ef1716-4b6a-4188-9d02-21c328114df7",
+    "created_at": "2026-05-31 03:36:32.231024+07"
+  },
+  {
+    "id": "c5f654fd-ead2-4e7f-a739-ea2ba2435733",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Eclipse",
+    "rating": 5,
+    "review_text": "enak,sayur melimpah",
+    "ordered_item": "Lotek + Telur Goreng, Tahu Goreng, Tempe Goreng",
+    "user_id": "12808ac5-aacf-4984-80dd-5e7f244b0ec8",
+    "created_at": "2026-05-31 03:36:32.231501+07"
+  },
+  {
+    "id": "523d5d69-14fb-44ef-9b47-b50119fa479a",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "user_name": "Phoenix",
+    "rating": 3,
+    "review_text": "Mohon maaf sebelumnya.. bumbu loteknya sangat sedikit jadi loteknya kering banget, baru ini nemu lotek kayak gini 😔 saran, bumbu loteknya ditambahin lagi biar gak kering banget soalnya ini bener\" kering 🙏🏻 ",
+    "ordered_item": "Lotek Dobel Bakwan, Bakwan, Jus Jambu",
+    "user_id": "dc59ec86-38e6-4967-821c-9d464d7e7353",
+    "created_at": "2026-05-31 03:36:32.231967+07"
+  },
+  {
+    "id": "1092f64b-7620-4b1e-84e1-2dd89544620a",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Indra",
+    "rating": 5,
+    "review_text": "Enak murah , lauknya banyak",
+    "ordered_item": "Nasi SMA Komplit Mercon, Kerupuk Enak, Abon Ayam Super, Tahu Balado Pedas , Tofu Spicy Balado",
+    "user_id": "49ee12da-98ce-4d11-a03d-e47c3f49a7b1",
+    "created_at": "2026-05-31 03:36:32.232403+07"
+  },
+  {
+    "id": "23155e81-fc7e-4475-86f9-fe115c7f1769",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Mega",
+    "rating": 5,
+    "review_text": "enakkk bangettt",
+    "ordered_item": "Sego Sd-1 Bakso Mercon, Sego Smp-1 Cumi Asin Mercon",
+    "user_id": "17c7c2d6-d4a2-4b08-833d-7397437df6c0",
+    "created_at": "2026-05-31 03:36:32.232871+07"
+  },
+  {
+    "id": "16e6b6a5-e583-4eeb-b31c-35fc4c1cfff2",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "user_name": "Lawrence",
+    "rating": 5,
+    "review_text": "enak banget! porsinya banyak, lauknya ngenyangin banget!",
+    "ordered_item": "Nasi SMA Komplit Mercon, Sego Pelajar Tok, Sego Sd-1 Bakso Mercon, Nasi Telur Sosis Tdk Pedas",
+    "user_id": "5b0366e3-d704-485a-aa68-bbc745fbe3a2",
+    "created_at": "2026-05-31 03:36:32.233361+07"
+  },
+  {
+    "id": "2ceb1af2-1e7a-4890-9d5f-e1608f0f4128",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Theo",
+    "rating": 5,
+    "review_text": "Joss banget rasanya",
+    "ordered_item": "Nasi SMA Komplit Mercon, Nasi SD 2 Ayam Suwir Mercon, Sego Sd-1 Bakso Mercon",
+    "user_id": "6ac3ef47-9432-475a-bd05-faf5e0b0c825",
+    "created_at": "2026-05-31 03:36:32.233824+07"
+  },
+  {
+    "id": "33e2edfa-896e-494d-9a96-a1c51b8c056e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Silas",
+    "rating": 5,
+    "review_text": "Loteknya enaaakkk, sesuai selera lidah.\nNexr mau pesen lagi deh 👍👍👍👍👍",
+    "ordered_item": "Lotek Double Bakwan, Telur Rebus / Dadar / Ceplok, Bakwan",
+    "user_id": "2dc07cbc-0abc-4cf1-aa60-26a5afc842a3",
+    "created_at": "2026-05-31 03:36:32.234343+07"
+  },
+  {
+    "id": "4a1ceb94-15a0-460f-bcfb-ca5e6ca5a7c6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Francis",
+    "rating": 5,
+    "review_text": "Ga ngecewain sih emg. Next time makan di tempat sih. Marur nuwun🤤",
+    "ordered_item": "Gado- Gado, Lotek Telur, Karedok, Bakwan",
+    "user_id": "0671bd51-2301-49e4-96b2-b341919ba3b6",
+    "created_at": "2026-05-31 03:36:32.234853+07"
+  },
+  {
+    "id": "fa80fc18-ab66-4c09-b097-4e4dcf544279",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Frost",
+    "rating": 4,
+    "review_text": "kemasan dibuat lbh menarik",
+    "ordered_item": "Karedok, Lotek Nasi, Nasi Goreng, Es Jeruk",
+    "user_id": "7dc84391-abc0-4364-9388-e09355a3a08d",
+    "created_at": "2026-05-31 03:36:32.235341+07"
+  },
+  {
+    "id": "4faf634a-9329-4e36-8f04-07396b588792",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Liam",
+    "rating": 5,
+    "review_text": "joss,pertahankan rasa nya",
+    "ordered_item": "Lotek Double Bakwan",
+    "user_id": "9b4dfaa9-726e-4aef-9787-16a979707544",
+    "created_at": "2026-05-31 03:36:32.23558+07"
+  },
+  {
+    "id": "05cd28a7-1e30-4904-8fbc-2eaf0c29e28c",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Eclipse",
+    "rating": 3,
+    "review_text": "ayamnya sptnya agak kecil tdk spt biasanya ",
+    "ordered_item": "Sambal Ayam Matang, Oseng-Oseng Daun Pepaya, Ayam Goreng Utuh, Oseng-Oseng Cakar",
+    "user_id": "12808ac5-aacf-4984-80dd-5e7f244b0ec8",
+    "created_at": "2026-05-31 03:36:32.236248+07"
+  },
+  {
+    "id": "81f92dfc-76de-4762-8b33-36fa4232cf92",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Fitri",
+    "rating": 1,
+    "review_text": "saya order 2 porsi yg lotek + telur tp kok telurnya gaada? selisih 5k x 2, rugi 10k gua kocak bener. terus req cabe 3 dikasihnya cuma cabe 2. MAKASI",
+    "ordered_item": "lotek+telur",
+    "user_id": "562dcb6a-5d05-46f5-a8a0-6c153511c88e",
+    "created_at": "2026-05-31 03:36:32.236797+07"
+  },
+  {
+    "id": "d7d487aa-1417-4647-846e-0ef7385f4b57",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Lestari",
+    "rating": 4,
+    "review_text": "rasa mantappp...harga little bit overpriced ",
+    "ordered_item": "Lotek",
+    "user_id": "277eff36-2987-46e8-b637-bb7c749cc27c",
+    "created_at": "2026-05-31 03:36:32.237049+07"
+  },
+  {
+    "id": "71203bd1-b42c-4af2-bdd4-557357b8c68c",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "user_name": "Henry",
+    "rating": 4,
+    "review_text": "bumbu kacang nya kurang nendang",
+    "ordered_item": "Lotek",
+    "user_id": "77b2ac1b-e954-4e70-918c-605022ebff44",
+    "created_at": "2026-05-31 03:36:32.237282+07"
+  },
+  {
+    "id": "ee698bbb-d49f-4e6f-b117-84542fd05338",
+    "restaurant_id": "36e69068-8cfe-4c5a-bdd3-8e434d69f833",
+    "user_name": "Grant",
+    "rating": 5,
+    "review_text": "Ayam rica nya enak, pedas dan gurih",
+    "ordered_item": "Nasi Ayam Rica, Bubur Kacang Hijau, Nasi Oseng Ayam, Bubur Ketan Hitam",
+    "user_id": "019c0b04-91e4-439e-b835-bbae8aeb7593",
+    "created_at": "2026-05-31 03:36:32.237732+07"
+  },
+  {
+    "id": "415e2502-50ea-4dd4-b756-0e670eb59891",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Forest",
+    "rating": 5,
+    "review_text": "Kalau bisa makanan jangan langsung diatas sterofoamnya, bahaya untuk kesehatan",
+    "ordered_item": "Telor Dadar/Ceplok, Nasi Oseng Ayam, Nasi Oseng Ati",
+    "user_id": "60d23f97-120b-489c-ae1c-3cd4661c4bb6",
+    "created_at": "2026-05-31 03:36:32.238235+07"
+  },
+  {
+    "id": "315364a1-f357-499d-82bb-305e7b8cf9ef",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "user_name": "Tyler",
+    "rating": 4,
+    "review_text": "baksonya kurang pedas😀",
+    "ordered_item": "Bakso Bakar Pedas, Oseng Bakso Mercon, Ayam Crispy Bakar Pedas, Es Coklat Banana (M)",
+    "user_id": "cd18f31c-95b3-4231-8c5b-477d4a168a2f",
+    "created_at": "2026-05-31 03:36:32.238713+07"
+  }
+]

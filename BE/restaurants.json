@@ -1,0 +1,633 @@
+[
+  {
+    "id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg Jogja Bu Mur 2, Condongcatur",
+    "rating": "4.70",
+    "open_period": "weekday: 00:00-23:59; weekend: 00:00-23:59",
+    "latitude": "-7.75511800",
+    "longitude": "110.40995400",
+    "description": null,
+    "created_year": 2021,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "name": "Soto Kadipiro Baru 2, Wates",
+    "rating": "4.60",
+    "open_period": "weekday: 06:00-20:30; weekend: 06:00-20:30",
+    "latitude": "-7.80089300",
+    "longitude": "110.34512300",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Bakso & soto"
+    ]
+  },
+  {
+    "id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "name": "Sate Klathak dan Bakmi Jowo Pak Jede, Nologaten",
+    "rating": "4.60",
+    "open_period": "weekday: 10:00-22:30; weekend: 10:00-22:30",
+    "latitude": "-7.77400440",
+    "longitude": "110.40100510",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Bakmie",
+      "Sate"
+    ]
+  },
+  {
+    "id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek & Gado - Gado Colombo Bu Ary, Kledokan",
+    "rating": "4.50",
+    "open_period": "weekday: 08:30-21:00; weekend: 08:30-21:00",
+    "latitude": "-7.76541161",
+    "longitude": "110.41223149",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "08bfba6d-3578-4653-ba9f-853b0e43f477",
+    "name": "Gudeg Wijilan Bu is",
+    "rating": "4.70",
+    "open_period": "weekday: 06:00-21:00; weekend: 06:00-21:00",
+    "latitude": "-7.80392777",
+    "longitude": "110.36667388",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Aneka nasi",
+      "Ayam & bebek"
+    ]
+  },
+  {
+    "id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Bakpiaku, Sultan Agung",
+    "rating": "4.80",
+    "open_period": "weekday: 06:15-21:45; weekend: 06:15-21:45",
+    "latitude": "-7.80163500",
+    "longitude": "110.37890200",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Jajanan",
+      "Roti"
+    ]
+  },
+  {
+    "id": "024edb32-43f4-460c-bdc4-8315254d12ea",
+    "name": "Lotek Gado-Gado Bu Ning, Tamansiswa",
+    "rating": "4.60",
+    "open_period": "weekday: 09:00-18:00; weekend: 09:00-18:00",
+    "latitude": "-7.80382400",
+    "longitude": "110.37955800",
+    "description": null,
+    "created_year": 2019,
+    "tags": [
+      "Aneka nasi",
+      "Ayam & bebek",
+      "Bakso & soto"
+    ]
+  },
+  {
+    "id": "562b2629-1591-4d8d-95bb-1cd00946899a",
+    "name": "Lotek & Gado - Gado Bu Nur, Gatak",
+    "rating": "4.70",
+    "open_period": "weekday: 08:00-16:00; weekend: 08:00-16:00",
+    "latitude": "-7.81459300",
+    "longitude": "110.32396400",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Aneka nasi",
+      "Ayam & bebek",
+      "Bakso & soto"
+    ]
+  },
+  {
+    "id": "03805cd4-a2a0-48a0-93fd-4d8648c4a70a",
+    "name": "Bakpia Bakery Kenes, Kusumanegara",
+    "rating": "4.40",
+    "open_period": "weekday: 06:15-20:45; weekend: 07:15-20:45",
+    "latitude": "-7.80209100",
+    "longitude": "110.38889900",
+    "description": "Kenes Bakery & Resto mempersembahkan hidangan istimewa Citarasa Tempo Doeloe yang memiliki beberapa menu andalan seperti Bakpia Premium, Ayam Spesial, Beef Cheese Lover (BCL),  Crispy Cookies dan Nasi Pedas.",
+    "created_year": 2018,
+    "tags": [
+      "Roti",
+      "Jajanan",
+      "Sweets"
+    ]
+  },
+  {
+    "id": "36e69068-8cfe-4c5a-bdd3-8e434d69f833",
+    "name": "Gudeg Dan Bubur Bu Lis, Jalan Sorowajan",
+    "rating": "4.40",
+    "open_period": "weekday: 05:00-13:00; weekend: 05:00-13:00",
+    "latitude": "-7.79357653",
+    "longitude": "110.40442832",
+    "description": null,
+    "created_year": 2022,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "7467238b-8f73-4847-88b9-918678a35fbe",
+    "name": "Lotek Gado-Gado, Selokan Mataram",
+    "rating": "4.80",
+    "open_period": "weekday: 08:00-22:00; weekend: 08:00-22:00",
+    "latitude": "-7.76805600",
+    "longitude": "110.39992400",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Aneka nasi",
+      "Bakmie"
+    ]
+  },
+  {
+    "id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Lotek, Pecel, Dan Ayam Shabrina, Mlati",
+    "rating": "4.60",
+    "open_period": "weekday: 08:30-19:30; weekend: 07:30-19:30",
+    "latitude": "-7.75475500",
+    "longitude": "110.35607000",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Aneka nasi",
+      "Ayam & bebek",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "d1ff6634-aee5-4bba-8a5d-b707f07baeb4",
+    "name": "Gudeg Yu Djum, Ngaglik",
+    "rating": "4.70",
+    "open_period": "weekday: 06:00-21:00; weekend: 06:00-21:00",
+    "latitude": "-7.73132200",
+    "longitude": "110.38088400",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "74c9c8ee-d4ff-48e7-94fa-3821137a4fca",
+    "name": "Lotek & Gado-Gado Bu Nur, Palagan",
+    "rating": "4.60",
+    "open_period": "weekday: 09:00-16:00; weekend: 09:00-16:00",
+    "latitude": "-7.74545600",
+    "longitude": "110.37342000",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Aneka nasi",
+      "Jajanan"
+    ]
+  },
+  {
+    "id": "e1cd857c-8068-4a84-abb5-d38308aceb04",
+    "name": "Gudeg Yu Narni, Palagan",
+    "rating": "4.60",
+    "open_period": "weekday: 05:15-20:00; weekend: 05:15-20:00",
+    "latitude": "-7.74698400",
+    "longitude": "110.37279700",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "9ca1ce1f-2f25-46f1-ae14-ce25b8b89aa8",
+    "name": "Gudeg Jamal, Jl. Magelang",
+    "rating": "4.70",
+    "open_period": "weekday: 07:00-20:30; weekend: 07:00-20:30",
+    "latitude": "-7.76598380",
+    "longitude": "110.36151030",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Aneka nasi",
+      "Ayam & bebek"
+    ]
+  },
+  {
+    "id": "e26bc4e6-144c-4634-9788-e5798f89086c",
+    "name": "Lotek Pandega Putri, Ngaglik",
+    "rating": "4.70",
+    "open_period": "weekday: 07:00-16:00; weekend: 07:00-16:00",
+    "latitude": "-7.73393690",
+    "longitude": "110.38914860",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "7938a948-7220-49d3-8307-4ab06d8756f2",
+    "name": "Lotek & Gado - Gado Bu Nur, Jambon",
+    "rating": "4.50",
+    "open_period": "weekday: 09:00-16:00; weekend: 09:00-16:00",
+    "latitude": "-7.76974900",
+    "longitude": "110.35691800",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Bakso & soto",
+      "Aneka nasi",
+      "Ayam & bebek"
+    ]
+  },
+  {
+    "id": "c2c5bc09-5662-4f70-a406-907822d38771",
+    "name": "Lotek Pandega Putri, Depok",
+    "rating": "4.70",
+    "open_period": "weekday: 07:00-16:00; weekend: 07:00-16:00",
+    "latitude": "-7.75523750",
+    "longitude": "110.37921820",
+    "description": null,
+    "created_year": 2017,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "d03a9299-809b-4c64-a256-28b639a993f2",
+    "name": "Gudeg Rizky 2",
+    "rating": "4.80",
+    "open_period": "weekday: 05:00-22:00; weekend: 05:00-22:00",
+    "latitude": "-7.77325132",
+    "longitude": "110.31249728",
+    "description": null,
+    "created_year": 2021,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "ab5ba174-35fb-43d2-872c-5cb731a5b5fd",
+    "name": "Bakpia Kurnia Sari, Godean",
+    "rating": "4.40",
+    "open_period": "weekday: 08:00-20:00; weekend: 08:00-20:00",
+    "latitude": "-7.77869000",
+    "longitude": "110.33861800",
+    "description": null,
+    "created_year": 2019,
+    "tags": [
+      "Jajanan"
+    ]
+  },
+  {
+    "id": "916d0536-7ad7-45fc-bf51-8028b865a96d",
+    "name": "Gudeg Yu Djum, AM Sangaji",
+    "rating": "4.70",
+    "open_period": "weekday: 06:00-19:00; weekend: 06:00-19:00",
+    "latitude": "-7.77086050",
+    "longitude": "110.36840830",
+    "description": "Juara Partner GO-FOOD 2019: Kategori Pelayanan Driver Terbaik Provinsi D.I Yogyakarta",
+    "created_year": 2016,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "ee28fe8e-8467-42f1-a878-a8e155f88fd1",
+    "name": "Gudeg Yu Djum, Kaliurang",
+    "rating": "4.60",
+    "open_period": "weekday: 05:00-18:00; weekend: 05:00-18:00",
+    "latitude": "-7.76321300",
+    "longitude": "110.38019600",
+    "description": "Juara Partner GO-FOOD 2019: Kategori Pelayanan Driver Terbaik Provinsi D.I Yogyakarta",
+    "created_year": 2016,
+    "tags": [
+      "Ayam & bebek",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "58b080b6-d315-48d6-b518-aca361770930",
+    "name": "Gudeg Mbarek Bu Hj. Amad, Agro",
+    "rating": "4.60",
+    "open_period": "weekday: 05:30-22:00; weekend: 05:30-22:00",
+    "latitude": "-7.76580310",
+    "longitude": "110.37929400",
+    "description": "Gudeg Mbarek bu Hj Amad yg telah hadir di Jogja sejak th 1950 adalah warung makan gudeg yg merupakan warisan leluhur yg bertema tradisional. \nDengan resep yg sudah terkenal karena rasanya dengan citarasa yg istimewa.\nGudeg Mbarek bu Hj Amad merupakan  makanan Khas kota Jogja. Dimasak dengan menggunakan kayu bakar, sehingga memberi citarasa yg khas & nikmat.",
+    "created_year": 2016,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "26b532e9-2005-4197-b8c6-2302a6cfbe69",
+    "name": "Gudeg Yu Djum, Mbarek",
+    "rating": "4.60",
+    "open_period": "weekday: 05:00-21:00; weekend: 05:00-21:00",
+    "latitude": "-7.76606156",
+    "longitude": "110.37973657",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "c96f5364-f214-440a-8093-2aaf2eb073b3",
+    "name": "Gudeg Mbak Pirang by Bu Mardjo, Depok",
+    "rating": "4.70",
+    "open_period": "weekday: 12:00-22:00; weekend: 12:00-21:00",
+    "latitude": "-7.76619000",
+    "longitude": "110.38590300",
+    "description": null,
+    "created_year": 2019,
+    "tags": [
+      "Ayam & bebek",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "c5fc0915-1e86-40ce-b505-1a099d2df59a",
+    "name": "Lotek & Gado-Gado Bu Bagyo, Anggajaya",
+    "rating": "4.60",
+    "open_period": "weekday: 09:00-16:15; weekend: 09:00-16:15",
+    "latitude": "-7.75706750",
+    "longitude": "110.39591980",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Jajanan",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "97e6fdbb-0b20-4ce3-bcab-1c82d3679d95",
+    "name": "Bakpia Bakpiaku, Tugu Jogja",
+    "rating": "4.70",
+    "open_period": "weekday: 06:00-21:45; weekend: 06:00-21:45",
+    "latitude": "-7.78305260",
+    "longitude": "110.36751510",
+    "description": null,
+    "created_year": 2023,
+    "tags": [
+      "Sweets"
+    ]
+  },
+  {
+    "id": "7028c43f-f1a0-464d-9d8a-ca66e19fd86b",
+    "name": "Gudeg Yu Narni, Margo Utomo",
+    "rating": "4.50",
+    "open_period": "weekday: 05:15-20:30; weekend: 05:15-20:30",
+    "latitude": "-7.78401660",
+    "longitude": "110.36699880",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "c56bdcac-1412-4470-a305-4a03f6d5a1de",
+    "name": "Bakpia Mutiara Jogja, Timur Hartono Mall",
+    "rating": "4.70",
+    "open_period": "weekday: 07:00-21:30; weekend: 07:00-21:30",
+    "latitude": "-7.75834300",
+    "longitude": "110.39999500",
+    "description": null,
+    "created_year": 2021,
+    "tags": [
+      "Jajanan",
+      "Roti"
+    ]
+  },
+  {
+    "id": "e0d0ea33-be40-4751-a0d0-a24528db6c9e",
+    "name": "Lotek & Gado - Gado Bu Bagyo, Sagan",
+    "rating": "4.70",
+    "open_period": "weekday: 08:30-18:15; weekend: 08:30-18:15",
+    "latitude": "-7.78055000",
+    "longitude": "110.37936000",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Jajanan",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "867c4e99-060d-42eb-813c-75a1bc8f9e31",
+    "name": "Bakpia Juwara Satoe, Kotabaru",
+    "rating": "4.20",
+    "open_period": "weekday: 07:00-21:00; weekend: 07:00-21:00",
+    "latitude": "-7.78478731",
+    "longitude": "110.37318997",
+    "description": null,
+    "created_year": 2022,
+    "tags": [
+      "Jajanan",
+      "Sweets",
+      "Roti"
+    ]
+  },
+  {
+    "id": "67b75737-3f65-44d2-af94-2f9ba82cb699",
+    "name": "Lotek & Gado-Gado Uswatun 2, Kaliurang",
+    "rating": "4.60",
+    "open_period": "weekday: 07:00-15:30; weekend: 07:00-15:30",
+    "latitude": "-7.69853100",
+    "longitude": "110.41633680",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "708f9160-e3a8-43e6-ab12-1bb3be8fa996",
+    "name": "Lotek & Gado - Gado Bu Bagyo, Candi Gebang",
+    "rating": "4.60",
+    "open_period": "weekday: 08:00-16:30; weekend: 08:00-16:30",
+    "latitude": "-7.74855750",
+    "longitude": "110.41199420",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Jajanan",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "899bacb5-e398-4088-8d14-3a8aa13231d5",
+    "name": "Bakpia Pathok 52, Sanggrahan Pathok",
+    "rating": "4.50",
+    "open_period": "weekday: 07:00-21:00; weekend: 07:00-21:00",
+    "latitude": "-7.79638443",
+    "longitude": "110.35828996",
+    "description": null,
+    "created_year": 2019,
+    "tags": [
+      "Jajanan",
+      "Roti"
+    ]
+  },
+  {
+    "id": "102058ef-8745-4cf5-9d8b-2dd21f852100",
+    "name": "Gudeg Song Djie Bu Atmo, Kuncen",
+    "rating": "4.70",
+    "open_period": "weekday: 06:30-21:00; weekend: 06:30-21:00",
+    "latitude": "-7.79873733",
+    "longitude": "110.35211585",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Ayam & bebek",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "4d2541ec-7fd7-4f9a-ae92-b85455460b3f",
+    "name": "Gudeg Yu Djum, Kadipiro",
+    "rating": "4.50",
+    "open_period": "weekday: 06:00-21:00; weekend: 06:00-21:00",
+    "latitude": "-7.80093656",
+    "longitude": "110.34543011",
+    "description": null,
+    "created_year": 2022,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "b1186b4e-997d-4d74-9570-11f68c606d21",
+    "name": "Bakmi Jawa Mas Ari",
+    "rating": "4.70",
+    "open_period": "weekday: 00:00-23:59; weekend: 00:00-23:59",
+    "latitude": "-7.77976728",
+    "longitude": "110.39997183",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Bakmie",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "013ccfd3-bd25-4736-ac53-cc27ccfb2e2d",
+    "name": "Gudeg Mbarek Bu Hj. Amad, Alun-Alun Utara",
+    "rating": "4.20",
+    "open_period": "weekday: 05:15-22:00; weekend: 05:00-22:00",
+    "latitude": "-7.80280340",
+    "longitude": "110.36344760",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "f9cfad01-b92e-4788-a4e0-b0788e5c3d4e",
+    "name": "Gudeg Areh Ayam Kampung Ibu Suradi, Ambarukmo",
+    "rating": "4.50",
+    "open_period": "weekday: 06:00-21:00; weekend: 06:00-21:00",
+    "latitude": "-7.78380010",
+    "longitude": "110.39986920",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "056f689c-75a0-4f4b-8edf-ba38f580842d",
+    "name": "Gudeg Yu Narni, Ngasem",
+    "rating": "4.40",
+    "open_period": "weekday: 05:45-18:15; weekend: 05:45-18:15",
+    "latitude": "-7.80662600",
+    "longitude": "110.36018200",
+    "description": null,
+    "created_year": 2020,
+    "tags": [
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Gudeg Mercon Bu Murni",
+    "rating": "4.60",
+    "open_period": "weekday: 00:00-23:59; weekend: 00:00-23:59",
+    "latitude": "-7.81386222",
+    "longitude": "110.33550426",
+    "description": null,
+    "created_year": 2021,
+    "tags": [
+      "Aneka nasi",
+      "Jajanan",
+      "Ayam & bebek"
+    ]
+  },
+  {
+    "id": "40779668-89cb-4a76-8859-371e7644fcb8",
+    "name": "Lotek & Gado-Gado Bu Bagyo, Kusumanegara",
+    "rating": "4.50",
+    "open_period": "weekday: 09:00-16:30; weekend: 09:00-16:30",
+    "latitude": "-7.80196360",
+    "longitude": "110.38806881",
+    "description": null,
+    "created_year": 2016,
+    "tags": [
+      "Jajanan"
+    ]
+  },
+  {
+    "id": "db7c2334-7a9d-42ab-98b2-b578fbcab6fa",
+    "name": "Gudeg Wijilan \"Bu Dim\", Umbulharjo",
+    "rating": "4.80",
+    "open_period": "weekday: 05:00-22:00; weekend: 05:00-22:00",
+    "latitude": "-7.81840200",
+    "longitude": "110.39079100",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Ayam & bebek",
+      "Aneka nasi",
+      "Minuman"
+    ]
+  },
+  {
+    "id": "61ca02a0-0a5d-4e20-9b95-3238ccfe2325",
+    "name": "Lotek dan Gado-Gado Bu Endang, Sidikan",
+    "rating": "4.60",
+    "open_period": "weekday: 08:30-15:30; weekend: 08:30-15:30",
+    "latitude": "-7.82351610",
+    "longitude": "110.38543928",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Ayam & bebek",
+      "Sweets",
+      "Aneka nasi"
+    ]
+  },
+  {
+    "id": "8afe1ecb-8a9e-4b5d-92aa-f2e1047beb7d",
+    "name": "Lotek & Gado - Gado Bu Nur, Sorowajan",
+    "rating": "4.60",
+    "open_period": "weekday: 09:00-16:00; weekend: 08:00-16:00",
+    "latitude": "-7.79386900",
+    "longitude": "110.40603500",
+    "description": null,
+    "created_year": 2018,
+    "tags": [
+      "Aneka nasi"
+    ]
+  }
+]

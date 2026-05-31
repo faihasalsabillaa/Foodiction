@@ -1,0 +1,1610 @@
+[
+  {
+    "id": "ce5c6539-96cf-4c40-a860-5f35124dba91",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Lotek, Pecel, Dan Ayam Shabrina, Mlati",
+    "price": "10000.00"
+  },
+  {
+    "id": "9e70c640-2507-4b15-909a-7a8d7da3657d",
+    "restaurant_id": "d1ff6634-aee5-4bba-8a5d-b707f07baeb4",
+    "name": "Gudeg Yu Djum, Ngaglik",
+    "price": "20000.00"
+  },
+  {
+    "id": "b9d955ea-c3c0-40d2-a5c4-618c95fbb423",
+    "restaurant_id": "74c9c8ee-d4ff-48e7-94fa-3821137a4fca",
+    "name": "Lotek & Gado-Gado Bu Nur, Palagan",
+    "price": "10000.00"
+  },
+  {
+    "id": "53b8423e-afe8-4d52-8f95-2478e1321c20",
+    "restaurant_id": "e1cd857c-8068-4a84-abb5-d38308aceb04",
+    "name": "Gudeg Yu Narni, Palagan",
+    "price": "20000.00"
+  },
+  {
+    "id": "39d3a734-9e79-4904-856f-269dcc258fc6",
+    "restaurant_id": "9ca1ce1f-2f25-46f1-ae14-ce25b8b89aa8",
+    "name": "Gudeg Jamal, Jl. Magelang",
+    "price": "10000.00"
+  },
+  {
+    "id": "ea73cebb-f855-4520-88d9-89fcbbf1d474",
+    "restaurant_id": "e26bc4e6-144c-4634-9788-e5798f89086c",
+    "name": "Lotek Pandega Putri, Ngaglik",
+    "price": "15000.00"
+  },
+  {
+    "id": "5802677c-72cb-429d-8e9e-959313f6ab3b",
+    "restaurant_id": "7938a948-7220-49d3-8307-4ab06d8756f2",
+    "name": "Lotek & Gado - Gado Bu Nur, Jambon",
+    "price": "10000.00"
+  },
+  {
+    "id": "9c66dc28-746e-4784-a7b8-c32864c0f89c",
+    "restaurant_id": "c2c5bc09-5662-4f70-a406-907822d38771",
+    "name": "Lotek Pandega Putri, Depok",
+    "price": "10000.00"
+  },
+  {
+    "id": "becce10c-dbcd-4013-abbe-6b9e4a559c3f",
+    "restaurant_id": "d03a9299-809b-4c64-a256-28b639a993f2",
+    "name": "Gudeg Rizky 2",
+    "price": "10000.00"
+  },
+  {
+    "id": "abe672d0-709d-4af9-90a1-ab78bc3051da",
+    "restaurant_id": "ab5ba174-35fb-43d2-872c-5cb731a5b5fd",
+    "name": "Bakpia Kurnia Sari, Godean",
+    "price": "20000.00"
+  },
+  {
+    "id": "693a0f28-15c1-4efb-91ce-50d6abafaac0",
+    "restaurant_id": "916d0536-7ad7-45fc-bf51-8028b865a96d",
+    "name": "Gudeg Yu Djum, AM Sangaji",
+    "price": "20000.00"
+  },
+  {
+    "id": "032e812f-adf3-4cc9-875d-1c3122a9af17",
+    "restaurant_id": "ee28fe8e-8467-42f1-a878-a8e155f88fd1",
+    "name": "Gudeg Yu Djum, Kaliurang",
+    "price": "20000.00"
+  },
+  {
+    "id": "f59075fb-1787-41ca-9d61-3386cc56f540",
+    "restaurant_id": "58b080b6-d315-48d6-b518-aca361770930",
+    "name": "Gudeg Mbarek Bu Hj. Amad, Agro",
+    "price": "20000.00"
+  },
+  {
+    "id": "3cbb2302-3738-4994-afca-124766d45c1b",
+    "restaurant_id": "26b532e9-2005-4197-b8c6-2302a6cfbe69",
+    "name": "Gudeg Yu Djum, Mbarek",
+    "price": "20000.00"
+  },
+  {
+    "id": "4b657066-0a3b-4914-a03f-fd71131be8d9",
+    "restaurant_id": "c96f5364-f214-440a-8093-2aaf2eb073b3",
+    "name": "Gudeg Mbak Pirang by Bu Mardjo, Depok",
+    "price": "15000.00"
+  },
+  {
+    "id": "ba5d6757-eaa1-4fb7-95d9-e08a37c28da6",
+    "restaurant_id": "c5fc0915-1e86-40ce-b505-1a099d2df59a",
+    "name": "Lotek & Gado-Gado Bu Bagyo, Anggajaya",
+    "price": "10000.00"
+  },
+  {
+    "id": "4e639232-4184-4e73-ac7e-09eae7d341e0",
+    "restaurant_id": "97e6fdbb-0b20-4ce3-bcab-1c82d3679d95",
+    "name": "Bakpia Bakpiaku, Tugu Jogja",
+    "price": "20000.00"
+  },
+  {
+    "id": "c5827af2-4d41-4c1c-9cf8-eac3df11db9b",
+    "restaurant_id": "7028c43f-f1a0-464d-9d8a-ca66e19fd86b",
+    "name": "Gudeg Yu Narni, Margo Utomo",
+    "price": "15000.00"
+  },
+  {
+    "id": "748acb1e-4326-45ba-a890-df1fb5d93da5",
+    "restaurant_id": "c56bdcac-1412-4470-a305-4a03f6d5a1de",
+    "name": "Bakpia Mutiara Jogja, Timur Hartono Mall",
+    "price": "20000.00"
+  },
+  {
+    "id": "c9f2d27b-9346-40b6-8a7e-39013074f0d5",
+    "restaurant_id": "e0d0ea33-be40-4751-a0d0-a24528db6c9e",
+    "name": "Lotek & Gado - Gado Bu Bagyo, Sagan",
+    "price": "15000.00"
+  },
+  {
+    "id": "1c05f083-75eb-468e-92b4-24894cd9f14c",
+    "restaurant_id": "867c4e99-060d-42eb-813c-75a1bc8f9e31",
+    "name": "Bakpia Juwara Satoe, Kotabaru",
+    "price": "15000.00"
+  },
+  {
+    "id": "e53902a4-960c-4dc3-a57a-7522ca08889c",
+    "restaurant_id": "67b75737-3f65-44d2-af94-2f9ba82cb699",
+    "name": "Lotek & Gado-Gado Uswatun 2, Kaliurang",
+    "price": "10000.00"
+  },
+  {
+    "id": "a60d279c-de79-42fb-aa07-7b5902b67be8",
+    "restaurant_id": "708f9160-e3a8-43e6-ab12-1bb3be8fa996",
+    "name": "Lotek & Gado - Gado Bu Bagyo, Candi Gebang",
+    "price": "15000.00"
+  },
+  {
+    "id": "43ee007c-2a3e-4b35-9707-138fbd2988ed",
+    "restaurant_id": "899bacb5-e398-4088-8d14-3a8aa13231d5",
+    "name": "Bakpia Pathok 52, Sanggrahan Pathok",
+    "price": "20000.00"
+  },
+  {
+    "id": "2af805ff-a223-4378-bb81-f1415ab7adf8",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg Jogja Bu Mur 2, Condongcatur",
+    "price": "15000.00"
+  },
+  {
+    "id": "472696d2-171c-4147-86ea-e0e2547ef753",
+    "restaurant_id": "102058ef-8745-4cf5-9d8b-2dd21f852100",
+    "name": "Gudeg Song Djie Bu Atmo, Kuncen",
+    "price": "20000.00"
+  },
+  {
+    "id": "fa5933b1-d2cc-483d-acd4-5588ee891a3e",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "name": "Soto Kadipiro Baru 2, Wates",
+    "price": "10000.00"
+  },
+  {
+    "id": "96575adb-5bb4-43d9-9103-6986824bd6af",
+    "restaurant_id": "4d2541ec-7fd7-4f9a-ae92-b85455460b3f",
+    "name": "Gudeg Yu Djum, Kadipiro",
+    "price": "20000.00"
+  },
+  {
+    "id": "d89c2699-f3a9-48a6-9336-687cf0486625",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "name": "Sate Klathak dan Bakmi Jowo Pak Jede, Nologaten",
+    "price": "15000.00"
+  },
+  {
+    "id": "52038db3-1b52-453f-adb8-811a7ba3351b",
+    "restaurant_id": "b1186b4e-997d-4d74-9570-11f68c606d21",
+    "name": "Bakmi Jawa Mas Ari",
+    "price": "10000.00"
+  },
+  {
+    "id": "ef71af58-e3cd-444d-87df-f4c931d6b472",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek & Gado - Gado Colombo Bu Ary, Kledokan",
+    "price": "10000.00"
+  },
+  {
+    "id": "d6cfde4e-baa3-4283-ab5e-7fb3c144ca11",
+    "restaurant_id": "013ccfd3-bd25-4736-ac53-cc27ccfb2e2d",
+    "name": "Gudeg Mbarek Bu Hj. Amad, Alun-Alun Utara",
+    "price": "20000.00"
+  },
+  {
+    "id": "a87bcfc6-b18d-4a41-87ab-356e701eb0b7",
+    "restaurant_id": "f9cfad01-b92e-4788-a4e0-b0788e5c3d4e",
+    "name": "Gudeg Areh Ayam Kampung Ibu Suradi, Ambarukmo",
+    "price": "15000.00"
+  },
+  {
+    "id": "0d4b3d78-386f-4b62-906b-0af2edc87377",
+    "restaurant_id": "08bfba6d-3578-4653-ba9f-853b0e43f477",
+    "name": "Gudeg Wijilan Bu is",
+    "price": "20000.00"
+  },
+  {
+    "id": "6b3c8561-b424-4822-909a-4e6d13621a4a",
+    "restaurant_id": "056f689c-75a0-4f4b-8edf-ba38f580842d",
+    "name": "Gudeg Yu Narni, Ngasem",
+    "price": "15000.00"
+  },
+  {
+    "id": "4924005f-736d-4c42-b05f-d6a564f367f4",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Bakpiaku, Sultan Agung",
+    "price": "20000.00"
+  },
+  {
+    "id": "99797b6c-49f0-42de-a9c3-986442d24773",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Gudeg Mercon Bu Murni",
+    "price": "15000.00"
+  },
+  {
+    "id": "2a7d0a13-a00a-4113-83a0-473414856b3b",
+    "restaurant_id": "024edb32-43f4-460c-bdc4-8315254d12ea",
+    "name": "Lotek Gado-Gado Bu Ning, Tamansiswa",
+    "price": "15000.00"
+  },
+  {
+    "id": "edde5316-5971-43f7-b6d2-c189b49babfe",
+    "restaurant_id": "562b2629-1591-4d8d-95bb-1cd00946899a",
+    "name": "Lotek & Gado - Gado Bu Nur, Gatak",
+    "price": "10000.00"
+  },
+  {
+    "id": "49edab62-4914-4959-b762-d5d557ec5dc6",
+    "restaurant_id": "40779668-89cb-4a76-8859-371e7644fcb8",
+    "name": "Lotek & Gado-Gado Bu Bagyo, Kusumanegara",
+    "price": "15000.00"
+  },
+  {
+    "id": "11df9f9d-a281-4bef-97e9-f11843195680",
+    "restaurant_id": "03805cd4-a2a0-48a0-93fd-4d8648c4a70a",
+    "name": "Bakpia Bakery Kenes, Kusumanegara",
+    "price": "15000.00"
+  },
+  {
+    "id": "5bfc7d0a-f4ad-4fde-8c66-f0800ace6403",
+    "restaurant_id": "db7c2334-7a9d-42ab-98b2-b578fbcab6fa",
+    "name": "Gudeg Wijilan \"Bu Dim\", Umbulharjo",
+    "price": "15000.00"
+  },
+  {
+    "id": "e2feacaa-967d-4979-9de8-76ff8640e50f",
+    "restaurant_id": "61ca02a0-0a5d-4e20-9b95-3238ccfe2325",
+    "name": "Lotek dan Gado-Gado Bu Endang, Sidikan",
+    "price": "15000.00"
+  },
+  {
+    "id": "8581982f-6a28-4d4b-b5b6-cbc9bb095916",
+    "restaurant_id": "36e69068-8cfe-4c5a-bdd3-8e434d69f833",
+    "name": "Gudeg Dan Bubur Bu Lis, Jalan Sorowajan",
+    "price": "10000.00"
+  },
+  {
+    "id": "ac36295f-c4cf-40cb-92d6-c538493095a0",
+    "restaurant_id": "8afe1ecb-8a9e-4b5d-92aa-f2e1047beb7d",
+    "name": "Lotek & Gado - Gado Bu Nur, Sorowajan",
+    "price": "10000.00"
+  },
+  {
+    "id": "66f607a2-f53c-44b7-b6a5-9eea7413ef92",
+    "restaurant_id": "7467238b-8f73-4847-88b9-918678a35fbe",
+    "name": "Lotek Gado-Gado, Selokan Mataram",
+    "price": "10000.00"
+  },
+  {
+    "id": "8194bde3-9941-4333-8e59-c377c2e20c0e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado-gado Spesial, Lotek Double Sayur",
+    "price": "10000.00"
+  },
+  {
+    "id": "65ccd179-7b09-493e-8209-aa310b331406",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "name": "Mendoan, Kunir Asem, Paket 4 ( Brongkos ), Cumi, Cap Cay Goreng, Nasi Putih, Bakmi Goreng, Jeruk Manis",
+    "price": "15000.00"
+  },
+  {
+    "id": "69a40653-4a52-4afb-b70e-92aafb3cedfa",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Ayam Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "7c640ad3-2229-4f43-9fc7-462cf329f61b",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Opor Ayam, Lotek Dobel Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "419323b3-de4b-4361-9e45-dde73f142c16",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Nasi Goreng, Lotek + Nasi, Bakwan, Teh Panas / Es, Milo Panas / Es",
+    "price": "10000.00"
+  },
+  {
+    "id": "c418153c-368f-47ab-b06a-4567db35627e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek",
+    "price": "10000.00"
+  },
+  {
+    "id": "81ab8643-6543-4a3f-b1cf-6424f1a86cae",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Telur Rebus, Lotek Dobel Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "3210dd17-9dff-4667-bead-ad4b4145fcd2",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur",
+    "price": "15000.00"
+  },
+  {
+    "id": "70246963-783b-4599-971f-85ec7c3a219e",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur + Suwir, Nasi Gudeg Krecek Telur + Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "5c824c80-4f02-46cd-ac60-19413a9092f0",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Sayap + Telor",
+    "price": "15000.00"
+  },
+  {
+    "id": "f8472710-b5cc-45fc-a474-edde8710e1cd",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Suwir, Nasi Gudeg Krecek Telor + Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "f034976d-1cc9-476e-beba-6ca08e6fc469",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "name": "Lotek, Mendoan (isi 3)",
+    "price": "10000.00"
+  },
+  {
+    "id": "fc4bda51-c4ea-4bc2-9491-b4abe752bcd6",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Bebek",
+    "price": "15000.00"
+  },
+  {
+    "id": "031f28e1-06a9-44f9-95ba-2daeb402f1d1",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Telur Bebek, Oseng Mercon, Gudeg",
+    "price": "15000.00"
+  },
+  {
+    "id": "32e2cff3-28d0-497d-9eab-7f1fd8d427c7",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Sayap, Bubur Gudeg Krecek Sayap, Nasi Gudeg Krecek Telur Bebek, Telur Bebek",
+    "price": "15000.00"
+  },
+  {
+    "id": "f8bda68e-7219-4330-a488-2819ae9c8bf4",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Bebek, Bubur",
+    "price": "15000.00"
+  },
+  {
+    "id": "f6cdef64-e99f-4413-aeba-d7074869d992",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Bebek, Sambel Krecek per Porsi, Komplitan",
+    "price": "15000.00"
+  },
+  {
+    "id": "69eda926-d6f3-4e30-ad57-f6f6ae2c2964",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Ceker Per Porsi, Nasi Gudeg Krecek Paha Bawah, Nasi Gudeg Krecek Paha Atas, Kerupuk",
+    "price": "15000.00"
+  },
+  {
+    "id": "6ff703da-8679-424b-9b31-810e8eccc9ca",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "062cad5d-f66e-4a60-89de-9f2afadf1dfc",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Double-double",
+    "price": "10000.00"
+  },
+  {
+    "id": "2b2dc3a1-0ea6-4f79-88ec-3c6c5440b402",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Double Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "6c5b6298-fa14-41ad-9c91-4524783708cb",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Double Sayur, Lotek Double Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "bfa40542-3664-4547-a760-23b8d340c78b",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Double Sayur, Bakwan Goreng",
+    "price": "10000.00"
+  },
+  {
+    "id": "dc834958-de08-4448-9bbf-152714e92d70",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Telur Rebus",
+    "price": "10000.00"
+  },
+  {
+    "id": "bfe988a7-3d20-4291-b325-ed5b5aaf25e5",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Opor Ayam",
+    "price": "10000.00"
+  },
+  {
+    "id": "68269f62-7a72-41bd-86c3-78c089f62632",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Double Bakwan, Kupat Tahu",
+    "price": "10000.00"
+  },
+  {
+    "id": "f6e13159-a287-4c88-a220-c9473d1b9bc1",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "b84d0131-af5d-492d-a9ed-13a8083a2dde",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Kupat Tahu, Lotek Telur, Krupuk Kecil, Ketupat, Es Teh",
+    "price": "10000.00"
+  },
+  {
+    "id": "679eaafe-ec55-47ce-ba60-09d72b4c66f2",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Kupat Tahu, Lotek Double Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "327aaed3-e26a-46e6-96de-ccbfbcbb063e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Double Bakwan, Lotek",
+    "price": "10000.00"
+  },
+  {
+    "id": "bb0157bd-ab57-4368-9fe4-b52a0135907c",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Nasi",
+    "price": "10000.00"
+  },
+  {
+    "id": "6a8534c6-32ea-4ca7-9805-a64357321864",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Lotek Double Bakwan, Lotek Double Sayur",
+    "price": "10000.00"
+  },
+  {
+    "id": "9dab0de7-3768-4575-baa9-0513d75017d0",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado Gado + Telur, Lotek + Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "f5ab9c14-398a-4c01-a908-cbe60e70b787",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "d09b665e-e260-422e-a467-e19b92f9b58c",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg Tahu Tanpa Nasi, Gudeg Gending Brutu Tanpa Nasi, Sambel Krecek Tanpa Nasi",
+    "price": "15000.00"
+  },
+  {
+    "id": "4db22461-9878-439b-afd5-c85fbde84db6",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Telor",
+    "price": "15000.00"
+  },
+  {
+    "id": "00bf0882-99de-4b55-a4e4-14e3c03d0a47",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Keju Isi 15, Bakpia Susu Durian Isi 15",
+    "price": "20000.00"
+  },
+  {
+    "id": "43ed88e2-c998-457d-b819-f9942b2910ce",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Bakpia Keju Isi 15, Bakpia Kacang Hijau Isi 15, Bakpia Coklat Isi 15",
+    "price": "15000.00"
+  },
+  {
+    "id": "06bd997c-96cf-48a4-9ca4-c5b9aaf80c01",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Susu Durian Isi 15, Bakpia Isi 40",
+    "price": "20000.00"
+  },
+  {
+    "id": "59ea2b8f-d3d6-4c1a-9cc9-e5bb57223dc8",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia  keju edam isi 15",
+    "price": "20000.00"
+  },
+  {
+    "id": "2f087a04-88d6-4af0-a3e8-1d04ebe3b054",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Paha Bawah, Nasi Gudeg Krecek Telur Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "64c9bf15-44d6-4405-9f4f-0908def0817a",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Sayap",
+    "price": "15000.00"
+  },
+  {
+    "id": "2f82aa74-5c6a-4ff7-8862-9f5e5aa33078",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg + Krecek + Telor 2",
+    "price": "15000.00"
+  },
+  {
+    "id": "40bfd425-52b7-4dd5-914e-7fafb87a9fcb",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Ayam Goreng Serundeng, Oseng Putih Telor, Oseng Genjer",
+    "price": "10000.00"
+  },
+  {
+    "id": "f9f0896d-1a33-4274-823c-ea2880d4fc7b",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "name": "Usus Mercon, Lodeh, Terong Balado",
+    "price": "10000.00"
+  },
+  {
+    "id": "4a320714-6ed1-4f6d-bb1f-700f5f85e192",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Ayam Opor, Oseng Jamur, Oseng Gembus, Sop, Cap Cay",
+    "price": "10000.00"
+  },
+  {
+    "id": "ceabc0e4-62a6-4ae3-a2ad-0563370273a6",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Ayam Suwir, Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "570927db-2903-43fb-abb2-d04a0f350868",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Paha Atas",
+    "price": "15000.00"
+  },
+  {
+    "id": "e070b729-d18d-4626-8154-ac4961ae89bf",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "19f7e435-188d-4f5f-a418-cab4ca873172",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado-Gado, Lotek, Lotek",
+    "price": "10000.00"
+  },
+  {
+    "id": "00875dda-d92b-4bb2-bd90-ed2f674662da",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Lotek",
+    "price": "15000.00"
+  },
+  {
+    "id": "7126e55e-7b52-4e30-87ce-1b55587093d6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Tahu Kupat, Lotek",
+    "price": "10000.00"
+  },
+  {
+    "id": "9ee48e9a-6b8d-4c0c-b5e8-e90f7bff943a",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur, Nasi Gudeg Krecek Telur Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "382fc19a-5a64-4a71-8246-d1e0e69d4230",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Sayap",
+    "price": "15000.00"
+  },
+  {
+    "id": "cae15273-e04a-4545-9a07-88324003ed91",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Sayap, Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "44991ec0-20b7-4577-8e31-7a90360021b4",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur, Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "17888e66-843e-4d50-9027-30160ab4c505",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Paha Atas",
+    "price": "15000.00"
+  },
+  {
+    "id": "c82d77ca-eea7-413e-8945-0a7537b97ea1",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Tahu, Nasi Gudeg Krecek Ayam Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "dff8ab6e-d594-4670-b60e-25277fb09b5e",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Ayam Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "f5897cc4-3529-406e-acc2-c20c4375ad32",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi / Bubur Gudeg Ayam Suwir +Telor",
+    "price": "15000.00"
+  },
+  {
+    "id": "5d0dee54-c8fe-440c-a69e-407f7789447c",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi / Bubur Gudeg Telor, Nasi / Bubur Gudeg Sayap Ayam, Nasi / Bubur Gudeg Sayap Ayam + Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "8fe82b1b-78d1-4342-97a8-bb7ae6a89fe3",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi / Bubur Gudeg Kepala Ayam + Tahu, Nasi / Bubur Gudeg Kepala Ayam + Telor",
+    "price": "15000.00"
+  },
+  {
+    "id": "c024f19d-35a7-4956-9f0b-953a90078ac2",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi / Bubur Gudeg Telor",
+    "price": "15000.00"
+  },
+  {
+    "id": "4977fef3-7696-4525-bac9-67f7aef4baf8",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi / Bubur Gudeg Ayam Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "b0127634-785d-4f65-85e6-4b1b64b6a030",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi / Bubur Gudeg Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "81e2b289-8d68-49cc-bac7-f65bfa38b34a",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi / Bubur Gudeg Telor + Tahu, Nasi / Bubur Gudeg Ayam Suwir + Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "6dcf9ab4-578b-46a2-9cbe-0293215b90a6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat, Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "95e4dd4f-fe9f-4cf9-92f7-579ffcd294b0",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat, Gado - Gado Kupat",
+    "price": "10000.00"
+  },
+  {
+    "id": "96593816-bf61-404d-940b-e11430dd2945",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Telur, Cabe, Kerupuk",
+    "price": "10000.00"
+  },
+  {
+    "id": "e16d0020-f1e7-41c2-baf6-8cf3327796eb",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Telur, Gado - Gado Kupat",
+    "price": "10000.00"
+  },
+  {
+    "id": "b0362862-c4eb-42a0-a1d1-1b260dba25b1",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpiaku Isi 20 Rasa Keju",
+    "price": "20000.00"
+  },
+  {
+    "id": "fc1e0ef1-6365-4310-b86a-e7234d147acf",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Suwir, Nasi Gudeg Krecek Telur",
+    "price": "15000.00"
+  },
+  {
+    "id": "ca1d9aaa-dc35-4906-9c25-dda363a0bd7b",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Dada + Telur",
+    "price": "15000.00"
+  },
+  {
+    "id": "2d7c66ed-674e-4c42-a283-822dbf470be5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telor + Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "284679ed-c58a-44a0-af29-5c57c3aa5d35",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Sayap, Nasi Gudeg Krecek Suwir, Nasi Gudeg Krecek Telor + Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "f5d2a31d-9214-45d8-9d44-d205c47bf5bf",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Coklat Isi 15, Bakpia Aneka Rasa Isi 10, Bakpia Kacang Hijau Isi 10, Bakpia Kacang Hijau Isi 20",
+    "price": "20000.00"
+  },
+  {
+    "id": "157dec41-0f18-4b6f-abe6-9703e3dc7877",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Kacang Hijau Isi 20",
+    "price": "20000.00"
+  },
+  {
+    "id": "bc087e6c-c3c2-4b52-bb11-5a2e7e470bd5",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Greentea isi 10, Bakpia Keju Isi 15, Bakpia Kacang Hijau Isi 10, Bakpia Keju Isi 10, Bakpia Coklat Isi 10",
+    "price": "20000.00"
+  },
+  {
+    "id": "2e750721-d68c-4039-bbea-8be8d53b7892",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat",
+    "price": "10000.00"
+  },
+  {
+    "id": "053b3cb7-2639-4b84-b435-4bfabec9167d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Nasi, Tahu (Mboten) Gimbal, Nasi Putih, Tjap Djaek",
+    "price": "10000.00"
+  },
+  {
+    "id": "050168e5-4942-49bf-8d4d-fc61f81205ad",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Telur, Es Jeruk, Kerupuk",
+    "price": "10000.00"
+  },
+  {
+    "id": "25e5b28c-737d-431e-89b6-cc707088658d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado - Gado Kupat, Lotek Kupat, Cap Cay Goreng / Rebus",
+    "price": "10000.00"
+  },
+  {
+    "id": "e3f3990f-22f0-4cba-ac2e-2b39aa77b4c6",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Telur, Gado - Gado Kupat, Kerupuk",
+    "price": "10000.00"
+  },
+  {
+    "id": "d368c980-b754-4e89-8c44-f24602d705ee",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado - Gado Kupat, Lotek Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "75002f57-2386-405f-8fc6-97e86e7e9759",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat, Tahu (Mboten) Gimbal, Tahu / Tempe Bacem",
+    "price": "10000.00"
+  },
+  {
+    "id": "a7b577b6-fd1b-4177-9a0d-b2925e055406",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Bihun Boreng / Rebus, Lotek Kupat",
+    "price": "10000.00"
+  },
+  {
+    "id": "5eefb4d6-6934-4ee7-a608-d4a322ffbae3",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Bumbu Pisah",
+    "price": "10000.00"
+  },
+  {
+    "id": "757cc3a9-61c1-4514-9df0-ce7961a9b7d5",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat, Jus Sirsak",
+    "price": "10000.00"
+  },
+  {
+    "id": "e0d9489d-1fc5-49aa-a3ac-ebb21551df00",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Ngikan POP!, Ikan Sambal Oseng Mercon, Ikan Sambal Woku",
+    "price": "15000.00"
+  },
+  {
+    "id": "a4a1f189-cdf2-424f-a9c5-b2d912efd21c",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Ikan Sambal Oseng Mercon",
+    "price": "15000.00"
+  },
+  {
+    "id": "12b63fcd-2dbb-4570-9891-770cef5d593c",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Basah Kumbu Hitam Isi 15, Bakpia Basah Keju Isi 15, Bakpia Kacang Hijau Original Isi 10 - Juwara Satoe, Bakpia Basah Coklat Premium Isi 15",
+    "price": "20000.00"
+  },
+  {
+    "id": "6868a036-8aff-4215-89a6-ea044fd58994",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpia Basah Kumbu Hitam Isi 15 - Juwara Satoe, Bakpia Basah Kacang Hijau Isi 15 - Juwara Satoe",
+    "price": "20000.00"
+  },
+  {
+    "id": "cf6c0dd2-2d3c-4acf-ad91-3d5fcc86545c",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Sayur, Lotek Sayur",
+    "price": "10000.00"
+  },
+  {
+    "id": "acc3c2c1-e7bf-4a07-b402-3b72cc357388",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Kupat Tahu, Gorengan (Tempe, Bakwan), Paket Lotek + Gorengan",
+    "price": "10000.00"
+  },
+  {
+    "id": "a72ae562-497a-423e-81f6-0d749d6d290c",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado-gado, Krupuk Lotek, Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "a0454a55-040b-41cc-9cc5-47d553f90e42",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Bakso Mercon",
+    "price": "15000.00"
+  },
+  {
+    "id": "5e68faae-ed92-4db9-a8d1-dd3ea1214004",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Biasa",
+    "price": "10000.00"
+  },
+  {
+    "id": "7e5c54b3-d0a9-444b-8b0d-0581326c0413",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Biasa, Tahu Bakso, Gado-gado Biasa",
+    "price": "10000.00"
+  },
+  {
+    "id": "1670bf7c-dfac-4389-92f7-02dcb2090efe",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Telur, Nasi Pecel + Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "8112c824-bfa5-4e71-aee2-c034ed95f2b1",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Biasa, Gado - Gado + Telur, Gorengan",
+    "price": "10000.00"
+  },
+  {
+    "id": "5b4fd31a-ac9a-4b8a-8657-8a37f75e00d9",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado - Gado + Telur, Lotek Biasa",
+    "price": "10000.00"
+  },
+  {
+    "id": "c234547e-09a6-40c2-bc65-66447ccf7243",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Telur, Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "721721c7-87de-44d0-ba72-a6bf7ff6a130",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "name": "Sate Ayam Biasa, Tahu Tek Telur, Es Teh, Bakso Mercon",
+    "price": "15000.00"
+  },
+  {
+    "id": "e932ab6d-e6ea-4b5e-967f-9ab6d2b6d3c7",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Bakso Mercon, Bakso isi Daging Cincang",
+    "price": "15000.00"
+  },
+  {
+    "id": "bea39d09-9db6-4576-a57b-b4714fd12447",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat, Magelangan, Es Jeruk, Kupat Tahu, Kerupuk",
+    "price": "10000.00"
+  },
+  {
+    "id": "89964d94-9d0c-4848-a5f2-7d05a8886375",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Telur Dadar / Ceplok / Rebus, Bakwan, Lotek Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "cfbdcb38-fc07-4e01-b4ca-7467bf8a472f",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Oseng Mie, Kering Tempe, Bergedel, Rica-rica Ati Ampela Ayam, Ayam Suwir Pedas",
+    "price": "10000.00"
+  },
+  {
+    "id": "db0b2bfb-6025-4c10-b5fb-138e8f7ceb80",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Es Batu, Teh Poci Mangga, Ceker Mercon, Oseng Tempe Lombok Ijo",
+    "price": "15000.00"
+  },
+  {
+    "id": "5f638df1-1304-4010-bfe0-66a4f0ffadbe",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Ceker Mercon, Soup Bakso, Soup Makaroni",
+    "price": "15000.00"
+  },
+  {
+    "id": "450e6462-fecf-4982-a084-59337abd8f47",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "name": "Paket CERIA isi 6 Box Bakpia isi 20 (Free Dus Traveler Packing), Tambahan Kardus Traveler Packing Muat Hingga 6 Kotak Bakpia, Kacang Hijau Original Isi 20",
+    "price": "10000.00"
+  },
+  {
+    "id": "6fdaf6fa-6fcc-47d0-9c0e-3607e0dd7ce5",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Paket CERIA isi 4 Box Bakpia isi 20 (Free Dus Traveler Packing), Kacang Hijau Rasa Coklat Isi 20, Bakpia Mix Aneka Rasa Buah isi 20",
+    "price": "20000.00"
+  },
+  {
+    "id": "bf4f9b84-df05-411c-8c84-ba9cbe777a15",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Kacang Hijau Isi 15, Bakpia Kumbu Hitam Isi 20, Kacang Hijau Mix ori dan Kumbu Hitam isi 20",
+    "price": "20000.00"
+  },
+  {
+    "id": "6e2d94d7-8351-43bd-948b-00aa1757b75d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telor Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "3cbe8a06-4725-404c-a100-fc8d4ad46ade",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Telor Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "7d78db7c-bbda-484a-89ff-8854f0f1f07f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Paha, Nasi Gudeg Paha",
+    "price": "15000.00"
+  },
+  {
+    "id": "631eb066-be4f-44a2-8920-21c2fba2066c",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "f12cf8a4-2343-44e9-9950-1921e2c9363c",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Sayap",
+    "price": "15000.00"
+  },
+  {
+    "id": "8dd5a6ff-c8aa-4efc-8cbc-a58617d58349",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Suwir Telor",
+    "price": "15000.00"
+  },
+  {
+    "id": "a2f9ce7b-a45d-4849-bab1-fb4e8798dcfe",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Pecel + Oseng Tempe + Peyek + Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "dfc17911-e066-411b-ad97-548054c57a7c",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Pecel + Oseng Tempe + Peyek + Tempe + Telur, Peyek teri, Telur Asin",
+    "price": "10000.00"
+  },
+  {
+    "id": "875dcb40-01e1-4bd5-9535-0492a5126db3",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Pecel + Oseng Tempe + Peyek + Telur, Es Jeruk, Paket A",
+    "price": "10000.00"
+  },
+  {
+    "id": "786c06a4-54ad-4573-b2a8-698301c259ef",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Pecel + Oseng Tempe + Peyek",
+    "price": "10000.00"
+  },
+  {
+    "id": "c34d8c78-5afb-4f16-b5a4-677f58929528",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg Kaleng Bu Tjitro - ORIGINAL, Gudeg Kaleng Bu Tjitro - PEDAS, Sambel Goreng KRECEK MERCON - kaleng -  BU TJITRO, Sambel Goreng KRECEK ORIGINAL - kaleng -  BU TJITRO, Wedang Uwuh - Isi 10 pack, Wedang Uwuh Jahe Merah - Isi 10",
+    "price": "15000.00"
+  },
+  {
+    "id": "2fcccf4b-9370-41c0-aade-0c1e388c55f6",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur Paha Atas, Nasi Gudeg Krecek Telur Dada",
+    "price": "15000.00"
+  },
+  {
+    "id": "6f8dd2f3-98e5-4ba6-8cc4-facea34ebd55",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Pathok 25 Keju, Pathok 25 Kacang Hijau ( Bakpia Basah )",
+    "price": "20000.00"
+  },
+  {
+    "id": "1da4038f-7e0e-4516-a4a1-48ea0c23004d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat, Gado Gado",
+    "price": "10000.00"
+  },
+  {
+    "id": "010fc3d5-3a49-4dad-bab2-f47a9844b7cc",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Tanpa Kupat, Tahu Guling",
+    "price": "10000.00"
+  },
+  {
+    "id": "a979763c-5fe1-4acb-832e-d3e58f1d5e75",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "name": "Gule Daging, Paket Sate Klathak + Nasi, Kicik, Krupuk",
+    "price": "15000.00"
+  },
+  {
+    "id": "f91434ef-89fd-48fd-b2d8-a3798cca2cbf",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "name": "Sate Klathak, Tongseng",
+    "price": "15000.00"
+  },
+  {
+    "id": "676fa3f4-e9c2-4bfd-a550-ea4af0a8bbd4",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Paket Geprek Bensu Oseng Mercon, Mie Goreng, Nasi Putih",
+    "price": "10000.00"
+  },
+  {
+    "id": "87fa4621-605d-4492-ac13-f0a4eb899adb",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Nasi Goreng Telur, Lotek",
+    "price": "10000.00"
+  },
+  {
+    "id": "9d8d32ab-ddaf-4a26-b396-4aa064354a16",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Gado-Gado, Nasi Pecel",
+    "price": "10000.00"
+  },
+  {
+    "id": "2805bc7f-3834-410e-a8ac-633c3d7b49c3",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Telur, Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "e04e7d20-4121-410b-bc5c-6b4769b500e5",
+    "restaurant_id": "ec59e64c-7f2f-4613-b9e3-6c7be31ad906",
+    "name": "Sate Klatak Kambing, Tongseng Mercon Kambing",
+    "price": "15000.00"
+  },
+  {
+    "id": "8bf46729-aa70-41ef-b191-9f169da586c7",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Oseng Ati, Nasi Ayam Rica, Mie Setan",
+    "price": "10000.00"
+  },
+  {
+    "id": "db0d359d-f18b-4e4b-8db2-c1506c357a6c",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Oseng Ayam, Nasi Orak Arik Telor, Mie Dok Dok, Nutrisari",
+    "price": "10000.00"
+  },
+  {
+    "id": "97631ca9-89a1-4247-a6e0-a72bcc3fe98f",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Ayam Rica, Nasi Oseng Ayam, Telor Dadar/Ceplok",
+    "price": "10000.00"
+  },
+  {
+    "id": "930332ed-bdc1-4923-9cf6-62e9addd31c5",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Oseng Ayam",
+    "price": "10000.00"
+  },
+  {
+    "id": "1198c4da-4000-4d5a-8e9a-3148d35c9418",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Paket Dos Nasi Gudeg Areh Ayam Kampung Paha Ceker Dan Kerupuk + Krecek, Es Teh Manis",
+    "price": "15000.00"
+  },
+  {
+    "id": "5f338724-b560-45e4-b8f5-145a6524a0cf",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Areh Ayam Kampung Suwir + Telur",
+    "price": "15000.00"
+  },
+  {
+    "id": "60bf48ba-76c7-4359-b774-9775f4cf7a36",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Bubur Putih, Nasi Gudeg Areh Paha Ceker",
+    "price": "15000.00"
+  },
+  {
+    "id": "7641cb9a-0f4b-4430-94a6-c3bb81840e1a",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Bubur Gudeg Telur Krecek Dan Areh, Nasi Ayam Goreng Kota + Kerupuk Udang, Telur, Rambak Kecil, Kerupuk Udang, Es jeruk Manis",
+    "price": "15000.00"
+  },
+  {
+    "id": "16efe5a0-89ec-427f-a932-999061ceff0d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Areh Ayam Kampung Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "8cfbab8f-debc-4cb9-a27c-50737dc9bcd6",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Areh Ayam Kampung Suwir + Telur, Nasi Gudeg Areh Ayam Kampung suwir, Nasi Gudeg Areh Ayam Kampung Paha Ceker, Nasi Gudeg Areh Telur",
+    "price": "15000.00"
+  },
+  {
+    "id": "001c536d-08ad-4e63-8d1e-72b0ab2bbc98",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Bubur Telur Gudeg Areh, Susu Coklat",
+    "price": "15000.00"
+  },
+  {
+    "id": "3f24a906-3552-49d7-a073-319a168369d7",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Telur,Ayam Suwir Tahu+ Krecek",
+    "price": "15000.00"
+  },
+  {
+    "id": "bca73b4e-be5c-47a1-af68-3928b650987f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Paha Atas + Krecek + GRATIS Es teh",
+    "price": "15000.00"
+  },
+  {
+    "id": "1f1ae90c-1197-4166-8cda-f13fc886f4f8",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg Dada 1 , Sayap 1 , Telur 2  + Krecek",
+    "price": "15000.00"
+  },
+  {
+    "id": "c06a6ba7-d59f-486c-8fcf-fc82eb3b231d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Telur Krecek, Es Teh, Es Jeruk",
+    "price": "15000.00"
+  },
+  {
+    "id": "f7c79efe-7257-4b02-b28d-28c4428a065c",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Telur Tahu +krecek",
+    "price": "15000.00"
+  },
+  {
+    "id": "7b265863-4deb-4ea4-bc6d-989b0db45dc1",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg Dada 1 , Paha Bawah 1, Telur 3,tahu + Krecek",
+    "price": "15000.00"
+  },
+  {
+    "id": "f1b989a3-11b3-4b56-ac17-96a210edaad3",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Telur Krecek",
+    "price": "15000.00"
+  },
+  {
+    "id": "26bab72a-fb84-4d87-95b7-e27b55a06af3",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Telur Tahu +krecek, Gudeg Sayap + Krecek",
+    "price": "15000.00"
+  },
+  {
+    "id": "575ec5e1-763f-4dd9-a171-31c5d6440329",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telor Suwir, Wedang Uwuh",
+    "price": "15000.00"
+  },
+  {
+    "id": "47e097fc-5042-45f6-b516-6082368c694f",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Sayap, Teh / Es Teh, Telor Bebek",
+    "price": "15000.00"
+  },
+  {
+    "id": "aeec19b7-2b4c-478d-9c6b-258ae22de9ae",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Sayap, Nasi Gudeg Krecek Telor",
+    "price": "15000.00"
+  },
+  {
+    "id": "2bc646d4-69a3-4067-a292-10a31df846b5",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur + Ayam Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "1ea3a364-e557-400f-b099-73939d623bd3",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpiaku Isi 10 Rasa Keju, Bakpiaku Isi 10 Rasa Kacang Hijau, Bakpiaku Isi 20 Rasa Kacang Hijau",
+    "price": "20000.00"
+  },
+  {
+    "id": "fd2952b1-14bf-4052-9abb-613b241e3006",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpiaku Isi 10 Rasa Kacang Hijau, Bakpiaku Isi 5 Rasa Coklat, Bakpiaku Isi 5 Rasa Keju",
+    "price": "20000.00"
+  },
+  {
+    "id": "bd2f37b6-e79c-4f60-b717-a1500ab22ae0",
+    "restaurant_id": "9fb181b3-3aeb-4276-97d7-60ec0276f1ee",
+    "name": "Bakpiaku Isi 10 Rasa Kacang Hijau",
+    "price": "20000.00"
+  },
+  {
+    "id": "31fbf1e2-ed30-4a99-97e0-2097d2faac23",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Duo Sujah Coklat, Nasi Ayam Balado, Ayam Paha Utuh, Jamur Crispi, Nasi Oseng Jamur",
+    "price": "10000.00"
+  },
+  {
+    "id": "dda4da52-8e6a-4860-a4e0-b9c91a79285b",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Mercon Ayam Suwir, Nasi Gudeg Krecek Mercon Telur+Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "eb069a4e-2258-4cd9-b90c-001c91839351",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Mercon Kepala",
+    "price": "15000.00"
+  },
+  {
+    "id": "20758a8e-756d-4026-ac8b-1e8f29324e09",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Mercon Paha+Telur+Tahu, Nasi Gudeg Krecek Mercon Kepala+Telur+Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "e2038a01-a161-4071-ad68-217e1d9fa8e1",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Mercon Telur+Tahu, Nasi Gudeg Krecek Mercon Paha",
+    "price": "15000.00"
+  },
+  {
+    "id": "20d65840-3696-471f-850a-6306e75fe838",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Mercon Telur+Ayam Suwir",
+    "price": "15000.00"
+  },
+  {
+    "id": "c61750f5-c462-4af9-87bf-e081145156a0",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Bakwan Sayur, Es Teh Manis",
+    "price": "10000.00"
+  },
+  {
+    "id": "adcaefdb-9e02-424a-ac3e-7cb6a02b17ce",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Bakwan + Telur Rebus/dadar/ceplok, Tempe Mendoan",
+    "price": "10000.00"
+  },
+  {
+    "id": "3eb2e3ed-7a7d-475f-a396-de566b2f91c9",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Kupat Tahu, Lotek",
+    "price": "10000.00"
+  },
+  {
+    "id": "4d84051f-500d-4f76-b686-4e15df7e0d55",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "b58b7611-b41e-4759-9580-d377506c1b40",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Telur Rebus / Dadar / Ceplok",
+    "price": "10000.00"
+  },
+  {
+    "id": "44b220ee-4e60-4f50-9a3f-e4746eea56a4",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Bakso Mercon, Bakso Bom",
+    "price": "15000.00"
+  },
+  {
+    "id": "f40004ea-3ac8-4186-908d-4193e55ee5d5",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado - Gado, Lotek Dobel Bakwan, Jeruk ( Es / Panas )",
+    "price": "10000.00"
+  },
+  {
+    "id": "05c67cf6-5ef6-476f-885c-ad5e0bde6d1e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Free Le Minerale 600ml, Krupuk Lotek, Jus Sirsak",
+    "price": "10000.00"
+  },
+  {
+    "id": "d3753f68-4582-4744-be0d-ccd8fc3e9e80",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Krupuk Lotek, Gado - Gado",
+    "price": "10000.00"
+  },
+  {
+    "id": "4c1a19e2-5ff2-4ec6-b04a-0b675b7ea6f4",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "d5ddba6e-283d-432e-a50b-27b21273981e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Telur Rebus, Jus Sirsak",
+    "price": "10000.00"
+  },
+  {
+    "id": "c064dafb-f20f-4193-bf40-f69713a1359f",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Garang Asem Ayam, Sayur Lodeh labu /Jipang +Tahu, Oseng Gembus Kemangi, Sayur Asem, Pete Lalap, Udang Asam Manis, Mendoan",
+    "price": "10000.00"
+  },
+  {
+    "id": "d84eb9fd-bbfd-4591-842a-85a43a23d6b9",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Rames Buto Terong, Sayur Lodeh Jipang+Tahu, Oseng So On, Garang Asem Ayam, Perkedel Kentang, Paha Ayam Goreng Kremes",
+    "price": "10000.00"
+  },
+  {
+    "id": "5cf9685d-6c47-4a91-8fa0-691820642872",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Paket Sarapan Werkudhoro, Oseng So On, Paha Bawah Ayam Bacem, Nasi Putih",
+    "price": "10000.00"
+  },
+  {
+    "id": "9bba6032-ce72-45f7-9656-b29a9293809b",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Rames Negoro Ngalengko, Nasi Rames Ayam Buto Ijo, Nasi Rames Cantrik, Oseng Jipang / Labu Siam, Oseng Jamur Tiram",
+    "price": "10000.00"
+  },
+  {
+    "id": "2a0c9459-0799-44c5-8a79-f881db30a4a1",
+    "restaurant_id": "36e69068-8cfe-4c5a-bdd3-8e434d69f833",
+    "name": "Bubur Kacang+ Ketan, Nasi Telor Asin, Telur Dadar, Nasi Putih, Nasi Ati Ampla Balado, Nasi Mangut Lele",
+    "price": "10000.00"
+  },
+  {
+    "id": "8bea201b-aafc-488c-bc42-c4e4d9c0832f",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado Gado Dan Teh(Panas,Es), Paket Geprek Dan Es Teh, Lotek Kupat(Es Teh/Panas)",
+    "price": "10000.00"
+  },
+  {
+    "id": "08bb7078-8e51-4a60-a369-489709a184e5",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat(Es Teh/Panas)",
+    "price": "10000.00"
+  },
+  {
+    "id": "1eeca919-d210-4a35-a09c-7faf3e0d344d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Kupat, Sop Ayu, Fuyunghai",
+    "price": "10000.00"
+  },
+  {
+    "id": "cd5b9dfa-a685-4d19-80ee-031a30c17d6c",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado - Gado Kupat, Kupat Tahu, Lotek Kupat, Teh Manis ( Hangat / Es )",
+    "price": "10000.00"
+  },
+  {
+    "id": "ace5310a-a7d1-4a1d-99a2-adad3d115261",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Sego Sambel Cumi, Seporsi Tahu Isi Mercon (Isi 3)",
+    "price": "15000.00"
+  },
+  {
+    "id": "3db121b2-5c78-405b-b0f9-8fac858a3e64",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi Ayam Geprek + Es Teh, Tahu Isi, Terong Sambalado, Oseng Usus 1 Porsi, Milo, Sayur 1porsi+ Ayam Penyet (Tanpa Nasi)",
+    "price": "10000.00"
+  },
+  {
+    "id": "1ef1e410-b7ce-4169-b0f5-8eebfa5a5f5e",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Komplit, Lotek Kupat",
+    "price": "10000.00"
+  },
+  {
+    "id": "90204ff2-d762-4713-8b6a-c009af463867",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Bakso Mercon, Bakso Urat",
+    "price": "15000.00"
+  },
+  {
+    "id": "31a056e7-16ea-4b84-a053-0aecb1166133",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Bakso Mercon, Bakso Biasa",
+    "price": "15000.00"
+  },
+  {
+    "id": "b8eb52a8-82af-446e-b2d5-6a1d7cc3d01f",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Bakso Mercon, Bakso Beranak",
+    "price": "15000.00"
+  },
+  {
+    "id": "83e39a3f-5dd8-4c94-a625-ba85bbbaa4b8",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Ayam Ungkep Sayap Isi 5, Ayam Ungkep Paha Isi 5, Sayur Oseng Pare, Oseng Pepaya Muda, Lele Mangut, Tempe Mendoan",
+    "price": "10000.00"
+  },
+  {
+    "id": "e27f6c90-ea47-483a-a7e2-7f720ee68176",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Bakwan Jagung, Bakmie Goreng, Sayur Lodeh, Sayur Sop, Gudeg Tewel Cowel, Kripik Singkong, Pithik Kriuk Double, Sayur Oseng Tempe, Nasi Geprek Paha",
+    "price": "15000.00"
+  },
+  {
+    "id": "a63c74f5-d10f-436c-95e6-0b5d6b06e001",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur, Nasi Gudeg Krecek Tahu, Nasi Gudeg Krecek Telur + Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "a1a75113-67d2-485e-a4c7-897f048acf5d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Sayap + Telur",
+    "price": "15000.00"
+  },
+  {
+    "id": "13f09431-fcde-45e7-a6cb-244ee4171bb1",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "5ecb592f-2c20-4c53-82a9-03c244ae6abb",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Telur, Nasi Gudeg Krecek Tahu, Oseng Mercon",
+    "price": "15000.00"
+  },
+  {
+    "id": "dd70ccac-4bdf-43ac-9f34-b192ba3d705d",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Nasi Gudeg Krecek Suwir + Telur, Nasi Gudeg Krecek Tahu",
+    "price": "15000.00"
+  },
+  {
+    "id": "13cb3e47-3fee-4f7e-8966-1c31e2e19fec",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Telur, Lotek Telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "d75b373d-38a2-4c90-81e4-e7423d48a576",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Dobel Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "7d322acb-92d9-417d-8459-d3bbf6d256c9",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado Gado, Lotek",
+    "price": "10000.00"
+  },
+  {
+    "id": "a0e8808d-315f-485a-ac67-ffdde12c689d",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek, Tahu Guling",
+    "price": "10000.00"
+  },
+  {
+    "id": "0857e87c-d7da-4fa7-941e-dfd055a8dc05",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg 5 (Nasi Gudeg Krecek Ayam) + Box/Dus, Gudeg 1(Nasi Gudeg Krecek Telur) + Box/Dus",
+    "price": "15000.00"
+  },
+  {
+    "id": "a5a931cb-ea89-4373-8ec9-cfee10ce08e4",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg 5 (Nasi Gudeg Krecek Ayam) + Box/Dus, Gudeg 2 (Nasi Gudek Krecek Kikil) + Box/Dus",
+    "price": "15000.00"
+  },
+  {
+    "id": "95a4b804-76d0-418d-ac6a-9956c6366f65",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Gudeg 1 (Nasi Gudeg Krecek Telur), Paket C (2 Ayam + 2 Telur)",
+    "price": "15000.00"
+  },
+  {
+    "id": "95af45ca-660a-4fa8-a49e-b136a3cace85",
+    "restaurant_id": "6c7103f1-12fb-4968-b0ec-e0e1607940d7",
+    "name": "Bubur 1 (Bubur Krecek Telur), Oseng Usus, Gudeg 6 (Nasi Gudeg Krecek Ayam Dan Kikil)",
+    "price": "15000.00"
+  },
+  {
+    "id": "511e91d6-c30b-4bf2-bd7f-157bcb9facbe",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Ayam Goreng Utuh, Gudangan, Oseng Tempe Lombok Ijo",
+    "price": "10000.00"
+  },
+  {
+    "id": "5ea781ef-8e35-47cf-b2da-8648b2d3dfcb",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek + Telur Goreng, Tahu Goreng, Tempe Goreng",
+    "price": "10000.00"
+  },
+  {
+    "id": "261fe6fc-f773-40b5-924f-f5e852e59c8e",
+    "restaurant_id": "7fded2fc-f424-4df2-8ef3-5d272e63d187",
+    "name": "Lotek Dobel Bakwan, Bakwan, Jus Jambu",
+    "price": "10000.00"
+  },
+  {
+    "id": "6b0b3144-7115-4993-8e09-f43eed8d4d6b",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi SMA Komplit Mercon, Kerupuk Enak, Abon Ayam Super, Tahu Balado Pedas , Tofu Spicy Balado",
+    "price": "10000.00"
+  },
+  {
+    "id": "0f34cac7-fa61-4575-9ae7-971513170b0f",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Sego Sd-1 Bakso Mercon, Sego Smp-1 Cumi Asin Mercon",
+    "price": "15000.00"
+  },
+  {
+    "id": "27e120d6-290c-46dd-85f0-80b5cfd3930f",
+    "restaurant_id": "2002c7dc-3de0-4752-8d09-c572d84c6376",
+    "name": "Nasi SMA Komplit Mercon, Sego Pelajar Tok, Sego Sd-1 Bakso Mercon, Nasi Telur Sosis Tdk Pedas",
+    "price": "15000.00"
+  },
+  {
+    "id": "7ad713dc-d834-447c-b67d-3f45c92ef65e",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Nasi SMA Komplit Mercon, Nasi SD 2 Ayam Suwir Mercon, Sego Sd-1 Bakso Mercon",
+    "price": "10000.00"
+  },
+  {
+    "id": "1333f4f1-3628-4080-86ef-928a1f0293bd",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Lotek Double Bakwan, Telur Rebus / Dadar / Ceplok, Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "b1713b33-fa4a-4280-8288-c836e8fb6fa2",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Gado- Gado, Lotek Telur, Karedok, Bakwan",
+    "price": "10000.00"
+  },
+  {
+    "id": "c1ddcf76-a292-403c-bea1-02233baaf352",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "Karedok, Lotek Nasi, Nasi Goreng, Es Jeruk",
+    "price": "10000.00"
+  },
+  {
+    "id": "d3836746-f5b1-4f1e-954d-80b07dfde891",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Sambal Ayam Matang, Oseng-Oseng Daun Pepaya, Ayam Goreng Utuh, Oseng-Oseng Cakar",
+    "price": "10000.00"
+  },
+  {
+    "id": "28694c4c-0728-43f2-ae31-e71ba15309fb",
+    "restaurant_id": "4744491b-c19f-4250-9ff6-7a9b3e0f16a1",
+    "name": "lotek+telur",
+    "price": "10000.00"
+  },
+  {
+    "id": "afe136ad-a93c-4772-b9d9-1e47872b6dea",
+    "restaurant_id": "36e69068-8cfe-4c5a-bdd3-8e434d69f833",
+    "name": "Nasi Ayam Rica, Bubur Kacang Hijau, Nasi Oseng Ayam, Bubur Ketan Hitam",
+    "price": "10000.00"
+  },
+  {
+    "id": "830fd7c3-4387-4bf9-89aa-1b6e315ff71b",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Telor Dadar/Ceplok, Nasi Oseng Ayam, Nasi Oseng Ati",
+    "price": "10000.00"
+  },
+  {
+    "id": "7d0b4e8e-8ffa-4b4c-8e73-814b1426ec6a",
+    "restaurant_id": "4d080f94-f282-42a8-931e-0db8f0f13d50",
+    "name": "Bakso Bakar Pedas, Oseng Bakso Mercon, Ayam Crispy Bakar Pedas, Es Coklat Banana (M)",
+    "price": "10000.00"
+  }
+]
